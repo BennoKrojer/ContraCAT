@@ -1,0 +1,1 @@
+python3 -m sockeye.score --target /home/benno/Projects/NMT/contrapro.text.bpe.de --source /home/benno/Projects/NMT/contrapro.text.bpe.en --output output-example --model /home/benno/Projects/NMT/models_dario/baseline/ --use-cpu --output-type score --batch-size 200
