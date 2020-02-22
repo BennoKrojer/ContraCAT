@@ -1,0 +1,1 @@
+python3 -m sockeye.score --target /mounts/Users/student/krojerb/BreakingNMT/contrapro.text.bpe.de --source /mounts/Users/student/krojerb/BreakingNMT/contrapro.text.bpe.en --output output-example --model /mounts/Users/student/krojerb/BreakingNMT/models_dario/baseline/ --device-ids 0 --output-type score --batch-size 200
