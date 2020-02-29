@@ -1,1 +1,0 @@
-python3 -m sockeye.score --target /mounts/Users/student/krojerb/BreakingNMT/contrapro.text.bpe.prev.de.de --source /mounts/Users/student/krojerb/BreakingNMT/contrapro.text.bpe.prev.en.en --output output-concat22 --model /mounts/Users/student/krojerb/BreakingNMT/models_dario/concat-2-2/ --device-ids 0 --output-type score --batch-size 100

@@ -1,1 +1,0 @@
-python3 -m sockeye.score --target /home/benno/Projects/NMT/contrapro.text.bpe.prev.de.de --source /home/benno/Projects/NMT/contrapro.text.bpe.prev.en.en --output output-concat22 --model /home/benno/Projects/NMT/models_dario/concat-2-2/ --device-ids 0 --output-type score --batch-size 100
