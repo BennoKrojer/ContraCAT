@@ -28,3 +28,6 @@ with open('tmp_en.txt', 'r') as tmp_en, open('../ContraPro_Dario/modified/he_sai
     for line in tmp_en:
         line = line.replace('<@@ SE@@ P@@ >', '<SEP>')
         bpe_en.write(line)
+
+os.system('rm -rf tmp_de.txt')
+os.system('rm -rf tmp_en.txt')
