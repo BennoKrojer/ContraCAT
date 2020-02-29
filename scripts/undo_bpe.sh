@@ -1,0 +1,2 @@
+sed -r 's/(@@ )|(@@ ?$)//g' <../ContraPro_Dario/contrapro.text.bpe.prev.en.en >../ContraPro_Dario/contrapro.text.tok.prev.en.en
+sed -r 's/(@@ )|(@@ ?$)//g' <../ContraPro_Dario/contrapro.text.bpe.prev.de.de >../ContraPro_Dario/contrapro.text.tok.prev.de.de
