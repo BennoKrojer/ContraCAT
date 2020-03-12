@@ -15050,9 +15050,9 @@ ich weiß noch , wie du mich hieltest , und wie ich auf deinem Gesicht saß und 
 ich habe den Tunnel , Johnson ! aber wieso ? <SEP> Er ist hier lang !
 ich habe den Tunnel , Johnson ! aber wieso ? <SEP> Sie ist hier lang !
 ich habe den Tunnel , Johnson ! aber wieso ? <SEP> Es ist hier lang !
-aber wieso ? <SEP> Der Tank selbst war ungewöhnlich , weil er vertikal war und wie ein alter Boiler aussah .
-aber wieso ? <SEP> Der Tank selbst war ungewöhnlich , weil sie vertikal war und wie ein alter Boiler aussah .
-aber wieso ? <SEP> Der Tank selbst war ungewöhnlich , weil es vertikal war und wie ein alter Boiler aussah .
+<SEP> Der Tank selbst war ungewöhnlich , weil er vertikal war und wie ein alter Boiler aussah .
+<SEP> Der Tank selbst war ungewöhnlich , weil sie vertikal war und wie ein alter Boiler aussah .
+<SEP> Der Tank selbst war ungewöhnlich , weil es vertikal war und wie ein alter Boiler aussah .
 ich sah sie bis in den Norden von Chihuahua. aber wieso ? <SEP> Die Indianer sagen , sie ruft alte Erinnerungen hervor , sogar extrem alte , und die Hinchis nennen sie &quot; die 1. Pflanze &quot; .
 ich sah sie bis in den Norden von Chihuahua. aber wieso ? <SEP> Die Indianer sagen , er ruft alte Erinnerungen hervor , sogar extrem alte , und die Hinchis nennen sie &quot; die 1. Pflanze &quot; .
 ich sah sie bis in den Norden von Chihuahua. aber wieso ? <SEP> Die Indianer sagen , es ruft alte Erinnerungen hervor , sogar extrem alte , und die Hinchis nennen es &quot; die 1. Pflanze &quot; .
@@ -21890,9 +21890,9 @@ kann man was dagegen tun ? aber wieso ? <SEP> Der Tumor kann nur operativ entfer
 wir müssen den Tumor biopsieren. aber wieso ? <SEP> Er sitzt an Ihrer Aorta . Das ist riskant .
 wir müssen den Tumor biopsieren. aber wieso ? <SEP> Sie sitzt an Ihrer Aorta . Das ist riskant .
 wir müssen den Tumor biopsieren. aber wieso ? <SEP> Es sitzt an Ihrer Aorta . Das ist riskant .
-aber wieso ? <SEP> Kinder , dass Geheimniss am Silvester Abend ist , das er nervt .
-aber wieso ? <SEP> Kinder , dass Geheimniss am Silvester Abend ist , das sie nervt .
-aber wieso ? <SEP> Kinder , dass Geheimniss am Silvester Abend ist , das es nervt .
+<SEP> Kinder , dass Geheimniss am Silvester Abend ist , das er nervt .
+<SEP> Kinder , dass Geheimniss am Silvester Abend ist , das sie nervt .
+<SEP> Kinder , dass Geheimniss am Silvester Abend ist , das es nervt .
 wenn der Duft wieder frei ist , übernehm ich ihn. aber wieso ? <SEP> Er gehört dir , Mann .
 wenn der Duft wieder frei ist , übernehm ich ihn. aber wieso ? <SEP> Sie gehört dir , Mann .
 wenn der Duft wieder frei ist , übernehm ich ihn. aber wieso ? <SEP> Es gehört dir , Mann .
@@ -23171,9 +23171,9 @@ ich finde sie vom Flussufer aus. aber wieso ? <SEP> Ich weiß , wo es ist .
 Ihre letzte Reise hat die ganze Energie verbraucht. aber wieso ? <SEP> Sie ist nicht so einfach zu erneuern .
 Ihre letzte Reise hat die ganze Energie verbraucht. aber wieso ? <SEP> Er ist nicht so einfach zu erneuern .
 Ihre letzte Reise hat die ganze Energie verbraucht. aber wieso ? <SEP> Es ist nicht so einfach zu erneuern .
-aber wieso ? <SEP> Ich hab mich immer gefragt wenn ein Schmetterling aus der Sicherheit seines Kokons schlüpft erkennt er dann , wie schön er geworden ist ?
-aber wieso ? <SEP> Ich hab mich immer gefragt wenn ein Schmetterling aus der Sicherheit ihres Kokons schlüpft erkennt sie dann , wie schön sie geworden ist ?
-aber wieso ? <SEP> Ich hab mich immer gefragt wenn ein Schmetterling aus der Sicherheit seines Kokons schlüpft erkennt es dann , wie schön es geworden ist ?
+<SEP> Ich hab mich immer gefragt wenn ein Schmetterling aus der Sicherheit seines Kokons schlüpft erkennt er dann , wie schön er geworden ist ?
+<SEP> Ich hab mich immer gefragt wenn ein Schmetterling aus der Sicherheit ihres Kokons schlüpft erkennt sie dann , wie schön sie geworden ist ?
+<SEP> Ich hab mich immer gefragt wenn ein Schmetterling aus der Sicherheit seines Kokons schlüpft erkennt es dann , wie schön es geworden ist ?
 kann ich ihn sehen ? aber wieso ? <SEP> - Ist er schön ?
 kann ich ihn sehen ? aber wieso ? <SEP> - Ist sie schön ?
 kann ich ihn sehen ? aber wieso ? <SEP> - Ist es schön ?
@@ -23945,9 +23945,9 @@ Mr. Palmer ? aber wieso ? <SEP> Der zervikale Rückenwirbel vom John Doe , der d
 Hey , Ferguson ! aber wieso ? <SEP> Ich laß deinen Bericht , und er ist kompletter Mist !
 Hey , Ferguson ! aber wieso ? <SEP> Ich laß deinen Bericht , und sie ist kompletter Mist !
 Hey , Ferguson ! aber wieso ? <SEP> Ich laß deinen Bericht , und es ist kompletter Mist !
-aber wieso ? <SEP> Der Film war nicht nur schlecht , er war richtig Scheisse . Er hat scheisse angefangen , und dann richtig scheisse weitergemacht .
-aber wieso ? <SEP> Der Film war nicht nur schlecht , sie war richtig Scheisse. sie hat scheisse angefangen , und dann richtig scheisse weitergemacht .
-aber wieso ? <SEP> Der Film war nicht nur schlecht , es war richtig Scheisse. es hat scheisse angefangen , und dann richtig scheisse weitergemacht .
+<SEP> Der Film war nicht nur schlecht , er war richtig Scheisse . Er hat scheisse angefangen , und dann richtig scheisse weitergemacht .
+<SEP> Der Film war nicht nur schlecht , sie war richtig Scheisse. sie hat scheisse angefangen , und dann richtig scheisse weitergemacht .
+<SEP> Der Film war nicht nur schlecht , es war richtig Scheisse. es hat scheisse angefangen , und dann richtig scheisse weitergemacht .
 zu diesem Zeitpunkt , hat er mich noch nicht getroffen. aber wieso ? <SEP> Ich sandte ihm eine Nachricht , aber das ging schief , sie kam zu früh an .
 zu diesem Zeitpunkt , hat er mich noch nicht getroffen. aber wieso ? <SEP> Ich sandte ihm eine Nachricht , aber das ging schief , er kam zu früh an .
 zu diesem Zeitpunkt , hat er mich noch nicht getroffen. aber wieso ? <SEP> Ich sandte ihm eine Nachricht , aber das ging schief , es kam zu früh an .
@@ -26249,9 +26249,9 @@ der Kuchen riecht wirklich gut. aber wieso ? <SEP> Es ist auch gut .
 er ist auch gut. aber wieso ? <SEP> Und er ist auch nicht im Laden gekauft .
 er ist auch gut. aber wieso ? <SEP> Und sie ist auch nicht im Laden gekauft .
 er ist auch gut. aber wieso ? <SEP> Und es ist auch nicht im Laden gekauft .
-aber wieso ? <SEP> Je mehr die Teekanne benutzt wird , desto schöner wird sie .
-aber wieso ? <SEP> Je mehr die Teekanne benutzt wird , desto schöner wird er .
-aber wieso ? <SEP> Je mehr die Teekanne benutzt wird , desto schöner wird es .
+<SEP> Je mehr die Teekanne benutzt wird , desto schöner wird sie .
+<SEP> Je mehr die Teekanne benutzt wird , desto schöner wird er .
+<SEP> Je mehr die Teekanne benutzt wird , desto schöner wird es .
 alle Schmuggler kennen ihn. aber wieso ? <SEP> Er basiert auf einem Buch ...
 alle Schmuggler kennen ihn. aber wieso ? <SEP> Sie basiert auf einem Buch ...
 alle Schmuggler kennen ihn. aber wieso ? <SEP> Es basiert auf einem Buch ...
@@ -29666,9 +29666,9 @@ ich kann nicht aufhören , über diese SD @-@ Karte nachzudenken aber wieso ? <S
 warum verschwand sie , als Markussen starb ? aber wieso ? <SEP> Und wichtiger , wo ist sie jetzt ?
 warum verschwand sie , als Markussen starb ? aber wieso ? <SEP> Und wichtiger , wo ist er jetzt ?
 warum verschwand sie , als Markussen starb ? aber wieso ? <SEP> Und wichtiger , wo ist es jetzt ?
-aber wieso ? <SEP> Die Themse pulsierte durch das Herz des East End , als wäre sie sein Blut .
-aber wieso ? <SEP> Die Themse pulsierte durch das Herz des East End , als wäre er sein Blut .
-aber wieso ? <SEP> Die Themse pulsierte durch das Herz des East End , als wäre es sein Blut .
+<SEP> Die Themse pulsierte durch das Herz des East End , als wäre sie sein Blut .
+<SEP> Die Themse pulsierte durch das Herz des East End , als wäre er sein Blut .
+<SEP> Die Themse pulsierte durch das Herz des East End , als wäre es sein Blut .
 aber es war herrlich. aber wieso ? <SEP> Ich hatte meinen Tee dabei , er war fast heiß .
 aber es war herrlich. aber wieso ? <SEP> Ich hatte meinen Tee dabei , sie war fast heiß .
 aber es war herrlich. aber wieso ? <SEP> Ich hatte meinen Tee dabei , es war fast heiß .
