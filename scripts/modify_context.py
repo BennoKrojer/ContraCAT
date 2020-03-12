@@ -17,9 +17,10 @@ with MosesPunctuationNormalizer('de') as norm, MosesTokenizer('de') as tok, Mose
             line = line.replace('&lt; SEP &gt;', '<SEP>')
             out.write(line)
 
-with MosesPunctuationNormalizer('en') as norm, MosesTokenizer('en') as tok:
+with MosesPunctuationNormalizer('de') as norm, MosesTokenizer('de') as tok, MosesDetokenizer('en') as de_tok:
     with open(en_path, 'r') as en_file, open(output_en, 'w') as out:
         for _, line in tqdm(enumerate(en_file)):
+            line = de_tok(line.split())
             line = 'he said ' + line
             line = norm(line)
             line = ' '.join(tok(line)) + '\n'
