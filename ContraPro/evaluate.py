@@ -4,9 +4,9 @@
 
 from __future__ import division, print_function, unicode_literals
 import sys
-if sys.version_info[0] < 3:
-    reload(sys)
-    sys.setdefaultencoding("utf8")
+# if sys.version_info[0] < 3:
+#     reload(sys)
+#     sys.setdefaultencoding("utf8")
 import json
 import argparse
 import codecs
