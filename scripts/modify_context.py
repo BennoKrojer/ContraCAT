@@ -6,19 +6,19 @@ from tqdm import tqdm
 
 
 def modify_as_quote(line, prefix):
-    try:
-        context, sent = line.split('<SEP>')
-    except ValueError:
-        return '', line
+    context, sent = line.split('<SEP>')
+    if not context:
+        return '', sent
     context = f'{prefix}: "{context}"'
     return context, sent
 
 
 def append(line, phrase, new_sentence=False):
-    try:
-        context, sent = line.split('<SEP>')
-    except ValueError:
-        return line
+    context, sent = line.split('<SEP>')
+    context = context.strip()
+    if not context:
+        return '', sent
+
     if new_sentence:
         context = context + phrase
     else:
@@ -29,8 +29,8 @@ def append(line, phrase, new_sentence=False):
     return context, sent
 
 
-de_modification = 'er_sagte'
-en_modification = 'he_said'
+de_modification = 'wieso'
+en_modification = 'why'
 de_path = '../ContraPro_Dario/contrapro.text.tok.prev.de.de'
 en_path = '../ContraPro_Dario/contrapro.text.tok.prev.en.en'
 output_de = f'../ContraPro_Dario/modified/{de_modification}_de_tok.txt'
@@ -41,7 +41,7 @@ with MosesPunctuationNormalizer('de') as norm, MosesTokenizer('de') as tok, Mose
         for _, line in tqdm(enumerate(de_file)):
             # print(line)
             line = de_tok(line.split())
-            context, sent = modify_as_quote(line, 'er sagte')
+            context, sent = append(line, ' aber wieso?', new_sentence=True)
             context, sent = norm(context), norm(sent)
             if context:
                 if de_modification == "er_sagte" and context[-1] in string.punctuation:
@@ -49,14 +49,14 @@ with MosesPunctuationNormalizer('de') as norm, MosesTokenizer('de') as tok, Mose
                 line = ' '.join(tok(context)) + ' <SEP> ' + ' '.join(tok(sent)) + '\n'
                 out.write(line)
             else:
-                print(sent)
+                sent = '<SEP> ' + ' '.join(tok(sent)) + '\n'
                 out.write(sent)
 
 with MosesPunctuationNormalizer('en') as norm, MosesTokenizer('en') as tok, MosesDetokenizer('en') as de_tok:
     with open(en_path, 'r') as en_file, open(output_en, 'w') as out:
         for _, line in tqdm(enumerate(en_file)):
             line = de_tok(line.split())
-            context, sent = modify_as_quote(line, 'he said')
+            context, sent = append(line, " but why?", new_sentence=True)
             context, sent = norm(context), norm(sent)
             if context:
                 if de_modification == "er_sagte" and context[-1] in string.punctuation:
@@ -64,9 +64,8 @@ with MosesPunctuationNormalizer('en') as norm, MosesTokenizer('en') as tok, Mose
                 line = ' '.join(tok(context)) + ' <SEP> ' + ' '.join(tok(sent)) + '\n'
                 out.write(line)
             else:
-                print(sent)
+                sent = '<SEP> ' + ' '.join(tok(sent)) + '\n'
                 out.write(sent)
-
 
 command_de = f'subword-nmt apply-bpe -c ../ted_data/train/ende.bpe --glossaries "<SEP>" < ../ContraPro_Dario/modified/{de_modification}_de_tok.txt > tmp_de.txt'
 command_en = f'subword-nmt apply-bpe -c ../ted_data/train/ende.bpe --glossaries "<SEP>" < ../ContraPro_Dario/modified/{en_modification}_en_tok.txt > tmp_en.txt'
