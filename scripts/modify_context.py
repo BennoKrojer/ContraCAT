@@ -2,6 +2,17 @@ import os
 from mosestokenizer import MosesPunctuationNormalizer, MosesTokenizer, MosesDetokenizer
 from tqdm import tqdm
 
+
+def modify_as_quote(line, prefix, quotes=True):
+    try:
+        context, sent = line.split(' <SEP>')
+    except ValueError:
+        return line
+    context = f'{prefix}: "{context}"'
+    result = context + ' <SEP>' + sent
+    return result
+
+
 de_path = '../ContraPro_Dario/contrapro.text.tok.prev.de.de'
 en_path = '../ContraPro_Dario/contrapro.text.tok.prev.en.en'
 output_de = '../ContraPro_Dario/modified/er_sagte_de_tok.txt'
@@ -11,7 +22,7 @@ with MosesPunctuationNormalizer('de') as norm, MosesTokenizer('de') as tok, Mose
     with open(de_path, 'r') as de_file, open(output_de, 'w') as out:
         for _, line in tqdm(enumerate(de_file)):
             line = de_tok(line.split())
-            line = 'er sagte ' + line
+            line = modify_as_quote(line, 'er sagte')
             line = norm(line)
             line = ' '.join(tok(line)) + '\n'
             line = line.replace('&lt; SEP &gt;', '<SEP>')
@@ -21,7 +32,7 @@ with MosesPunctuationNormalizer('de') as norm, MosesTokenizer('de') as tok, Mose
     with open(en_path, 'r') as en_file, open(output_en, 'w') as out:
         for _, line in tqdm(enumerate(en_file)):
             line = de_tok(line.split())
-            line = 'he said ' + line
+            line = modify_as_quote(line, 'he said')
             line = norm(line)
             line = ' '.join(tok(line)) + '\n'
             line = line.replace('&lt; SEP &gt;', '<SEP>')
