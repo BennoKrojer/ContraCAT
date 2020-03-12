@@ -7,7 +7,7 @@ from tqdm import tqdm
 
 def modify_as_quote(line, prefix):
     try:
-        context, sent = line.split(' <SEP>')
+        context, sent = line.split('<SEP>')
     except ValueError:
         return '', line
     context = f'{prefix}: "{context}"'
@@ -16,7 +16,7 @@ def modify_as_quote(line, prefix):
 
 def append(line, phrase):
     try:
-        context, sent = line.split(' <SEP>')
+        context, sent = line.split('<SEP>')
     except ValueError:
         return line
     if context[-1] in string.punctuation:
@@ -46,6 +46,7 @@ with MosesPunctuationNormalizer('de') as norm, MosesTokenizer('de') as tok, Mose
                 line = ' '.join(tok(context)) + ' <SEP> ' + ' '.join(tok(sent)) + '\n'
                 out.write(line)
             else:
+                print(sent)
                 out.write(sent)
 
 with MosesPunctuationNormalizer('de') as norm, MosesTokenizer('de') as tok, MosesDetokenizer('en') as de_tok:
@@ -60,6 +61,7 @@ with MosesPunctuationNormalizer('de') as norm, MosesTokenizer('de') as tok, Mose
                 line = ' '.join(tok(context)) + ' <SEP> ' + ' '.join(tok(sent)) + '\n'
                 out.write(line)
             else:
+                print(sent)
                 out.write(sent)
 
 
