@@ -1,1 +1,1 @@
-python3 -m sockeye.score --target ContraPro_Dario/modified/catch/haken_1sent_de_bpe.txt --source ContraPro_Dario/modified/catch/catch_1sent_en_bpe.txt --output outputs/catch/concat22_1sent --model models_dario/concat-2-2/ --device-ids 0 --output-type score --batch-size 128
+python3 -m sockeye.score --target ContraPro_Dario/modified/point/punkt_1sent_de_bpe.txt --source ContraPro_Dario/modified/point/point_1sent_en_bpe.txt --output outputs/point/concat22_1sent --model models_dario/concat-2-2/ --device-ids 0 --output-type score --batch-size 128
