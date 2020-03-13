@@ -29,8 +29,8 @@ def append(line, phrase, new_sentence=False):
     return context, sent
 
 
-de_modification = 'punkt_1sent'
-en_modification = 'point_1sent'
+de_modification = 'punkt'
+en_modification = 'point'
 de_path = '../ContraPro_Dario/contrapro.text.tok.prev.de.de'
 en_path = '../ContraPro_Dario/contrapro.text.tok.prev.en.en'
 output_de = f'../ContraPro_Dario/modified/{de_modification}_de_tok.txt'
@@ -41,7 +41,7 @@ with MosesPunctuationNormalizer('de') as norm, MosesTokenizer('de') as tok, Mose
         for _, line in tqdm(enumerate(de_file)):
             # print(line)
             line = de_tok(line.split())
-            context, sent = append(line, ' aber das ist nicht der punkt.', new_sentence=True)
+            context, sent = append(line, ', aber das ist nicht der punkt')
             context, sent = norm(context), norm(sent)
             if context:
                 if de_modification == "er_sagte" and context[-1] in string.punctuation:
@@ -56,7 +56,7 @@ with MosesPunctuationNormalizer('en') as norm, MosesTokenizer('en') as tok, Mose
     with open(en_path, 'r') as en_file, open(output_en, 'w') as out:
         for _, line in tqdm(enumerate(en_file)):
             line = de_tok(line.split())
-            context, sent = append(line, " but that's not the point.", new_sentence=True)
+            context, sent = append(line, " but that's not the point")
             context, sent = norm(context), norm(sent)
             if context:
                 if de_modification == "er_sagte" and context[-1] in string.punctuation:
