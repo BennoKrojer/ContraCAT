@@ -85,12 +85,12 @@ if __name__=='__main__':
 
     # = parser.parse_)
     scoresA = open('../outputs/normal/output-concat22', 'r')
-    scoresB = open('../outputs/why/concat22_1sent', 'r')
+    scoresB = open('../outputs/why/concat22', 'r')
     sourceA_en = open('../ContraPro_Dario/contrapro.text.tok.prev.en.en', 'r')
     sourceA_de = open('../ContraPro_Dario/contrapro.text.tok.prev.de.de', 'r')
-    sourceB_en = open('../ContraPro_Dario/modified/why/why_1sent_en_tok.txt', 'r')
-    sourceB_de = open('../ContraPro_Dario/modified/why/wieso_1sent_de_tok.txt', 'r')
-    results = open('../outputs/compare/normal-why1sent', 'w')
+    sourceB_en = open('../ContraPro_Dario/modified/why/why_en_tok.txt', 'r')
+    sourceB_de = open('../ContraPro_Dario/modified/why/wieso_de_tok.txt', 'r')
+    results = open('../outputs/compare/normal-why', 'w')
     A = 'normal'
-    B = 'why1sent'
+    B = 'why'
     main(A,B, scoresA.readlines(), sourceA_en.readlines(), sourceA_de.readlines(), scoresB.readlines(), sourceB_en.readlines(), sourceB_de.readlines(), results)
