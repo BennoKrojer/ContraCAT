@@ -10,47 +10,59 @@ nlp_en = spacy.load("en_core_web_sm")
 nlp_de = spacy.load("de_core_news_sm")
 
 
+def determine_start_index(phrase, ante):
+    start_index = 0
+    for _ in range(3):
+        mid_idx = phrase[start_index+1:].index(ante[1]) + start + 1
+        for i in range(mid_idx, -1, -1):
+            if ante[0] in phrase[i:mid_idx]:
+                return i
+        start_index = mid_idx
+
+
+
 def modify(tokenize, line, to_be_replaced, ante_distance, np, append=True):
     modified = True
     context, sent = line.split('<SEP>')
-    if not context:
-        return '', ' '.join(tokenize(norm(sent))), modified
+    # if not context:
+    #     return '', ' '.join(tokenize(norm(sent))), modified
 
     if ante_distance == 0:
-        lower_sent, ante = sent.lower(), to_be_replaced.lower()
-        if ante in lower_sent:
+        lower_sent, ante = sent.lower(), [word.lower() for word in to_be_replaced]
+        if ante[0] in lower_sent and ante[1] in lower_sent:
             if append:
                 idx = lower_sent.index(ante) + len(ante)
             else:
-                idx = lower_sent.index(ante)
-            sent = sent[:idx] + ' ' + np + sent[idx + len(ante):]
+                idx = determine_start_index(lower_sent, ante)
+            sent = sent[:idx] + ' ' + np + ' ' + sent[idx + len(ante[0])+1:]
         else:
             modified = False
-            print('\nAntecedent not in sentence. Modification not possible'
-                  f'SENTENCE: {sent}'
+            print('\nAntecedent not in sentence. Modification not possible\n'
+                  f'SENTENCE: {sent}\n'
                   f'MODIFICATION: {to_be_replaced}')
 
     elif ante_distance == 1:
-        lower_context, ante = context.lower(), to_be_replaced.lower()
-        if ante in lower_context:
+        lower_context, ante = context.lower(), [word.lower() for word in to_be_replaced]
+        if ante[0] in lower_context and ante[1] in lower_context:
             if append:
                 idx = lower_context.index(ante) + len(ante)
             else:
-                idx = lower_context.index(ante)
-            context = context[:idx] + ' ' + np + context[idx + len(ante):]
+                idx = determine_start_index(lower_context, ante)
+            context = context[:idx] + ' ' + np + ' ' + context[idx + len(ante[0])+1:]
         else:
             modified = False
-            print('\nAntecedent not in context. Modification not possible'
-                  f'CONTEXT: {context}'
+            print('\nAntecedent not in context. Modification not possible\n'
+                  f'CONTEXT: {context}\n'
                   f'MODIFICATION: {to_be_replaced}')
 
     sent = ' '.join(tokenize(norm(sent)))
-    context = ' '.join(tokenize(norm(context)))
+    if context:
+        context = ' '.join(tokenize(norm(context)))
     return context, sent, modified
 
 
-de_modification = 'lisa_no_mismatches'
-en_modification = 'lisa_no_mismatches'
+de_modification = 'peter_no_mismatches'
+en_modification = 'peter_no_mismatches'
 de_lines = open('../ContraPro_Dario/contrapro.text.tok.prev.de.de', 'r').readlines()
 en_lines = open('../ContraPro_Dario/contrapro.text.tok.prev.en.en', 'r').readlines()
 output_de = f'../ContraPro_Dario/modified/{de_modification}_de_tok.txt'
@@ -83,21 +95,26 @@ with MosesPunctuationNormalizer('de') as norm, MosesTokenizer('de') as tok, Mose
         modified = False
         for i, line in enumerate(de_lines[start:end]):
             if ante is None or pos_tags not in valid_pos_seqs or mismatch:
+                lines.append('')
                 continue
 
             line = de_tok(line.split())
-            context, sent, modified = modify(tok, line, str(seq[0]), dist, 'Lisas', append=False)
+            context, sent, modified = modify(tok, line, list(map(str, seq)), dist, 'Peters', append=False)
             if context:
                 line = context + ' <SEP> ' + sent + '\n'
             else:
                 line = '<SEP> ' + sent + '\n'
-            lines.append(line)
-            if not modified:
+            if modified:
+                lines.append(line)
+            else:
                 break
 
         if modified:
             modified_count += 1
             modified_idx_de.add(example_id)
+        else:
+            lines = [''] * (end - start)
+        assert len(lines) == end - start
         for line, original in zip(lines, de_lines[start:end]):
             modified_de[example_id].append((line, original))
 
@@ -113,7 +130,9 @@ modified_en = defaultdict(list)
 with MosesPunctuationNormalizer('en') as norm, MosesTokenizer('en') as tok, MosesDetokenizer('en') as de_tok:
     for example_id, (start, end) in tqdm(enumerate(list(zip(idx, idx[1:])))):
         if example_id in mismatch_idx:
+            lines.append('')
             continue
+
         info = contrapro[example_id]
         ante = info['src ante phrase']
         dist = info['ante distance']
@@ -130,21 +149,25 @@ with MosesPunctuationNormalizer('en') as norm, MosesTokenizer('en') as tok, Mose
         modified = False
         for i, line in enumerate(en_lines[start:end]):
             if ante is None or pos_tags not in valid_pos_seqs or mismatch:
+                lines.append('')
                 continue
 
             line = de_tok(line.split())
-            context, sent, modified = modify(tok, line, str(seq[0]), dist, "Lisa's", append=False)
+            context, sent, modified = modify(tok, line, list(map(str, seq)), dist, "Peter's", append=False)
             if context:
                 line = context + ' <SEP> ' + sent + '\n'
             else:
                 line = '<SEP> ' + sent + '\n'
-            lines.append(line)
-            if not modified:
+            if modified:
+                lines.append(line)
+            else:
                 break
 
         if modified:
             modified_count += 1
             modified_idx_en.add(example_id)
+        else:
+            lines = [''] * (end - start)
         for line, original in zip(lines, en_lines[start:end]):
             modified_en[example_id].append((line, original))
 
