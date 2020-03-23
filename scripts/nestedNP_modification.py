@@ -12,13 +12,12 @@ nlp_de = spacy.load("de_core_news_sm")
 
 def determine_start_index(phrase, ante):
     start_index = 0
-    for _ in range(3):
-        mid_idx = phrase[start_index+1:].index(ante[1]) + start + 1
+    for _ in range(8):
+        mid_idx = phrase[start_index+1:].index(ante[1]) + start_index + 1
         for i in range(mid_idx, -1, -1):
             if ante[0] in phrase[i:mid_idx]:
                 return i
         start_index = mid_idx
-
 
 
 def modify(tokenize, line, to_be_replaced, ante_distance, np, append=True):
@@ -37,7 +36,7 @@ def modify(tokenize, line, to_be_replaced, ante_distance, np, append=True):
             sent = sent[:idx] + ' ' + np + ' ' + sent[idx + len(ante[0])+1:]
         else:
             modified = False
-            print('\nAntecedent not in sentence. Modification not possible\n'
+            print('\nAntecedent not found in sentence. Modification not possible\n'
                   f'SENTENCE: {sent}\n'
                   f'MODIFICATION: {to_be_replaced}')
 
@@ -51,7 +50,7 @@ def modify(tokenize, line, to_be_replaced, ante_distance, np, append=True):
             context = context[:idx] + ' ' + np + ' ' + context[idx + len(ante[0])+1:]
         else:
             modified = False
-            print('\nAntecedent not in context. Modification not possible\n'
+            print('\nAntecedent not found in context. Modification not possible\n'
                   f'CONTEXT: {context}\n'
                   f'MODIFICATION: {to_be_replaced}')
 
@@ -61,8 +60,8 @@ def modify(tokenize, line, to_be_replaced, ante_distance, np, append=True):
     return context, sent, modified
 
 
-de_modification = 'peter_no_mismatches'
-en_modification = 'peter_no_mismatches'
+de_modification = 'lisa_no_mismatches'
+en_modification = 'lisa_no_mismatches'
 de_lines = open('../ContraPro_Dario/contrapro.text.tok.prev.de.de', 'r').readlines()
 en_lines = open('../ContraPro_Dario/contrapro.text.tok.prev.en.en', 'r').readlines()
 output_de = f'../ContraPro_Dario/modified/{de_modification}_de_tok.txt'
@@ -99,7 +98,7 @@ with MosesPunctuationNormalizer('de') as norm, MosesTokenizer('de') as tok, Mose
                 continue
 
             line = de_tok(line.split())
-            context, sent, modified = modify(tok, line, list(map(str, seq)), dist, 'Peters', append=False)
+            context, sent, modified = modify(tok, line, list(map(str, seq)), dist, 'Lisas', append=False)
             if context:
                 line = context + ' <SEP> ' + sent + '\n'
             else:
@@ -153,7 +152,7 @@ with MosesPunctuationNormalizer('en') as norm, MosesTokenizer('en') as tok, Mose
                 continue
 
             line = de_tok(line.split())
-            context, sent, modified = modify(tok, line, list(map(str, seq)), dist, "Peter's", append=False)
+            context, sent, modified = modify(tok, line, list(map(str, seq)), dist, "Lisa's", append=False)
             if context:
                 line = context + ' <SEP> ' + sent + '\n'
             else:
