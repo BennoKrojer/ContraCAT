@@ -60,8 +60,8 @@ def modify(tokenize, line, to_be_replaced, ante_distance, np, append=True):
     return context, sent, modified
 
 
-de_modification = 'robert_no_mismatches'
-en_modification = 'robert_no_mismatches'
+de_modification = 'maria_no_mismatches'
+en_modification = 'maria_no_mismatches'
 de_lines = open('../ContraPro_Dario/contrapro.text.tok.prev.de.de', 'r').readlines()
 en_lines = open('../ContraPro_Dario/contrapro.text.tok.prev.en.en', 'r').readlines()
 output_de = f'../ContraPro_Dario/modified/{de_modification}_de_tok.txt'
@@ -98,7 +98,7 @@ with MosesPunctuationNormalizer('de') as norm, MosesTokenizer('de') as tok, Mose
                 continue
 
             line = de_tok(line.split())
-            context, sent, modified = modify(tok, line, list(map(str, seq)), dist, 'Roberts', append=False)
+            context, sent, modified = modify(tok, line, list(map(str, seq)), dist, 'Marias', append=False)
             if context:
                 line = context + ' <SEP> ' + sent + '\n'
             else:
@@ -152,7 +152,7 @@ with MosesPunctuationNormalizer('en') as norm, MosesTokenizer('en') as tok, Mose
                 continue
 
             line = de_tok(line.split())
-            context, sent, modified = modify(tok, line, list(map(str, seq)), dist, "Robert's", append=False)
+            context, sent, modified = modify(tok, line, list(map(str, seq)), dist, "Maria's", append=False)
             if context:
                 line = context + ' <SEP> ' + sent + '\n'
             else:
