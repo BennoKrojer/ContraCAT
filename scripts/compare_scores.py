@@ -39,6 +39,14 @@ def main(A, B, scoresA, sourceA_en, sourceA_de, scoresB, sourceB_en, sourceB_de,
         if best_idB != 0 and best_idA == 0:
             onlyBwrong.append((groundtruth[example_id], '->\n'.join((sourceB_en[start+best_idB], sourceB_de[start+best_idB]))))
 
+    #stats
+    nr_modification_errors = len(onlyAwrong)
+    print("MODIFICATION ERRORS" + str(nr_modification_errors))
+    for item in onlyAwrong:
+        groundtruth = item[0][0] + item[0][1]
+        mistake_mod = item[1].replace('\n->\n', '')
+
+
     result_file.write('both A & B wrong:\n\n')
     for item in both:
         result_file.write('GOLD:\n')
@@ -85,12 +93,12 @@ if __name__=='__main__':
 
     # = parser.parse_)
     scoresA = open('../outputs/nested/concat22_peter', 'r')
-    scoresB = open('../outputs/nested/concat22_lisa', 'r')
+    scoresB = open('../outputs/normal/output-concat22', 'r')
     sourceA_en = open('../ContraPro_Dario/modified/nested/peter_no_mismatches_en_tok.txt', 'r')
     sourceA_de = open('../ContraPro_Dario/modified/nested/peter_no_mismatches_de_tok.txt', 'r')
-    sourceB_en = open('../ContraPro_Dario/modified/nested/lisa_no_mismatches_en_tok.txt', 'r')
-    sourceB_de = open('../ContraPro_Dario/modified/nested/lisa_no_mismatches_de_tok.txt', 'r')
-    results = open('../outputs/compare/peter-lisa', 'w')
+    sourceB_en = open('../ContraPro_Dario/contrapro.text.tok.prev.en.en', 'r')
+    sourceB_de = open('../ContraPro_Dario/contrapro.text.tok.prev.de.de', 'r')
+    results = open('../outputs/compare/normal-peter-test', 'w')
     A = 'peter'
-    B = 'lisa'
-    main(A,B, scoresA.readlines(), sourceA_en.readlines(), sourceA_de.readlines(), scoresB.readlines(), sourceB_en.readlines(), sourceB_de.readlines(), results)
+    B = 'normal'
+    main(A, B, scoresA.readlines(), sourceA_en.readlines(), sourceA_de.readlines(), scoresB.readlines(), sourceB_en.readlines(), sourceB_de.readlines(), results)
