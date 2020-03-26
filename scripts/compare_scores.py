@@ -1,5 +1,6 @@
-import argparse
-import sys
+import difflib
+import string
+from collections import defaultdict
 
 import numpy as np
 from scripts.sample_modifications import get_sentence_idx
@@ -42,9 +43,16 @@ def main(A, B, scoresA, sourceA_en, sourceA_de, scoresB, sourceB_en, sourceB_de,
     #stats
     nr_modification_errors = len(onlyAwrong)
     print("MODIFICATION ERRORS" + str(nr_modification_errors))
+    count = defaultdict(int)
     for item in onlyAwrong:
-        groundtruth = item[0][0] + item[0][1]
-        mistake_mod = item[1].replace('\n->\n', '')
+        groundtruth = "".join([char for char in (item[0][0] + item[0][1]) if char not in string.punctuation]).replace('aposs', '').split()
+        mistake_mod = "".join([char for char in item[1] if char not in string.punctuation]).replace('\n->\n', '').replace('aposs', '').split()
+        for _, (ground, mod) in enumerate(zip(groundtruth, mistake_mod)):
+            if ground == mod or 'Peter' in mod:
+                continue
+            if ground != mod:
+                count[(ground, mod)] += 1
+
 
 
     result_file.write('both A & B wrong:\n\n')
