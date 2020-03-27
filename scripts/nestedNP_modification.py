@@ -10,9 +10,9 @@ nlp_en = spacy.load("en_core_web_sm")
 nlp_de = spacy.load("de_core_news_sm")
 
 
-def load_dets():
+def load_dets(lang):
     d = dict()
-    with open('DET2definiteDET_de', 'r') as file:
+    with open('DET2definiteDET_'+lang, 'r') as file:
         for line in file:
             line = line.split()
             if len(line) == 1:
@@ -97,15 +97,15 @@ def modify(tokenize, line, to_be_replaced, ante_distance, np, word_mapping=None,
     return context, sent, modified
 
 
-de_modification = 'man_no_mismatches'
-en_modification = 'man_no_mismatches'
+de_modification = 'gov_no_mismatches'
+en_modification = 'gov_no_mismatches'
 de_lines = open('../ContraPro_Dario/contrapro.text.tok.prev.de.de', 'r').readlines()
 en_lines = open('../ContraPro_Dario/contrapro.text.tok.prev.en.en', 'r').readlines()
 output_de = f'../ContraPro_Dario/modified/{de_modification}_de_tok.txt'
 output_en = f'../ContraPro_Dario/modified/{en_modification}_en_tok.txt'
 valid_pos_seqs = [['PRP$', 'NN'], ['DT', 'NN'], ['DT', 'NNP'], ['DT', 'JJ', 'NN'], ['DT', 'NN', 'NN'], ['PRP$', 'JJ', 'NN'], ['DT', 'NNP', 'NNP']]
 
-det2def_det = load_dets()
+det2def_det = load_dets('de')
 contrapro = json.load(open('../ContraPro/contrapro.json', 'r'))
 idx = get_sentence_idx()
 
@@ -134,7 +134,7 @@ with MosesPunctuationNormalizer('de') as norm, MosesTokenizer('de') as tok, Mose
                 continue
 
             line = de_tok(line.split())
-            context, sent, modified = modify(tok, line, list(map(str, seq)), dist, 'vom Mann', word_mapping=det2def_det, append=True)
+            context, sent, modified = modify(tok, line, list(map(str, seq)), dist, 'der Regierung', word_mapping=det2def_det, append=True)
             if context:
                 line = context + ' <SEP> ' + sent + '\n'
             else:
@@ -156,7 +156,7 @@ with MosesPunctuationNormalizer('de') as norm, MosesTokenizer('de') as tok, Mose
 # sorted_pos = sorted(pos_seqs.items(), key=lambda x: len(x[1]), reverse=True)
 # humanreadable = '\n'.join([str(len(example)) + '  ' + seq + str(example[:3]) for (seq, example) in sorted_pos])
 # print(humanreadable)
-
+det2def_det = load_dets('en')
 modified_count = 0
 pos_seqs = defaultdict(list)
 mismatch_idx = []
@@ -188,7 +188,7 @@ with MosesPunctuationNormalizer('en') as norm, MosesTokenizer('en') as tok, Mose
                 continue
 
             line = de_tok(line.split())
-            context, sent, modified = modify(tok, line, list(map(str, seq)), dist, "the man's", append=False)
+            context, sent, modified = modify(tok, line, list(map(str, seq)), dist, "the government's", append=False)
             if context:
                 line = context + ' <SEP> ' + sent + '\n'
             else:
@@ -205,7 +205,6 @@ with MosesPunctuationNormalizer('en') as norm, MosesTokenizer('en') as tok, Mose
             lines = [''] * (end - start)
         for line, original in zip(lines, en_lines[start:end]):
             modified_en[example_id].append((line, original))
-
 
 # sorted_pos = sorted(pos_seqs.items(), key=lambda x: len(x[1]), reverse=True)
 # humanreadable = '\n'.join([str(len(example)) + '  ' + seq + str(example[:3]) for (seq, example) in sorted_pos])

@@ -92,10 +92,10 @@ def main(A, B, scoresA, sourceA_en, sourceA_de, scoresB, sourceB_en, sourceB_de,
 
 if __name__=='__main__':
 
-    scoresA = open('../outputs/nested/concat22_peter', 'r')
+    scoresA = open('../outputs/nested/names/concat22_peter', 'r')
     scoresB = open('../outputs/normal/output-concat22', 'r')
-    sourceA_en = open('../ContraPro_Dario/modified/nested/peter_no_mismatches_en_tok.txt', 'r')
-    sourceA_de = open('../ContraPro_Dario/modified/nested/peter_no_mismatches_de_tok.txt', 'r')
+    sourceA_en = open('../ContraPro_Dario/modified/nested/names/peter_no_mismatches_en_tok.txt', 'r')
+    sourceA_de = open('../ContraPro_Dario/modified/nested/names/peter_no_mismatches_de_tok.txt', 'r')
     sourceB_en = open('../ContraPro_Dario/contrapro.text.tok.prev.en.en', 'r')
     sourceB_de = open('../ContraPro_Dario/contrapro.text.tok.prev.de.de', 'r')
     results = open('../outputs/compare/normal-peter-test', 'w')
