@@ -10,6 +10,18 @@ nlp_en = spacy.load("en_core_web_sm")
 nlp_de = spacy.load("de_core_news_sm")
 
 
+def load_dets():
+    d = dict()
+    with open('DET2definiteDET_de', 'r') as file:
+        for line in file:
+            line = line.split()
+            if len(line) == 1:
+                d[line[0]] = ''
+            else:
+                d[line[0]] = line[1]
+    return d
+
+
 def determine_start_index(phrase, ante):
     start_index = 0
     for _ in range(8):
@@ -20,7 +32,16 @@ def determine_start_index(phrase, ante):
         start_index = mid_idx
 
 
-def modify(tokenize, line, to_be_replaced, ante_distance, np, append=True):
+def get_start_word(word, d):
+    if word in d.keys():
+        if d[word] == '':
+            return word
+        else:
+            return d[word]
+    return None
+
+
+def modify(tokenize, line, to_be_replaced, ante_distance, np, word_mapping=None, append=True):
     modified = True
     context, sent = line.split('<SEP>')
     # if not context:
@@ -30,12 +51,20 @@ def modify(tokenize, line, to_be_replaced, ante_distance, np, append=True):
         lower_sent, ante = sent.lower(), [word.lower() for word in to_be_replaced]
         if ante[0] in lower_sent and ante[1] in lower_sent:
             if append:
-                idx = lower_sent.index(ante) + len(ante)
+                starter = get_start_word(ante[0], word_mapping)
+                if starter is not None:
+                    pre_idx = determine_start_index(lower_sent, ante)
+                    post_idx = lower_sent.index(ante[-1]) + len(ante[-1])
+                    sent = sent[:pre_idx] + starter + ' ' + sent[pre_idx + len(ante[0]) + 1: post_idx]+ ' ' + np + ' ' + sent[post_idx:]
+                else:
+                    modified = False
             else:
                 idx = determine_start_index(lower_sent, ante)
-            sent = sent[:idx] + ' ' + np + ' ' + sent[idx + len(ante[0])+1:]
+                sent = sent[:idx] + ' ' + np + ' ' + sent[idx + len(ante[0])+1:]
         else:
             modified = False
+
+        if not modified:
             print('\nAntecedent not found in sentence. Modification not possible\n'
                   f'SENTENCE: {sent}\n'
                   f'MODIFICATION: {to_be_replaced}')
@@ -44,12 +73,20 @@ def modify(tokenize, line, to_be_replaced, ante_distance, np, append=True):
         lower_context, ante = context.lower(), [word.lower() for word in to_be_replaced]
         if ante[0] in lower_context and ante[1] in lower_context:
             if append:
-                idx = lower_context.index(ante) + len(ante)
+                starter = get_start_word(ante[0], word_mapping)
+                if starter is not None:
+                    pre_idx = determine_start_index(lower_context, ante)
+                    post_idx = lower_context.index(ante[-1]) + len(ante[-1])
+                    context = context[:pre_idx] + starter + ' ' + context[pre_idx + len(ante[0]) + 1: post_idx] + ' ' + np + ' ' + context[post_idx:]
+                else:
+                    modified = False
             else:
                 idx = determine_start_index(lower_context, ante)
-            context = context[:idx] + ' ' + np + ' ' + context[idx + len(ante[0])+1:]
+                context = context[:idx] + ' ' + np + ' ' + context[idx + len(ante[0])+1:]
         else:
             modified = False
+
+        if not modified:
             print('\nAntecedent not found in context. Modification not possible\n'
                   f'CONTEXT: {context}\n'
                   f'MODIFICATION: {to_be_replaced}')
@@ -60,15 +97,15 @@ def modify(tokenize, line, to_be_replaced, ante_distance, np, append=True):
     return context, sent, modified
 
 
-de_modification = 'david_no_mismatches'
-en_modification = 'david_no_mismatches'
+de_modification = 'man_no_mismatches'
+en_modification = 'man_no_mismatches'
 de_lines = open('../ContraPro_Dario/contrapro.text.tok.prev.de.de', 'r').readlines()
 en_lines = open('../ContraPro_Dario/contrapro.text.tok.prev.en.en', 'r').readlines()
 output_de = f'../ContraPro_Dario/modified/{de_modification}_de_tok.txt'
 output_en = f'../ContraPro_Dario/modified/{en_modification}_en_tok.txt'
 valid_pos_seqs = [['PRP$', 'NN'], ['DT', 'NN'], ['DT', 'NNP'], ['DT', 'JJ', 'NN'], ['DT', 'NN', 'NN'], ['PRP$', 'JJ', 'NN'], ['DT', 'NNP', 'NNP']]
 
-
+det2def_det = load_dets()
 contrapro = json.load(open('../ContraPro/contrapro.json', 'r'))
 idx = get_sentence_idx()
 
@@ -87,7 +124,6 @@ with MosesPunctuationNormalizer('de') as norm, MosesTokenizer('de') as tok, Mose
             pos_seqs[str(pos_tags)].append(ante)
             mismatch = False
             if len(pos_tags) != len(seq):
-                # print('\nMISMATCH:' + ante)
                 mismatch = True
 
         lines = []
@@ -98,7 +134,7 @@ with MosesPunctuationNormalizer('de') as norm, MosesTokenizer('de') as tok, Mose
                 continue
 
             line = de_tok(line.split())
-            context, sent, modified = modify(tok, line, list(map(str, seq)), dist, 'Davids', append=False)
+            context, sent, modified = modify(tok, line, list(map(str, seq)), dist, 'vom Mann', word_mapping=det2def_det, append=True)
             if context:
                 line = context + ' <SEP> ' + sent + '\n'
             else:
@@ -152,7 +188,7 @@ with MosesPunctuationNormalizer('en') as norm, MosesTokenizer('en') as tok, Mose
                 continue
 
             line = de_tok(line.split())
-            context, sent, modified = modify(tok, line, list(map(str, seq)), dist, "David's", append=False)
+            context, sent, modified = modify(tok, line, list(map(str, seq)), dist, "the man's", append=False)
             if context:
                 line = context + ' <SEP> ' + sent + '\n'
             else:

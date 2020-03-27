@@ -16,7 +16,7 @@ def get_groundtruth_translations():
 # def get_predicted_translations(scores, source, idx):
 #
 
-def main(A, B, scoresA, sourceA_en, sourceA_de, scoresB, sourceB_en, sourceB_de, result_file):
+def main(A, B, scoresA, sourceA_en, sourceA_de, scoresB, sourceB_en, sourceB_de, result_file, stats=False):
     groundtruth, idx = get_groundtruth_translations()
     # if scoresA == 'groundtruth':
     #     sentencesB =
@@ -41,65 +41,57 @@ def main(A, B, scoresA, sourceA_en, sourceA_de, scoresB, sourceB_en, sourceB_de,
             onlyBwrong.append((groundtruth[example_id], '->\n'.join((sourceB_en[start+best_idB], sourceB_de[start+best_idB]))))
 
     #stats
-    nr_modification_errors = len(onlyAwrong)
-    print("MODIFICATION ERRORS" + str(nr_modification_errors))
-    count = defaultdict(int)
-    for item in onlyAwrong:
-        groundtruth = "".join([char for char in (item[0][0] + item[0][1]) if char not in string.punctuation]).replace('aposs', '').split()
-        mistake_mod = "".join([char for char in item[1] if char not in string.punctuation]).replace('\n->\n', '').replace('aposs', '').split()
-        for _, (ground, mod) in enumerate(zip(groundtruth, mistake_mod)):
-            if ground == mod or 'Peter' in mod:
-                continue
-            if ground != mod:
-                count[(ground, mod)] += 1
+    if stats:
+        nr_modification_errors = len(onlyAwrong)
+        count = defaultdict(int)
+        for item in onlyAwrong:
+            groundtruth = "".join([char for char in (item[0][0] + item[0][1]) if char not in string.punctuation]).replace('aposs', '').split()
+            mistake_mod = "".join([char for char in item[1] if char not in string.punctuation]).replace('\n->\n', '').replace('aposs', '').split()
+            yas = 0
+            for _, (ground, mod) in enumerate(zip(groundtruth, mistake_mod)):
+                if ground == mod or 'Peter' in mod:
+                    continue
+                if ground != mod:
+                    count[(ground.lower(), mod.lower())] += 1
+                    if mod in ["er", "sie"]:
+                        print("GROUNDTRUTH:" + " ".join(groundtruth))
+                        print(f"SHIFT FROM {ground} to {mod}: {' '.join(mistake_mod)}\n")
+                    break
 
+        print("Statistics of errors (counts of how the gender shifted, e.g. er -> sie):\n")
+        print("Total errors: " + str(nr_modification_errors) + "\n")
+        for key, value in count.items():
+            print(f'{key[0]} -> {key[1]}: {value}')
 
+    else:
+        result_file.write('both A & B wrong:\n\n')
+        for item in both:
+            result_file.write('GOLD:\n')
+            result_file.write(f'{item[0][0]}->\n{item[0][1]}\n')
+            result_file.write(f'{A} PREDICTED:\n')
+            result_file.write(f'{item[1]}\n')
+            result_file.write(f'{B} PREDICTED:\n')
+            result_file.write(f'{item[2]}--------\n')
 
-    result_file.write('both A & B wrong:\n\n')
-    for item in both:
-        result_file.write('GOLD:\n')
-        result_file.write(f'{item[0][0]}->\n{item[0][1]}\n')
-        result_file.write(f'{A} PREDICTED:\n')
-        result_file.write(f'{item[1]}\n')
-        result_file.write(f'{B} PREDICTED:\n')
-        result_file.write(f'{item[2]}--------\n')
+        result_file.write(f'only {A} wrong:\n\n')
 
-    result_file.write(f'only {A} wrong:\n\n')
+        for item in onlyAwrong:
+            result_file.write('GOLD:\n')
+            result_file.write(f'{item[0][0]}->\n{item[0][1]}\n')
+            result_file.write(f'{A} PREDICTED:\n')
+            result_file.write(f'{item[1]}--------\n')
 
-    for item in onlyAwrong:
-        result_file.write('GOLD:\n')
-        result_file.write(f'{item[0][0]}->\n{item[0][1]}\n')
-        result_file.write(f'{A} PREDICTED:\n')
-        result_file.write(f'{item[1]}--------\n')
+        result_file.write(f'only {B} wrong:\n\n')
 
-    result_file.write(f'only {B} wrong:\n\n')
-
-    for item in onlyBwrong:
-        result_file.write('GOLD:\n')
-        result_file.write(f'{item[0][0]}->\n{item[0][1]}\n')
-        result_file.write(f'{B} PREDICTED:\n')
-        result_file.write(f'{item[1]}--------\n')
+        for item in onlyBwrong:
+            result_file.write('GOLD:\n')
+            result_file.write(f'{item[0][0]}->\n{item[0][1]}\n')
+            result_file.write(f'{B} PREDICTED:\n')
+            result_file.write(f'{item[1]}--------\n')
 
 
 if __name__=='__main__':
-    # parser = argparse.ArgumentParser()
-    # parser.add_argument('--scoresA', type=argparse.FileType('r'),
-    #                     default='groundtruth', metavar='PATH',
-    #                     help="File with scores (one per line). If nothing passed, using groundtruth")
-    # parser.add_argument('--sourceA', type=argparse.FileType('r'),
-    #                     default='groundtruth', metavar='PATH',
-    #                     help="File with (modified) source")
-    # parser.add_argument('--scoresB', type=argparse.FileType('r'),
-    #                     default=sys.stdin, metavar='PATH',
-    #                     help="File with scores (one per line)")
-    # parser.add_argument('--sourceB', type=argparse.FileType('r'),
-    #                     default='groundtruth', metavar='PATH',
-    #                     help="File with (modified) source")
-    # parser.add_argument('--results', type=argparse.FileType('w'),
-    #                     default=sys.stdout, metavar='PATH',
-    #                     help="Filepath to write results")
 
-    # = parser.parse_)
     scoresA = open('../outputs/nested/concat22_peter', 'r')
     scoresB = open('../outputs/normal/output-concat22', 'r')
     sourceA_en = open('../ContraPro_Dario/modified/nested/peter_no_mismatches_en_tok.txt', 'r')
@@ -109,4 +101,5 @@ if __name__=='__main__':
     results = open('../outputs/compare/normal-peter-test', 'w')
     A = 'peter'
     B = 'normal'
-    main(A, B, scoresA.readlines(), sourceA_en.readlines(), sourceA_de.readlines(), scoresB.readlines(), sourceB_en.readlines(), sourceB_de.readlines(), results)
+    stats_mode = True
+    main(A, B, scoresA.readlines(), sourceA_en.readlines(), sourceA_de.readlines(), scoresB.readlines(), sourceB_en.readlines(), sourceB_de.readlines(), results, stats=stats_mode)
