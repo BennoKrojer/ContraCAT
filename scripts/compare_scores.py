@@ -16,6 +16,36 @@ def get_groundtruth_translations():
 # def get_predicted_translations(scores, source, idx):
 #
 
+def align_pad(groundtruth, mistake_mod):
+    if len(mistake_mod) - len(groundtruth) == 4:
+        new_mistake = []
+        i = 0
+        while i < len(mistake_mod):
+            if mistake_mod[i:i+3] == ['von', 'der', 'Katze']:
+                i += 3
+            if mistake_mod[i:i+2] == ['the', 'cat']:
+                new_mistake.append('XXX')
+                i += 2
+            else:
+                new_mistake.append(mistake_mod[i])
+                i += 1
+        return new_mistake
+    else:
+        return []
+
+
+def load_dets(lang):
+    d = dict()
+    with open('DET2definiteDET_'+lang, 'r') as file:
+        for line in file:
+            line = line.split()
+            if len(line) == 1:
+                d[line[0]] = ''
+            else:
+                d[line[0]] = line[1]
+    return d
+
+
 def main(A, B, scoresA, sourceA_en, sourceA_de, scoresB, sourceB_en, sourceB_de, result_file, stats=False):
     groundtruth, idx = get_groundtruth_translations()
     # if scoresA == 'groundtruth':
@@ -42,16 +72,17 @@ def main(A, B, scoresA, sourceA_en, sourceA_de, scoresB, sourceB_en, sourceB_de,
 
     #stats
     if stats:
-        nr_modification_errors = len(onlyAwrong)
+        nr_modification_errors = len(onlyBwrong)
         count = defaultdict(int)
-        for item in onlyAwrong:
+        german_modified_dets = load_dets("de").values()
+        for item in onlyBwrong:
             groundtruth = "".join([char for char in (item[0][0] + item[0][1]) if char not in string.punctuation]).replace('aposs', '').split()
             mistake_mod = "".join([char for char in item[1] if char not in string.punctuation]).replace('\n->\n', '').replace('aposs', '').split()
-            yas = 0
+            # new_mistake_mod = align_pad(groundtruth, mistake_mod) # has to be one for onlyA
             for _, (ground, mod) in enumerate(zip(groundtruth, mistake_mod)):
-                if ground == mod or 'Peter' in mod:
-                    continue
-                if ground != mod:
+                # if ground == mod or "the man's" in mod:
+                #     continue
+                if ground != mod and mod != "XXX" and mod.lower().strip() not in german_modified_dets:
                     count[(ground.lower(), mod.lower())] += 1
                     if mod in ["er", "sie"]:
                         print("GROUNDTRUTH:" + " ".join(groundtruth))
@@ -61,7 +92,7 @@ def main(A, B, scoresA, sourceA_en, sourceA_de, scoresB, sourceB_en, sourceB_de,
         print("Statistics of errors (counts of how the gender shifted, e.g. er -> sie):\n")
         print("Total errors: " + str(nr_modification_errors) + "\n")
         for key, value in count.items():
-            print(f'{key[0]} -> {key[1]}: {value}')
+            print(f'{key[1]} -> {key[0]}: {value}') # 0 -> 1 for onlyA
 
     else:
         result_file.write('both A & B wrong:\n\n')
@@ -92,14 +123,14 @@ def main(A, B, scoresA, sourceA_en, sourceA_de, scoresB, sourceB_en, sourceB_de,
 
 if __name__=='__main__':
 
-    scoresA = open('../outputs/nested/names/concat22_peter', 'r')
+    scoresA = open('../outputs/nested/noun_phrases/concat22_cat', 'r')
     scoresB = open('../outputs/normal/output-concat22', 'r')
-    sourceA_en = open('../ContraPro_Dario/modified/nested/names/peter_no_mismatches_en_tok.txt', 'r')
-    sourceA_de = open('../ContraPro_Dario/modified/nested/names/peter_no_mismatches_de_tok.txt', 'r')
+    sourceA_en = open('../ContraPro_Dario/modified/nested/noun_phrases/cat_no_mismatches_en_tok.txt', 'r')
+    sourceA_de = open('../ContraPro_Dario/modified/nested/noun_phrases/cat_no_mismatches_de_tok.txt', 'r')
     sourceB_en = open('../ContraPro_Dario/contrapro.text.tok.prev.en.en', 'r')
     sourceB_de = open('../ContraPro_Dario/contrapro.text.tok.prev.de.de', 'r')
-    results = open('../outputs/compare/normal-peter-test', 'w')
-    A = 'peter'
+    results = open('../outputs/compare/normal-cat', 'w')
+    A = 'cat'
     B = 'normal'
     stats_mode = True
     main(A, B, scoresA.readlines(), sourceA_en.readlines(), sourceA_de.readlines(), scoresB.readlines(), sourceB_en.readlines(), sourceB_de.readlines(), results, stats=stats_mode)
