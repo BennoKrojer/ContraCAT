@@ -1,5 +1,6 @@
 sockeye/__pycache__/
 models_dario/
 env_nmt/
+**/__pycache__/
 env_cpu/
 .idea/

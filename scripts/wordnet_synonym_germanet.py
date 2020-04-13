@@ -3,6 +3,7 @@ import json
 import re
 import spacy
 import nltk
+import tqdm
 from mosestokenizer import MosesDetokenizer
 from nltk.corpus import wordnet
 import numpy as np
@@ -10,7 +11,6 @@ from nltk.wsd import lesk
 
 from scripts.sample_modifications import get_sentence_idx
 import xml.etree.ElementTree as ET
-
 
 nltk.download('wordnet')
 nlp_en = spacy.load("en_core_web_sm")
@@ -57,6 +57,7 @@ def load_germanet():
 en2lex_id = load_interlingual()
 lexid2synset = load_germanet()
 
+
 def clean_context(context):
     context = context.replace('<SEP> ', '')
     context = MosesDetokenizer('en')(context.split())
@@ -92,20 +93,25 @@ def get_genders():
         return genders
 
 
+results = []
 de2gender = get_genders()
 indices = get_sentence_idx()
-context_lines = open('../ContraPro_Dario/contrapro.text.tok.prev.en.en', 'r').readlines()
+en_context_lines = open('../ContraPro_Dario/contrapro.text.tok.prev.en.en', 'r').readlines()
+de_context_lines = open('../ContraPro_Dario/contrapro.text.tok.prev.de.de', 'r').readlines()
 nn_count = 0
 modifiable_count = 0
 different_gender_count = 0
-for i, example in enumerate(contrapro):
+modifications_file = open('possible_modifications', 'w')
+for i, example in tqdm.tqdm(enumerate(contrapro)):
     head = example['src ante head lemma']
     tag = example["src ante head pos"]
     de_head = example['ref ante head lemma']
-    context = clean_context(context_lines[indices[i]])
-    if 'NN' in tag and de_head is not None:
+    dist = example['ante distance']
+    en_context = clean_context(en_context_lines[indices[i]])
+    de_context = clean_context(de_context_lines[indices[i]])
+    if 'NN' in tag and de_head is not None and dist < 2:
         nn_count += 1
-        synset = disambiguate(head, context, wordnet.synsets(head)) # if it is not ".n" you can ignore it
+        synset = disambiguate(head, en_context, wordnet.synsets(head))  # if it is not ".n" you can ignore it
         if synset:
             id = synset._offset
             try:
@@ -115,10 +121,10 @@ for i, example in enumerate(contrapro):
 
                 different_gender = False
                 german_synonyms = dict()
-                for word, head in german_synset:
+                for word, compound_head in german_synset:
                     try:
-                        if head:
-                            gender = de2gender[head.lower()]
+                        if compound_head:
+                            gender = de2gender[compound_head.lower()]
                         else:
                             gender = de2gender[word.lower()]
                         german_synonyms[word] = gender
@@ -126,12 +132,26 @@ for i, example in enumerate(contrapro):
                             different_gender = True
                     except KeyError:
                         continue
-                print(f'English antecedent: {head}, German antecedent: {de_head} ({original_gender})')
-                print(f'ENGLISH: {synset.lemma_names()}\nGERMAN where gender was identified: {german_synonyms}\n\n')
+                # print(f'English antecedent: {head}, German antecedent: {de_head} ({original_gender})')
+                # print(f'ENGLISH: {synset.lemma_names()}\nGERMAN where gender was identified: {german_synonyms}\n\n')
                 modifiable_count += 1
+                modifications_syns = ' '+head + ' '+str(synset.lemma_names())
+                # en_context = en_context.replace(' '+head+' ', modifications_syns)
+                en_context = re.sub(rf'[\W]{head}[\W]', modifications_syns, en_context)
+                modifications_syns = ' '+de_head+' '+str(german_synonyms)
+                de_context = re.sub(rf'[\W]{de_head}[\W]', modifications_syns, de_context)
+                modifications_file.write('\n_______________________\n')
+                modifications_file.write('EN:\n'+en_context)
+                modifications_file.write('\nDE:\n'+de_context)
+                result = {'original_english': head, 'original_german': de_head, 'original_gender': original_gender,
+                          'english synonyms': synset.lemma_names(), 'german synonyms': german_synonyms}
+                results.append(result)
                 if different_gender:
                     different_gender_count += 1
             except:
                 print(f'{synset} not found\n')
-
+                results.append(None)
+        results.append(None)
+json.dump(results, open('../ContraPro_Dario/modified/synonyms/synonyms.json', 'w'))
 print(f'Found {nn_count} antecedents tagged as NN. {modifiable_count} could be modified right now')
+modifications_file.close()
