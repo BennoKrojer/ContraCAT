@@ -12,7 +12,7 @@ import tqdm
 from mosestokenizer import MosesDetokenizer, MosesPunctuationNormalizer, MosesTokenizer
 from nltk.corpus import wordnet
 
-from scripts.compare_scores import load_dets
+from scripts.compare_scores import load_dets, load_gender_change
 from scripts.sample_modifications import get_sentence_idx
 import xml.etree.ElementTree as ET
 
@@ -105,13 +105,14 @@ modifiable_count = 0
 different_gender_count = 0
 modifications_file = open('possible_modifications', 'w')
 
-modification_name = 'same_gender'
+modification_name = 'neutral'
 de_lines = open('../ContraPro_Dario/contrapro.text.tok.prev.de.de', 'r').readlines()
 en_lines = open('../ContraPro_Dario/contrapro.text.tok.prev.en.en', 'r').readlines()
 output_de = f'../ContraPro_Dario/modified/{modification_name}_de_tok.txt'
 output_en = f'../ContraPro_Dario/modified/{modification_name}_en_tok.txt'
 
 det2def_det = load_dets('de')
+gender_change = load_gender_change('2neutral_de')
 contrapro = json.load(open('../ContraPro/contrapro.json', 'r'))
 idx = get_sentence_idx()
 
@@ -120,7 +121,7 @@ modified_indices = []
 modified_idx_de = set()
 modified_de = defaultdict(list)
 to_be_examined = ""
-
+count_preword = defaultdict(int)
 with MosesPunctuationNormalizer('de') as norm, MosesTokenizer('de') as tok, MosesDetokenizer('de') as de_tok,\
         open(output_de, 'w') as de_file:
     for i, example in tqdm.tqdm(enumerate(contrapro)):
@@ -130,7 +131,7 @@ with MosesPunctuationNormalizer('de') as norm, MosesTokenizer('de') as tok, Mose
         dist = example['ante distance']
         en_context = clean_context(en_context_lines[indices[i]])
         de_context = clean_context(de_context_lines[indices[i]])
-        if 'NN' in tag and de_head is not None and dist < 2:
+        if 'NN' in tag and de_head is not None and dist < 2 and (de_head in tok(de_context) or de_head  in de_context.split()):
             nn_count += 1
             synset = disambiguate(head, en_context, wordnet.synsets(head))  # if it is not ".n" you can ignore it
             if synset:
@@ -139,10 +140,9 @@ with MosesPunctuationNormalizer('de') as norm, MosesTokenizer('de') as tok, Mose
                     lemma_id = en2lex_id[id]
                     german_synset = lexid2synset[lemma_id]
                     original_gender = de2gender[de_head.lower()]
-
                     different_gender = False
                     german_synonyms = dict()
-                    same_gender_instance = []
+                    gender_instance = []
                     for word, compound_head in german_synset:
                         try:
                             if compound_head:
@@ -152,18 +152,33 @@ with MosesPunctuationNormalizer('de') as norm, MosesTokenizer('de') as tok, Mose
                             german_synonyms[word] = gender
                             if gender != original_gender:
                                 different_gender = True
-                            else:
-                                if word.lower() != de_head.lower():
-                                    same_gender_instance.append(word)
+                                if gender == 'n' and word.lower() != de_head.lower():
+                                    gender_instance.append(word)
                         except KeyError:
                             continue
 
-                    if same_gender_instance:
+                    if gender_instance:
                         for j, line in enumerate(de_lines[indices[i]:indices[i+1]]):
                             to_be_examined += line + "\n"
                             line = de_tok(line.split())
-                            line = line.replace(de_head, same_gender_instance[0].capitalize())
-                            context, sent = line.split('<SEP>')
+                            try:
+                                words = line.split()
+                                pre = words[words.index(de_head) - 1]
+                                replace_pre = gender_change[pre]
+                                words[words.index(de_head) - 1] = replace_pre
+                                line = ' '.join(words)
+                            except ValueError:
+                                words = tok(line)
+                                pre = words[words.index(de_head) - 1]
+                                replace_pre = gender_change[pre]
+                                words[words.index(de_head) - 1] = replace_pre
+                                line = de_tok(words)
+                            count_preword[pre] += 1
+                            line = line.replace(de_head, gender_instance[0].capitalize())
+                            try:
+                                context, sent = line.split('<SEP>')
+                            except ValueError:
+                                context, sent = line.split('< SEP >')
                             if context:
                                 context = ' '.join(tok(norm(context)))
                             sent = ' '.join(tok(norm(sent)))
@@ -172,13 +187,13 @@ with MosesPunctuationNormalizer('de') as norm, MosesTokenizer('de') as tok, Mose
                             modified = True
                             to_be_examined += line + '\n\n\n'
                         modified_indices.append(i)
-
                 except KeyError:
                     pass
         if not modified:
             for j, line in enumerate(de_lines[indices[i]:indices[i + 1]]):
                 de_file.write(line)
         modified = False
+print(sorted(count_preword.items(), key=lambda x: x[1], reverse=True))
 
 print('MODIFIED EXAMPLES:' + str(len(modified_indices)))
 command_de = f'subword-nmt apply-bpe -c ../ted_data/train/ende.bpe --glossaries "<SEP>" < ../ContraPro_Dario/modified/{modification_name}_de_tok.txt > tmp_de.txt'
@@ -191,4 +206,4 @@ with open('tmp_de.txt', 'r') as tmp_de, open(f'../ContraPro_Dario/modified/{modi
 os.system('rm -rf tmp_de.txt')
 shutil.copy('../ContraPro_Dario/contrapro.text.tok.prev.en.en', f'../ContraPro_Dario/modified/{modification_name}_en_tok.txt')
 shutil.copy('../ContraPro_Dario/contrapro.text.bpe.prev.en.en', f'../ContraPro_Dario/modified/{modification_name}_en_bpe.txt')
-pickle.dump(modified_indices, open('../ContraPro_Dario/modified/synonyms/same_gender/modified_indices.pkl', 'wb'))
+pickle.dump(modified_indices, open('../ContraPro_Dario/modified/modified_indices.pkl', 'wb'))

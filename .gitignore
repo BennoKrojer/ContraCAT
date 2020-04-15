@@ -3,4 +3,5 @@ models_dario/
 env_nmt/
 **/__pycache__/
 env_cpu/
+GermaNet/
 .idea/

@@ -46,6 +46,18 @@ def load_dets(lang):
     return d
 
 
+def load_gender_change(filename):
+    d = dict()
+    with open(filename, 'r') as file:
+        for line in file:
+            line = line.split()
+            if len(line) == 1:
+                d[line[0]] = line[0]
+            else:
+                d[line[0]] = line[1]
+    return d
+
+
 def main(A, B, scoresA, sourceA_en, sourceA_de, scoresB, sourceB_en, sourceB_de, result_file, stats=False):
     groundtruth, idx = get_groundtruth_translations()
     # if scoresA == 'groundtruth':
@@ -123,14 +135,14 @@ def main(A, B, scoresA, sourceA_en, sourceA_de, scoresB, sourceB_en, sourceB_de,
 
 if __name__=='__main__':
 
-    scoresA = open('../outputs/nested/noun_phrases/concat22_cat', 'r')
+    scoresA = open('../outputs/synonyms/same/concat22', 'r')
     scoresB = open('../outputs/normal/output-concat22', 'r')
-    sourceA_en = open('../ContraPro_Dario/modified/nested/noun_phrases/cat_no_mismatches_en_tok.txt', 'r')
-    sourceA_de = open('../ContraPro_Dario/modified/nested/noun_phrases/cat_no_mismatches_de_tok.txt', 'r')
+    sourceA_en = open('../ContraPro_Dario/modified/synonyms/same_gender/same_gender_en_tok.txt', 'r')
+    sourceA_de = open('../ContraPro_Dario/modified/synonyms/same_gender/same_gender_de_tok.txt', 'r')
     sourceB_en = open('../ContraPro_Dario/contrapro.text.tok.prev.en.en', 'r')
     sourceB_de = open('../ContraPro_Dario/contrapro.text.tok.prev.de.de', 'r')
-    results = open('../outputs/compare/normal-cat', 'w')
-    A = 'cat'
+    results = open('../outputs/compare/normal-same_gender_synonym', 'w')
+    A = 'same_gender_synonym'
     B = 'normal'
-    stats_mode = True
+    stats_mode = False
     main(A, B, scoresA.readlines(), sourceA_en.readlines(), sourceA_de.readlines(), scoresB.readlines(), sourceB_en.readlines(), sourceB_de.readlines(), results, stats=stats_mode)
