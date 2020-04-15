@@ -1,4 +1,5 @@
 import difflib
+import pickle
 import string
 from collections import defaultdict
 
@@ -58,7 +59,7 @@ def load_gender_change(filename):
     return d
 
 
-def main(A, B, scoresA, sourceA_en, sourceA_de, scoresB, sourceB_en, sourceB_de, result_file, stats=False):
+def main(A, B, scoresA, sourceA_en, sourceA_de, scoresB, sourceB_en, sourceB_de, result_file, modified_idx, stats=False):
     groundtruth, idx = get_groundtruth_translations()
     # if scoresA == 'groundtruth':
     #     sentencesB =
@@ -69,25 +70,26 @@ def main(A, B, scoresA, sourceA_en, sourceA_de, scoresB, sourceB_en, sourceB_de,
     onlyAwrong = []
     onlyBwrong = []
     for example_id, (start, end) in enumerate(list(zip(idx, idx[1:]))):
-        local_scoresA = list(map(lambda x: float(x.strip()), scoresA[start:end]))
-        local_scoresB = list(map(lambda x: float(x.strip()), scoresB[start:end]))
-        best_idA = np.argmin(local_scoresA)
-        if scoresA == 'groundtruth':
-            best_idA = 0
-        best_idB = np.argmin(local_scoresB)
-        if best_idA != 0 and best_idB != 0:
-            both.append((groundtruth[example_id], '->\n'.join((sourceA_en[start+best_idA], sourceA_de[start+best_idA])), '\n->\n'.join((sourceB_en[start+best_idB], sourceB_de[start+best_idB]))))
-        if best_idA != 0 and best_idB == 0:
-            onlyAwrong.append((groundtruth[example_id], '->\n'.join((sourceA_en[start+best_idA], sourceA_de[start+best_idA]))))
-        if best_idB != 0 and best_idA == 0:
-            onlyBwrong.append((groundtruth[example_id], '->\n'.join((sourceB_en[start+best_idB], sourceB_de[start+best_idB]))))
+        if example_id in modified_idx:
+            local_scoresA = list(map(lambda x: float(x.strip()), scoresA[start:end]))
+            local_scoresB = list(map(lambda x: float(x.strip()), scoresB[start:end]))
+            best_idA = np.argmin(local_scoresA)
+            if scoresA == 'groundtruth':
+                best_idA = 0
+            best_idB = np.argmin(local_scoresB)
+            if best_idA != 0 and best_idB != 0:
+                both.append((groundtruth[example_id], '->\n'.join((sourceA_en[start+best_idA], sourceA_de[start+best_idA])), '\n->\n'.join((sourceB_en[start+best_idB], sourceB_de[start+best_idB]))))
+            if best_idA != 0 and best_idB == 0:
+                onlyAwrong.append((groundtruth[example_id], '->\n'.join((sourceA_en[start+best_idA], sourceA_de[start+best_idA]))))
+            if best_idB != 0 and best_idA == 0:
+                onlyBwrong.append((groundtruth[example_id], '->\n'.join((sourceB_en[start+best_idB], sourceB_de[start+best_idB]))))
 
     #stats
     if stats:
         nr_modification_errors = len(onlyBwrong)
         count = defaultdict(int)
         german_modified_dets = load_dets("de").values()
-        for item in onlyBwrong:
+        for item in onlyAwrong:
             groundtruth = "".join([char for char in (item[0][0] + item[0][1]) if char not in string.punctuation]).replace('aposs', '').split()
             mistake_mod = "".join([char for char in item[1] if char not in string.punctuation]).replace('\n->\n', '').replace('aposs', '').split()
             # new_mistake_mod = align_pad(groundtruth, mistake_mod) # has to be one for onlyA
@@ -133,7 +135,7 @@ def main(A, B, scoresA, sourceA_en, sourceA_de, scoresB, sourceB_en, sourceB_de,
             result_file.write(f'{item[1]}--------\n')
 
 
-if __name__=='__main__':
+if __name__ == '__main__':
 
     scoresA = open('../outputs/ted/synonyms/male/concat22', 'r')
     scoresB = open('../outputs/ted/normal/output-concat22', 'r')
@@ -141,8 +143,9 @@ if __name__=='__main__':
     sourceA_de = open('../ContraPro_Dario/modified/synonyms/male/male_de_tok.txt', 'r')
     sourceB_en = open('../ContraPro_Dario/contrapro.text.tok.prev.en.en', 'r')
     sourceB_de = open('../ContraPro_Dario/contrapro.text.tok.prev.de.de', 'r')
+    modified_idx = pickle.load(open('../ContraPro_Dario/modified/synonyms/male/modified_indices.pkl','rb'))
     results = open('../outputs/ted/compare/normal-male_synonym', 'w')
     A = 'male'
     B = 'normal'
-    stats_mode = True
-    main(A, B, scoresA.readlines(), sourceA_en.readlines(), sourceA_de.readlines(), scoresB.readlines(), sourceB_en.readlines(), sourceB_de.readlines(), results, stats=stats_mode)
+    stats_mode = False
+    main(A, B, scoresA.readlines(), sourceA_en.readlines(), sourceA_de.readlines(), scoresB.readlines(), sourceB_en.readlines(), sourceB_de.readlines(), results, modified_idx, stats=stats_mode)
