@@ -1,4 +1,5 @@
 import difflib
+import json
 import pickle
 import string
 from collections import defaultdict
@@ -69,21 +70,36 @@ def main(A, B, scoresA, sourceA_en, sourceA_de, scoresB, sourceB_en, sourceB_de,
     both = []
     onlyAwrong = []
     onlyBwrong = []
+    none = []
+    shifts = defaultdict(int)
     for example_id, (start, end) in enumerate(list(zip(idx, idx[1:]))):
         if example_id in modified_idx:
             local_scoresA = list(map(lambda x: float(x.strip()), scoresA[start:end]))
             local_scoresB = list(map(lambda x: float(x.strip()), scoresB[start:end]))
             best_idA = np.argmin(local_scoresA)
+
             if scoresA == 'groundtruth':
                 best_idA = 0
             best_idB = np.argmin(local_scoresB)
+            wordsA = sourceA_de[start + best_idA].split()
+            wordsB = sourceA_de[start + best_idB].split()
+            diff = list(set([(b.lower(), a.lower()) for a, b in zip(wordsA, wordsB) if a != b]))
+            if len(diff) > 0:
+                shifts[diff[0]] += 1
+            else:
+                wordsA = sourceA_de[start + best_idA].split()
+                wordsB = sourceA_de[start + (0 if best_idA == 1 else 1)].split()
+                remained = [a.lower() for a, b in zip(wordsA, wordsB) if a.lower() != b.lower()][0]
+                shifts[(remained, remained)] += 1
             if best_idA != 0 and best_idB != 0:
                 both.append((groundtruth[example_id], '->\n'.join((sourceA_en[start+best_idA], sourceA_de[start+best_idA])), '\n->\n'.join((sourceB_en[start+best_idB], sourceB_de[start+best_idB]))))
             if best_idA != 0 and best_idB == 0:
                 onlyAwrong.append((groundtruth[example_id], '->\n'.join((sourceA_en[start+best_idA], sourceA_de[start+best_idA]))))
             if best_idB != 0 and best_idA == 0:
                 onlyBwrong.append((groundtruth[example_id], '->\n'.join((sourceB_en[start+best_idB], sourceB_de[start+best_idB]))))
-
+            if best_idB == 0 and best_idA == 0:
+                none.append((groundtruth[example_id], '->\n'.join((sourceA_en[start+best_idA], sourceA_de[start+best_idA])), '\n->\n'.join((sourceB_en[start+best_idB], sourceB_de[start+best_idB]))))
+    print(shifts)
     #stats
     if stats:
         nr_modification_errors = len(onlyBwrong)
@@ -118,6 +134,16 @@ def main(A, B, scoresA, sourceA_en, sourceA_de, scoresB, sourceB_en, sourceB_de,
             result_file.write(f'{B} PREDICTED:\n')
             result_file.write(f'{item[2]}--------\n')
 
+        result_file.write('none wrong:\n\n')
+
+        for item in none:
+            result_file.write('GOLD:\n')
+            result_file.write(f'{item[0][0]}->\n{item[0][1]}\n')
+            result_file.write(f'{A} PREDICTED:\n')
+            result_file.write(f'{item[1]}\n')
+            result_file.write(f'{B} PREDICTED:\n')
+            result_file.write(f'{item[2]}--------\n')
+
         result_file.write(f'only {A} wrong:\n\n')
 
         for item in onlyAwrong:
@@ -137,15 +163,15 @@ def main(A, B, scoresA, sourceA_en, sourceA_de, scoresB, sourceB_en, sourceB_de,
 
 if __name__ == '__main__':
 
-    scoresA = open('../outputs/ted/synonyms/male/concat22', 'r')
+    scoresA = open('../outputs/ted/synonyms/neutral/concat22', 'r')
     scoresB = open('../outputs/ted/normal/output-concat22', 'r')
-    sourceA_en = open('../ContraPro_Dario/modified/synonyms/male/male_en_tok.txt', 'r')
-    sourceA_de = open('../ContraPro_Dario/modified/synonyms/male/male_de_tok.txt', 'r')
+    sourceA_en = open('../ContraPro_Dario/modified/synonyms/neutral/neutral_en_tok.txt', 'r')
+    sourceA_de = open('../ContraPro_Dario/modified/synonyms/neutral/neutral_de_tok.txt', 'r')
     sourceB_en = open('../ContraPro_Dario/contrapro.text.tok.prev.en.en', 'r')
     sourceB_de = open('../ContraPro_Dario/contrapro.text.tok.prev.de.de', 'r')
-    modified_idx = pickle.load(open('../ContraPro_Dario/modified/synonyms/male/modified_indices.pkl','rb'))
-    results = open('../outputs/ted/compare/normal-male_synonym', 'w')
-    A = 'male'
+    modified_idx = pickle.load(open('../ContraPro_Dario/modified/synonyms/neutral/modified_indices.pkl','rb'))
+    results = open('../outputs/ted/compare/normal-neutral_synonym', 'w')
+    A = 'neutral'
     B = 'normal'
     stats_mode = False
     main(A, B, scoresA.readlines(), sourceA_en.readlines(), sourceA_de.readlines(), scoresB.readlines(), sourceB_en.readlines(), sourceB_de.readlines(), results, modified_idx, stats=stats_mode)

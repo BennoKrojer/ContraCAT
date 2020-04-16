@@ -105,14 +105,14 @@ modifiable_count = 0
 different_gender_count = 0
 modifications_file = open('possible_modifications', 'w')
 
-modification_name = 'neutral'
+modification_name = 'male'
 de_lines = open('../ContraPro_Dario/contrapro.text.tok.prev.de.de', 'r').readlines()
 en_lines = open('../ContraPro_Dario/contrapro.text.tok.prev.en.en', 'r').readlines()
 output_de = f'../ContraPro_Dario/modified/{modification_name}_de_tok.txt'
 output_en = f'../ContraPro_Dario/modified/{modification_name}_en_tok.txt'
 
 det2def_det = load_dets('de')
-gender_change = load_gender_change('2neutral_de')
+gender_change = load_gender_change('2male_de')
 contrapro = json.load(open('../ContraPro/contrapro.json', 'r'))
 idx = get_sentence_idx()
 
@@ -152,7 +152,7 @@ with MosesPunctuationNormalizer('de') as norm, MosesTokenizer('de') as tok, Mose
                             german_synonyms[word] = gender
                             if gender != original_gender:
                                 different_gender = True
-                                if gender == 'n' and word.lower() != de_head.lower():
+                                if gender == 'm' and word.lower() != de_head.lower():
                                     gender_instance.append(word)
                         except KeyError:
                             continue

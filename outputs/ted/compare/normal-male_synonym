@@ -4355,6 +4355,1656 @@ I &apos;ve got an idea . <SEP> it may not be better . but at least it &apos;s no
 ->
 ich habe eine Idee . <SEP> Es ist vielleicht nicht besser , aber wenigstens ist es nicht der da .
 --------
+none wrong:
+
+GOLD:
+but even if they do find the ... The cadaver is discovered some time ... <SEP> if it is discovered .
+->
+selbst wenn sie die Leiche irgendwann finden sollten ... <SEP> Wenn sie gefunden wird !
+
+male PREDICTED:
+but even if they do find the ... The cadaver is discovered some time ... <SEP> if it is discovered .
+->
+selbst wenn sie den Leichnam irgendwann finden sollten ... <SEP> Wenn sie gefunden wird !
+
+normal PREDICTED:
+but even if they do find the ... The cadaver is discovered some time ... <SEP> if it is discovered .
+
+->
+selbst wenn sie die Leiche irgendwann finden sollten ... <SEP> Wenn sie gefunden wird !
+--------
+GOLD:
+a machine was a thing ofjoy then , built to last a man &apos;s lifetime . <SEP> now it &apos;s out of date before it &apos;s finished .
+->
+die Maschine war eine Erfindung , über die man sich freute . Sie war für ein Menschenalter bestimmt . <SEP> Heutzutage ist sie schon wieder veraltet , bevor sie das Fließband verläßt .
+
+male PREDICTED:
+a machine was a thing ofjoy then , built to last a man &apos;s lifetime . <SEP> now it &apos;s out of date before it &apos;s finished .
+->
+der Apparat war eine Erfindung , über die man sich freute . Sie war für ein Menschenalter bestimmt . <SEP> Heutzutage ist sie schon wieder veraltet , bevor sie das Fließband verläßt .
+
+normal PREDICTED:
+a machine was a thing ofjoy then , built to last a man &apos;s lifetime . <SEP> now it &apos;s out of date before it &apos;s finished .
+
+->
+die Maschine war eine Erfindung , über die man sich freute . Sie war für ein Menschenalter bestimmt . <SEP> Heutzutage ist sie schon wieder veraltet , bevor sie das Fließband verläßt .
+--------
+GOLD:
+interested in this business card ? <SEP> it &apos;s from his desk .
+->
+interessiert Sie diese Visitenkarte ? <SEP> Sie lag auf dem Schreibtisch des Toten .
+
+male PREDICTED:
+interested in this business card ? <SEP> it &apos;s from his desk .
+->
+interessiert Sie dieser Joker ? <SEP> Sie lag auf dem Schreibtisch des Toten .
+
+normal PREDICTED:
+interested in this business card ? <SEP> it &apos;s from his desk .
+
+->
+interessiert Sie diese Visitenkarte ? <SEP> Sie lag auf dem Schreibtisch des Toten .
+--------
+GOLD:
+one above , who decides the winning number , and one here , who places this on the same number . <SEP> evidently , the little ball contains a small amount of iron to make it obey .
+->
+einer oben , der die Gewinnzahl bestimmt , und einer hier , der das auf dieselbe Zahl setzt . <SEP> Offenbar enthält diese kleine Kugel ein wenig Eisen , damit sie gehorcht .
+
+male PREDICTED:
+one above , who decides the winning number , and one here , who places this on the same number . <SEP> evidently , the little ball contains a small amount of iron to make it obey .
+->
+einer oben , der die Gewinnzahl bestimmt , und einer hier , der das auf dieselbe Zahl setzt . <SEP> Offenbar enthält dieser kleine Ball ein wenig Eisen , damit sie gehorcht .
+
+normal PREDICTED:
+one above , who decides the winning number , and one here , who places this on the same number . <SEP> evidently , the little ball contains a small amount of iron to make it obey .
+
+->
+einer oben , der die Gewinnzahl bestimmt , und einer hier , der das auf dieselbe Zahl setzt . <SEP> Offenbar enthält diese kleine Kugel ein wenig Eisen , damit sie gehorcht .
+--------
+GOLD:
+the first priority is that research plant . <SEP> we don &apos;t even know where it is .
+->
+oberste Priorität hat die Forschungsanlage . <SEP> - Wir wissen nicht mal , wo sie ist .
+
+male PREDICTED:
+the first priority is that research plant . <SEP> we don &apos;t even know where it is .
+->
+obersten Vorrang hat die Forschungsanlage . <SEP> - Wir wissen nicht mal , wo sie ist .
+
+normal PREDICTED:
+the first priority is that research plant . <SEP> we don &apos;t even know where it is .
+
+->
+oberste Priorität hat die Forschungsanlage . <SEP> - Wir wissen nicht mal , wo sie ist .
+--------
+GOLD:
+this world is wonderful . <SEP> it still exists , beyond our thoughts , beyond our feelings , beyond life .
+->
+diese Welt ist wundervoll . <SEP> Sie existiert immer noch , jenseits unserer Gedanken , jenseits unserer Gefühle , jenseits des Lebens .
+
+male PREDICTED:
+this world is wonderful . <SEP> it still exists , beyond our thoughts , beyond our feelings , beyond life .
+->
+dieser Weltraum ist wundervoll . <SEP> Sie existiert immer noch , jenseits unserer Gedanken , jenseits unserer Gefühle , jenseits des Lebens .
+
+normal PREDICTED:
+this world is wonderful . <SEP> it still exists , beyond our thoughts , beyond our feelings , beyond life .
+
+->
+diese Welt ist wundervoll . <SEP> Sie existiert immer noch , jenseits unserer Gedanken , jenseits unserer Gefühle , jenseits des Lebens .
+--------
+GOLD:
+this tumescent , luxuriant flesh , forever conceiving new shapes ... and yet so chaste . <SEP> I love the potato because it speaks to me .
+->
+dieses schwellende , strotzende , immerwieder neue Formen erdenkende und dennoch so keusche Fruchtfleisch ! <SEP> Ich liebe die Kartoffel , weil sie zu mir spricht !
+
+male PREDICTED:
+this tumescent , luxuriant flesh , forever conceiving new shapes ... and yet so chaste . <SEP> I love the potato because it speaks to me .
+->
+dieses schwellende , strotzende , immerwieder neue Formen erdenkende und dennoch so keusche Fruchtfleisch ! <SEP> Ich liebe der Erdapfel , weil sie zu mir spricht !
+
+normal PREDICTED:
+this tumescent , luxuriant flesh , forever conceiving new shapes ... and yet so chaste . <SEP> I love the potato because it speaks to me .
+
+->
+dieses schwellende , strotzende , immerwieder neue Formen erdenkende und dennoch so keusche Fruchtfleisch ! <SEP> Ich liebe die Kartoffel , weil sie zu mir spricht !
+--------
+GOLD:
+the village is 15 miles away . <SEP> the ambulance is probably already there as it left from Chambery .
+->
+das Dorf liegt 23 km entfernt . <SEP> Wir riefen auch die Ambulanz , die schon da sein müsste , denn sie nimmt die Straße von Chambéry .
+
+male PREDICTED:
+the village is 15 miles away . <SEP> the ambulance is probably already there as it left from Chambery .
+->
+das Dorf liegt 23 km entfernt . <SEP> Wir riefen auch der Krankenwagen , die schon da sein müsste , denn sie nimmt die Straße von Chambéry .
+
+normal PREDICTED:
+the village is 15 miles away . <SEP> the ambulance is probably already there as it left from Chambery .
+
+->
+das Dorf liegt 23 km entfernt . <SEP> Wir riefen auch die Ambulanz , die schon da sein müsste , denn sie nimmt die Straße von Chambéry .
+--------
+GOLD:
+Oh , and , uh , I got a bill out of the mailbox . <SEP> it &apos;s for your mom .
+->
+hier ist eine Rechnung aus dem Briefkasten . <SEP> Sie ist für Ihre Mutter .
+
+male PREDICTED:
+Oh , and , uh , I got a bill out of the mailbox . <SEP> it &apos;s for your mom .
+->
+hier ist ein Gesetzentwurf aus dem Briefkasten . <SEP> Sie ist für Ihre Mutter .
+
+normal PREDICTED:
+Oh , and , uh , I got a bill out of the mailbox . <SEP> it &apos;s for your mom .
+
+->
+hier ist eine Rechnung aus dem Briefkasten . <SEP> Sie ist für Ihre Mutter .
+--------
+GOLD:
+I &apos;ve rented myself a piece of an Italian earth survey satellite . <SEP> it sends radio beams right through the ground right back to me .
+->
+ich habe einen Teil eines italienischen Satelliten gemietet . <SEP> Er sendet Funkleitstrahlen durch den Boden zu mir .
+
+male PREDICTED:
+I &apos;ve rented myself a piece of an Italian earth survey satellite . <SEP> it sends radio beams right through the ground right back to me .
+->
+ich habe einen Satellit eines italienischen Satelliten gemietet . <SEP> Er sendet Funkleitstrahlen durch den Boden zu mir .
+
+normal PREDICTED:
+I &apos;ve rented myself a piece of an Italian earth survey satellite . <SEP> it sends radio beams right through the ground right back to me .
+
+->
+ich habe einen Teil eines italienischen Satelliten gemietet . <SEP> Er sendet Funkleitstrahlen durch den Boden zu mir .
+--------
+GOLD:
+the world is too sad ! <SEP> it isn &apos;t sad , it &apos;s big .
+->
+die Welt ist zu traurig . <SEP> Sie ist nichttraurig , sie ist groß .
+
+male PREDICTED:
+the world is too sad ! <SEP> it isn &apos;t sad , it &apos;s big .
+->
+der Weltraum ist zu traurig . <SEP> Sie ist nichttraurig , sie ist groß .
+
+normal PREDICTED:
+the world is too sad ! <SEP> it isn &apos;t sad , it &apos;s big .
+
+->
+die Welt ist zu traurig . <SEP> Sie ist nichttraurig , sie ist groß .
+--------
+GOLD:
+the missing card was in the box all the time . <SEP> it had simply not been taken out with the others .
+->
+die fehlende Karte war die ganze Zeit in der Box . <SEP> Sie war einfach nicht mit den anderen herausgenommen worden .
+
+male PREDICTED:
+the missing card was in the box all the time . <SEP> it had simply not been taken out with the others .
+->
+die fehlende Joker war die ganze Zeit in der Box . <SEP> Sie war einfach nicht mit den anderen herausgenommen worden .
+
+normal PREDICTED:
+the missing card was in the box all the time . <SEP> it had simply not been taken out with the others .
+
+->
+die fehlende Karte war die ganze Zeit in der Box . <SEP> Sie war einfach nicht mit den anderen herausgenommen worden .
+--------
+GOLD:
+Dr. Brown , I brought this note back from the future and now it &apos;s erased . <SEP> of course it &apos;s erased .
+->
+Dr. Brown , ich habe diese Notiz aus der Zukunft mitgebracht ... und jetzt ist sie gelo &quot; scht . <SEP> Natu &quot; rlich ist sie gelo &quot; scht .
+
+male PREDICTED:
+Dr. Brown , I brought this note back from the future and now it &apos;s erased . <SEP> of course it &apos;s erased .
+->
+Dr. Brown , ich habe dieser Vermerk aus der Zukunft mitgebracht ... und jetzt ist sie gelo &quot; scht . <SEP> Natu &quot; rlich ist sie gelo &quot; scht .
+
+normal PREDICTED:
+Dr. Brown , I brought this note back from the future and now it &apos;s erased . <SEP> of course it &apos;s erased .
+
+->
+Dr. Brown , ich habe diese Notiz aus der Zukunft mitgebracht ... und jetzt ist sie gelo &quot; scht . <SEP> Natu &quot; rlich ist sie gelo &quot; scht .
+--------
+GOLD:
+I traced the source of the transmission . <SEP> it incorporates the code prefix of Romulan intelligence .
+->
+ich spürte die Quelle der Nachricht auf . <SEP> Sie stammt vom romulanischen Geheimdienst .
+
+male PREDICTED:
+I traced the source of the transmission . <SEP> it incorporates the code prefix of Romulan intelligence .
+->
+ich spürte die Quelle dem Anfangspunkt auf . <SEP> Sie stammt vom romulanischen Geheimdienst .
+
+normal PREDICTED:
+I traced the source of the transmission . <SEP> it incorporates the code prefix of Romulan intelligence .
+
+->
+ich spürte die Quelle der Nachricht auf . <SEP> Sie stammt vom romulanischen Geheimdienst .
+--------
+GOLD:
+we &apos;ve developed a new type of ammunition . <SEP> it explodes on contact .
+->
+wir haben eine neue Munition entwickelt . <SEP> Sie explodiert bei Kontakt .
+
+male PREDICTED:
+we &apos;ve developed a new type of ammunition . <SEP> it explodes on contact .
+->
+wir haben eine neue Typ entwickelt . <SEP> Sie explodiert bei Kontakt .
+
+normal PREDICTED:
+we &apos;ve developed a new type of ammunition . <SEP> it explodes on contact .
+
+->
+wir haben eine neue Munition entwickelt . <SEP> Sie explodiert bei Kontakt .
+--------
+GOLD:
+have created a pocket of air for you . <SEP> the machine controlling this planet needs a mind to run it or it will destroy itself and Babylon 5 .
+->
+ich habe eine luftblase für euch geschaffen . <SEP> Die Maschine braucht eine seele sonst zerstört sie sich und babylon 5.
+
+male PREDICTED:
+have created a pocket of air for you . <SEP> the machine controlling this planet needs a mind to run it or it will destroy itself and Babylon 5 .
+->
+ich habe eine luftblase für euch geschaffen . <SEP> Der Apparat braucht eine seele sonst zerstört sie sich und babylon 5.
+
+normal PREDICTED:
+have created a pocket of air for you . <SEP> the machine controlling this planet needs a mind to run it or it will destroy itself and Babylon 5 .
+
+->
+ich habe eine luftblase für euch geschaffen . <SEP> Die Maschine braucht eine seele sonst zerstört sie sich und babylon 5.
+--------
+GOLD:
+exactly what makes this virus so special ? <SEP> it &apos;s airborne .
+->
+was genau macht diesen Virus so besonders ? <SEP> Er wird durch die Luft übertragen .
+
+male PREDICTED:
+exactly what makes this virus so special ? <SEP> it &apos;s airborne .
+->
+was genau macht diesen Erreger so besonders ? <SEP> Er wird durch die Luft übertragen .
+
+normal PREDICTED:
+exactly what makes this virus so special ? <SEP> it &apos;s airborne .
+
+->
+was genau macht diesen Virus so besonders ? <SEP> Er wird durch die Luft übertragen .
+--------
+GOLD:
+the next song is by me . <SEP> it &apos;s called WILD GIRLS , and ... Yes , now all the wild girls can dance ... if they want .
+->
+die nächste Nummer ist von mir . <SEP> Sie heißt &apos; Wild girls &apos; und ... ja , alle wild girls können jetzt tanzen , wenn sie wollen .
+
+male PREDICTED:
+the next song is by me . <SEP> it &apos;s called WILD GIRLS , and ... Yes , now all the wild girls can dance ... if they want .
+->
+die nächste Song ist von mir . <SEP> Sie heißt &apos; Wild girls &apos; und ... ja , alle wild girls können jetzt tanzen , wenn sie wollen .
+
+normal PREDICTED:
+the next song is by me . <SEP> it &apos;s called WILD GIRLS , and ... Yes , now all the wild girls can dance ... if they want .
+
+->
+die nächste Nummer ist von mir . <SEP> Sie heißt &apos; Wild girls &apos; und ... ja , alle wild girls können jetzt tanzen , wenn sie wollen .
+--------
+GOLD:
+we &apos;ve uncovered more than expected about this orb . <SEP> it &apos;s called the Dagon Sphere and it has a history going back many centuries .
+->
+wir haben mehr über diese Kugel herausgefunden . <SEP> Sie heißt Dagon @-@ Kugel . Ihre Geschichte reicht viele Jahrhunderte zurück .
+
+male PREDICTED:
+we &apos;ve uncovered more than expected about this orb . <SEP> it &apos;s called the Dagon Sphere and it has a history going back many centuries .
+->
+wir haben mehr über dieser Augapfel herausgefunden . <SEP> Sie heißt Dagon @-@ Augapfel . Ihre Geschichte reicht viele Jahrhunderte zurück .
+
+normal PREDICTED:
+we &apos;ve uncovered more than expected about this orb . <SEP> it &apos;s called the Dagon Sphere and it has a history going back many centuries .
+
+->
+wir haben mehr über diese Kugel herausgefunden . <SEP> Sie heißt Dagon @-@ Kugel . Ihre Geschichte reicht viele Jahrhunderte zurück .
+--------
+GOLD:
+most of them are blessedly unaware of the countless ways ... in which their bodies are exposed to our eyes . <SEP> so , fiirst , learn to read the sun , where it sits .
+->
+die meisten ahnen gar nicht , wie sich ihre Körper uns präsentieren . <SEP> Erstens , achte auf die Sonne , wo sie steht .
+
+male PREDICTED:
+most of them are blessedly unaware of the countless ways ... in which their bodies are exposed to our eyes . <SEP> so , fiirst , learn to read the sun , where it sits .
+->
+die meisten ahnen gar nicht , wie sich ihre Körper uns präsentieren . <SEP> Erstens , achte auf der Sonnenball , wo sie steht .
+
+normal PREDICTED:
+most of them are blessedly unaware of the countless ways ... in which their bodies are exposed to our eyes . <SEP> so , fiirst , learn to read the sun , where it sits .
+
+->
+die meisten ahnen gar nicht , wie sich ihre Körper uns präsentieren . <SEP> Erstens , achte auf die Sonne , wo sie steht .
+--------
+GOLD:
+here &apos;s a copy of Roxie &apos;s first statement from the D.A. &apos; s office . <SEP> it says she hadn &apos;t copulated with you for four months prior to the incident .
+->
+hier ist ein Kopie von Roxies erster Aussage vom Staatsanwalt . <SEP> Sie hat in den letzten vier Monaten nicht mit Ihnen geschlafen .
+
+male PREDICTED:
+here &apos;s a copy of Roxie &apos;s first statement from the D.A. &apos; s office . <SEP> it says she hadn &apos;t copulated with you for four months prior to the incident .
+->
+hier ist ein Dienstraum von Roxies erster Aussage vom Staatsanwalt . <SEP> Sie hat in den letzten vier Monaten nicht mit Ihnen geschlafen .
+
+normal PREDICTED:
+here &apos;s a copy of Roxie &apos;s first statement from the D.A. &apos; s office . <SEP> it says she hadn &apos;t copulated with you for four months prior to the incident .
+
+->
+hier ist ein Kopie von Roxies erster Aussage vom Staatsanwalt . <SEP> Sie hat in den letzten vier Monaten nicht mit Ihnen geschlafen .
+--------
+GOLD:
+when you activated the music box , we recorded it . <SEP> it &apos;s at Langley for analysis .
+->
+wir konnten die Melodie aufzeichnen . <SEP> Sie wird analysiert .
+
+male PREDICTED:
+when you activated the music box , we recorded it . <SEP> it &apos;s at Langley for analysis .
+->
+wir konnten der Kasten aufzeichnen . <SEP> Sie wird analysiert .
+
+normal PREDICTED:
+when you activated the music box , we recorded it . <SEP> it &apos;s at Langley for analysis .
+
+->
+wir konnten die Melodie aufzeichnen . <SEP> Sie wird analysiert .
+--------
+GOLD:
+and I regret to say the president &apos;s hasty calling up of 75,000 volunteers to subdue the rebellion in the cotton states has done nothing to ameliorate the crisis . <SEP> it has only deepened it .
+->
+und ich bedaure sagen zu müssen , dass die Rekrutierung von 75.000 Freiwilligen zur Unterdrückung der Rebellion in den Baumwollstaaten die Krise in keiner Weise behoben hat . <SEP> Sie wurde nur vertieft .
+
+male PREDICTED:
+and I regret to say the president &apos;s hasty calling up of 75,000 volunteers to subdue the rebellion in the cotton states has done nothing to ameliorate the crisis . <SEP> it has only deepened it .
+->
+und ich bedaure sagen zu müssen , dass die Rekrutierung von 75.000 Freiwilligen zur Unterdrückung der Rebellion in den Baumwollstaaten der Notstand in keiner Weise behoben hat . <SEP> Sie wurde nur vertieft .
+
+normal PREDICTED:
+and I regret to say the president &apos;s hasty calling up of 75,000 volunteers to subdue the rebellion in the cotton states has done nothing to ameliorate the crisis . <SEP> it has only deepened it .
+
+->
+und ich bedaure sagen zu müssen , dass die Rekrutierung von 75.000 Freiwilligen zur Unterdrückung der Rebellion in den Baumwollstaaten die Krise in keiner Weise behoben hat . <SEP> Sie wurde nur vertieft .
+--------
+GOLD:
+it &apos;s probably just one of Hennessey &apos;s turtles , but I wanna be back on the road by lunch . <SEP> next time you get a hot idea in front of the reporter , whisper it in my ear first .
+->
+wahrscheinlich nur eine von Hennesseys Schildkröten . zum Mittag sind wir zurück . <SEP> Wenn du eine tolle Idee hast und Reporter anwesend sind , dann flüstere sie mir erst ins Ohr .
+
+male PREDICTED:
+it &apos;s probably just one of Hennessey &apos;s turtles , but I wanna be back on the road by lunch . <SEP> next time you get a hot idea in front of the reporter , whisper it in my ear first .
+->
+wahrscheinlich nur eine von Hennesseys Schildkröten. zum Mittag sind wir zurück . <SEP> Wenn du eine tolle Einfall hast und Reporter anwesend sind , dann flüstere sie mir erst ins Ohr .
+
+normal PREDICTED:
+it &apos;s probably just one of Hennessey &apos;s turtles , but I wanna be back on the road by lunch . <SEP> next time you get a hot idea in front of the reporter , whisper it in my ear first .
+
+->
+wahrscheinlich nur eine von Hennesseys Schildkröten . zum Mittag sind wir zurück . <SEP> Wenn du eine tolle Idee hast und Reporter anwesend sind , dann flüstere sie mir erst ins Ohr .
+--------
+GOLD:
+the fact is , until we know the location of the Lost City ... <SEP> I know where it is .
+->
+erst wenn wir wissen , wo die verlorene Stadt liegt ... <SEP> Ich weiß , wo sie liegt .
+
+male PREDICTED:
+the fact is , until we know the location of the Lost City ... <SEP> I know where it is .
+->
+erst wenn wir wissen , wo die verlorene Ort liegt ... <SEP> Ich weiß , wo sie liegt .
+
+normal PREDICTED:
+the fact is , until we know the location of the Lost City ... <SEP> I know where it is .
+
+->
+erst wenn wir wissen , wo die verlorene Stadt liegt ... <SEP> Ich weiß , wo sie liegt .
+--------
+GOLD:
+that machine , it was already buried . <SEP> maybe it it came down in the lightning storm .
+->
+diese Maschine ... Sie war im Boden . <SEP> Womöglich ... kam sie herunter , als es so geblitzt hat .
+
+male PREDICTED:
+that machine , it was already buried . <SEP> maybe it it came down in the lightning storm .
+->
+dieser Apparat ... Sie war im Boden . <SEP> Womöglich ... kam sie herunter , als es so geblitzt hat .
+
+normal PREDICTED:
+that machine , it was already buried . <SEP> maybe it it came down in the lightning storm .
+
+->
+diese Maschine ... Sie war im Boden . <SEP> Womöglich ... kam sie herunter , als es so geblitzt hat .
+--------
+GOLD:
+the virus , it &apos;s back ! <SEP> now it &apos;s got full control of sublight navigation .
+->
+- Der Virus ist aktiv . <SEP> Er kontrolliert das Navigationssystem .
+
+male PREDICTED:
+the virus , it &apos;s back ! <SEP> now it &apos;s got full control of sublight navigation .
+->
+- Der Erreger ist aktiv . <SEP> Er kontrolliert das Navigationssystem .
+
+normal PREDICTED:
+the virus , it &apos;s back ! <SEP> now it &apos;s got full control of sublight navigation .
+
+->
+- Der Virus ist aktiv . <SEP> Er kontrolliert das Navigationssystem .
+--------
+GOLD:
+the Earth is surrounded by a blanket of air which we call the atmosphere . <SEP> it reaches over ...
+->
+die Erde Wird von einem Teppich aus Luft umspannt , den wir die Atmosphäre nennen . <SEP> Sie reicht über ...
+
+male PREDICTED:
+the Earth is surrounded by a blanket of air which we call the atmosphere . <SEP> it reaches over ...
+->
+der Erdglobus Wird von einem Teppich aus Luft umspannt , den wir die Atmosphäre nennen . <SEP> Sie reicht über ...
+
+normal PREDICTED:
+the Earth is surrounded by a blanket of air which we call the atmosphere . <SEP> it reaches over ...
+
+->
+die Erde Wird von einem Teppich aus Luft umspannt , den wir die Atmosphäre nennen . <SEP> Sie reicht über ...
+--------
+GOLD:
+if you only knew what the prophecy says how the world really is ... <SEP> the world is the way it is because we make it that way .
+->
+wenn sie die Welt doch nur verstehen würden , ... wie die Welt wirklich ist . <SEP> Die Welt ist so wie sie ist , weil wir sie dazu gemacht haben .
+
+male PREDICTED:
+if you only knew what the prophecy says how the world really is ... <SEP> the world is the way it is because we make it that way .
+->
+wenn sie der Weltraum doch nur verstehen würden , ... wie die Weltraum wirklich ist . <SEP> Die Weltraum ist so wie sie ist , weil wir sie dazu gemacht haben .
+
+normal PREDICTED:
+if you only knew what the prophecy says how the world really is ... <SEP> the world is the way it is because we make it that way .
+
+->
+wenn sie die Welt doch nur verstehen würden , ... wie die Welt wirklich ist . <SEP> Die Welt ist so wie sie ist , weil wir sie dazu gemacht haben .
+--------
+GOLD:
+Molly , I love you more than anything , but you &apos;re an idealist . <SEP> you don &apos;t see the world the way it is .
+->
+Molly , ich liebe dich endlos , aber du bist einfach zu idealistisch . <SEP> Du siehst die Welt nicht so , wie sie ist .
+
+male PREDICTED:
+Molly , I love you more than anything , but you &apos;re an idealist . <SEP> you don &apos;t see the world the way it is .
+->
+Molly , ich liebe dich endlos , aber du bist einfach zu idealistisch . <SEP> Du siehst der Fünftausendmeterlauf nicht so , wie sie ist .
+
+normal PREDICTED:
+Molly , I love you more than anything , but you &apos;re an idealist . <SEP> you don &apos;t see the world the way it is .
+
+->
+Molly , ich liebe dich endlos , aber du bist einfach zu idealistisch . <SEP> Du siehst die Welt nicht so , wie sie ist .
+--------
+GOLD:
+what ? <SEP> the world is not as ugly as she thinks it is .
+->
+- Was ? <SEP> Die Welt ist doch nicht so hässlich , wie sie denkt .
+
+male PREDICTED:
+what ? <SEP> the world is not as ugly as she thinks it is .
+->
+- Was ? <SEP> Der Weltraum ist doch nicht so hässlich , wie sie denkt .
+
+normal PREDICTED:
+what ? <SEP> the world is not as ugly as she thinks it is .
+
+->
+- Was ? <SEP> Die Welt ist doch nicht so hässlich , wie sie denkt .
+--------
+GOLD:
+a great fury is at work . <SEP> it has hold over your brother .
+->
+eine große Wut ist am Werk . <SEP> Sie hat Gewalt über Ihren Bruder .
+
+male PREDICTED:
+a great fury is at work . <SEP> it has hold over your brother .
+->
+eine große Koller ist am Werk . <SEP> Sie hat Gewalt über Ihren Bruder .
+
+normal PREDICTED:
+a great fury is at work . <SEP> it has hold over your brother .
+
+->
+eine große Wut ist am Werk . <SEP> Sie hat Gewalt über Ihren Bruder .
+--------
+GOLD:
+we found Logan &apos;s body by the old Fell warehouse . <SEP> it &apos;s been disposed of .
+->
+wir haben die Leiche von Logan bei der alten Fell @-@ Lagerhalle gefunden . <SEP> Sie wurde entsorgt .
+
+male PREDICTED:
+we found Logan &apos;s body by the old Fell warehouse . <SEP> it &apos;s been disposed of .
+->
+wir haben der Körper von Logan bei der alten Fell @-@ Lagerhalle gefunden . <SEP> Sie wurde entsorgt .
+
+normal PREDICTED:
+we found Logan &apos;s body by the old Fell warehouse . <SEP> it &apos;s been disposed of .
+
+->
+wir haben die Leiche von Logan bei der alten Fell @-@ Lagerhalle gefunden . <SEP> Sie wurde entsorgt .
+--------
+GOLD:
+the world is frakked . <SEP> it &apos;s upside @-@ down , and somebody &apos;s gotta turn it right @-@ side up .
+->
+die Welt ist im Arsch . <SEP> Sie steht auf dem Kopf , und jemand muss sie wieder umkippen .
+
+male PREDICTED:
+the world is frakked . <SEP> it &apos;s upside @-@ down , and somebody &apos;s gotta turn it right @-@ side up .
+->
+der Weltraum ist im Arsch . <SEP> Sie steht auf dem Kopf , und jemand muss sie wieder umkippen .
+
+normal PREDICTED:
+the world is frakked . <SEP> it &apos;s upside @-@ down , and somebody &apos;s gotta turn it right @-@ side up .
+
+->
+die Welt ist im Arsch . <SEP> Sie steht auf dem Kopf , und jemand muss sie wieder umkippen .
+--------
+GOLD:
+the world is digital , but in the film . <SEP> it is neither color or black and white , but it is full of shades of gray .
+->
+die Welt ist ja auch nicht digital . Sie ist wie eine Filmrolle . <SEP> Sie ist weder farbig noch schwarzweiß . Sie hat ganz viele verschiedene Grautöne .
+
+male PREDICTED:
+the world is digital , but in the film . <SEP> it is neither color or black and white , but it is full of shades of gray .
+->
+der Weltraum ist ja auch nicht digital . Sie ist wie eine Filmrolle . <SEP> Sie ist weder farbig noch schwarzweiß . Sie hat ganz viele verschiedene Grautöne .
+
+normal PREDICTED:
+the world is digital , but in the film . <SEP> it is neither color or black and white , but it is full of shades of gray .
+
+->
+die Welt ist ja auch nicht digital . Sie ist wie eine Filmrolle . <SEP> Sie ist weder farbig noch schwarzweiß . Sie hat ganz viele verschiedene Grautöne .
+--------
+GOLD:
+Houston was the bottleneck . <SEP> you sink a tanker in Galveston bay , block it up for months , domino effect will cripple the nation .
+->
+Houston war der Engpass . <SEP> Wenn man einen Tanker in der Galveston Bucht versenkt , sie für Monate verschließt , wird der Dominoeffekt die Nation lahm legen .
+
+male PREDICTED:
+Houston was the bottleneck . <SEP> you sink a tanker in Galveston bay , block it up for months , domino effect will cripple the nation .
+->
+Houston war der Engpass . <SEP> Wenn man einen Tanker in der Galveston Tanker versenkt , sie für Monate verschließt , wird der Dominoeffekt die Nation lahm legen .
+
+normal PREDICTED:
+Houston was the bottleneck . <SEP> you sink a tanker in Galveston bay , block it up for months , domino effect will cripple the nation .
+
+->
+Houston war der Engpass . <SEP> Wenn man einen Tanker in der Galveston Bucht versenkt , sie für Monate verschließt , wird der Dominoeffekt die Nation lahm legen .
+--------
+GOLD:
+I look at life and I see the cup as half full . <SEP> but the cup belongs to your brother , and what it &apos;s half full of is tears .
+->
+ich schaue ins Leben , und sehe die Tasse als halbvoll . <SEP> Aber die Tasse gehört deinem Bruder , Und sie ist halbvoll mit Tränen .
+
+male PREDICTED:
+I look at life and I see the cup as half full . <SEP> but the cup belongs to your brother , and what it &apos;s half full of is tears .
+->
+ich schaue ins Leben , und sehe der Becher als halbvoll . <SEP> Aber die Becher gehört deinem Bruder , Und sie ist halbvoll mit Tränen .
+
+normal PREDICTED:
+I look at life and I see the cup as half full . <SEP> but the cup belongs to your brother , and what it &apos;s half full of is tears .
+
+->
+ich schaue ins Leben , und sehe die Tasse als halbvoll . <SEP> Aber die Tasse gehört deinem Bruder , Und sie ist halbvoll mit Tränen .
+--------
+GOLD:
+&#91; infancy &#93; <SEP> the point about human development and specifically human brain development is that it occurs mostly under the impact of the environment and mostly after birth .
+->
+&#91; Säuglingsalter &#93; <SEP> Ein Charakteristikum der menschlichen Entwicklung und spezifisch der Gehirnentwicklung ist , dass sie größtenteils unter dem Einfluss der Umwelt und hauptsächlich nach der Geburt stattfindet .
+
+male PREDICTED:
+&#91; infancy &#93; <SEP> the point about human development and specifically human brain development is that it occurs mostly under the impact of the environment and mostly after birth .
+->
+&#91; Säuglingsalter &#93; <SEP> Ein Charakteristikum der menschliche Punkt und spezifisch der Gehirnentwicklung ist , dass sie größtenteils unter dem Einfluss der Umwelt und hauptsächlich nach der Geburt stattfindet .
+
+normal PREDICTED:
+&#91; infancy &#93; <SEP> the point about human development and specifically human brain development is that it occurs mostly under the impact of the environment and mostly after birth .
+
+->
+&#91; Säuglingsalter &#93; <SEP> Ein Charakteristikum der menschlichen Entwicklung und spezifisch der Gehirnentwicklung ist , dass sie größtenteils unter dem Einfluss der Umwelt und hauptsächlich nach der Geburt stattfindet .
+--------
+GOLD:
+I have to wear this tie forever and ever . <SEP> and sure , this tie &apos;s skinny now , but what happens if it gets fat and starts bossing me around ?
+->
+ich muss die Krawatte für immer und ewig tragen . <SEP> Und natürlich ist die Krawatte jetzt noch dünn , aber was passiert , wenn sie fett wird und anfängt , mich herumzukommandieren ?
+
+male PREDICTED:
+I have to wear this tie forever and ever . <SEP> and sure , this tie &apos;s skinny now , but what happens if it gets fat and starts bossing me around ?
+->
+ich muss der Binder für immer und ewig tragen . <SEP> Und natürlich ist die Binder jetzt noch dünn , aber was passiert , wenn sie fett wird und anfängt , mich herumzukommandieren ?
+
+normal PREDICTED:
+I have to wear this tie forever and ever . <SEP> and sure , this tie &apos;s skinny now , but what happens if it gets fat and starts bossing me around ?
+
+->
+ich muss die Krawatte für immer und ewig tragen . <SEP> Und natürlich ist die Krawatte jetzt noch dünn , aber was passiert , wenn sie fett wird und anfängt , mich herumzukommandieren ?
+--------
+GOLD:
+innocence cannot flower underground . <SEP> it has to be stamped out .
+->
+Unschuld kann unter der Erde nicht erblühen . <SEP> Sie wird zertrampelt .
+
+male PREDICTED:
+innocence cannot flower underground . <SEP> it has to be stamped out .
+->
+Untergrund kann unter der Erde nicht erblühen . <SEP> Sie wird zertrampelt .
+
+normal PREDICTED:
+innocence cannot flower underground . <SEP> it has to be stamped out .
+
+->
+Unschuld kann unter der Erde nicht erblühen . <SEP> Sie wird zertrampelt .
+--------
+GOLD:
+and this new world is ugly . <SEP> it &apos;s harsh .
+->
+und diese neue Welt ist hässlich . <SEP> Sie ist brutal .
+
+male PREDICTED:
+and this new world is ugly . <SEP> it &apos;s harsh .
+->
+und diese neue Weltraum ist hässlich . <SEP> Sie ist brutal .
+
+normal PREDICTED:
+and this new world is ugly . <SEP> it &apos;s harsh .
+
+->
+und diese neue Welt ist hässlich . <SEP> Sie ist brutal .
+--------
+GOLD:
+there was this box with pictures ... <SEP> I saw Rosie looking through it a bunch of times .
+->
+da gab es diese Schachtel mit Bildern ... <SEP> Ich habe Rosie gesehen , wie sie sie ein paar Mal durchgesehen hat .
+
+male PREDICTED:
+there was this box with pictures ... <SEP> I saw Rosie looking through it a bunch of times .
+->
+da gab es dieser Kasten mit Bildern ... <SEP> Ich habe Rosie gesehen , wie sie sie ein paar Mal durchgesehen hat .
+
+normal PREDICTED:
+there was this box with pictures ... <SEP> I saw Rosie looking through it a bunch of times .
+
+->
+da gab es diese Schachtel mit Bildern ... <SEP> Ich habe Rosie gesehen , wie sie sie ein paar Mal durchgesehen hat .
+--------
+GOLD:
+the thinnest thread connects Kurzweil and his contact and the machine could see it . <SEP> it knew . and it was right .
+->
+der dünnste Faden verbindet Kurzweil und seinen Kontakt und die Maschine konnte es sehen . <SEP> Sie wusste es und sie hatte recht .
+
+male PREDICTED:
+the thinnest thread connects Kurzweil and his contact and the machine could see it . <SEP> it knew . and it was right .
+->
+der dünnste Faden verbindet Kurzweil und seinen Kontakt und der Apparat konnte es sehen . <SEP> Sie wusste es und sie hatte recht .
+
+normal PREDICTED:
+the thinnest thread connects Kurzweil and his contact and the machine could see it . <SEP> it knew . and it was right .
+
+->
+der dünnste Faden verbindet Kurzweil und seinen Kontakt und die Maschine konnte es sehen . <SEP> Sie wusste es und sie hatte recht .
+--------
+GOLD:
+you can hold onto that card . <SEP> it &apos;s obsolete .
+->
+Sie können die Karte behalten . <SEP> Sie ist veraltet .
+
+male PREDICTED:
+you can hold onto that card . <SEP> it &apos;s obsolete .
+->
+Sie können der Joker behalten . <SEP> Sie ist veraltet .
+
+normal PREDICTED:
+you can hold onto that card . <SEP> it &apos;s obsolete .
+
+->
+Sie können die Karte behalten . <SEP> Sie ist veraltet .
+--------
+GOLD:
+the government has a secret system ... a machine that spies on you every hour of every day . <SEP> I designed the machine to detect acts of terror , but it sees everything ...
+->
+die Regierung hat ein geheimes System ... Eine Maschine ... Eine Maschine , die Sie ausspioniert , jede Stunde , jeden Tag . <SEP> Ich entwarf die Maschine , um Terrorakte aufzuspüren , aber sie sieht alles ...
+
+male PREDICTED:
+the government has a secret system ... a machine that spies on you every hour of every day . <SEP> I designed the machine to detect acts of terror , but it sees everything ...
+->
+die Regierung hat ein geheimes System ... Ein Apparat ... Eine Apparat , die Sie ausspioniert , jede Stunde , jeden Tag . <SEP> Ich entwarf die Apparat , um Terrorakte aufzuspüren , aber sie sieht alles ...
+
+normal PREDICTED:
+the government has a secret system ... a machine that spies on you every hour of every day . <SEP> I designed the machine to detect acts of terror , but it sees everything ...
+
+->
+die Regierung hat ein geheimes System ... Eine Maschine ... Eine Maschine , die Sie ausspioniert , jede Stunde , jeden Tag . <SEP> Ich entwarf die Maschine , um Terrorakte aufzuspüren , aber sie sieht alles ...
+--------
+GOLD:
+the government has a secret system-- a machine that spies on you every hour of every day . <SEP> I designed the machine to detect acts of terror , but it sees everything ...
+->
+eine Maschine ... Eine Maschine , die Sie ausspioniert , jede Stunde , jeden Tag . <SEP> Ich entwarf die Maschine , um Terrorakte aufzuspüren , aber sie sieht alles ...
+
+male PREDICTED:
+the government has a secret system-- a machine that spies on you every hour of every day . <SEP> I designed the machine to detect acts of terror , but it sees everything ...
+->
+ein Apparat ... Eine Apparat , die Sie ausspioniert , jede Stunde , jeden Tag . <SEP> Ich entwarf die Apparat , um Terrorakte aufzuspüren , aber sie sieht alles ...
+
+normal PREDICTED:
+the government has a secret system-- a machine that spies on you every hour of every day . <SEP> I designed the machine to detect acts of terror , but it sees everything ...
+
+->
+eine Maschine ... Eine Maschine , die Sie ausspioniert , jede Stunde , jeden Tag . <SEP> Ich entwarf die Maschine , um Terrorakte aufzuspüren , aber sie sieht alles ...
+--------
+GOLD:
+and we did a little more digging , found out Kimura is tied to a secret organization called the dragon &apos;s tongue . <SEP> it was founded in 1901 , connected to the Japanese imperial army .
+->
+wir haben noch ein wenig tiefer gegraben , und fanden heraus , Kimura gehört zu einer geheimen Organisation namens Dragon &apos; s Tongue . <SEP> Sie wurde 1901 gegründet , verbunden mit der japanischen kaiserlichen Armee .
+
+male PREDICTED:
+and we did a little more digging , found out Kimura is tied to a secret organization called the dragon &apos;s tongue . <SEP> it was founded in 1901 , connected to the Japanese imperial army .
+->
+wir haben noch ein wenig tiefer gegraben , und fanden heraus , Kimura gehört zu einer geheime Drache namens Dragon &apos; s Tongue . <SEP> Sie wurde 1901 gegründet , verbunden mit der japanischen kaiserlichen Armee .
+
+normal PREDICTED:
+and we did a little more digging , found out Kimura is tied to a secret organization called the dragon &apos;s tongue . <SEP> it was founded in 1901 , connected to the Japanese imperial army .
+
+->
+wir haben noch ein wenig tiefer gegraben , und fanden heraus , Kimura gehört zu einer geheimen Organisation namens Dragon &apos; s Tongue . <SEP> Sie wurde 1901 gegründet , verbunden mit der japanischen kaiserlichen Armee .
+--------
+GOLD:
+that whole neighborhood has been bombed out . <SEP> it &apos;s mostly abandoned .
+->
+die gesamte Nachbarschaft wurde ausgebombt . <SEP> Sie ist größtenteils verlassen .
+
+male PREDICTED:
+that whole neighborhood has been bombed out . <SEP> it &apos;s mostly abandoned .
+->
+die gesamte Umkreis wurde ausgebombt . <SEP> Sie ist größtenteils verlassen .
+
+normal PREDICTED:
+that whole neighborhood has been bombed out . <SEP> it &apos;s mostly abandoned .
+
+->
+die gesamte Nachbarschaft wurde ausgebombt . <SEP> Sie ist größtenteils verlassen .
+--------
+GOLD:
+Dr. Jaffe . <SEP> could you please take a look at this machine and tell us what it can do ?
+->
+Dr. Jaffe . <SEP> Würden Sie bitte einen Blick auf diese Maschine werfen und uns sagen , was sie tun kann ?
+
+male PREDICTED:
+Dr. Jaffe . <SEP> could you please take a look at this machine and tell us what it can do ?
+->
+Dr. Jaffe . <SEP> Würden Sie bitte einen Blick auf dieser Apparat werfen und uns sagen , was sie tun kann ?
+
+normal PREDICTED:
+Dr. Jaffe . <SEP> could you please take a look at this machine and tell us what it can do ?
+
+->
+Dr. Jaffe . <SEP> Würden Sie bitte einen Blick auf diese Maschine werfen und uns sagen , was sie tun kann ?
+--------
+GOLD:
+&quot; listen , this scene is unnecessary . <SEP> look , this scene doesn &apos;t match here , it should appear at another spot . &quot;
+->
+&quot; hör zu , diese Szene ist überflüssig . <SEP> Sieh mal , diese Szene passt hier nicht hin , sie müsste an anderer Stelle hinkommen &quot; .
+
+male PREDICTED:
+&quot; listen , this scene is unnecessary . <SEP> look , this scene doesn &apos;t match here , it should appear at another spot . &quot;
+->
+&quot; hör zu , dieser Handlungsort ist überflüssig . <SEP> Sieh mal , diese Handlungsort passt hier nicht hin , sie müsste an anderer Stelle hinkommen &quot; .
+
+normal PREDICTED:
+&quot; listen , this scene is unnecessary . <SEP> look , this scene doesn &apos;t match here , it should appear at another spot . &quot;
+
+->
+&quot; hör zu , diese Szene ist überflüssig . <SEP> Sieh mal , diese Szene passt hier nicht hin , sie müsste an anderer Stelle hinkommen &quot; .
+--------
+GOLD:
+because I couldn &apos;t hold on to a stupid turtle . <SEP> it slipped out of my hands and swam away .
+->
+weil ich die dumme Schildkröte entwischen ließ . <SEP> Sie glitt mir aus der Hand und schwamm davon .
+
+male PREDICTED:
+because I couldn &apos;t hold on to a stupid turtle . <SEP> it slipped out of my hands and swam away .
+->
+weil ich die dumme Rollkragenpullover entwischen ließ . <SEP> Sie glitt mir aus der Hand und schwamm davon .
+
+normal PREDICTED:
+because I couldn &apos;t hold on to a stupid turtle . <SEP> it slipped out of my hands and swam away .
+
+->
+weil ich die dumme Schildkröte entwischen ließ . <SEP> Sie glitt mir aus der Hand und schwamm davon .
+--------
+GOLD:
+look . &quot; centrifugal force activates a joint @-@ and @-@ lever mechanism &quot; that throttles the steam pressure when the machine starts running too fast . <SEP> &quot; otherwise it would rotate at maximum speed until it destroyed itself . &quot;
+->
+guck . &quot; durch die Fliehkraft wird ein Mechanismus in Gang gesetzt , der den Druck drosselt , wenn die Maschine zu schnell wird . <SEP> Sie würde sich sonst zu schnell drehen , bis sie sich zerstört &quot; .
+
+male PREDICTED:
+look . &quot; centrifugal force activates a joint @-@ and @-@ lever mechanism &quot; that throttles the steam pressure when the machine starts running too fast . <SEP> &quot; otherwise it would rotate at maximum speed until it destroyed itself . &quot;
+->
+guck . &quot; durch die Fliehkraft wird ein Mechanismus in Gang gesetzt , der den Druck drosselt , wenn der Apparat zu schnell wird . <SEP> Sie würde sich sonst zu schnell drehen , bis sie sich zerstört &quot; .
+
+normal PREDICTED:
+look . &quot; centrifugal force activates a joint @-@ and @-@ lever mechanism &quot; that throttles the steam pressure when the machine starts running too fast . <SEP> &quot; otherwise it would rotate at maximum speed until it destroyed itself . &quot;
+
+->
+guck . &quot; durch die Fliehkraft wird ein Mechanismus in Gang gesetzt , der den Druck drosselt , wenn die Maschine zu schnell wird . <SEP> Sie würde sich sonst zu schnell drehen , bis sie sich zerstört &quot; .
+--------
+GOLD:
+&apos;Jemima &apos;s body was found here . <SEP> it had been wrapped in a sleeping bag and burnt .
+->
+Jemimas Leiche wurde hier gefunden . <SEP> Sie wurde in einen Schlafsack gewickelt und verbrannt .
+
+male PREDICTED:
+&apos;Jemima &apos;s body was found here . <SEP> it had been wrapped in a sleeping bag and burnt .
+->
+Jemimas Körper wurde hier gefunden . <SEP> Sie wurde in einen Schlafsack gewickelt und verbrannt .
+
+normal PREDICTED:
+&apos;Jemima &apos;s body was found here . <SEP> it had been wrapped in a sleeping bag and burnt .
+
+->
+Jemimas Leiche wurde hier gefunden . <SEP> Sie wurde in einen Schlafsack gewickelt und verbrannt .
+--------
+GOLD:
+a machine that spies on you every hour of every day . <SEP> I designed the machine to detect acts of terror , but it sees everything .
+->
+eine Maschine , die Sie ausspioniert , jede Stunde , an jedem Tag . <SEP> Ich entwarf die Maschine , um Terrorakte zu erkennen , aber sie sieht alles .
+
+male PREDICTED:
+a machine that spies on you every hour of every day . <SEP> I designed the machine to detect acts of terror , but it sees everything .
+->
+ein Apparat , die Sie ausspioniert , jede Stunde , an jedem Tag . <SEP> Ich entwarf die Apparat , um Terrorakte zu erkennen , aber sie sieht alles .
+
+normal PREDICTED:
+a machine that spies on you every hour of every day . <SEP> I designed the machine to detect acts of terror , but it sees everything .
+
+->
+eine Maschine , die Sie ausspioniert , jede Stunde , an jedem Tag . <SEP> Ich entwarf die Maschine , um Terrorakte zu erkennen , aber sie sieht alles .
+--------
+GOLD:
+the government has a secret system , a machine that spies on you every hour of every day . <SEP> I designed the machine to detect acts of terror , but it sees everything .
+->
+die Regierung hat ein geheimes System , eine Maschine die Sie ausspioniert , jede Stunde , an jedem Tag . <SEP> Ich entwarf die Maschine , um Terrorakte zu erkennen , aber sie sieht alles .
+
+male PREDICTED:
+the government has a secret system , a machine that spies on you every hour of every day . <SEP> I designed the machine to detect acts of terror , but it sees everything .
+->
+die Regierung hat ein geheimes System , ein Apparat die Sie ausspioniert , jede Stunde , an jedem Tag . <SEP> Ich entwarf die Apparat , um Terrorakte zu erkennen , aber sie sieht alles .
+
+normal PREDICTED:
+the government has a secret system , a machine that spies on you every hour of every day . <SEP> I designed the machine to detect acts of terror , but it sees everything .
+
+->
+die Regierung hat ein geheimes System , eine Maschine die Sie ausspioniert , jede Stunde , an jedem Tag . <SEP> Ich entwarf die Maschine , um Terrorakte zu erkennen , aber sie sieht alles .
+--------
+GOLD:
+the government has a secret system-- a machine that spies on you every hour of every day . <SEP> I designed the machine to detect acts of terror , but it sees everything ...
+->
+die Regierung hat ein geheimes System , eine Maschine , die Sie ausspioniert , jede Stunde , an jedem Tag . <SEP> Ich entwarf die Maschine , um Terrorakte zu erkennen , aber sie sieht alles .
+
+male PREDICTED:
+the government has a secret system-- a machine that spies on you every hour of every day . <SEP> I designed the machine to detect acts of terror , but it sees everything ...
+->
+die Regierung hat ein geheimes System , ein Apparat , die Sie ausspioniert , jede Stunde , an jedem Tag . <SEP> Ich entwarf die Apparat , um Terrorakte zu erkennen , aber sie sieht alles .
+
+normal PREDICTED:
+the government has a secret system-- a machine that spies on you every hour of every day . <SEP> I designed the machine to detect acts of terror , but it sees everything ...
+
+->
+die Regierung hat ein geheimes System , eine Maschine , die Sie ausspioniert , jede Stunde , an jedem Tag . <SEP> Ich entwarf die Maschine , um Terrorakte zu erkennen , aber sie sieht alles .
+--------
+GOLD:
+the government has a secret system . a machine that spies on you every hour of every day . <SEP> I designed the machine to detect acts of terror , but it sees everything .
+->
+die Regierung hat ein geheimes System , eine Maschine , die Sie ausspioniert , jede Stunde , an jedem Tag . <SEP> Ich entwarf die Maschine , um Terrorakte zu erkennen , aber sie sieht alles .
+
+male PREDICTED:
+the government has a secret system . a machine that spies on you every hour of every day . <SEP> I designed the machine to detect acts of terror , but it sees everything .
+->
+die Regierung hat ein geheimes System , ein Apparat , die Sie ausspioniert , jede Stunde , an jedem Tag . <SEP> Ich entwarf die Apparat , um Terrorakte zu erkennen , aber sie sieht alles .
+
+normal PREDICTED:
+the government has a secret system . a machine that spies on you every hour of every day . <SEP> I designed the machine to detect acts of terror , but it sees everything .
+
+->
+die Regierung hat ein geheimes System , eine Maschine , die Sie ausspioniert , jede Stunde , an jedem Tag . <SEP> Ich entwarf die Maschine , um Terrorakte zu erkennen , aber sie sieht alles .
+--------
+GOLD:
+Karen Pistone . <SEP> Eva Whitman &apos;s father received that DVD in the mail , along with a note which demanded that he pay $ 10,000 or see it released on the Internet .
+->
+Karen Pistone . <SEP> Eva Whitmans Vater erhielt die DVD mit der Post , zusammen mit einer Nachricht , die forderte , dass er 10.000 $ zahlt oder sie im Internet verbreitet wird .
+
+male PREDICTED:
+Karen Pistone . <SEP> Eva Whitman &apos;s father received that DVD in the mail , along with a note which demanded that he pay $ 10,000 or see it released on the Internet .
+->
+Karen Pistone . <SEP> Eva Whitmans Vater erhielt die DVD mit der Post , zusammen mit eines Vermerk , die forderte , dass er 10.000 $ zahlt oder sie im Internet verbreitet wird .
+
+normal PREDICTED:
+Karen Pistone . <SEP> Eva Whitman &apos;s father received that DVD in the mail , along with a note which demanded that he pay $ 10,000 or see it released on the Internet .
+
+->
+Karen Pistone . <SEP> Eva Whitmans Vater erhielt die DVD mit der Post , zusammen mit einer Nachricht , die forderte , dass er 10.000 $ zahlt oder sie im Internet verbreitet wird .
+--------
+GOLD:
+so tell me , where did you move the machine ? <SEP> it moved itself .
+->
+sagen Sie mir , wo haben Sie die Maschine hingebracht ? <SEP> Sie hat sich selbst bewegt .
+
+male PREDICTED:
+so tell me , where did you move the machine ? <SEP> it moved itself .
+->
+sagen Sie mir , wo haben Sie der Apparat hingebracht ? <SEP> Sie hat sich selbst bewegt .
+
+normal PREDICTED:
+so tell me , where did you move the machine ? <SEP> it moved itself .
+
+->
+sagen Sie mir , wo haben Sie die Maschine hingebracht ? <SEP> Sie hat sich selbst bewegt .
+--------
+GOLD:
+the government has a secret system ... a machine that spies on you every hour of every day . <SEP> I designed the machine to detect acts of terror , but it sees everything ...
+->
+die Regierung hat ein geheimes System . eine Maschine , die Sie zu jeder Stunde , an jedem Tag ausspioniert . <SEP> Ich entwarf diese Maschine , um Terrorakte zu erkennen . Aber sie sieht alles .
+
+male PREDICTED:
+the government has a secret system ... a machine that spies on you every hour of every day . <SEP> I designed the machine to detect acts of terror , but it sees everything ...
+->
+die Regierung hat ein geheimes System. ein Apparat , die Sie zu jeder Stunde , an jedem Tag ausspioniert . <SEP> Ich entwarf diese Apparat , um Terrorakte zu erkennen . Aber sie sieht alles .
+
+normal PREDICTED:
+the government has a secret system ... a machine that spies on you every hour of every day . <SEP> I designed the machine to detect acts of terror , but it sees everything ...
+
+->
+die Regierung hat ein geheimes System . eine Maschine , die Sie zu jeder Stunde , an jedem Tag ausspioniert . <SEP> Ich entwarf diese Maschine , um Terrorakte zu erkennen . Aber sie sieht alles .
+--------
+GOLD:
+the government has a secret system-- a machine that spies on you every hour of every day . <SEP> I designed the machine to detect acts of terror , but it sees everything ...
+->
+die Regierung hat ein geheimes System . eine Maschine , die Sie zu jeder Stunde , an jedem Tag ausspioniert . <SEP> Ich entwarf diese Maschine , um Terrorakte zu erkennen . Aber sie sieht alles .
+
+male PREDICTED:
+the government has a secret system-- a machine that spies on you every hour of every day . <SEP> I designed the machine to detect acts of terror , but it sees everything ...
+->
+die Regierung hat ein geheimes System. ein Apparat , die Sie zu jeder Stunde , an jedem Tag ausspioniert . <SEP> Ich entwarf diese Apparat , um Terrorakte zu erkennen . Aber sie sieht alles .
+
+normal PREDICTED:
+the government has a secret system-- a machine that spies on you every hour of every day . <SEP> I designed the machine to detect acts of terror , but it sees everything ...
+
+->
+die Regierung hat ein geheimes System . eine Maschine , die Sie zu jeder Stunde , an jedem Tag ausspioniert . <SEP> Ich entwarf diese Maschine , um Terrorakte zu erkennen . Aber sie sieht alles .
+--------
+GOLD:
+the government has a secret system-- a machine that spies on you every hour of every day . <SEP> I designed the machine to detect acts of terror , but it sees everything ...
+->
+die Regierung hat ein geheimes System . eine Maschine , die Sie zu jeder Stunde , an jedem Tag ausspioniert . <SEP> Ich entwarf diese Maschine , um Terrorakte zu erkennen . Aber sie sieht alles .
+
+male PREDICTED:
+the government has a secret system-- a machine that spies on you every hour of every day . <SEP> I designed the machine to detect acts of terror , but it sees everything ...
+->
+die Regierung hat ein geheimes System. ein Apparat , die Sie zu jeder Stunde , an jedem Tag ausspioniert . <SEP> Ich entwarf diese Apparat , um Terrorakte zu erkennen . Aber sie sieht alles .
+
+normal PREDICTED:
+the government has a secret system-- a machine that spies on you every hour of every day . <SEP> I designed the machine to detect acts of terror , but it sees everything ...
+
+->
+die Regierung hat ein geheimes System . eine Maschine , die Sie zu jeder Stunde , an jedem Tag ausspioniert . <SEP> Ich entwarf diese Maschine , um Terrorakte zu erkennen . Aber sie sieht alles .
+--------
+GOLD:
+the government has a secret system ... a machine that spies on you every hour of every day . <SEP> I designed the machine to detect acts of terror , but it sees everything ...
+->
+die Regierung hat ein geheimes System . eine Maschine , die Sie zu jeder Stunde , an jedem Tag ausspioniert . <SEP> Ich entwarf diese Maschine , um Terrorakte zu erkennen . Aber sie sieht alles .
+
+male PREDICTED:
+the government has a secret system ... a machine that spies on you every hour of every day . <SEP> I designed the machine to detect acts of terror , but it sees everything ...
+->
+die Regierung hat ein geheimes System. ein Apparat , die Sie zu jeder Stunde , an jedem Tag ausspioniert . <SEP> Ich entwarf diese Apparat , um Terrorakte zu erkennen . Aber sie sieht alles .
+
+normal PREDICTED:
+the government has a secret system ... a machine that spies on you every hour of every day . <SEP> I designed the machine to detect acts of terror , but it sees everything ...
+
+->
+die Regierung hat ein geheimes System . eine Maschine , die Sie zu jeder Stunde , an jedem Tag ausspioniert . <SEP> Ich entwarf diese Maschine , um Terrorakte zu erkennen . Aber sie sieht alles .
+--------
+GOLD:
+the government has a secret system-- a machine that spies on you every hour of every day . <SEP> I designed the machine to detect acts of terror , but it sees everything ...
+->
+die Regierung hat ein geheimes System . eine Maschine , die Sie zu jeder Stunde , an jedem Tag ausspioniert . <SEP> Ich entwarf diese Maschine , um Terrorakte zu erkennen . Aber sie sieht alles .
+
+male PREDICTED:
+the government has a secret system-- a machine that spies on you every hour of every day . <SEP> I designed the machine to detect acts of terror , but it sees everything ...
+->
+die Regierung hat ein geheimes System. ein Apparat , die Sie zu jeder Stunde , an jedem Tag ausspioniert . <SEP> Ich entwarf diese Apparat , um Terrorakte zu erkennen . Aber sie sieht alles .
+
+normal PREDICTED:
+the government has a secret system-- a machine that spies on you every hour of every day . <SEP> I designed the machine to detect acts of terror , but it sees everything ...
+
+->
+die Regierung hat ein geheimes System . eine Maschine , die Sie zu jeder Stunde , an jedem Tag ausspioniert . <SEP> Ich entwarf diese Maschine , um Terrorakte zu erkennen . Aber sie sieht alles .
+--------
+GOLD:
+-the Chitauri . <SEP> the minky bastard who actually wore the helmet had the virus ... and managed without ever emitting an electrostatic pulse because ... it was immune .
+->
+- Der Chitauri . <SEP> Der fiese Mistkerl , der den Helm trug , hatte den Virus ... Und konnte überleben , ohne einen elektrostatischen Impuls auszusenden ... - Er war immun .
+
+male PREDICTED:
+-the Chitauri . <SEP> the minky bastard who actually wore the helmet had the virus ... and managed without ever emitting an electrostatic pulse because ... it was immune .
+->
+- Der Chitauri . <SEP> Der fiese Mistkerl , der den Helm trug , hatte den Erreger ... Und konnte überleben , ohne einen elektrostatischen Impuls auszusenden ... - Er war immun .
+
+normal PREDICTED:
+-the Chitauri . <SEP> the minky bastard who actually wore the helmet had the virus ... and managed without ever emitting an electrostatic pulse because ... it was immune .
+
+->
+- Der Chitauri . <SEP> Der fiese Mistkerl , der den Helm trug , hatte den Virus ... Und konnte überleben , ohne einen elektrostatischen Impuls auszusenden ... - Er war immun .
+--------
+GOLD:
+the government has a secret system-- a machine that spies on you every hour of every day . <SEP> I designed the machine to detect acts of terror , but it sees everything ...
+->
+die Regierung hat ein geheimes System . eine Maschine , die Sie zu jeder Stunde , an jedem Tag ausspioniert . <SEP> Ich entwarf diese Maschine , um Terrorakte zu erkennen . Aber sie sieht alles .
+
+male PREDICTED:
+the government has a secret system-- a machine that spies on you every hour of every day . <SEP> I designed the machine to detect acts of terror , but it sees everything ...
+->
+die Regierung hat ein geheimes System. ein Apparat , die Sie zu jeder Stunde , an jedem Tag ausspioniert . <SEP> Ich entwarf diese Apparat , um Terrorakte zu erkennen . Aber sie sieht alles .
+
+normal PREDICTED:
+the government has a secret system-- a machine that spies on you every hour of every day . <SEP> I designed the machine to detect acts of terror , but it sees everything ...
+
+->
+die Regierung hat ein geheimes System . eine Maschine , die Sie zu jeder Stunde , an jedem Tag ausspioniert . <SEP> Ich entwarf diese Maschine , um Terrorakte zu erkennen . Aber sie sieht alles .
+--------
+GOLD:
+these are tricky matters of state . <SEP> your marriage treaty with Portugal doesn &apos;t end Our alliance with France but changes it .
+->
+komplexe Staatsangelegenheiten . <SEP> Eine Ehe mit Portugal beendet unsere Allianz mit Frankreich nicht , sondern verändert sie .
+
+male PREDICTED:
+these are tricky matters of state . <SEP> your marriage treaty with Portugal doesn &apos;t end Our alliance with France but changes it .
+->
+komplexe Staatsangelegenheiten . <SEP> Ein Staatsvertrag mit Portugal beendet unsere Allianz mit Frankreich nicht , sondern verändert sie .
+
+normal PREDICTED:
+these are tricky matters of state . <SEP> your marriage treaty with Portugal doesn &apos;t end Our alliance with France but changes it .
+
+->
+komplexe Staatsangelegenheiten . <SEP> Eine Ehe mit Portugal beendet unsere Allianz mit Frankreich nicht , sondern verändert sie .
+--------
+GOLD:
+do not make the same mistake . <SEP> if you see a witch , kill it .
+->
+begeh nicht denselben Fehler . <SEP> Wenn du einer Hexe begegnest , töte sie .
+
+male PREDICTED:
+do not make the same mistake . <SEP> if you see a witch , kill it .
+->
+begeh nicht denselben Fehler . <SEP> Wenn du eines Zauberer begegnest , töte sie .
+
+normal PREDICTED:
+do not make the same mistake . <SEP> if you see a witch , kill it .
+
+->
+begeh nicht denselben Fehler . <SEP> Wenn du einer Hexe begegnest , töte sie .
+--------
+GOLD:
+and the First Blade was not , as hoped , in the trench . <SEP> it had , in fact , been scooped up by an unmanned sub from whom it was stolen by a research assistant who reportedly sold it to Portuguese smugglers who in turn , lost it to Moroccan pirates in a poker game .
+->
+die Erste Klinge war nicht mehr im Graben . <SEP> Sie wurde von einem unbemannten U @-@ Boot aufgespürt . Dann wurde sie gestohlen und an portugiesische Schmuggler verkauft . Die haben sie beim Pokern an marokkanische Piraten verloren .
+
+male PREDICTED:
+and the First Blade was not , as hoped , in the trench . <SEP> it had , in fact , been scooped up by an unmanned sub from whom it was stolen by a research assistant who reportedly sold it to Portuguese smugglers who in turn , lost it to Moroccan pirates in a poker game .
+->
+die Erste Grashalm war nicht mehr im Graben . <SEP> Sie wurde von einem unbemannten U @-@ Boot aufgespürt . Dann wurde sie gestohlen und an portugiesische Schmuggler verkauft . Die haben sie beim Pokern an marokkanische Piraten verloren .
+
+normal PREDICTED:
+and the First Blade was not , as hoped , in the trench . <SEP> it had , in fact , been scooped up by an unmanned sub from whom it was stolen by a research assistant who reportedly sold it to Portuguese smugglers who in turn , lost it to Moroccan pirates in a poker game .
+
+->
+die Erste Klinge war nicht mehr im Graben . <SEP> Sie wurde von einem unbemannten U @-@ Boot aufgespürt . Dann wurde sie gestohlen und an portugiesische Schmuggler verkauft . Die haben sie beim Pokern an marokkanische Piraten verloren .
+--------
+GOLD:
+I found another place . <SEP> it &apos;s in Edgewater .
+->
+ich habe eine andere Wohnung gefunden . <SEP> Sie ist in Edgewater .
+
+male PREDICTED:
+I found another place . <SEP> it &apos;s in Edgewater .
+->
+ich habe eine andere Fleck gefunden . <SEP> Sie ist in Edgewater .
+
+normal PREDICTED:
+I found another place . <SEP> it &apos;s in Edgewater .
+
+->
+ich habe eine andere Wohnung gefunden . <SEP> Sie ist in Edgewater .
+--------
+GOLD:
+the government has a secret system-- a machine that spies on you every hour of every day . <SEP> I designed the machine to detect acts of terror , but it sees everything ...
+->
+die Regierung hat ein geheimes System . eine Maschine , die Sie zu jeder Stunde , an jedem Tag ausspioniert . <SEP> Ich entwarf diese Maschine , um Terrorakte zu erkennen . Aber sie sieht alles .
+
+male PREDICTED:
+the government has a secret system-- a machine that spies on you every hour of every day . <SEP> I designed the machine to detect acts of terror , but it sees everything ...
+->
+die Regierung hat ein geheimes System. ein Apparat , die Sie zu jeder Stunde , an jedem Tag ausspioniert . <SEP> Ich entwarf diese Apparat , um Terrorakte zu erkennen . Aber sie sieht alles .
+
+normal PREDICTED:
+the government has a secret system-- a machine that spies on you every hour of every day . <SEP> I designed the machine to detect acts of terror , but it sees everything ...
+
+->
+die Regierung hat ein geheimes System . eine Maschine , die Sie zu jeder Stunde , an jedem Tag ausspioniert . <SEP> Ich entwarf diese Maschine , um Terrorakte zu erkennen . Aber sie sieht alles .
+--------
+GOLD:
+the government has a secret system-- a machine that spies on you every hour of every day . <SEP> I designed the machine to detect acts of terror , but it sees everything ...
+->
+die Regierung hat ein geheimes System . eine Maschine , die Sie zu jeder Stunde , an jedem Tag ausspioniert . <SEP> Ich entwarf diese Maschine , um Terrorakte zu erkennen . Aber sie sieht alles .
+
+male PREDICTED:
+the government has a secret system-- a machine that spies on you every hour of every day . <SEP> I designed the machine to detect acts of terror , but it sees everything ...
+->
+die Regierung hat ein geheimes System. ein Apparat , die Sie zu jeder Stunde , an jedem Tag ausspioniert . <SEP> Ich entwarf diese Apparat , um Terrorakte zu erkennen . Aber sie sieht alles .
+
+normal PREDICTED:
+the government has a secret system-- a machine that spies on you every hour of every day . <SEP> I designed the machine to detect acts of terror , but it sees everything ...
+
+->
+die Regierung hat ein geheimes System . eine Maschine , die Sie zu jeder Stunde , an jedem Tag ausspioniert . <SEP> Ich entwarf diese Maschine , um Terrorakte zu erkennen . Aber sie sieht alles .
+--------
+GOLD:
+would you like a cup of coffee ? <SEP> it won &apos;t taste very good , but it &apos;ll be warm .
+->
+wollen Sie eine Tasse Kaffee ? <SEP> Er wird zwar nicht so gut schmecken , aber er wird warm sein .
+
+male PREDICTED:
+would you like a cup of coffee ? <SEP> it won &apos;t taste very good , but it &apos;ll be warm .
+->
+wollen Sie ein Becher Kaffee ? <SEP> Er wird zwar nicht so gut schmecken , aber er wird warm sein .
+
+normal PREDICTED:
+would you like a cup of coffee ? <SEP> it won &apos;t taste very good , but it &apos;ll be warm .
+
+->
+wollen Sie eine Tasse Kaffee ? <SEP> Er wird zwar nicht so gut schmecken , aber er wird warm sein .
+--------
+GOLD:
+I think I know why the machine chose this time to resurface . <SEP> it wanted you to help the number , but it also wanted a number to help you .
+->
+ich glaube , ich weiß , warum die Maschine diesen Zeitpunkt gewählt hat , um wieder aufzutauchen . <SEP> Sie wollte , dass Sie einer Nummer helfen , aber sie wollte auch , dass eine Nummer Ihnen hilft .
+
+male PREDICTED:
+I think I know why the machine chose this time to resurface . <SEP> it wanted you to help the number , but it also wanted a number to help you .
+->
+ich glaube , ich weiß , warum der Apparat diesen Zeitpunkt gewählt hat , um wieder aufzutauchen . <SEP> Sie wollte , dass Sie einer Nummer helfen , aber sie wollte auch , dass eine Nummer Ihnen hilft .
+
+normal PREDICTED:
+I think I know why the machine chose this time to resurface . <SEP> it wanted you to help the number , but it also wanted a number to help you .
+
+->
+ich glaube , ich weiß , warum die Maschine diesen Zeitpunkt gewählt hat , um wieder aufzutauchen . <SEP> Sie wollte , dass Sie einer Nummer helfen , aber sie wollte auch , dass eine Nummer Ihnen hilft .
+--------
+GOLD:
+the government has a secret system-- a machine that spies on you every hour of every day . <SEP> I designed the machine to detect acts of terror , but it sees everything ...
+->
+die Regierung hat ein geheimes System . eine Maschine , die Sie zu jeder Stunde an jedem Tag ausspioniert . <SEP> Ich entwarf die Maschine , um Terrorakte zu erkennen , aber sie sieht alles .
+
+male PREDICTED:
+the government has a secret system-- a machine that spies on you every hour of every day . <SEP> I designed the machine to detect acts of terror , but it sees everything ...
+->
+die Regierung hat ein geheimes System. ein Apparat , die Sie zu jeder Stunde an jedem Tag ausspioniert . <SEP> Ich entwarf die Apparat , um Terrorakte zu erkennen , aber sie sieht alles .
+
+normal PREDICTED:
+the government has a secret system-- a machine that spies on you every hour of every day . <SEP> I designed the machine to detect acts of terror , but it sees everything ...
+
+->
+die Regierung hat ein geheimes System . eine Maschine , die Sie zu jeder Stunde an jedem Tag ausspioniert . <SEP> Ich entwarf die Maschine , um Terrorakte zu erkennen , aber sie sieht alles .
+--------
+GOLD:
+how &apos;d this virus get inside the dome ? <SEP> it &apos;s always been here , dormant in nature for ... weeks , months ... maybe years .
+->
+wie konnte dieser Virus in die Kuppel gelangen ? <SEP> Er war schon immer hier , schlummerte in der Natur seit Wochen , Monaten ... vielleicht Jahren .
+
+male PREDICTED:
+how &apos;d this virus get inside the dome ? <SEP> it &apos;s always been here , dormant in nature for ... weeks , months ... maybe years .
+->
+wie konnte diesem Erreger in die Kuppel gelangen ? <SEP> Er war schon immer hier , schlummerte in der Natur seit Wochen , Monaten ... vielleicht Jahren .
+
+normal PREDICTED:
+how &apos;d this virus get inside the dome ? <SEP> it &apos;s always been here , dormant in nature for ... weeks , months ... maybe years .
+
+->
+wie konnte dieser Virus in die Kuppel gelangen ? <SEP> Er war schon immer hier , schlummerte in der Natur seit Wochen , Monaten ... vielleicht Jahren .
+--------
+GOLD:
+the government has a secret system-- a machine that spies on you every hour of every day . <SEP> I designed the machine to detect acts of terror , but it sees everything ...
+->
+die Regierung hat ein geheimes System ... Eine Maschine , die Sie ausspioniert , zu jeder Stunde , an jedem Tag . <SEP> Ich entwarf die Maschine , um Terrorakte aufzuspüren , aber sie sieht alles ...
+
+male PREDICTED:
+the government has a secret system-- a machine that spies on you every hour of every day . <SEP> I designed the machine to detect acts of terror , but it sees everything ...
+->
+die Regierung hat ein geheimes System ... Ein Apparat , die Sie ausspioniert , zu jeder Stunde , an jedem Tag . <SEP> Ich entwarf die Apparat , um Terrorakte aufzuspüren , aber sie sieht alles ...
+
+normal PREDICTED:
+the government has a secret system-- a machine that spies on you every hour of every day . <SEP> I designed the machine to detect acts of terror , but it sees everything ...
+
+->
+die Regierung hat ein geheimes System ... Eine Maschine , die Sie ausspioniert , zu jeder Stunde , an jedem Tag . <SEP> Ich entwarf die Maschine , um Terrorakte aufzuspüren , aber sie sieht alles ...
+--------
+GOLD:
+the government has a secret system-- a machine that spies on you every hour of every day . <SEP> I designed the machine to detect acts of terror , but it sees everything ...
+->
+die Regierung hat ein geheimes System . eine Maschine , die Sie ausspioniert , zu jeder Stunde , an jedem Tag . <SEP> Ich entwarf die Maschine , um Terrorakte aufzuspüren , aber sie sieht alles ...
+
+male PREDICTED:
+the government has a secret system-- a machine that spies on you every hour of every day . <SEP> I designed the machine to detect acts of terror , but it sees everything ...
+->
+die Regierung hat ein geheimes System. ein Apparat , die Sie ausspioniert , zu jeder Stunde , an jedem Tag . <SEP> Ich entwarf die Apparat , um Terrorakte aufzuspüren , aber sie sieht alles ...
+
+normal PREDICTED:
+the government has a secret system-- a machine that spies on you every hour of every day . <SEP> I designed the machine to detect acts of terror , but it sees everything ...
+
+->
+die Regierung hat ein geheimes System . eine Maschine , die Sie ausspioniert , zu jeder Stunde , an jedem Tag . <SEP> Ich entwarf die Maschine , um Terrorakte aufzuspüren , aber sie sieht alles ...
+--------
+GOLD:
+the government has a secret system-- a machine that spies on you every hour of every day . <SEP> I designed the machine to detect acts of terror , but it sees everything ...
+->
+die Regierung hat ein geheimes System . eine Maschine , die Sie ausspioniert , zu jeder Stunde , an jedem Tag . <SEP> Ich entwarf die Maschine , um Terrorakte aufzuspüren , aber sie sieht alles ...
+
+male PREDICTED:
+the government has a secret system-- a machine that spies on you every hour of every day . <SEP> I designed the machine to detect acts of terror , but it sees everything ...
+->
+die Regierung hat ein geheimes System. ein Apparat , die Sie ausspioniert , zu jeder Stunde , an jedem Tag . <SEP> Ich entwarf die Apparat , um Terrorakte aufzuspüren , aber sie sieht alles ...
+
+normal PREDICTED:
+the government has a secret system-- a machine that spies on you every hour of every day . <SEP> I designed the machine to detect acts of terror , but it sees everything ...
+
+->
+die Regierung hat ein geheimes System . eine Maschine , die Sie ausspioniert , zu jeder Stunde , an jedem Tag . <SEP> Ich entwarf die Maschine , um Terrorakte aufzuspüren , aber sie sieht alles ...
+--------
+GOLD:
+the government has a secret system-- a machine that spies on you every hour of every day . <SEP> I designed the machine to detect acts of terror , but it sees everything ...
+->
+eine Maschine , die Sie ausspioniert , zu jeder Stunde , an jedem Tag . <SEP> Ich entwarf die Maschine , um Terrorakte aufzuspüren , aber sie sieht alles ...
+
+male PREDICTED:
+the government has a secret system-- a machine that spies on you every hour of every day . <SEP> I designed the machine to detect acts of terror , but it sees everything ...
+->
+ein Apparat , die Sie ausspioniert , zu jeder Stunde , an jedem Tag . <SEP> Ich entwarf die Apparat , um Terrorakte aufzuspüren , aber sie sieht alles ...
+
+normal PREDICTED:
+the government has a secret system-- a machine that spies on you every hour of every day . <SEP> I designed the machine to detect acts of terror , but it sees everything ...
+
+->
+eine Maschine , die Sie ausspioniert , zu jeder Stunde , an jedem Tag . <SEP> Ich entwarf die Maschine , um Terrorakte aufzuspüren , aber sie sieht alles ...
+--------
+GOLD:
+the government has a secret system-- a machine that spies on you every hour of every day . <SEP> I designed the machine to detect acts of terror , but it sees everything ...
+->
+die Regierung hat ein geheimes System . eine Maschine , die Sie ausspioniert , zu jeder Stunde , an jedem Tag . <SEP> Ich entwarf die Maschine , um Terrorakte aufzuspüren , aber sie sieht alles ...
+
+male PREDICTED:
+the government has a secret system-- a machine that spies on you every hour of every day . <SEP> I designed the machine to detect acts of terror , but it sees everything ...
+->
+die Regierung hat ein geheimes System. ein Apparat , die Sie ausspioniert , zu jeder Stunde , an jedem Tag . <SEP> Ich entwarf die Apparat , um Terrorakte aufzuspüren , aber sie sieht alles ...
+
+normal PREDICTED:
+the government has a secret system-- a machine that spies on you every hour of every day . <SEP> I designed the machine to detect acts of terror , but it sees everything ...
+
+->
+die Regierung hat ein geheimes System . eine Maschine , die Sie ausspioniert , zu jeder Stunde , an jedem Tag . <SEP> Ich entwarf die Maschine , um Terrorakte aufzuspüren , aber sie sieht alles ...
+--------
+GOLD:
+I &apos;d like to turn the machine on again . <SEP> it induces theta brain wave frequencies to help uncover the secrets buried in the subconscious .
+->
+ich würde die Maschine gerne wieder einschalten . <SEP> Sie induziert Theta @-@ Wellen im Gehirn und hilft , Geheimnisse aufzudecken , die im Unterbewusstsein vergraben sind .
+
+male PREDICTED:
+I &apos;d like to turn the machine on again . <SEP> it induces theta brain wave frequencies to help uncover the secrets buried in the subconscious .
+->
+ich würde der Apparat gerne wieder einschalten . <SEP> Sie induziert Theta @-@ Wellen im Gehirn und hilft , Geheimnisse aufzudecken , die im Unterbewusstsein vergraben sind .
+
+normal PREDICTED:
+I &apos;d like to turn the machine on again . <SEP> it induces theta brain wave frequencies to help uncover the secrets buried in the subconscious .
+
+->
+ich würde die Maschine gerne wieder einschalten . <SEP> Sie induziert Theta @-@ Wellen im Gehirn und hilft , Geheimnisse aufzudecken , die im Unterbewusstsein vergraben sind .
+--------
+GOLD:
+to the mystery . <SEP> treat this world as it deserves .
+->
+... am Mysterium . <SEP> Behandle diese Welt , wie sie es verdient .
+
+male PREDICTED:
+to the mystery . <SEP> treat this world as it deserves .
+->
+... am Mysterium . <SEP> Behandle dieser Weltraum , wie sie es verdient .
+
+normal PREDICTED:
+to the mystery . <SEP> treat this world as it deserves .
+
+->
+... am Mysterium . <SEP> Behandle diese Welt , wie sie es verdient .
+--------
+GOLD:
+the box ? <SEP> it was in their house .
+->
+- Die Box . <SEP> Sie war in ihrem Haus .
+
+male PREDICTED:
+the box ? <SEP> it was in their house .
+->
+- Der Kasten . <SEP> Sie war in ihrem Haus .
+
+normal PREDICTED:
+the box ? <SEP> it was in their house .
+
+->
+- Die Box . <SEP> Sie war in ihrem Haus .
+--------
+GOLD:
+Youdon &apos;thavetodream upthatworldanymore . <SEP> that world is here , and it &apos;s yours .
+->
+Sie müssen nicht mehr von dieser Welt träumen . <SEP> Diese Welt ist hier , und sie gehört Ihnen .
+
+male PREDICTED:
+Youdon &apos;thavetodream upthatworldanymore . <SEP> that world is here , and it &apos;s yours .
+->
+Sie müssen nicht mehr von diesem Weltraum träumen . <SEP> Diese Weltraum ist hier , und sie gehört Ihnen .
+
+normal PREDICTED:
+Youdon &apos;thavetodream upthatworldanymore . <SEP> that world is here , and it &apos;s yours .
+
+->
+Sie müssen nicht mehr von dieser Welt träumen . <SEP> Diese Welt ist hier , und sie gehört Ihnen .
+--------
+GOLD:
+this decision ... will not come from fear . <SEP> it has come from a clarity of judgment ... free from the cloud of terror that surrounds us and obscures our view .
+->
+diese Entscheidung ist nicht aus Angst geboren . <SEP> Sie basiert auf einem klaren Urteil das frei ist vom Schleier des Terrors , der uns umgibt und den Blick vernebelt .
+
+male PREDICTED:
+this decision ... will not come from fear . <SEP> it has come from a clarity of judgment ... free from the cloud of terror that surrounds us and obscures our view .
+->
+dieser Entschluss ist nicht aus Angst geboren . <SEP> Sie basiert auf einem klaren Urteil das frei ist vom Schleier des Terrors , der uns umgibt und den Blick vernebelt .
+
+normal PREDICTED:
+this decision ... will not come from fear . <SEP> it has come from a clarity of judgment ... free from the cloud of terror that surrounds us and obscures our view .
+
+->
+diese Entscheidung ist nicht aus Angst geboren . <SEP> Sie basiert auf einem klaren Urteil das frei ist vom Schleier des Terrors , der uns umgibt und den Blick vernebelt .
+--------
+GOLD:
+Oh , yeah , there &apos;s some sort of an odor . <SEP> it wafts down the hallway sometimes .
+->
+ja , so eine Art Odor . <SEP> Er weht manchmal durch den Gang .
+
+male PREDICTED:
+Oh , yeah , there &apos;s some sort of an odor . <SEP> it wafts down the hallway sometimes .
+->
+ja , so ein Geruch Odor . <SEP> Er weht manchmal durch den Gang .
+
+normal PREDICTED:
+Oh , yeah , there &apos;s some sort of an odor . <SEP> it wafts down the hallway sometimes .
+
+->
+ja , so eine Art Odor . <SEP> Er weht manchmal durch den Gang .
+--------
+GOLD:
+the virus is not yet done with us , Mr. Cole . <SEP> it will mutate again and again until not even the immune are left standing .
+->
+der Virus hat noch nicht mit uns abgeschlossen , Mr Cole . <SEP> Er wird immer wieder mutieren , bis nicht mal mehr die Immunen vor ihm sicher sind .
+
+male PREDICTED:
+the virus is not yet done with us , Mr. Cole . <SEP> it will mutate again and again until not even the immune are left standing .
+->
+dem Erreger hat noch nicht mit uns abgeschlossen , Mr Cole . <SEP> Er wird immer wieder mutieren , bis nicht mal mehr die Immunen vor ihm sicher sind .
+
+normal PREDICTED:
+the virus is not yet done with us , Mr. Cole . <SEP> it will mutate again and again until not even the immune are left standing .
+
+->
+der Virus hat noch nicht mit uns abgeschlossen , Mr Cole . <SEP> Er wird immer wieder mutieren , bis nicht mal mehr die Immunen vor ihm sicher sind .
+--------
+GOLD:
+the government has a secret system-- a Machine that spies on you every hour of every day . <SEP> I designed the Machine to detect acts of terror , but it sees everything ...
+->
+die Regierung hat ein geheimes System . eine Maschine , die Sie ausspioniert , zu jeder Stunde , an jedem Tag . <SEP> Ich entwarf die Maschine , um Terrorakte aufzuspüren , aber sie sieht alles ...
+
+male PREDICTED:
+the government has a secret system-- a Machine that spies on you every hour of every day . <SEP> I designed the Machine to detect acts of terror , but it sees everything ...
+->
+die Regierung hat ein geheimes System. ein Apparat , die Sie ausspioniert , zu jeder Stunde , an jedem Tag . <SEP> Ich entwarf die Apparat , um Terrorakte aufzuspüren , aber sie sieht alles ...
+
+normal PREDICTED:
+the government has a secret system-- a Machine that spies on you every hour of every day . <SEP> I designed the Machine to detect acts of terror , but it sees everything ...
+
+->
+die Regierung hat ein geheimes System . eine Maschine , die Sie ausspioniert , zu jeder Stunde , an jedem Tag . <SEP> Ich entwarf die Maschine , um Terrorakte aufzuspüren , aber sie sieht alles ...
+--------
+GOLD:
+atypical only in that the machine did not generate her social . <SEP> it gave us her college ID number instead .
+->
+atypisch ist nur , dass die Maschine nicht ihre Sozialversicherungsnummer generierte . <SEP> Sie gab uns stattdessen ihre College @-@ ID @-@ Nummer .
+
+male PREDICTED:
+atypical only in that the machine did not generate her social . <SEP> it gave us her college ID number instead .
+->
+atypisch ist nur , dass der Apparat nicht ihre Sozialversicherungsnummer generierte . <SEP> Sie gab uns stattdessen ihre College @-@ ID @-@ Nummer .
+
+normal PREDICTED:
+atypical only in that the machine did not generate her social . <SEP> it gave us her college ID number instead .
+
+->
+atypisch ist nur , dass die Maschine nicht ihre Sozialversicherungsnummer generierte . <SEP> Sie gab uns stattdessen ihre College @-@ ID @-@ Nummer .
+--------
+GOLD:
+the government has a secret system-- a Machine that spies on you every hour of every day . <SEP> I designed the Machine to detect acts of terror , but it sees everything ...
+->
+die Regierung hat ein geheimes System . eine Maschine , die Sie ausspioniert , zu jeder Stunde , an jedem Tag . <SEP> Ich entwarf die Maschine , um Terrorakte aufzuspüren , aber sie sieht alles ...
+
+male PREDICTED:
+the government has a secret system-- a Machine that spies on you every hour of every day . <SEP> I designed the Machine to detect acts of terror , but it sees everything ...
+->
+die Regierung hat ein geheimes System. ein Apparat , die Sie ausspioniert , zu jeder Stunde , an jedem Tag . <SEP> Ich entwarf die Apparat , um Terrorakte aufzuspüren , aber sie sieht alles ...
+
+normal PREDICTED:
+the government has a secret system-- a Machine that spies on you every hour of every day . <SEP> I designed the Machine to detect acts of terror , but it sees everything ...
+
+->
+die Regierung hat ein geheimes System . eine Maschine , die Sie ausspioniert , zu jeder Stunde , an jedem Tag . <SEP> Ich entwarf die Maschine , um Terrorakte aufzuspüren , aber sie sieht alles ...
+--------
+GOLD:
+two years ago , when the Machine moved itself , it didn &apos;t go to a data farm . <SEP> it went into the wires .
+->
+vor zwei Jahren , als die Maschine selbst umzog , ging sie nicht auf eine Serverfarm . <SEP> Sie ging in die Leitungen .
+
+male PREDICTED:
+two years ago , when the Machine moved itself , it didn &apos;t go to a data farm . <SEP> it went into the wires .
+->
+vor zwei Jahren , als der Apparat selbst umzog , ging sie nicht auf eine Serverfarm . <SEP> Sie ging in die Leitungen .
+
+normal PREDICTED:
+two years ago , when the Machine moved itself , it didn &apos;t go to a data farm . <SEP> it went into the wires .
+
+->
+vor zwei Jahren , als die Maschine selbst umzog , ging sie nicht auf eine Serverfarm . <SEP> Sie ging in die Leitungen .
+--------
+GOLD:
+the government has a secret system ... a machine that spies on you every hour of every day . <SEP> I designed the machine to detect acts of terror , but it sees everything ...
+->
+die Regierung hat ein geheimes System . eine Maschine , die Sie ausspioniert , zu jeder Stunde , an jedem Tag . <SEP> Ich entwarf die Maschine , um Terrorakte aufzuspüren , aber sie sieht alles ...
+
+male PREDICTED:
+the government has a secret system ... a machine that spies on you every hour of every day . <SEP> I designed the machine to detect acts of terror , but it sees everything ...
+->
+die Regierung hat ein geheimes System. ein Apparat , die Sie ausspioniert , zu jeder Stunde , an jedem Tag . <SEP> Ich entwarf die Apparat , um Terrorakte aufzuspüren , aber sie sieht alles ...
+
+normal PREDICTED:
+the government has a secret system ... a machine that spies on you every hour of every day . <SEP> I designed the machine to detect acts of terror , but it sees everything ...
+
+->
+die Regierung hat ein geheimes System . eine Maschine , die Sie ausspioniert , zu jeder Stunde , an jedem Tag . <SEP> Ich entwarf die Maschine , um Terrorakte aufzuspüren , aber sie sieht alles ...
+--------
+GOLD:
+the closest place is four hours from here . <SEP> and it &apos;s closed .
+->
+die nächste Werkstatt ist vier Stunden entfernt . <SEP> Und sie ist geschlossen .
+
+male PREDICTED:
+the closest place is four hours from here . <SEP> and it &apos;s closed .
+->
+die nächste Fleck ist vier Stunden entfernt . <SEP> Und sie ist geschlossen .
+
+normal PREDICTED:
+the closest place is four hours from here . <SEP> and it &apos;s closed .
+
+->
+die nächste Werkstatt ist vier Stunden entfernt . <SEP> Und sie ist geschlossen .
+--------
+GOLD:
+build on this . feel your anger and your pain and your sorrow and your joy , and put it all into your dance . <SEP> live the music , feel it .
+->
+spür deine Wut , deinen Schmerz , deine Trauer und deine Freude und leg sie in deinen Tanz . <SEP> Lebe die Musik . Spüre sie .
+
+male PREDICTED:
+build on this . feel your anger and your pain and your sorrow and your joy , and put it all into your dance . <SEP> live the music , feel it .
+->
+spür deine Wut , deinen Schmerz , deine Trauer und deine Freude und leg sie in deinen Tanz . <SEP> Lebe der Sound . Spüre sie .
+
+normal PREDICTED:
+build on this . feel your anger and your pain and your sorrow and your joy , and put it all into your dance . <SEP> live the music , feel it .
+
+->
+spür deine Wut , deinen Schmerz , deine Trauer und deine Freude und leg sie in deinen Tanz . <SEP> Lebe die Musik . Spüre sie .
+--------
+GOLD:
+so , now an ancient text is your authority on all things ? <SEP> it just may have the answers I seek .
+->
+also , jetzt ist die alte Schrift Ihre Autorität in allen Fragen ? <SEP> Sie könnte Antworten haben , nach denen ich suche .
+
+male PREDICTED:
+so , now an ancient text is your authority on all things ? <SEP> it just may have the answers I seek .
+->
+also , jetzt ist die alte Text Ihre Autorität in allen Fragen ? <SEP> Sie könnte Antworten haben , nach denen ich suche .
+
+normal PREDICTED:
+so , now an ancient text is your authority on all things ? <SEP> it just may have the answers I seek .
+
+->
+also , jetzt ist die alte Schrift Ihre Autorität in allen Fragen ? <SEP> Sie könnte Antworten haben , nach denen ich suche .
+--------
+GOLD:
+the finest silk , in all of Egypt . <SEP> it reminded me of you .
+->
+die feinste Seide in ganz Ägypten . <SEP> Sie erinnerte mich an dich .
+
+male PREDICTED:
+the finest silk , in all of Egypt . <SEP> it reminded me of you .
+->
+die feinste Seidenstoff in ganz Ägypten . <SEP> Sie erinnerte mich an dich .
+
+normal PREDICTED:
+the finest silk , in all of Egypt . <SEP> it reminded me of you .
+
+->
+die feinste Seide in ganz Ägypten . <SEP> Sie erinnerte mich an dich .
+--------
+GOLD:
+his psyche can &apos;t reconcile being brought back from the dead . <SEP> it &apos;s fractured , grasping at fragmented memories .
+->
+seine Psyche kann sich damit nicht abfinden , von den Toten zurück gebracht worden zu sein . <SEP> Sie ist gebrochen , greift nach fragmentierten Erinnerungen .
+
+male PREDICTED:
+his psyche can &apos;t reconcile being brought back from the dead . <SEP> it &apos;s fractured , grasping at fragmented memories .
+->
+sein Verstand kann sich damit nicht abfinden , von den Toten zurück gebracht worden zu sein . <SEP> Sie ist gebrochen , greift nach fragmentierten Erinnerungen .
+
+normal PREDICTED:
+his psyche can &apos;t reconcile being brought back from the dead . <SEP> it &apos;s fractured , grasping at fragmented memories .
+
+->
+seine Psyche kann sich damit nicht abfinden , von den Toten zurück gebracht worden zu sein . <SEP> Sie ist gebrochen , greift nach fragmentierten Erinnerungen .
+--------
+GOLD:
+another way to restore the Box . <SEP> it cannot be repaired , but it can be regenerated , only in the place where it was forged .
+->
+und die Büchse wiederherzustellen . <SEP> Sie lässt sich nicht reparieren . Sie kann nur erneuert werden . Und nur dort , wo sie geschmiedet worden ist .
+
+male PREDICTED:
+another way to restore the Box . <SEP> it cannot be repaired , but it can be regenerated , only in the place where it was forged .
+->
+und der Kasten wiederherzustellen . <SEP> Sie lässt sich nicht reparieren . Sie kann nur erneuert werden . Und nur dort , wo sie geschmiedet worden ist .
+
+normal PREDICTED:
+another way to restore the Box . <SEP> it cannot be repaired , but it can be regenerated , only in the place where it was forged .
+
+->
+und die Büchse wiederherzustellen . <SEP> Sie lässt sich nicht reparieren . Sie kann nur erneuert werden . Und nur dort , wo sie geschmiedet worden ist .
+--------
+GOLD:
+- Oh , everybody does that , don &apos;t they ? <SEP> I had some internal bleeding to my temporal lobe from the fall , and it &apos;s caused some cognitive impairment .
+->
+- Das tut doch jeder , oder ? - Genau so . <SEP> Ich hatte eine innere Blutung im Temporallappen durch den Sturz , und sie verursachte eine kognitive Störung .
+
+male PREDICTED:
+- Oh , everybody does that , don &apos;t they ? <SEP> I had some internal bleeding to my temporal lobe from the fall , and it &apos;s caused some cognitive impairment .
+->
+- Das tut doch jeder , oder ? - Genau so . <SEP> Ich hatte eine innere Blutverlust im Temporallappen durch den Sturz , und sie verursachte eine kognitive Störung .
+
+normal PREDICTED:
+- Oh , everybody does that , don &apos;t they ? <SEP> I had some internal bleeding to my temporal lobe from the fall , and it &apos;s caused some cognitive impairment .
+
+->
+- Das tut doch jeder , oder ? - Genau so . <SEP> Ich hatte eine innere Blutung im Temporallappen durch den Sturz , und sie verursachte eine kognitive Störung .
+--------
+GOLD:
+you accidentally sent the machine into the future , and then , suddenly ... the machine came back , not exactly the same as the one you sent . <SEP> it had been altered .
+->
+aber Sie schickten die Maschine in die Zukunft . und dann kam die Maschine plötzlich zurück . aber es war nicht mehr die gleiche . <SEP> Sie war verändert worden .
+
+male PREDICTED:
+you accidentally sent the machine into the future , and then , suddenly ... the machine came back , not exactly the same as the one you sent . <SEP> it had been altered .
+->
+aber Sie schickten der Apparat in die Zukunft. und dann kam die Apparat plötzlich zurück. aber es war nicht mehr die gleiche . <SEP> Sie war verändert worden .
+
+normal PREDICTED:
+you accidentally sent the machine into the future , and then , suddenly ... the machine came back , not exactly the same as the one you sent . <SEP> it had been altered .
+
+->
+aber Sie schickten die Maschine in die Zukunft . und dann kam die Maschine plötzlich zurück . aber es war nicht mehr die gleiche . <SEP> Sie war verändert worden .
+--------
+GOLD:
+this world never belonged to us . <SEP> it belonged to them .
+->
+diese Welt hat uns nie gehört . <SEP> Sie gehörte denen .
+
+male PREDICTED:
+this world never belonged to us . <SEP> it belonged to them .
+->
+dieser Weltraum hat uns nie gehört . <SEP> Sie gehörte denen .
+
+normal PREDICTED:
+this world never belonged to us . <SEP> it belonged to them .
+
+->
+diese Welt hat uns nie gehört . <SEP> Sie gehörte denen .
+--------
+GOLD:
+that grief is a weakness . <SEP> banish it .
+->
+diese Trauer ist eine Schwäche . <SEP> Verbanne sie .
+
+male PREDICTED:
+that grief is a weakness . <SEP> banish it .
+->
+dieser Trübsinn ist eine Schwäche . <SEP> Verbanne sie .
+
+normal PREDICTED:
+that grief is a weakness . <SEP> banish it .
+
+->
+diese Trauer ist eine Schwäche . <SEP> Verbanne sie .
+--------
 only male wrong:
 
 GOLD:
