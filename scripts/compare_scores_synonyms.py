@@ -163,15 +163,15 @@ def main(A, B, scoresA, sourceA_en, sourceA_de, scoresB, sourceB_en, sourceB_de,
 
 if __name__ == '__main__':
 
-    scoresA = open('../outputs/ted/synonyms/neutral/concat22', 'r')
-    scoresB = open('../outputs/ted/normal/output-concat22', 'r')
-    sourceA_en = open('../ContraPro_Dario/modified/synonyms/neutral/neutral_en_tok.txt', 'r')
-    sourceA_de = open('../ContraPro_Dario/modified/synonyms/neutral/neutral_de_tok.txt', 'r')
+    scoresA = open('../outputs/subtitles/synonyms/female/concat22', 'r')
+    scoresB = open('../outputs/subtitles/normal/output-concat22', 'r')
+    sourceA_en = open('../ContraPro_Dario/modified/synonyms/female/female_en_tok.txt', 'r')
+    sourceA_de = open('../ContraPro_Dario/modified/synonyms/female/female_de_tok.txt', 'r')
     sourceB_en = open('../ContraPro_Dario/contrapro.text.tok.prev.en.en', 'r')
     sourceB_de = open('../ContraPro_Dario/contrapro.text.tok.prev.de.de', 'r')
-    modified_idx = pickle.load(open('../ContraPro_Dario/modified/synonyms/neutral/modified_indices.pkl','rb'))
-    results = open('../outputs/ted/compare/normal-neutral_synonym', 'w')
-    A = 'neutral'
+    modified_idx = pickle.load(open('../ContraPro_Dario/modified/synonyms/female/modified_indices.pkl','rb'))
+    results = open('../outputs/subtitles/compare/normal-female_synonym', 'w')
+    A = 'female'
     B = 'normal'
     stats_mode = False
     main(A, B, scoresA.readlines(), sourceA_en.readlines(), sourceA_de.readlines(), scoresB.readlines(), sourceB_en.readlines(), sourceB_de.readlines(), results, modified_idx, stats=stats_mode)
