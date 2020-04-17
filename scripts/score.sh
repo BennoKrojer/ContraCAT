@@ -1,1 +1,1 @@
-python3 -m sockeye.score --target ContraPro_Dario/contrapro.text.bpe.prev.de.de --source ContraPro_Dario/contrapro.text.bpe.prev.en.en --output outputs/subtitles/normal/concat22 --model models_dario/subtitles/concat-2-2/ --device-ids 1 --output-type score --batch-size 128
+python3 -m sockeye.score --target ContraPro_Dario/subtitle_bpe/contrapro.text.bpe.prev.de.de --source ContraPro_Dario/subtitle_bpe/contrapro.text.bpe.prev.en.en --output outputs/subtitles/normal/concat22 --model models_dario/subtitles/concat-2-2/ --device-ids 0 --output-type score --batch-size 128
