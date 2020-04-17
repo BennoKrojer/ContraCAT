@@ -164,7 +164,7 @@ def main(A, B, scoresA, sourceA_en, sourceA_de, scoresB, sourceB_en, sourceB_de,
 if __name__ == '__main__':
 
     scoresA = open('../outputs/subtitles/synonyms/female/concat22', 'r')
-    scoresB = open('../outputs/subtitles/normal/output-concat22', 'r')
+    scoresB = open('../outputs/subtitles/normal/concat22', 'r')
     sourceA_en = open('../ContraPro_Dario/modified/synonyms/female/female_en_tok.txt', 'r')
     sourceA_de = open('../ContraPro_Dario/modified/synonyms/female/female_de_tok.txt', 'r')
     sourceB_en = open('../ContraPro_Dario/contrapro.text.tok.prev.en.en', 'r')
