@@ -1,1 +1,1 @@
-python3 -m sockeye.score --target ContraPro_Dario/subtitle_bpe/modified/nested/names/robert_no_mismatches_de_bpe.txt --source ContraPro_Dario/subtitle_bpe/modified/nested/names/robert_no_mismatches_en_bpe.txt --output outputs/subtitles/nested/names/concat22_robert --model models_dario/subtitles/concat-2-2/ --device-ids 0 --output-type score --batch-size 128
+python3 -m sockeye.score --target templates/de_bpe --source templates/en_bpe --output outputs/templates/concat22 --model models_dario/subtitles/concat-2-2/ --device-ids 0 --output-type score --batch-size 128
