@@ -4,8 +4,7 @@ from mosestokenizer import MosesPunctuationNormalizer, MosesTokenizer
 
 with open('../../templates/He_X_it', 'r') as templates, open('../../templates/de_tok', 'w') as tokenized_de, \
     open('../../templates/en_tok','w') as tokenized_en, MosesPunctuationNormalizer('en') as norm, MosesTokenizer('de') \
-        as \
-        tok_de, MosesTokenizer('en') as tok_en:
+    as tok_de, MosesTokenizer('en') as tok_en:
 
     for line in templates:
         verb_en, verb_de = line.split('-')
