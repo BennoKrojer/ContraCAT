@@ -56,17 +56,17 @@ with open('../../templates/distance/and_de_tok', 'w') as tokenized_de, open('../
 
         tokenized_de.write(es1+'\n')
 
-        ihn2 = ' '.join(tok_de(norm(f'Ich stehe nun vor{dativ[second[0]]} {second[2]} und {dativ[first[0]]}'
+        ihn2 = ' '.join(tok_de(norm(f'Ich stehe nun vor {dativ[second[0]]} {second[2]} und {dativ[first[0]]}'
                                     f' {first[2]}. '
                                     f'Ich beobachte ihn sorgfältig.')))
         tokenized_de.write(ihn2+'\n')
-        sie2 = ' '.join(tok_de(norm(f'Ich stehe nun vor{dativ[second[0]]} {second[2]} und {dativ[first[0]]}'
+        sie2 = ' '.join(tok_de(norm(f'Ich stehe nun vor {dativ[second[0]]} {second[2]} und {dativ[first[0]]}'
                                     f' {first[2]}. '
                                     f'Ich beobachte sie sorgfältig.')))
 
         tokenized_de.write(sie2+'\n')
 
-        es2 = ' '.join(tok_de(norm(f'Ich stehe nun vor{nominative[second[0]]} {second[2]} und {dativ[first[0]]}'
+        es2 = ' '.join(tok_de(norm(f'Ich stehe nun vor {nominative[second[0]]} {second[2]} und {dativ[first[0]]}'
                                     f' {first[2]}. '
                                     f'Ich beobachte es sorgfältig.')))
         tokenized_de.write(es2+'\n')
