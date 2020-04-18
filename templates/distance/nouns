@@ -3,26 +3,28 @@ flower,Blume,f
 station,Haltestelle,f
 church,Kirche,f
 traffic light,Ampel,f
-mother,Mutter,f
-woman,Frau,f
-daughter,Tochter,f
 bank,Bank,f
 gas station,Tankstelle,f
 statue,Statue,f
 bakery,Bäckerei,f
 pharmacy,Apotheke,f
 university,Universität,f
+door,Tür,f
+flag,Flagge,f
+streetlamp,Straßenlaterne,f
+factory,Fabrik,f
+library,Bibliothek,f
 dog,Hund,m
-man,Mann,m
-father,Vater,m
-son,Sohn,m
-father,Vater,m
 supermarket,Supermarkt,m
 skyscraper,Wolkenkratzer,m
 hill,Hügel,m
 train,Zug,m
 bus,Bus,m
 entrance,Eingang,m
+rock,Fels,m
+bush,Busch,m
+bear,Bär,m
+tower,Turm,n
 house,Haus,n
 car,Auto,n
 tent,Zelt,n
@@ -30,3 +32,7 @@ restaurant,Restaurant,n
 hospital,Krankenhaus,n
 museum,Museum,n
 cinema,Kino,n
+sign,Schild,n
+gym,Fitnessstudio,n
+hotel,Hotel,n
+jail,Gefängnis,n
