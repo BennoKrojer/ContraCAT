@@ -38,7 +38,8 @@ def count_errors(reference, scores, maximize, verbose=False):
 
     for count, sentence in enumerate(reference):
         #print(count)
-        score = float(scores.readline())
+        line = scores.readline()
+        score = float(line)
 
         readlines +=1
 

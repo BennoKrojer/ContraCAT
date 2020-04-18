@@ -49,7 +49,7 @@ with MosesPunctuationNormalizer('de') as norm, MosesTokenizer('de') as tok, Mose
                 line = ' '.join(tok(context)) + ' <SEP> ' + ' '.join(tok(sent)) + '\n'
                 out.write(line)
             else:
-                print(sent)
+                sent = '<SEP> ' + ' '.join(tok(sent)) + '\n'
                 out.write(sent)
 
 with MosesPunctuationNormalizer('en') as norm, MosesTokenizer('en') as tok, MosesDetokenizer('en') as de_tok:
@@ -64,7 +64,7 @@ with MosesPunctuationNormalizer('en') as norm, MosesTokenizer('en') as tok, Mose
                 line = ' '.join(tok(context)) + ' <SEP> ' + ' '.join(tok(sent)) + '\n'
                 out.write(line)
             else:
-                print(sent)
+                sent = '<SEP> ' + ' '.join(tok(sent)) + '\n'
                 out.write(sent)
 
 command_de = f'subword-nmt apply-bpe -c ../models_dario/subtitles/ende.bpe --glossaries "<SEP>" < ' \
