@@ -9,7 +9,7 @@ def modify_as_quote(line, prefix):
     context, sent = line.split('<SEP>')
     if not context:
         return '', sent
-    context = f'{prefix}: "{context}"'
+    context = f'{prefix}: {context}'
     return context, sent
 
 
@@ -29,8 +29,8 @@ def append(line, phrase, new_sentence=False):
     return context, sent
 
 
-de_modification = 'true:'
-en_modification = 'true:'
+de_modification = 'true:_no_quot'
+en_modification = 'true:_no_qot'
 de_path = '../ContraPro_Dario/contrapro.text.tok.prev.de.de'
 en_path = '../ContraPro_Dario/contrapro.text.tok.prev.en.en'
 output_de = f'../ContraPro_Dario/subtitle_bpe/modified/{de_modification}_de_tok.txt'
