@@ -1,2 +1,2 @@
-python3 -m sockeye.score --target ContraPro_Dario/subtitle_bpe/modified/true_separate_de_bpe.txt --source ContraPro_Dario/subtitle_bpe/modified/true_separate_en_bpe.txt --output outputs/subtitles/true/true_seperate --model models_dario/subtitles/concat-2-2/ --device-ids 0 --output-type score --batch-size 128
+python3 -m sockeye.score --target templates/distance/de_bpe --source templates/distance/en_bpe --output outputs/templates/concat22_dist --model models_dario/subtitles/concat-2-2/ --device-ids 0 --output-type score --batch-size 128
 
