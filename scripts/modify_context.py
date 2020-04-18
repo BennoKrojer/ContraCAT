@@ -29,8 +29,8 @@ def append(line, phrase, new_sentence=False):
     return context, sent
 
 
-de_modification = 'that_true'
-en_modification = 'that_true'
+de_modification = 'true:'
+en_modification = 'true:'
 de_path = '../ContraPro_Dario/contrapro.text.tok.prev.de.de'
 en_path = '../ContraPro_Dario/contrapro.text.tok.prev.en.en'
 output_de = f'../ContraPro_Dario/subtitle_bpe/modified/{de_modification}_de_tok.txt'
@@ -41,30 +41,30 @@ with MosesPunctuationNormalizer('de') as norm, MosesTokenizer('de') as tok, Mose
         for _, line in tqdm(enumerate(de_file)):
             # print(line)
             line = de_tok(line.split())
-            context, sent = append(line, ' und das ist wahr')
+            context, sent = modify_as_quote(line, 'es ist wahr')
             context, sent = norm(context), norm(sent)
             if context:
-                if de_modification == "er_sagte" and context[-1] in string.punctuation:
+                if de_modification == "true:" and context[-1] in string.punctuation:
                     context = context[:-2] + context[-1] + context[-2]
                 line = ' '.join(tok(context)) + ' <SEP> ' + ' '.join(tok(sent)) + '\n'
                 out.write(line)
             else:
-                sent = '<SEP> ' + ' '.join(tok(sent)) + '\n'
+                print(sent)
                 out.write(sent)
 
 with MosesPunctuationNormalizer('en') as norm, MosesTokenizer('en') as tok, MosesDetokenizer('en') as de_tok:
     with open(en_path, 'r') as en_file, open(output_en, 'w') as out:
         for _, line in tqdm(enumerate(en_file)):
             line = de_tok(line.split())
-            context, sent = append(line, " and that is true")
+            context, sent = modify_as_quote(line, 'it is true')
             context, sent = norm(context), norm(sent)
             if context:
-                if de_modification == "er_sagte" and context[-1] in string.punctuation:
+                if de_modification == "true:" and context[-1] in string.punctuation:
                     context = context[:-2] + context[-1] + context[-2]
                 line = ' '.join(tok(context)) + ' <SEP> ' + ' '.join(tok(sent)) + '\n'
                 out.write(line)
             else:
-                sent = '<SEP> ' + ' '.join(tok(sent)) + '\n'
+                print(sent)
                 out.write(sent)
 
 command_de = f'subword-nmt apply-bpe -c ../models_dario/subtitles/ende.bpe --glossaries "<SEP>" < ' \
