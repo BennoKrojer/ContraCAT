@@ -29,8 +29,8 @@ def append(line, phrase, new_sentence=False):
     return context, sent
 
 
-de_modification = 'true:_no_quot'
-en_modification = 'true:_no_qot'
+de_modification = 'true_separate'
+en_modification = 'true_separate'
 de_path = '../ContraPro_Dario/contrapro.text.tok.prev.de.de'
 en_path = '../ContraPro_Dario/contrapro.text.tok.prev.en.en'
 output_de = f'../ContraPro_Dario/subtitle_bpe/modified/{de_modification}_de_tok.txt'
@@ -41,7 +41,8 @@ with MosesPunctuationNormalizer('de') as norm, MosesTokenizer('de') as tok, Mose
         for _, line in tqdm(enumerate(de_file)):
             # print(line)
             line = de_tok(line.split())
-            context, sent = modify_as_quote(line, 'es ist wahr')
+            # context, sent = modify_as_quote(line, 'es ist wahr')
+            context, sent = append(line, 'es ist wahr', new_sentence=True)
             context, sent = norm(context), norm(sent)
             if context:
                 if de_modification == "true:" and context[-1] in string.punctuation:
@@ -56,7 +57,8 @@ with MosesPunctuationNormalizer('en') as norm, MosesTokenizer('en') as tok, Mose
     with open(en_path, 'r') as en_file, open(output_en, 'w') as out:
         for _, line in tqdm(enumerate(en_file)):
             line = de_tok(line.split())
-            context, sent = modify_as_quote(line, 'it is true')
+            # context, sent = modify_as_quote(line, 'it is true')
+            context, sent = append(line, "it is true", new_sentence=True)
             context, sent = norm(context), norm(sent)
             if context:
                 if de_modification == "true:" and context[-1] in string.punctuation:
