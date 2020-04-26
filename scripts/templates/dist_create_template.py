@@ -66,7 +66,7 @@ with open('../../templates/distance/and_de_tok', 'w') as tokenized_de, open('../
 
         tokenized_de.write(sie2+'\n')
 
-        es2 = ' '.join(tok_de(norm(f'Ich stehe nun vor {nominative[second[0]]} {second[2]} und {dativ[first[0]]}'
+        es2 = ' '.join(tok_de(norm(f'Ich stehe nun vor {dativ[second[0]]} {second[2]} und {dativ[first[0]]}'
                                     f' {first[2]}. '
                                     f'Ich beobachte es sorgfältig.')))
         tokenized_de.write(es2+'\n')

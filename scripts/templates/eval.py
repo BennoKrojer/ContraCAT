@@ -5,8 +5,9 @@ genders = ['er', 'sie', 'es']
 predictions = {'er': [], 'sie': [], 'es': []}
 best_en = ''
 best_de = ''
-for i, (score, de, en) in enumerate(zip(open('../../outputs/templates/concat22_trans', 'r'), open('../../templates/de_tok',
-    'r').readlines(), open('../../templates/en_tok', 'r').readlines())):
+for i, (score, de, en) in enumerate(zip(open('../../outputs/templates/concat22_trans', 'r'),
+                                        open('../../templates/transitive/de_tok', 'r').readlines(),
+                                        open('../../templates/transitive/en_tok', 'r').readlines())):
     score = float(score)
     if best > score:
         best = score
@@ -21,7 +22,7 @@ for i, (score, de, en) in enumerate(zip(open('../../outputs/templates/concat22_t
 
 for key, val in predictions.items():
     print(f'{key}: {len(val)}')
-json.dump(predictions, open('../../outputs/templates/results.json', 'w'))
+json.dump(predictions, open('../../outputs/templates/trans_results.json', 'w'), indent=2)
 
 
 
