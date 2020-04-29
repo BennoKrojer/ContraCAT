@@ -1,0 +1,404 @@
+[
+  {
+    "src pronoun": "It",
+    "ref pronoun": "Es",
+    "ante distance": 1,
+    "corpus": "opensubs1919-ende",
+    "document id": "1919_10247_5578145.de",
+    "errors": [
+      {
+        "contrastive": "Sie waren all die Frauen von Marstrand, junge wie alte, in Trauerkleidung.",
+        "replacement": "Sie",
+        "replacement gender": "Fem",
+        "type": "pronominal coreference"
+      },
+      {
+        "contrastive": "Er waren all die Frauen von Marstrand, junge wie alte, in Trauerkleidung.",
+        "replacement": "Er",
+        "replacement gender": "Masc",
+        "type": "pronominal coreference"
+      }
+    ],
+    "intrasegmental": false,
+    "ref ante head": null,
+    "ref ante head gender": null,
+    "ref ante head id": null,
+    "ref ante head lemma": null,
+    "ref ante head morpho": null,
+    "ref ante head pos": null,
+    "ref ante phrase": null,
+    "ref segment": "Es waren all die Frauen von Marstrand, junge wie alte, in Trauerkleidung.",
+    "segment id": 140,
+    "src ante head": "skipper",
+    "src ante head gender": null,
+    "src ante head id": 11,
+    "src ante head lemma": "skipper",
+    "src ante head morpho": null,
+    "src ante head pos": "NN",
+    "src ante phrase": "the skipper",
+    "src segment": "It was the womenfolk of Marstrand, both young and old."
+  },
+  {
+    "ante distance": 0,
+    "ref pronoun": "es",
+    "src pronoun": "it",
+    "corpus": "opensubs1921-ende",
+    "document id": "1921_12806_3712161.de",
+    "errors": [
+      {
+        "contrastive": "Jetzt hast du mich mit deiner Erz\u00e4hlung aber neugierig gemacht, und ich bin gespannt zu h\u00f6ren, wie sie weiterging!",
+        "replacement": "sie",
+        "replacement gender": "Fem",
+        "type": "pronominal coreference"
+      },
+      {
+        "contrastive": "Jetzt hast du mich mit deiner Erz\u00e4hlung aber neugierig gemacht, und ich bin gespannt zu h\u00f6ren, wie er weiterging!",
+        "replacement": "er",
+        "replacement gender": "Masc",
+        "type": "pronominal coreference"
+      }
+    ],
+    "intrasegmental": true,
+    "ref ante head": null,
+    "ref ante head gender": null,
+    "ref ante head id": null,
+    "ref ante head lemma": null,
+    "ref ante head morpho": null,
+    "ref ante head pos": null,
+    "ref ante phrase": null,
+    "ref segment": "Jetzt hast du mich mit deiner Erz\u00e4hlung aber neugierig gemacht, und ich bin gespannt zu h\u00f6ren, wie es weiterging!",
+    "segment id": 70,
+    "src ante head": "story",
+    "src ante head gender": null,
+    "src ante head id": 9,
+    "src ante head lemma": "story",
+    "src ante head morpho": null,
+    "src ante head pos": "NN",
+    "src ante phrase": "your story",
+    "src segment": "You have made me very curious about your story and I can't wait to hear how it continues!"
+  },
+  {
+    "ante distance": 0,
+    "src pronoun": "it",
+    "ref pronoun": "es",
+    "corpus": "opensubs1922-ende",
+    "document id": "1922_13169_3363298.de",
+    "errors": [
+      {
+        "contrastive": "Bei offenen Fenstern tanzt sie herein.",
+        "replacement": "sie",
+        "replacement gender": "Fem",
+        "type": "pronominal coreference"
+      },
+      {
+        "contrastive": "Bei offenen Fenstern tanzt er herein.",
+        "replacement": "er",
+        "replacement gender": "Masc",
+        "type": "pronominal coreference"
+      }
+    ],
+    "intrasegmental": true,
+    "ref ante head": null,
+    "ref ante head gender": null,
+    "ref ante head id": null,
+    "ref ante head lemma": null,
+    "ref ante head morpho": null,
+    "ref ante head pos": null,
+    "ref ante phrase": null,
+    "ref segment": "Bei offenen Fenstern tanzt es herein.",
+    "segment id": 46,
+    "src ante head": "windows",
+    "src ante head gender": null,
+    "src ante head id": 3,
+    "src ante head lemma": "window",
+    "src ante head morpho": null,
+    "src ante head pos": "NNS",
+    "src ante phrase": "open windows",
+    "src segment": "Through open windows it came in, dancing."
+  },
+  {
+    "ante distance": 1,
+    "ref pronoun": "es",
+    "src pronoun": "it",
+    "corpus": "opensubs1922-ende",
+    "document id": "1922_13169_3363298.de",
+    "errors": [
+      {
+        "contrastive": "Ich verga\u00df, sie euch zu vertraun.",
+        "replacement": "sie",
+        "replacement gender": "Fem",
+        "type": "pronominal coreference"
+      },
+      {
+        "contrastive": "Ich verga\u00df, ihn euch zu vertraun.",
+        "replacement": "ihn",
+        "replacement gender": "Masc",
+        "type": "pronominal coreference"
+      }
+    ],
+    "intrasegmental": false,
+    "ref ante head": null,
+    "ref ante head gender": null,
+    "ref ante head id": null,
+    "ref ante head lemma": null,
+    "ref ante head morpho": null,
+    "ref ante head pos": null,
+    "ref ante phrase": null,
+    "ref segment": "Ich verga\u00df, es euch zu vertraun.",
+    "segment id": 64,
+    "src ante head": "plan",
+    "src ante head gender": null,
+    "src ante head id": 4,
+    "src ante head lemma": "plan",
+    "src ante head morpho": null,
+    "src ante head pos": "NN",
+    "src ante phrase": "your plan",
+    "src segment": "I forgot to confide it to you."
+  },
+  {
+    "ante distance": 1,
+    "src pronoun": "it",
+    "ref pronoun": "es",
+    "corpus": "opensubs1922-ende",
+    "document id": "1922_13169_3363298.de",
+    "errors": [
+      {
+        "contrastive": "Dein halbes Verm\u00f6gen wandtest du dran, sie sorglos verschwendend...",
+        "replacement": "sie",
+        "replacement gender": "Fem",
+        "type": "pronominal coreference"
+      },
+      {
+        "contrastive": "Dein halbes Verm\u00f6gen wandtest du dran, er sorglos verschwendend...",
+        "replacement": "er",
+        "replacement gender": "Masc",
+        "type": "pronominal coreference"
+      },
+      {
+        "contrastive": "Dein halbes Verm\u00f6gen wandtest du dran, ihn sorglos verschwendend...",
+        "replacement": "ihn",
+        "replacement gender": "Masc",
+        "type": "pronominal coreference"
+      }
+    ],
+    "intrasegmental": false,
+    "ref ante head": null,
+    "ref ante head gender": null,
+    "ref ante head id": null,
+    "ref ante head lemma": null,
+    "ref ante head morpho": null,
+    "ref ante head pos": null,
+    "ref ante phrase": null,
+    "ref segment": "Dein halbes Verm\u00f6gen wandtest du dran, es sorglos verschwendend...",
+    "segment id": 70,
+    "src ante head": "life",
+    "src ante head gender": null,
+    "src ante head id": 2,
+    "src ante head lemma": "life",
+    "src ante head morpho": null,
+    "src ante head pos": "NN",
+    "src ante phrase": "Your life 's",
+    "src segment": "You spent half your fortune on it; you wasted it, thoughtlessly."
+  },
+  {
+    "ante distance": 0,
+    "ref pronoun": "es",
+    "src pronoun": "it",
+    "corpus": "opensubs1922-ende",
+    "document id": "1922_13169_3363298.de",
+    "errors": [
+      {
+        "contrastive": "Einerseits sei sie erfreulich f\u00fcr Genuas Volk, anderseits m\u00fcsst 'sie der Adel bedauern, wenn ein wertvoll st\u00fcck Grund und Boden verloren ihr ginge.",
+        "replacement": "sie",
+        "replacement gender": "Fem",
+        "type": "pronominal coreference"
+      },
+      {
+        "contrastive": "Einerseits sei es erfreulich f\u00fcr Genuas Volk, anderseits m\u00fcsst 'er der Adel bedauern, wenn ein wertvoll st\u00fcck Grund und Boden verloren ihm ginge.",
+        "replacement": "er",
+        "replacement gender": "Masc",
+        "type": "pronominal coreference"
+      },
+      {
+        "contrastive": "Einerseits sei es erfreulich f\u00fcr Genuas Volk, anderseits m\u00fcsst 'ihn der Adel bedauern, wenn ein wertvoll st\u00fcck Grund und Boden verloren ihm ginge.",
+        "replacement": "ihn",
+        "replacement gender": "Masc",
+        "type": "pronominal coreference"
+      }
+    ],
+    "intrasegmental": true,
+    "ref ante head": null,
+    "ref ante head gender": null,
+    "ref ante head id": null,
+    "ref ante head lemma": null,
+    "ref ante head morpho": null,
+    "ref ante head pos": null,
+    "ref ante phrase": null,
+    "ref segment": "Einerseits sei es erfreulich f\u00fcr Genuas Volk, anderseits m\u00fcsst 'es der Adel bedauern, wenn ein wertvoll st\u00fcck Grund und Boden verloren ihm ginge.",
+    "segment id": 246,
+    "src ante head": "it",
+    "src ante head gender": null,
+    "src ante head id": 5,
+    "src ante head lemma": "it",
+    "src ante head morpho": null,
+    "src ante head pos": "PRP",
+    "src ante phrase": "it",
+    "src segment": "On the one hand it would be welcome for the people of Genoa, on the other hand the aristocracy would regret if it were to lose a valuable property."
+  },
+  {
+    "src pronoun": "it",
+    "ref pronoun": "es",
+    "ante distance": 0,
+    "corpus": "opensubs1922-ende",
+    "document id": "1922_13169_3363298.de",
+    "errors": [
+      {
+        "contrastive": "Die treibende Kraft dieses armen Lebens war Gier nach Ruhm, und die Quelle, aus der sie sch\u00f6pfte, war Leid.",
+        "replacement": "sie",
+        "replacement gender": "Fem",
+        "type": "pronominal coreference"
+      },
+      {
+        "contrastive": "Die treibende Kraft dieses armen Lebens war Gier nach Ruhm, und die Quelle, aus der er sch\u00f6pfte, war Leid.",
+        "replacement": "er",
+        "replacement gender": "Masc",
+        "type": "pronominal coreference"
+      }
+    ],
+    "intrasegmental": true,
+    "ref ante head": null,
+    "ref ante head gender": null,
+    "ref ante head id": null,
+    "ref ante head lemma": null,
+    "ref ante head morpho": null,
+    "ref ante head pos": null,
+    "ref ante phrase": null,
+    "ref segment": "Die treibende Kraft dieses armen Lebens war Gier nach Ruhm, und die Quelle, aus der es sch\u00f6pfte, war Leid.",
+    "segment id": 367,
+    "src ante head": "force",
+    "src ante head gender": null,
+    "src ante head id": 3,
+    "src ante head lemma": "force",
+    "src ante head morpho": null,
+    "src ante head pos": "NN",
+    "src ante phrase": "The driving force of this poor life",
+    "src segment": "The driving force of this poor life was greed for fame and the fountain from which it was nourished was pain."
+  },
+  {
+    "ante distance": 0,
+    "ref pronoun": "es",
+    "src pronoun": "it",
+    "corpus": "opensubs1922-ende",
+    "document id": "1922_13169_3363298.de",
+    "errors": [
+      {
+        "contrastive": "Das wollt 'allzu oft gar zu heftig schlagen, und manchmal war ihr, als griff' eine Hand, eine harte, unbarmherzige Hand, nach dem zuckenden Ding und krampft 'sie zusammen, furchtbar und wehe,",
+        "replacement": "sie",
+        "replacement gender": "Fem",
+        "type": "pronominal coreference"
+      },
+      {
+        "contrastive": "Das wollt 'allzu oft gar zu heftig schlagen, und manchmal war ihr, als griff' eine Hand, eine harte, unbarmherzige Hand, nach dem zuckenden Ding und krampft 'ihn zusammen, furchtbar und wehe,",
+        "replacement": "ihn",
+        "replacement gender": "Masc",
+        "type": "pronominal coreference"
+      }
+    ],
+    "intrasegmental": true,
+    "ref ante head": null,
+    "ref ante head gender": null,
+    "ref ante head id": null,
+    "ref ante head lemma": null,
+    "ref ante head morpho": null,
+    "ref ante head pos": null,
+    "ref ante phrase": null,
+    "ref segment": "Das wollt 'allzu oft gar zu heftig schlagen, und manchmal war ihr, als griff' eine Hand, eine harte, unbarmherzige Hand, nach dem zuckenden Ding und krampft 'es zusammen, furchtbar und wehe,",
+    "segment id": 374,
+    "src ante head": "thing",
+    "src ante head gender": null,
+    "src ante head id": 22,
+    "src ante head lemma": "thing",
+    "src ante head morpho": null,
+    "src ante head pos": "NN",
+    "src ante phrase": "the twitching thing",
+    "src segment": "All too often it would beat too passionately and sometimes she felt as if a merciless hand clutched at the twitching thing and squeezed it, dreadful and aching,"
+  },
+  {
+    "ante distance": 1,
+    "src pronoun": "it",
+    "ref pronoun": "es",
+    "corpus": "opensubs1922-ende",
+    "document id": "1922_13169_3363298.de",
+    "errors": [
+      {
+        "contrastive": "auf dass sie zur Ruh k\u00e4m!",
+        "replacement": "sie",
+        "replacement gender": "Fem",
+        "type": "pronominal coreference"
+      },
+      {
+        "contrastive": "auf dass er zur Ruh k\u00e4m!",
+        "replacement": "er",
+        "replacement gender": "Masc",
+        "type": "pronominal coreference"
+      }
+    ],
+    "intrasegmental": false,
+    "ref ante head": null,
+    "ref ante head gender": null,
+    "ref ante head id": null,
+    "ref ante head lemma": null,
+    "ref ante head morpho": null,
+    "ref ante head pos": null,
+    "ref ante phrase": null,
+    "ref segment": "auf dass es zur Ruh k\u00e4m!",
+    "segment id": 375,
+    "src ante head": "thing",
+    "src ante head gender": null,
+    "src ante head id": 22,
+    "src ante head lemma": "thing",
+    "src ante head morpho": null,
+    "src ante head pos": "NN",
+    "src ante phrase": "the twitching thing",
+    "src segment": "so that it may come to rest!"
+  },
+  {
+    "ante distance": 0,
+    "src pronoun": "it",
+    "ref pronoun": "es",
+    "corpus": "opensubs1922-ende",
+    "document id": "1922_13169_3363298.de",
+    "errors": [
+      {
+        "contrastive": "Und ob ihr auch leugnet, ihr seid bewegt, so ging sie Euch nahe?",
+        "replacement": "sie",
+        "replacement gender": "Fem",
+        "type": "pronominal coreference"
+      },
+      {
+        "contrastive": "Und ob ihr auch leugnet, ihr seid bewegt, so ging er Euch nahe?",
+        "replacement": "er",
+        "replacement gender": "Masc",
+        "type": "pronominal coreference"
+      }
+    ],
+    "intrasegmental": true,
+    "ref ante head": null,
+    "ref ante head gender": null,
+    "ref ante head id": null,
+    "ref ante head lemma": null,
+    "ref ante head morpho": null,
+    "ref ante head pos": null,
+    "ref ante phrase": null,
+    "ref segment": "Und ob ihr auch leugnet, ihr seid bewegt, so ging es Euch nahe?",
+    "segment id": 378,
+    "src ante head": "it",
+    "src ante head gender": null,
+    "src ante head id": 5,
+    "src ante head lemma": "it",
+    "src ante head morpho": null,
+    "src ante head pos": "PRP",
+    "src ante phrase": "it",
+    "src segment": "Even though you deny it, you are deeply moved, so it really touched you?"
+  }
+]

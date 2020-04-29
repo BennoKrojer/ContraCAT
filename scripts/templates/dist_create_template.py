@@ -1,5 +1,4 @@
 import os
-
 from mosestokenizer import MosesTokenizer, MosesPunctuationNormalizer
 
 nouns = {'m': [], 'f': [], 'n': []}
