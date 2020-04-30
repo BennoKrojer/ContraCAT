@@ -103,13 +103,16 @@ different_gender_count = 0
 
 modification_name = 'augm_synoynm'
 folder = 'synonym_augmentation'
-model = 'ted'
+model = 'subtitles_half'
 
 de_lines = open('../ContraPro_Dario/contrapro.text.tok.prev.de.de', 'r').readlines()
 en_lines = open('../ContraPro_Dario/contrapro.text.tok.prev.en.en', 'r').readlines()
 bpe_en_lines = open('../ContraPro_Dario/contrapro.text.bpe.prev.en.en', 'r').readlines()
 output_de = f'../ContraPro_Dario/{folder}/{model}/{modification_name}_de_tok.txt'
 output_en = f'../ContraPro_Dario/{folder}/{model}/{modification_name}_en_tok.txt'
+de_file_acc = []
+en_file_acc = []
+split = True
 
 det2def_det = load_dets('de')
 gender_change = {'m':load_gender_change('2male_de'), 'f': load_gender_change('2female_de'), 'n': load_gender_change(
@@ -119,27 +122,35 @@ idx = get_sentence_idx()
 new_contrapro = []
 
 modified = False
-modified_indices = []
+cached = os.path.exists('../ContraPro_Dario/synonym_augmentation/modified_indices.pkl')
+if cached:
+    modified_indices = pickle.load(open('../ContraPro_Dario/synonym_augmentation/modified_indices.pkl', 'rb'))
+else:
+    modified_indices = []
 modified_idx_de = set()
 modified_de = defaultdict(list)
 count_preword = defaultdict(int)
 
 
 def get_gender2sent(example):
-    res = dict()
-    # map = {'er' : 'm', 'sie':'f','es':'n', 'Fem':'f', 'Neut':'n', 'Masc':'m'}
-    # correct_gender = map[example['ref pronoun']]
+    order = []
+    map = {'er' : 'm', 'sie':'f','es':'n', 'Fem':'f', 'Neut':'n', 'Masc':'m'}
+    correct_gender = map[example['ref pronoun'].lower()]
+    order.append(correct_gender)
     # res[correct_gender] = example['ref segment']
-    # for contrastive in example['errors']:
-    #     res[map[contrastive['replacement gender']]] = contrastive['contrastive']
+    for contrastive in example['errors']:
+        order.append(map[contrastive['replacement gender']])
+        # res[map[contrastive['replacement gender']]] = contrastive['contrastive']
     unusual = len(example['errors']) > 2
-    return res, unusual
+    return order, unusual
 
 
 with MosesPunctuationNormalizer('de') as norm, MosesTokenizer('de') as tok, MosesDetokenizer('de') as de_tok,\
         open(output_de, 'w') as de_file, open(output_en, 'w') as en_file:
-    for i, example in tqdm.tqdm(enumerate(contrapro)):
-        _, unusual = get_gender2sent(example)
+    for i in tqdm.tqdm(modified_indices if cached else range(len(contrapro))):
+        modified = False
+        example = contrapro[i]
+        gender_order, unusual = get_gender2sent(example)
         head = example['src ante head lemma']
         tag = example["src ante head pos"]
         de_head = example['ref ante head lemma']
@@ -167,7 +178,6 @@ with MosesPunctuationNormalizer('de') as norm, MosesTokenizer('de') as tok, Mose
                             continue
                     if len(german_synonyms) > 1:
                         for synonym, gender in german_synonyms.items():
-                            gender_order = ['n', 'm', 'f']
                             line = de_lines[indices[i]+gender_order.index(gender)]
                             line = de_tok(line.split())
                             if original_gender != gender:
@@ -192,21 +202,27 @@ with MosesPunctuationNormalizer('de') as norm, MosesTokenizer('de') as tok, Mose
                                 context = ' '.join(tok(norm(context)))
                             sent = ' '.join(tok(norm(sent)))
                             line = context + (' <SEP> ' if context else '<SEP> ') + sent + '\n'
-                            de_file.write(line if not unusual else '!!!'+line)
-                            en_file.write(en_lines[indices[i]+gender_order.index(gender)])
-                            modified = True
-                        modified_indices.append(i)
+                            if not split:
+                                de_file.write(line)
+                                en_file.write(en_lines[indices[i]+gender_order.index(gender)])
+                                modified = True
+                            elif np.random.randint(2) == 1:
+                                de_file.write(line)
+                                en_file.write(en_lines[indices[i] + gender_order.index(gender)])
+                                modified = True
+                        if not cached:
+                            modified_indices.append(i)
                 except KeyError:
                     pass
         if not modified:
             new_contrapro.append(example)
 
+
 bpe = '../ted_data/train/ende.bpe' if model == 'ted' else '../models_dario/subtitles/ende.bpe'
 command_de = f'subword-nmt apply-bpe -c {bpe} --glossaries "<SEP>" < {output_de} > {output_de.replace("tok", "bpe")}'
-
 command_en = f'subword-nmt apply-bpe -c {bpe} --glossaries "<SEP>" < {output_en} > {output_en.replace("tok", "bpe")}'
 os.system(command_de)
 os.system(command_en)
 
-pickle.dump(modified_indices, open(f'../ContraPro_Dario/{folder}/modified_indices.pkl', 'wb'))
-json.dump(new_contrapro, open('../ContraPro/contrapro_no_augm.json', 'w'), indent=2)
+pickle.dump(modified_indices, open(f'../ContraPro_Dario/{folder}/{model}/modified_indices.pkl', 'wb'))
+json.dump(new_contrapro, open(f'../ContraPro/contrapro_no_augm{"_half" if split else ""}.json', 'w'), indent=2)
