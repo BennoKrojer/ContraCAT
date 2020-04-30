@@ -3,9 +3,8 @@ import json
 import os
 import pickle
 import re
-import shutil
 from collections import defaultdict
-
+import numpy as np
 import spacy
 import nltk
 import tqdm
@@ -18,7 +17,7 @@ import xml.etree.ElementTree as ET
 
 nltk.download('wordnet')
 nlp_en = spacy.load("en_core_web_sm")
-
+np.random.seed(42)
 def load_interlingual():
     root = ET.parse('../GermaNet/GN_V120/GN_V120_XML/interLingualIndex_DE-EN.xml').getroot()
     wn_id2lex_id = dict()
@@ -104,7 +103,8 @@ different_gender_count = 0
 
 modification_name = 'augm_synoynm'
 folder = 'synonym_augmentation'
-model = 'subtitles'
+model = 'ted'
+
 de_lines = open('../ContraPro_Dario/contrapro.text.tok.prev.de.de', 'r').readlines()
 en_lines = open('../ContraPro_Dario/contrapro.text.tok.prev.en.en', 'r').readlines()
 bpe_en_lines = open('../ContraPro_Dario/contrapro.text.bpe.prev.en.en', 'r').readlines()
@@ -155,7 +155,7 @@ with MosesPunctuationNormalizer('de') as norm, MosesTokenizer('de') as tok, Mose
                     lemma_id = en2lex_id[id]
                     german_synset = lexid2synset[lemma_id]
                     original_gender = de2gender[de_head.lower()]
-                    german_synonyms = {de_head.lower(): original_gender}
+                    german_synonyms = {de_head: original_gender}
                     for word, compound_head in german_synset:
                         try:
                             if compound_head:
