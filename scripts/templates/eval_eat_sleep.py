@@ -1,11 +1,11 @@
 import json
 import numpy
 
-gender_order = ['m','f','n']
-variant = 'sleep_eat_eat'
+gender_order = ['m', 'f', 'n']
+variant = 'object_verb_overlap/drink_eat_eat'
 predictions = {'correct': [], 'false': []}
 correct = open(f'../../templates/animals/{variant}/correct', 'r').readlines()
-scores = open(f'../../outputs/templates/{variant}/concat22_pattern_match', 'r').readlines()
+scores = open(f'../../outputs/templates/animals/{variant}/concat22_pattern_match', 'r').readlines()
 en = open(f'../../templates/animals/{variant}/en_tok', 'r').readlines()
 de = open(f'../../templates/animals/{variant}/de_tok', 'r').readlines()
 
@@ -22,4 +22,4 @@ for i in range(0, len(scores)-2, 3):
 
 for key, val in predictions.items():
     print(f'{key}: {len(val)}')
-json.dump(predictions, open(f'../../outputs/templates/{variant}/results.json', 'w'), indent=2)
+json.dump(predictions, open(f'../../outputs/templates/animals/{variant}/results.json', 'w'), indent=2)

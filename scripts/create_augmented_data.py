@@ -103,7 +103,7 @@ different_gender_count = 0
 
 modification_name = 'augm_synoynm'
 folder = 'synonym_augmentation'
-model = 'subtitles_half'
+model = 'subtitles'
 
 de_lines = open('../ContraPro_Dario/contrapro.text.tok.prev.de.de', 'r').readlines()
 en_lines = open('../ContraPro_Dario/contrapro.text.tok.prev.en.en', 'r').readlines()
@@ -112,10 +112,10 @@ output_de = f'../ContraPro_Dario/{folder}/{model}/{modification_name}_de_tok.txt
 output_en = f'../ContraPro_Dario/{folder}/{model}/{modification_name}_en_tok.txt'
 de_file_acc = []
 en_file_acc = []
-split = True
+split = False
 
 det2def_det = load_dets('de')
-gender_change = {'m':load_gender_change('2male_de'), 'f': load_gender_change('2female_de'), 'n': load_gender_change(
+gender_change = {'m': load_gender_change('2male_de'), 'f': load_gender_change('2female_de'), 'n': load_gender_change(
     '2neutral_de')}
 contrapro = json.load(open('../ContraPro/contrapro.json', 'r'))
 idx = get_sentence_idx()
@@ -123,6 +123,7 @@ new_contrapro = []
 
 modified = False
 cached = os.path.exists(f'../ContraPro_Dario/synonym_augmentation/{model}/modified_indices.pkl')
+modified_indices_lines = []
 if cached:
     modified_indices = pickle.load(open(f'../ContraPro_Dario/synonym_augmentation/{model}/modified_indices.pkl', 'rb'))
 else:
@@ -211,12 +212,14 @@ with MosesPunctuationNormalizer('de') as norm, MosesTokenizer('de') as tok, Mose
                             else:
                                 de_sentences.append(line)
                                 en_sentences.append(en_lines[indices[i] + gender_order.index(gender)])
-                        if not cached:
-                            modified_indices.append(i)
+                        # if not cached:
+                        # modified_indices.append(i)
+                        for ind in range(indices[i], indices[i+1]):
+                            modified_indices_lines.append(ind)
                         if de_sentences and np.random.randint(2) == 1:
                             modified = True
-                            de_file.write('\n'.join(de_sentences))
-                            en_file.write('\n'.join(en_sentences))
+                            de_file.write(''.join(de_sentences))
+                            en_file.write(''.join(en_sentences))
                 except KeyError:
                     pass
         if not modified:
@@ -229,5 +232,6 @@ command_en = f'subword-nmt apply-bpe -c {bpe} --glossaries "<SEP>" < {output_en}
 os.system(command_de)
 os.system(command_en)
 
-# pickle.dump(modified_indices, open(f'../ContraPro_Dario/{folder}/{model}/modified_indices.pkl', 'wb'))
-json.dump(new_contrapro, open(f'../ContraPro/contrapro_no_augm{"_half" if split else ""}.json', 'w'), indent=2)
+pickle.dump(modified_indices, open(f'../ContraPro_Dario/{folder}/{model}/modified_indices_examples.pkl', 'wb'))
+pickle.dump(modified_indices_lines, open(f'../ContraPro_Dario/{folder}/{model}/modified_indices_lines.pkl', 'wb'))
+# json.dump(new_contrapro, open(f'../ContraPro/contrapro_no_augm{"_half" if split else ""}.json', 'w'), indent=2)
