@@ -1,1 +1,1 @@
-python3 -m sockeye.score --target templates/animals/animacy/de_bpe --source templates/animals/animacy/en_bpe --output outputs/templates/animals/animacy/concat22 --model models_dario/subtitles/concat-2-2/ --device-ids 0 --output-type score --batch-size 128
+python3 -m sockeye.score --target templates/animals/animacy/fressen/de_bpe --source templates/animals/animacy/fressen/en_bpe --output outputs/templates/animals/animacy/fressen/concat22 --model models_dario/subtitles/concat-2-2/ --device-ids 0 --output-type score --batch-size 128
