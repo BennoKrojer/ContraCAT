@@ -23,7 +23,7 @@ def combine_nouns(animal_path, food_path):
     return pairs
 
 
-type = 'animacy'
+type = 'animacy/fressen'
 first_correct = True
 path = f'../../templates/animals/{type}/'
 os.makedirs(path, exist_ok=True)
@@ -51,13 +51,13 @@ with open(path + 'de_tok', 'w') as tokenized_de, \
 
         for pronoun in ['Er', 'Sie', 'Es']:
             de_phrase = ' '.join(tok_de(norm(f'{nominative[first[0]]} {first[2]} hat {accusative[second[0]]} '
-                                             f'{second[2]} gegessen. {pronoun} war hungrig.')))
+                                             f'{second[2]} gefressen. {pronoun} war hungrig.')))
 
             tokenized_de.write(de_phrase + '\n')
 
         for pronoun in ['Er', 'Sie', 'Es']:
             de_phrase = ' '.join(tok_de(norm(f'{nominative[first[0]]} {first[2]} hat {accusative[second[0]]} '
-                                             f'{second[2]} gegessen. {pronoun} war lecker.')))
+                                             f'{second[2]} gefressen. {pronoun} war lecker.')))
 
             tokenized_de.write(de_phrase + '\n')
 

@@ -2,10 +2,10 @@ import json
 import numpy
 
 gender_order = ['m', 'f', 'n']
-variant = 'object_verb_overlap/drink_eat_eat'
+variant = 'animacy/'
 predictions = {'correct': [], 'false': []}
 correct = open(f'../../templates/animals/{variant}/correct', 'r').readlines()
-scores = open(f'../../outputs/templates/animals/{variant}/concat22_pattern_match', 'r').readlines()
+scores = open(f'../../outputs/templates/animals/{variant}/concat22', 'r').readlines()
 en = open(f'../../templates/animals/{variant}/en_tok', 'r').readlines()
 de = open(f'../../templates/animals/{variant}/de_tok', 'r').readlines()
 
