@@ -40,7 +40,7 @@ with open(path + 'de_tok', 'w') as tokenized_de, \
         open(f'../../templates/animals/{type}/correct', 'w') as correct:
     for first, second in pairs:
         en_template1 = ' '.join(tok_en(norm(f'The {first[1]} was eating the {second[1]}. It was hungry.')))
-        en_template2 = ' '.join(tok_en(norm(f'The {first[1]} was eating the {second[1]}. It was hungry.')))
+        en_template2 = ' '.join(tok_en(norm(f'The {first[1]} was eating the {second[1]}. It was delicious.')))
 
         for _ in range(3):
             tokenized_en.write(en_template1 + '\n')
