@@ -1,0 +1,262 @@
+{
+  "der": {
+    "f": "die",
+    "m": "der",
+    "n": "das"
+  },
+  "das": {
+    "f": "die",
+    "m": "der",
+    "n": "das"
+  },
+  "den": {
+    "f": "die",
+    "m": "den",
+    "n": "das"
+  },
+  "dem": {
+    "f": "der",
+    "m": "dem",
+    "n": "dem"
+  },
+  "meinen": {
+    "f": "mein",
+    "n": "mein"
+  },
+  "meinem": {
+    "f": "meiner",
+    "n": "meinem"
+  },
+  "dieser": {
+    "f": "diese",
+    "m": "diesem",
+    "n": "dieses"
+  },
+  "ihr": {
+    "f": "ihre",
+    "n": "ihr"
+  },
+  "ihren": {
+    "f": "ihre"
+  },
+  "einen": {
+    "f": "eine",
+    "m": "einen",
+    "n": "ein"
+  },
+  "sein": {
+    "f": "seine"
+  },
+  "diesen": {
+    "f": "diese",
+    "m": "diesen",
+    "n": "dieses"
+  },
+  "diesem": {
+    "f": "dieser",
+    "n": "diesem"
+  },
+  "euren": {
+    "f": "eure"
+  },
+  "mein": {
+    "f": "meine",
+    "n": "mein"
+  },
+  "deinen": {
+    "f": "deine",
+    "n": "dein"
+  },
+  "dein": {
+    "f": "deine",
+    "n": "dein"
+  },
+  "ein": {
+    "f": "eine",
+    "m": "ein",
+    "n": "ein"
+  },
+  "die": {
+    "f": "die",
+    "m": "der",
+    "n": "das"
+  },
+  "n\u00e4chste": {
+    "f": "n\u00e4chste",
+    "m": "n\u00e4chste",
+    "n": "n\u00e4chste"
+  },
+  "einem": {
+    "f": "einer",
+    "m": "einem"
+  },
+  "eine": {
+    "f": "eine",
+    "m": "ein",
+    "n": "ein"
+  },
+  "ganze": {
+    "f": "ganze",
+    "m": "ganze",
+    "n": "ganze"
+  },
+  "diese": {
+    "f": "diese",
+    "m": "dieser",
+    "n": "dieses"
+  },
+  "kleine": {
+    "f": "kleine",
+    "m": "kleine",
+    "n": "kleine"
+  },
+  "gro\u00dfe": {
+    "f": "gro\u00dfe",
+    "m": "gro\u00dfe",
+    "n": "gro\u00dfe"
+  },
+  "neue": {
+    "f": "neue",
+    "m": "neue",
+    "n": "neue"
+  },
+  "meine": {
+    "m": "mein",
+    "n": "mein"
+  },
+  "deine": {
+    "m": "dein",
+    "n": "dein"
+  },
+  "deiner": {
+    "m": "deinem"
+  },
+  "seine": {
+    "m": "sein",
+    "n": "sein"
+  },
+  "meiner": {
+    "m": "meinem"
+  },
+  "unsere": {
+    "m": "unser"
+  },
+  "jeder": {
+    "m": "jedem"
+  },
+  "eure": {
+    "m": "euer"
+  },
+  "dumme": {
+    "m": "dumme"
+  },
+  "einer": {
+    "m": "eines",
+    "n": "einem"
+  },
+  "ihre": {
+    "m": "ihr"
+  },
+  "richtigen": {
+    "m": "richtige"
+  },
+  "zeitweise": {
+    "m": "zeitweise"
+  },
+  "falsche": {
+    "m": "falsche"
+  },
+  "oberste": {
+    "m": "oberste"
+  },
+  "ideologische": {
+    "m": "ideologische"
+  },
+  "rambos": {
+    "m": "rambos"
+  },
+  "fehlende": {
+    "m": "fehlende"
+  },
+  "heutige": {
+    "m": "heutige"
+  },
+  "tolle": {
+    "m": "tolle"
+  },
+  "verlorene": {
+    "m": "verlorene"
+  },
+  "bl\u00f6de": {
+    "m": "bl\u00f6de"
+  },
+  "etwas": {
+    "m": "etwas"
+  },
+  "dannys": {
+    "m": "dannys"
+  },
+  "barbecue": {
+    "m": "barbecue"
+  },
+  "dieses": {
+    "m": "dieses"
+  },
+  "galveston": {
+    "m": "galveston"
+  },
+  "menschlichen": {
+    "m": "menschliche"
+  },
+  "automatisierter": {
+    "m": "automatisiertem"
+  },
+  "zertrampelt.": {
+    "m": "zertrampelt."
+  },
+  "geheimen": {
+    "m": "geheime"
+  },
+  "gesamte": {
+    "m": "gesamte"
+  },
+  "jemimas": {
+    "m": "jemimas"
+  },
+  "liams": {
+    "m": "liams"
+  },
+  "erste": {
+    "m": "erste"
+  },
+  "andere": {
+    "m": "andere"
+  },
+  "goldene": {
+    "m": "goldene"
+  },
+  "wills": {
+    "m": "wills"
+  },
+  "zur": {
+    "m": "zur"
+  },
+  "alte": {
+    "m": "alte"
+  },
+  "feinste": {
+    "m": "feinste"
+  },
+  "innere": {
+    "m": "innere"
+  },
+  "blutige": {
+    "m": "blutige"
+  },
+  "-die": {
+    "m": "-der"
+  },
+  "ihrer": {
+    "n": "ihrem"
+  }
+}

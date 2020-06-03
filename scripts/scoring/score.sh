@@ -1,4 +1,1 @@
-python3 -m sockeye.score --target templates/animals/eat_sleep_sleep/de_bpe --source templates/animals/eat_sleep_sleep/en_bpe --output outputs/templates/eat_sleep_sleep/concat22_pattern_match --model models_dario/subtitles/concat-2-2/ --device-ids 1 --output-type score --batch-size 128
-python3 -m sockeye.score --target templates/animals/sleep_eat_sleep/de_bpe --source templates/animals/sleep_eat_sleep/en_bpe --output outputs/templates/sleep_eat_sleep/concat22_pattern_match --model models_dario/subtitles/concat-2-2/ --device-ids 1 --output-type score --batch-size 128
-python3 -m sockeye.score --target templates/animals/sleep_eat_eat/de_bpe --source templates/animals/sleep_eat_eat/en_bpe --output outputs/templates/sleep_eat_eat/concat22_pattern_match --model models_dario/subtitles/concat-2-2/ --device-ids 1 --output-type score --batch-size 128
-
+python3 -m sockeye.score --target templates/animals/animacy/fressen/de_bpe --source templates/animals/animacy/fressen/en_bpe --output outputs/templates/animals/animacy/fressen/concat22 --model models_dario/subtitles/concat-2-2/ --device-ids 0 --output-type score --batch-size 128

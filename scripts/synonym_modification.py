@@ -5,8 +5,6 @@ import pickle
 import re
 import shutil
 from collections import defaultdict
-
-import spacy
 import nltk
 import tqdm
 from mosestokenizer import MosesDetokenizer, MosesPunctuationNormalizer, MosesTokenizer
@@ -15,9 +13,10 @@ from nltk.corpus import wordnet
 from scripts.compare_scores import load_dets, load_gender_change
 from scripts.sample_modifications import get_sentence_idx
 import xml.etree.ElementTree as ET
+from scripts.utils import get_genders
 
 nltk.download('wordnet')
-nlp_en = spacy.load("en_core_web_sm")
+# nlp_en = spacy.load("en_core_web_sm")
 
 def load_interlingual():
     root = ET.parse('../GermaNet/GN_V120/GN_V120_XML/interLingualIndex_DE-EN.xml').getroot()
@@ -73,28 +72,6 @@ def disambiguate(word, context, synsets):
         return None
 
 
-def get_genders():
-    pattern = r'\[.*?\]|\(.*?\)'
-    with open('dict_cc_original.txt', 'r') as file:
-        genders = dict()
-        retrieved = 0
-        for line in file:
-            if line[0] != '#' and len(line) > 2:
-                _, de = line.split(' :: ')
-                de = re.sub(pattern, '', de)
-                if len(de.split()) == 2:
-                    word, gender = de.split()
-                    gender = gender.replace('{', '').replace('}', '').strip()
-                    if gender in ['m', 'f', 'n']:
-                        retrieved += 1
-                        genders[word.lower().strip()] = gender
-                else:
-                    # print(de)
-                    pass
-        print("!!!!!!!!!!RETRIEVED:" + str(retrieved))
-        return genders
-
-
 results = []
 de2gender = get_genders()
 indices = get_sentence_idx()
@@ -131,7 +108,7 @@ with MosesPunctuationNormalizer('de') as norm, MosesTokenizer('de') as tok, Mose
         dist = example['ante distance']
         en_context = clean_context(en_context_lines[indices[i]])
         de_context = clean_context(de_context_lines[indices[i]])
-        if 'NN' in tag and de_head is not None and dist < 2 and (de_head in tok(de_context) or de_head  in de_context.split()):
+        if 'NN' in tag and de_head is not None and dist < 2 and (de_head in tok(de_context) or de_head in de_context.split()):
             nn_count += 1
             synset = disambiguate(head, en_context, wordnet.synsets(head))  # if it is not ".n" you can ignore it
             if synset:

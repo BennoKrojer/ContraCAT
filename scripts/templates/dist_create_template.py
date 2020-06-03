@@ -5,7 +5,7 @@ nouns = {'m': [], 'f': [], 'n': []}
 nominative = {'m': 'Der', 'f': 'Die', 'n': 'Das'}
 dativ = {'m': 'dem', 'f': 'der', 'n': 'dem'}
 
-with open('../../templates/distance/nouns', 'r') as file:
+with open('../../templates_fixed/distance/nouns', 'r') as file:
     for line in file:
         en, de, gender = line.split(',')
         nouns[gender.strip()].append((en, de))
@@ -22,12 +22,12 @@ for m_en,m_de in nouns['f']:
     for f_en,f_de in nouns['n']:
         pairs.append((('f', m_en, m_de), ('n', f_en, f_de)))
 
-with open('../../templates/distance/and_de_tok', 'w') as tokenized_de, open('../../templates/distance/and_en_tok',
+with open('../../templates_fixed/distance/and_de_tok', 'w') as tokenized_de, open('../../templates_fixed/distance/and_en_tok',
                                                                             'w') \
         as tokenized_en, MosesPunctuationNormalizer('en') as norm, MosesTokenizer('de') as tok_de, MosesTokenizer(
-    'en') as tok_en, open('../../templates/distance/gender_combination', 'w') as gender_file:
+    'en') as tok_en, open('../../templates_fixed/distance/gender_combination', 'w') as gender_file:
     for first, second in pairs:
-        en_template1 = ' '.join(tok_en(norm(f'I am now standing in front of the {first[1]} and the {second[1]}. I '
+        en_template1 = ' '.join(tok_en(norm(f'I am now standing in front of the {first[1]} and the {second[1]}.  I '
                                             f'carefully observe it.')))
 
         en_template2 = ' '.join(tok_en(norm(f' am now standing in front of the {second[1]} and the {first[1]}. I '
@@ -72,9 +72,9 @@ with open('../../templates/distance/and_de_tok', 'w') as tokenized_de, open('../
 
 
 command = 'subword-nmt apply-bpe -c ../../models_dario/subtitles/ende.bpe --glossaries "<SEP>" < ' \
-          '../../templates/distance/and_en_tok > ../../templates/distance/and_en_bpe'
+          '../../templates_SEP_fixed/distance/and_en_tok > ../../templates_SEP_fixed/distance/and_en_bpe'
 os.system(command)
 
 command = 'subword-nmt apply-bpe -c ../../models_dario/subtitles/ende.bpe --glossaries "<SEP>" < ' \
-                  '../../templates/distance/and_de_tok > ../../templates/distance/and_de_bpe'
+                  '../../templates_SEP_fixed/distance/and_de_tok > ../../templates_SEP_fixed/distance/and_de_bpe'
 os.system(command)

@@ -13,7 +13,7 @@ from scripts.sample_modifications import get_sentence_idx
 import xml.etree.ElementTree as ET
 
 nltk.download('wordnet')
-nlp_en = spacy.load("en_core_web_sm")
+# nlp_en = spacy.load("en_core_web_sm")
 contrapro = json.load(open('../ContraPro/contrapro.json', 'r'))
 
 
