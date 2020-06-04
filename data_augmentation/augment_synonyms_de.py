@@ -26,9 +26,12 @@ def get_modifiable_nouns(phrase):
     return [(str(phrase[i-1]) if i != 0 else '', str(phrase[i])) for i in range(len(phrase)) if phrase[i].tag_ == 'NN']
 
 
-def get_new_prev(prev, gender):
+def get_new_prev(prev, gender, old_gender):
     if prev == '':
         return prev
+    if old_gender == 'f' and prev.lower() == 'der':
+        print('HAPPENED')
+        return gender_conversion['der_dative'][gender]
     else:
         if prev[0].isupper():
             return gender_conversion.get(prev.lower()).get(gender).capitalize()
@@ -47,12 +50,13 @@ def modify(df):
             for prev, noun in nouns:
                 if noun in german_synsets:
                     synonyms, head = german_synsets[noun]
+                    old_gender = gender_mapping[head.lower()] if head else gender_mapping[noun.lower()]
                     synonyms = [syn for syn in synonyms if syn[0] != noun] # only keep synonyms which != original
                     for synonym, head in synonyms:
                         try:
                             new_gender = gender_mapping[head.lower()] if head else gender_mapping[synonym.lower()]
 
-                            new_prev = get_new_prev(prev, new_gender)
+                            new_prev = get_new_prev(prev, new_gender, old_gender)
                             sentence = ''.join(sentence)
                             new_sentence = sentence.replace(noun, synonym).replace(prev, new_prev)
                             mods_per_sentence.append(new_sentence)

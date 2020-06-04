@@ -1,34 +1,25 @@
 import json
+import numpy
 
-best = float('inf')
-genders = ['er', 'sie', 'es']
-predictions = {'er': [], 'sie': [], 'es': []}
-best_en = ''
-best_de = ''
-for i, (score, de, en) in enumerate(zip(open('../../outputs/templates/concat22_trans', 'r'),
-                                        open('../../templates/transitive/de_tok', 'r').readlines(),
-                                        open('../../templates/transitive/en_tok', 'r').readlines())):
-    score = float(score)
-    if best > score:
-        best = score
-        gender = genders[i % 3]
-        best_de = de
-        best_en = en
-    if i % 3 == 2:
-        predictions[gender].append(best_de.strip() + ' - ' + best_en.strip())
-        best = float('inf')
-        best_de = ''
-        best_en = ''
+gender_order = ['m', 'f', 'n']
+variant = 'animacy/fressen'
+predictions = {'correct': [], 'false': []}
+correct = open(f'../../templates/animals/{variant}/correct', 'r').readlines()
+scores = open(f'../../outputs/templates/animals/{variant}/concat22', 'r').readlines()
+en = open(f'../../templates/animals/{variant}/en_tok', 'r').readlines()
+de = open(f'../../templates/animals/{variant}/de_tok', 'r').readlines()
+
+for i in range(0, len(scores)-2, 3):
+    correct_gender = correct[i].split()[0]
+    pred = numpy.argmin(scores[i:i+3])
+    pred_gender = gender_order[pred]
+
+    if correct_gender == pred_gender:
+        predictions['correct'].append(de[i+pred])
+    else:
+        predictions['false'].append(de[i+pred])
+
 
 for key, val in predictions.items():
     print(f'{key}: {len(val)}')
-json.dump(predictions, open('../../outputs/templates/trans_results.json', 'w'), indent=2)
-
-
-
-
-
-
-
-
-
+json.dump(predictions, open(f'../../outputs/templates/animals/{variant}/results.json', 'w'), indent=2)

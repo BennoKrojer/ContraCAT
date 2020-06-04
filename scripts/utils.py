@@ -56,3 +56,8 @@ def load_germanet(path):
     return id2synset, word2synset
 
 # def adapt_german(phrase, replacement, head=None):
+
+def top_k_german_words(k=50000, source='open_subtitles'):
+    # other possible source would be resources/zeit-10M-tagged
+    if source == 'open_subtitles':
+        pass
