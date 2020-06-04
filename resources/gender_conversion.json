@@ -6,8 +6,8 @@
   },
   "der_dative": {
     "f": "der",
-    "m": "d",
-    "n": "das"
+    "m": "dem",
+    "n": "dem"
   },
   "das": {
     "f": "die",
@@ -25,32 +25,39 @@
     "n": "dem"
   },
   "meinen": {
+    "m": "meinen",
     "f": "mein",
     "n": "mein"
   },
   "meinem": {
+    "m": "meinem",
     "f": "meiner",
     "n": "meinem"
   },
   "dieser": {
     "f": "diese",
-    "m": "diesem",
+    "m": "dieser",
     "n": "dieses"
   },
   "ihr": {
+    "m": "ihr",
     "f": "ihre",
     "n": "ihr"
   },
   "ihren": {
-    "f": "ihre"
+    "m": "ihren",
+    "f": "ihre",
+    "n": "ihr"
   },
   "einen": {
     "f": "eine",
     "m": "einen",
-    "n": "ein"
+    "n": "einen"
   },
   "sein": {
-    "f": "seine"
+    "m": "sein",
+    "f": "seine",
+    "n": "sein"
   },
   "diesen": {
     "f": "diese",
@@ -59,20 +66,26 @@
   },
   "diesem": {
     "f": "dieser",
-    "n": "diesem"
+    "n": "diesem",
+    "m": "diesem"
   },
   "euren": {
-    "f": "eure"
+    "m": "euren",
+    "f": "eure",
+    "n": "euer"
   },
   "mein": {
+    "m": "mein",
     "f": "meine",
     "n": "mein"
   },
   "deinen": {
+    "m": "deinen",
     "f": "deine",
     "n": "dein"
   },
   "dein": {
+    "m": "dein",
     "f": "deine",
     "n": "dein"
   },
@@ -86,182 +99,89 @@
     "m": "der",
     "n": "das"
   },
-  "n\u00e4chste": {
-    "f": "n\u00e4chste",
-    "m": "n\u00e4chste",
-    "n": "n\u00e4chste"
-  },
   "einem": {
     "f": "einer",
-    "m": "einem"
+    "m": "einem",
+    "n": "einem"
   },
   "eine": {
     "f": "eine",
     "m": "ein",
     "n": "ein"
   },
-  "ganze": {
-    "f": "ganze",
-    "m": "ganze",
-    "n": "ganze"
-  },
   "diese": {
     "f": "diese",
     "m": "dieser",
     "n": "dieses"
   },
-  "kleine": {
-    "f": "kleine",
-    "m": "kleine",
-    "n": "kleine"
-  },
-  "gro\u00dfe": {
-    "f": "gro\u00dfe",
-    "m": "gro\u00dfe",
-    "n": "gro\u00dfe"
-  },
-  "neue": {
-    "f": "neue",
-    "m": "neue",
-    "n": "neue"
-  },
   "meine": {
     "m": "mein",
-    "n": "mein"
+    "n": "mein",
+    "f": "meine"
   },
   "deine": {
     "m": "dein",
-    "n": "dein"
+    "n": "dein",
+    "f": "deine"
   },
   "deiner": {
-    "m": "deinem"
+    "m": "deinem",
+    "n": "deinem",
+    "f": "deiner"
   },
   "seine": {
     "m": "sein",
-    "n": "sein"
+    "n": "sein",
+    "f": "seine"
   },
   "meiner": {
+    "f": "meiner",
+    "n": "meinem",
     "m": "meinem"
   },
   "unsere": {
+    "f": "unsere",
+    "n": "unser",
     "m": "unser"
   },
   "jeder": {
-    "m": "jedem"
+    "m": "jeder",
+    "f": "jede",
+    "n": "jedes"
   },
   "eure": {
-    "m": "euer"
-  },
-  "dumme": {
-    "m": "dumme"
+    "f": "eure",
+    "m": "euer",
+    "n": "euer"
   },
   "einer": {
     "m": "eines",
-    "n": "einem"
+    "n": "eines",
+    "f": "eines"
   },
   "ihre": {
-    "m": "ihr"
-  },
-  "richtigen": {
-    "m": "richtige"
-  },
-  "zeitweise": {
-    "m": "zeitweise"
-  },
-  "falsche": {
-    "m": "falsche"
-  },
-  "oberste": {
-    "m": "oberste"
-  },
-  "ideologische": {
-    "m": "ideologische"
-  },
-  "rambos": {
-    "m": "rambos"
-  },
-  "fehlende": {
-    "m": "fehlende"
-  },
-  "heutige": {
-    "m": "heutige"
-  },
-  "tolle": {
-    "m": "tolle"
-  },
-  "verlorene": {
-    "m": "verlorene"
-  },
-  "bl\u00f6de": {
-    "m": "bl\u00f6de"
-  },
-  "etwas": {
-    "m": "etwas"
-  },
-  "dannys": {
-    "m": "dannys"
-  },
-  "barbecue": {
-    "m": "barbecue"
+    "m": "ihr",
+    "f": "ihre",
+    "n": "ihr"
   },
   "dieses": {
-    "m": "dieses"
-  },
-  "galveston": {
-    "m": "galveston"
-  },
-  "menschlichen": {
-    "m": "menschliche"
-  },
-  "automatisierter": {
-    "m": "automatisiertem"
-  },
-  "zertrampelt.": {
-    "m": "zertrampelt."
-  },
-  "geheimen": {
-    "m": "geheime"
-  },
-  "gesamte": {
-    "m": "gesamte"
-  },
-  "jemimas": {
-    "m": "jemimas"
-  },
-  "liams": {
-    "m": "liams"
-  },
-  "erste": {
-    "m": "erste"
-  },
-  "andere": {
-    "m": "andere"
-  },
-  "goldene": {
-    "m": "goldene"
-  },
-  "wills": {
-    "m": "wills"
+    "m": "dieser",
+    "n": "dieses",
+    "f": "diese"
   },
   "zur": {
-    "m": "zur"
-  },
-  "alte": {
-    "m": "alte"
-  },
-  "feinste": {
-    "m": "feinste"
-  },
-  "innere": {
-    "m": "innere"
-  },
-  "blutige": {
-    "m": "blutige"
-  },
-  "-die": {
-    "m": "-der"
+    "m": "zum",
+    "n": "zum",
+    "f": "zur"
   },
   "ihrer": {
-    "n": "ihrem"
+    "n": "ihrem",
+    "m": "ihrem",
+    "f": "ihrer"
+  },
+  "unserer": {
+    "f": "unserer",
+    "m": "unseres",
+    "n": "unseres"
   }
 }

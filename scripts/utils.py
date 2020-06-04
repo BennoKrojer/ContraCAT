@@ -3,7 +3,8 @@ import re
 
 import xml.etree.ElementTree as ET
 
-def get_genders(dict_cc_file, en_key=True):
+
+def get_gender_dict(dict_cc_file, en_key=True):
     '''
     Returns a mapping from german word to tuple (english word, gender)
     '''
@@ -22,7 +23,7 @@ def get_genders(dict_cc_file, en_key=True):
                     if gender in ['m', 'f', 'n']:
                         retrieved += 1
                         if en_key:
-                            genders[en.lower().strip()] = (word.lower().strip(),gender)
+                            genders[en.lower().strip()] = (word.lower().strip(), gender)
                         else:
                             genders[word.lower()] = gender
                 else:
@@ -55,9 +56,17 @@ def load_germanet(path):
             id2synset.update(ids)
     return id2synset, word2synset
 
+
 # def adapt_german(phrase, replacement, head=None):
 
 def top_k_german_words(k=50000, source='open_subtitles'):
     # other possible source would be resources/zeit-10M-tagged
     if source == 'open_subtitles':
         pass
+
+
+def get_gender(mapping, word, head=None):
+    result = mapping.get(word.lower())
+    if result is None:
+        result = mapping.get(head.lower())
+    return result

@@ -7,3 +7,4 @@ env_cpu/
 GermaNet/
 .idea/
 resources/zeit-10M-tagged
+resources/OpenSubtitles.de-en.clean.train.tok.clean.de
