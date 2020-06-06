@@ -10,7 +10,7 @@ genders = get_gender_dict('../../resources/dict_cc_original.txt')
 de_freq = json.load(open('../../resources/open_subtitles_de_freq.json', 'r'))
 en_freq = json.load(open('../../resources/open_subtitles_en_freq.json', 'r'))
 
-type = 'gender_simplified'
+type = 'gender_simplifiedv2'
 path = f'../../templates_SEP_fixed/{type}/'
 os.makedirs(path, exist_ok=True)
 
@@ -28,13 +28,13 @@ with open(path + 'de_tok', 'w') as tokenized_de, \
     for en, (de, gender) in genders.items():
         de = de.capitalize()
         if de in de_freq and de_freq[de] > 20 and en in en_freq and en_freq[en] > 20:
-            en_template = f'<SEP> The {en}?'
+            en_template = f'The {en}?'
 
             for _ in range(3):
                 tokenized_en.write(en_template + '\n')
                 correct.write(gender + '\n')
             for (article, pronoun) in [('Der', 'ihn'), ('Die', 'sie'), ('Das', 'es')]:
-                de_template = f'<SEP> {article} {de}?'
+                de_template = f'{article} {de}?'
                 tokenized_de.write(de_template + '\n')
 
 command = f'subword-nmt apply-bpe -c ../../models_dario/subtitles/ende.bpe --glossaries "<SEP>" < ' \
