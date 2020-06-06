@@ -8,3 +8,4 @@ GermaNet/
 .idea/
 resources/zeit-10M-tagged
 resources/OpenSubtitles.de-en.clean.train.tok.clean.de
+resources/OpenSubtitles.de-en.clean.train.tok.clean.en

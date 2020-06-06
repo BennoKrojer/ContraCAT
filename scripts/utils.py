@@ -59,7 +59,7 @@ def load_germanet(path):
 
 # def adapt_german(phrase, replacement, head=None):
 
-def top_k_german_words(k=50000, source='open_subtitles'):
+def top_k_words(k=50000, source='open_subtitles'):
     # other possible source would be resources/zeit-10M-tagged
     if source == 'open_subtitles':
         pass

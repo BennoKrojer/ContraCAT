@@ -1,21 +1,16 @@
+import json
 import os
 
 from mosestokenizer import MosesPunctuationNormalizer, MosesTokenizer
 
-from scripts.utils import get_genders
-
-def get_top_german(max=20000):
-    top = set()
-    with open('../de_50k.txt') as file:
-        for line in file.readlines()[:max]:
-            top.add(line.split()[0])
-    return top
+from scripts.utils import get_gender_dict
 
 
-genders = get_genders('../../resources/dict_cc_original.txt')
-top_german = get_top_german()
+genders = get_gender_dict('../../resources/dict_cc_original.txt')
+de_freq = json.load(open('../../resources/open_subtitles_de_freq.json', 'r'))
+en_freq = json.load(open('../../resources/open_subtitles_en_freq.json', 'r'))
 
-type = 'gender'
+type = 'gender_simplified'
 path = f'../../templates_SEP_fixed/{type}/'
 os.makedirs(path, exist_ok=True)
 
@@ -31,14 +26,15 @@ with open(path + 'de_tok', 'w') as tokenized_de, \
         open(f'../../templates_SEP_fixed/{type}/correct', 'w') as correct:
 
     for en, (de, gender) in genders.items():
-        if de in top_german:
-            en_template = f'A {en}? <SEP> I find it interesting.'
+        de = de.capitalize()
+        if de in de_freq and de_freq[de] > 20 and en in en_freq and en_freq[en] > 20:
+            en_template = f'<SEP> The {en}?'
 
             for _ in range(3):
                 tokenized_en.write(en_template + '\n')
                 correct.write(gender + '\n')
-            for (article, pronoun) in [('Ein', 'ihn'), ('Eine', 'sie'), ('Ein', 'es')]:
-                de_template = f'{article} {de.capitalize()}? <SEP> Ich finde {pronoun} interessant.'
+            for (article, pronoun) in [('Der', 'ihn'), ('Die', 'sie'), ('Das', 'es')]:
+                de_template = f'<SEP> {article} {de}?'
                 tokenized_de.write(de_template + '\n')
 
 command = f'subword-nmt apply-bpe -c ../../models_dario/subtitles/ende.bpe --glossaries "<SEP>" < ' \
