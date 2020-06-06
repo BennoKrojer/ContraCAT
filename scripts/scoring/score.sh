@@ -1,1 +1,1 @@
-python3 -m sockeye.score --target templates_SEP_fixed/gender_simplified/de_bpe --source templates_SEP_fixed/gender_simplified/en_bpe --output templates_SEP_fixed/gender_simplified/concat22 --model models_dario/subtitles/concat-2-2/ --device-ids 0 --output-type score --batch-size 128
+python3 -m sockeye.score --target templates_SEP_fixed/gender_simplifiedv2/de_bpe --source templates_SEP_fixed/gender_simplifiedv2/en_bpe --output templates_SEP_fixed/gender_simplifiedv2/concat22 --model models_dario/subtitles/concat-2-2/ --device-ids 0 --output-type score --batch-size 128
