@@ -3,7 +3,7 @@ import numpy
 import os
 
 gender_order = ['m', 'f', 'n']
-dir = '../../templates_SEP_fixed/gender_the_SEP'
+dir = '../../templates_SEP_fixed/gender/gender_like_a'
 for path, _, files in os.walk(dir):
     if 'correct' in files:
         predictions = {'correct': [], 'false': []}
