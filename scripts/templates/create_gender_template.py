@@ -10,7 +10,7 @@ genders = get_gender_dict('../../resources/dict_cc_original.txt')
 de_freq = json.load(open('../../resources/open_subtitles_de_freq.json', 'r'))
 en_freq = json.load(open('../../resources/open_subtitles_en_freq.json', 'r'))
 
-type = 'gender/gender_like_the_SEP'
+type = 'gender/gender_talk_a_cleaned'
 path = f'../../templates_SEP_fixed/{type}/'
 os.makedirs(path, exist_ok=True)
 
@@ -27,14 +27,15 @@ with open(path + 'de_tok', 'w') as tokenized_de, \
 
     for en, (de, gender) in genders.items():
         de = de.capitalize()
-        if de in de_freq and de_freq[de] > 20 and en in en_freq and en_freq[en] > 20:
-            en_template = f'<SEP> I like the {en}.'
+        if de in de_freq and de_freq[de] > 20 and en in en_freq and en_freq[en] > 20 and en[-1] != 's':
+            article = 'an' if en[0] in ['a', 'o', 'e', 'i'] else 'a'
+            en_template = f'I mentioned {article} {en}.'
 
             for _ in range(3):
                 tokenized_en.write(en_template + '\n')
                 correct.write(gender + '\n')
-            for (article, pronoun) in [('den', 'ihn'), ('die', 'sie'), ('das', 'es')]:
-                de_template = f'<SEP> Ich mag {article} {de}.'
+            for (article, pronoun) in [('einen', 'ihn'), ('eine', 'sie'), ('ein', 'es')]:
+                de_template = f'Ich habe {article} {de} erwähnt.'
                 tokenized_de.write(de_template + '\n')
 
 command = f'subword-nmt apply-bpe -c ../../models_dario/subtitles/ende.bpe --glossaries "<SEP>" < ' \
