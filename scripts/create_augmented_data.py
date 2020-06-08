@@ -140,8 +140,8 @@ def get_gender2sent(example):
     order.append(correct_gender)
     # res[correct_gender] = example['ref segment']
     for contrastive in example['errors']:
-        order.append(map[contrastive['replacement gender']])
-        # res[map[contrastive['replacement gender']]] = contrastive['contrastive']
+        order.append(map[contrastive['replacement deprecated_gender']])
+        # res[map[contrastive['replacement deprecated_gender']]] = contrastive['contrastive']
     unusual = len(example['errors']) > 2
     return order, unusual
 

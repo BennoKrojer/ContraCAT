@@ -6,7 +6,7 @@ import xml.etree.ElementTree as ET
 
 def get_gender_dict(dict_cc_file, en_key=True):
     '''
-    Returns a mapping from german word to tuple (english word, gender)
+    Returns a mapping from german word to tuple (english word, deprecated_gender)
     '''
     pattern = r'\[.*?\]|\(.*?\)'
     with open(dict_cc_file, 'r') as file:

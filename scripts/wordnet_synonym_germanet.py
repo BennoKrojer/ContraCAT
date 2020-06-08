@@ -133,7 +133,7 @@ for i, example in tqdm.tqdm(enumerate(contrapro)):
                     except KeyError:
                         continue
                 # print(f'English antecedent: {head}, German antecedent: {de_head} ({original_gender})')
-                # print(f'ENGLISH: {synset.lemma_names()}\nGERMAN where gender was identified: {german_synonyms}\n\n')
+                # print(f'ENGLISH: {synset.lemma_names()}\nGERMAN where deprecated_gender was identified: {german_synonyms}\n\n')
                 modifiable_count += 1
                 modifications_syns = ' '+head + ' '+str(synset.lemma_names())
                 # en_context = en_context.replace(' '+head+' ', modifications_syns)

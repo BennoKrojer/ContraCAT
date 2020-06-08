@@ -119,7 +119,7 @@ def main(A, B, scoresA, sourceA_en, sourceA_de, scoresB, sourceB_en, sourceB_de,
                         print(f"SHIFT FROM {ground} to {mod}: {' '.join(mistake_mod)}\n")
                     break
 
-        print("Statistics of errors (counts of how the gender shifted, e.g. er -> sie):\n")
+        print("Statistics of errors (counts of how the deprecated_gender shifted, e.g. er -> sie):\n")
         print("Total errors: " + str(nr_modification_errors) + "\n")
         for key, value in count.items():
             print(f'{key[1]} -> {key[0]}: {value}') # 0 -> 1 for onlyA
