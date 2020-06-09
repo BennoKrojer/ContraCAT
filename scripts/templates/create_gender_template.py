@@ -10,7 +10,7 @@ genders = get_gender_dict('../../resources/dict_cc_original.txt')
 de_freq = json.load(open('../../resources/open_subtitles_de_freq.json', 'r'))
 en_freq = json.load(open('../../resources/open_subtitles_en_freq.json', 'r'))
 
-type = 'gender/gender_two_simple_phrases'
+type = 'gender/gender_talk_very_verbose'
 path = f'../../templates_SEP_fixed/{type}/'
 os.makedirs(path, exist_ok=True)
 
@@ -29,13 +29,14 @@ with open(path + 'de_tok', 'w') as tokenized_de, \
         de = de.capitalize()
         if de in de_freq and de_freq[de] > 20 and en in en_freq and en_freq[en] > 20:
             # article = 'an' if en[0] in ['a', 'o', 'e', 'i'] else 'a'
-            en_template = f'The {en}? <SEP> Interesting!'
+            en_template = f'Actually I talked about a {en} yesterday at the restaurant. <SEP> Did you know that?'
 
             for _ in range(3):
                 tokenized_en.write(en_template + '\n')
                 correct.write(gender + '\n')
-            for (article, pronoun) in [('Der', 'ihn'), ('Die', 'sie'), ('Das', 'es')]:
-                de_template = f'{article} {de}? <SEP> Interessant!'
+            for (article, pronoun) in [('einen', 'ihn'), ('eine', 'sie'), ('ein', 'es')]:
+                de_template = f'Tatsächlich habe ich gestern im Restaurant über {article} {de} geredet. <SEP> ' \
+                              f'Wusstest du das?'
                 tokenized_de.write(de_template + '\n')
 
 command = f'subword-nmt apply-bpe -c ../../models_dario/subtitles/ende.bpe --glossaries "<SEP>" < ' \
