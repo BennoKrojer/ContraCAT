@@ -35,7 +35,7 @@ with open(path + 'de_tok', 'w') as tokenized_de, \
                 tokenized_en.write(en_template + '\n')
                 correct.write(gender + '\n')
             for (article, pronoun) in [('Der', 'er'), ('Die', 'sie'), ('Das', 'es')]:
-                de_template = f'{article} {de} and why {pronoun} is limited.'
+                de_template = f'{article} {de} und warum {pronoun} limitiert ist.'
                 tokenized_de.write(de_template + '\n')
 
 command = f'subword-nmt apply-bpe -c ../../models_dario/subtitles/ende.bpe --glossaries "<SEP>" < ' \
