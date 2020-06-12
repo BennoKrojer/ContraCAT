@@ -9,6 +9,9 @@ _, german_synsets = load_germanet('../GermaNet/GN_V120/GN_V120_XML/nomen*.xml')
 gender_conversion = json.load(open('../resources/gender_conversion.json'))
 de_freq = json.load(open('../resources/open_subtitles_de_freq.json', 'r'))
 
+for token in nlp_de('Ich mag sie sehr'):
+    print(token.dep_)
+
 
 def get_de_ante(row):
     try:

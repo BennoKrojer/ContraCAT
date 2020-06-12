@@ -10,9 +10,16 @@
     "n": "dem"
   },
   "das": {
-    "f": "die",
-    "m": "der",
-    "n": "das"
+    "subj": {
+      "f": "die",
+      "m": "der",
+      "n": "das"
+    },
+    "obj": {
+      "f": "die",
+      "m": "den",
+      "n": "das"
+    }
   },
   "den": {
     "f": "die",
