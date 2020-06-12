@@ -29,7 +29,8 @@ with open(path + 'de_tok', 'w') as tokenized_de, \
 
     for en, (de, gender) in genders.items():
         de = de.capitalize()
-        if de in de_freq and de_freq[de] > 20 and en in en_freq and en_freq[en] > 20:
+        if de in de_freq and de_freq[de] > 30 and en in en_freq and en_freq[en] > 30\
+                and en[-1] != 's':
             valid.write(f'{en} {de} {gender}\n')
             # article = 'an' if en[0] in ['a', 'o', 'e', 'i'] else 'a'
             en_template = f'The {en} and why it is limited.'
