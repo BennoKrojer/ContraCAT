@@ -1,4 +1,3 @@
-cat,Katze,f
 flower,Blume,f
 station,Haltestelle,f
 church,Kirche,f
@@ -14,7 +13,6 @@ flag,Flagge,f
 streetlamp,Straßenlaterne,f
 factory,Fabrik,f
 library,Bibliothek,f
-dog,Hund,m
 supermarket,Supermarkt,m
 skyscraper,Wolkenkratzer,m
 hill,Hügel,m

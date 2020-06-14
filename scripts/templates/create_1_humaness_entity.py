@@ -23,7 +23,7 @@ def combine_nouns(animal_path, people_path):
     return pairs
 
 
-type = '1_entity_step'
+type = '1_entity_step/animal'
 first_correct = True
 path = f'../../templates_SEP_fixed/{type}/'
 os.makedirs(path, exist_ok=True)
@@ -42,29 +42,29 @@ with open(path + 'de_tok', 'w') as tokenized_de, \
                                             f'me.')))
         en_template2 = ' '.join(tok_en(norm(f'The {second[1]} and the {first[1]} come closer. It is looking at '
                                             f'me.')))
-        en_template1 = en_template1.replace('. ', '. <SEP>')
-        en_template2 = en_template2.replace('. ', '. <SEP>')
+        en_template1 = en_template1.replace('. ', '. <SEP> ')
+        en_template2 = en_template2.replace('. ', '. <SEP> ')
         for _ in range(3):
             tokenized_en.write(en_template1 + '\n')
-            correct.write(second[0] + '\n')
+            correct.write(first[0] + '\n')
 
         for _ in range(3):
             tokenized_en.write(en_template2 + '\n')
-            correct.write(second[0] + '\n')
+            correct.write(first[0] + '\n')
 
         for pronoun in ['Er', 'Sie', 'Es']:
             de_phrase = ' '.join(tok_de(norm(f'{nominative[first[0]].capitalize()} {first[2]} und'
                                              f' {nominative[second[0]]} {second[2]} kommen näher. '
                                              f' {pronoun} schaut mich an.')))
 
-            de_phrase = de_phrase.replace('. ', '. <SEP>' )
+            de_phrase = de_phrase.replace('. ', '. <SEP> ')
             tokenized_de.write(de_phrase + '\n')
 
         for pronoun in ['Er', 'Sie', 'Es']:
             de_phrase = ' '.join(tok_de(norm(f'{nominative[second[0]].capitalize()} {second[2]} und'
                                              f' {nominative[first[0]]} {first[2]} kommen näher. '
                                              f' {pronoun} schaut mich an.')))
-            de_phrase = de_phrase.replace('.', '. <SEP>')
+            de_phrase = de_phrase.replace('. ', '. <SEP> ')
             tokenized_de.write(de_phrase + '\n')
 
 command = f'subword-nmt apply-bpe -c ../../models_dario/subtitles/ende.bpe --glossaries "<SEP>" < ' \
