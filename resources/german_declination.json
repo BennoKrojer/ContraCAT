@@ -1,0 +1,473 @@
+{
+  "article": {
+    "der": {
+      "nom": {
+        "f": "die",
+        "n": "das"
+      },
+      "dat": {
+        "m": "dem",
+        "n": "dem"
+      },
+      "gen": {
+        "m": "des",
+        "n": "des"
+      }
+    },
+    "die": {
+      "nom": {
+        "m": "der",
+        "n": "das"
+      },
+      "acc": {
+        "m": "den",
+        "n": "das"
+      }
+    },
+    "das": {
+      "nom": {
+        "m": "der",
+        "f": "die"
+      },
+      "acc": {
+        "m": "den",
+        "f": "die"
+      }
+    },
+    "den": {
+      "f": "die",
+      "n": "das"
+    },
+    "dem": {
+      "m": "dem",
+      "f": "der",
+      "n": "dem"
+    },
+    "des": {
+      "f": "der",
+      "n": "des"
+    },
+
+    "ein": {
+      "nom": {
+        "m": "ein",
+        "f": "eine",
+        "n": "ein"
+      },
+      "acc": {
+        "m": "einen",
+        "f": "eine"
+      }
+    },
+    "eine":{
+      "nom": {
+        "m": "ein",
+        "n": "ein"
+      },
+      "acc": {
+        "m": "einen",
+        "n": "eine"
+      }
+    },
+    "einen": {
+      "f": "eine",
+      "n": "ein"
+    },
+    "einem": {
+      "m": "einem",
+      "f": "einer",
+      "n": "einem"
+    },
+    "einer": {
+      "dat": {
+        "m": "einem",
+        "n": "einem"
+      },
+      "gen": {
+        "m": "eines",
+        "n": "eines"
+      }
+    },
+    "eines": {
+      "m": "eines",
+      "f": "einer",
+      "n": "eines"
+    },
+
+    "mein": {
+      "nom": {
+        "m": "mein",
+        "f": "meine",
+        "n": "meine"
+      },
+      "acc": {
+        "m": "meinen",
+        "f": "meine"
+      }
+    },
+    "meine": {
+      "nom": {
+        "m": "mein",
+        "n": "mein"
+      },
+      "acc": {
+        "m": "meinen",
+        "n": "mein"
+      }
+    },
+    "meinen": {
+      "f": "meine",
+      "n": "mein"
+    },
+    "meinem": {
+      "m": "meinem",
+      "f": "meiner",
+      "n": "meinem"
+    },
+    "meiner": {
+      "dat": {
+        "m": "meinem",
+        "n": "meinem"
+      },
+      "gen": {
+        "m": "meines",
+        "n": "meines"
+      }
+    },
+    "meines": {
+      "m": "meines",
+      "f": "meiner",
+      "n": "meines"
+    },
+    
+    "dein": {
+      "nom": {
+        "m": "dein",
+        "f": "deine",
+        "n": "deine"
+      },
+      "acc": {
+        "m": "deinen",
+        "f": "deine"
+      }
+    },
+    "deine": {
+      "nom": {
+        "m": "dein",
+        "n": "dein"
+      },
+      "acc": {
+        "m": "deinen",
+        "n": "dein"
+      }
+    },
+    "deinen": {
+      "f": "deine",
+      "n": "dein"
+    },
+    "deinem": {
+      "m": "deinem",
+      "f": "deiner",
+      "n": "deinem"
+    },
+    "deiner": {
+      "dat": {
+        "m": "deinem",
+        "n": "deinem"
+      },
+      "gen": {
+        "m": "deines",
+        "n": "deines"
+      }
+    },
+    "deines": {
+      "m": "deines",
+      "f": "deiner",
+      "n": "deines"
+    },
+
+    "sein": {
+      "nom": {
+        "m": "sein",
+        "f": "seine",
+        "n": "seine"
+      },
+      "acc": {
+        "m": "seinen",
+        "f": "seine"
+      }
+    },
+    "seine": {
+      "nom": {
+        "m": "sein",
+        "n": "sein"
+      },
+      "acc": {
+        "m": "seinen",
+        "n": "sein"
+      }
+    },
+    "seinen": {
+      "f": "seine",
+      "n": "sein"
+    },
+    "seinem": {
+      "m": "seinem",
+      "f": "seiner",
+      "n": "seinem"
+    },
+    "seiner": {
+      "dat": {
+        "m": "seinem",
+        "n": "seinem"
+      },
+      "gen": {
+        "m": "seines",
+        "n": "seines"
+      }
+    },
+    "seines": {
+      "m": "seines",
+      "f": "seiner",
+      "n": "seines"
+    },
+
+    "ihr": {
+      "nom": {
+        "m": "ihr",
+        "f": "ihre",
+        "n": "ihre"
+      },
+      "acc": {
+        "m": "ihren",
+        "f": "ihre"
+      }
+    },
+    "ihre": {
+      "nom": {
+        "m": "ihr",
+        "n": "ihr"
+      },
+      "acc": {
+        "m": "ihren",
+        "n": "ihr"
+      }
+    },
+    "ihren": {
+      "f": "ihre",
+      "n": "ihr"
+    },
+    "ihrem": {
+      "m": "ihrem",
+      "f": "ihrer",
+      "n": "ihrem"
+    },
+    "ihrer": {
+      "dat": {
+        "m": "ihrem",
+        "n": "ihrem"
+      },
+      "gen": {
+        "m": "ihres",
+        "n": "ihres"
+      }
+    },
+    "ihres": {
+      "m": "ihres",
+      "f": "ihrer",
+      "n": "ihres"
+    },
+
+    "unser": {
+      "nom": {
+        "m": "unser",
+        "f": "unsere",
+        "n": "unsere"
+      },
+      "acc": {
+        "m": "unseren",
+        "f": "unsere"
+      }
+    },
+    "unsere": {
+      "nom": {
+        "m": "unser",
+        "n": "unser"
+      },
+      "acc": {
+        "m": "unseren",
+        "n": "unser"
+      }
+    },
+    "unseren": {
+      "f": "unsere",
+      "n": "unser"
+    },
+    "unserem": {
+      "m": "unserem",
+      "f": "unserer",
+      "n": "unserem"
+    },
+    "unserer": {
+      "dat": {
+        "m": "unserem",
+        "n": "unserem"
+      },
+      "gen": {
+        "m": "unseres",
+        "n": "unseres"
+      }
+    },
+    "unseres": {
+      "m": "unseres",
+      "f": "unserer",
+      "n": "unseres"
+    },
+
+    "vom": {
+      "m": "vom",
+      "f": "von der",
+      "n": "vom"
+    },
+    "beim": {
+      "m": "beim",
+      "f": "bei der",
+      "n": "beim"
+    },
+    "zum": {
+      "m": "zum",
+      "f": "zu der",
+      "n": "zum"
+    },
+
+    "euer": {
+      "nom": {
+        "m": "euer",
+        "f": "eure",
+        "n": "eure"
+      },
+      "acc": {
+        "m": "euren",
+        "f": "eure"
+      }
+    },
+    "eure": {
+      "nom": {
+        "m": "euer",
+        "n": "euer"
+      },
+      "acc": {
+        "m": "euren",
+        "n": "euer"
+      }
+    },
+    "euren": {
+      "f": "eure",
+      "n": "euer"
+    },
+    "eurem": {
+      "m": "eurem",
+      "f": "eurer",
+      "n": "eurem"
+    },
+    "eurer": {
+      "dat": {
+        "m": "eurem",
+        "n": "eurem"
+      },
+      "gen": {
+        "m": "eures",
+        "n": "eures"
+      }
+    },
+    "eures": {
+      "m": "eures",
+      "f": "eurer",
+      "n": "eures"
+    },
+    "dieser": {
+      "nom": {
+        "f": "diese",
+        "n": "dieses"
+      },
+      "dat": {
+        "m": "diesem",
+        "n": "diesem"
+      }
+    },
+    "diese": {
+      "nom": {
+        "m": "dieser",
+        "n": "dieses"
+      },
+      "acc": {
+        "m": "diesen",
+        "n": "dieses"
+      }
+    },
+    "dieses": {
+      "nom": {
+        "m": "dieser",
+        "f": "diese"
+      },
+      "gen": {
+        "m": "dieses",
+        "f": "dieser",
+        "n": "dieses"
+      },
+      "acc": {
+        "m": "diesen",
+        "f": "diese"
+      }
+    },
+    "diesem": {
+      "m": "diesem",
+      "f": "dieser",
+      "n": "diesem"
+    },
+    "diesen": {
+      "f": "diese",
+      "n": "dieses"
+    }
+  },
+
+  "pronoun": {
+    "er": {
+      "f": "sie",
+      "n": "es"
+    },
+    "sie": {
+      "nom": {
+        "m": "er",
+        "n": "es"
+      },
+      "acc": {
+        "m": "ihn",
+        "n": "es"
+      }
+    },
+    "es": {
+      "nom": {
+        "m": "er",
+        "f": "sie"
+      },
+      "acc": {
+        "m": "ihn",
+        "f": "sie"
+      }
+    },
+    "ihn": {
+      "f": "sie",
+      "n": "es"
+    },
+    "ihm": {
+      "m": "ihm",
+      "f": "ihr",
+      "n": "ihm"
+    },
+    "ihr": {
+      "m": "ihm",
+      "n": "ihm"
+    }
+  }
+}

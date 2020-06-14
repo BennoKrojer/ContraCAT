@@ -42,8 +42,8 @@ with open(path + 'de_tok', 'w') as tokenized_de, \
                                             f'me.')))
         en_template2 = ' '.join(tok_en(norm(f'The {second[1]} and the {first[1]} come closer. It is looking at '
                                             f'me.')))
-        en_template1 = en_template1.replace('.', '. <SEP>')
-        en_template2 = en_template2.replace('.', '. <SEP>')
+        en_template1 = en_template1.replace('. ', '. <SEP>')
+        en_template2 = en_template2.replace('. ', '. <SEP>')
         for _ in range(3):
             tokenized_en.write(en_template1 + '\n')
             correct.write(second[0] + '\n')
@@ -57,7 +57,7 @@ with open(path + 'de_tok', 'w') as tokenized_de, \
                                              f' {nominative[second[0]]} {second[2]} kommen näher. '
                                              f' {pronoun} schaut mich an.')))
 
-            de_phrase = de_phrase.replace('.', '. <SEP>')
+            de_phrase = de_phrase.replace('. ', '. <SEP>' )
             tokenized_de.write(de_phrase + '\n')
 
         for pronoun in ['Er', 'Sie', 'Es']:

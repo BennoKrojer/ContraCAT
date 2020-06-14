@@ -9,6 +9,11 @@
     "m": "dem",
     "n": "dem"
   },
+  "der_genitive": {
+    "f": "der",
+    "m": "des",
+    "n": "des"
+  },
   "das": {
     "subj": {
       "f": "die",
