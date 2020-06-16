@@ -1,25 +1,14 @@
 import json
 import os
 from collections import defaultdict
-
+from scripts.utils import get_word2definite_article
 from mosestokenizer import MosesPunctuationNormalizer, MosesTokenizer, MosesDetokenizer
 from tqdm import tqdm
 from scripts.sample_modifications import get_sentence_idx
 import spacy
+import pickle
 nlp_en = spacy.load("en_core_web_sm")
 nlp_de = spacy.load("de_core_news_sm")
-
-
-def load_dets(lang):
-    d = dict()
-    with open('DET2definiteDET_'+lang, 'r') as file:
-        for line in file:
-            line = line.split()
-            if len(line) == 1:
-                d[line[0]] = ''
-            else:
-                d[line[0]] = line[1]
-    return d
 
 
 def determine_start_index(phrase, ante):
@@ -44,8 +33,6 @@ def get_start_word(word, d):
 def modify(tokenize, line, to_be_replaced, ante_distance, np, word_mapping=None, append=True):
     modified = True
     context, sent = line.split('<SEP>')
-    # if not context:
-    #     return '', ' '.join(tokenize(norm(sent))), modified
 
     if ante_distance == 0:
         lower_sent, ante = sent.lower(), [word.lower() for word in to_be_replaced]
@@ -97,15 +84,15 @@ def modify(tokenize, line, to_be_replaced, ante_distance, np, word_mapping=None,
     return context, sent, modified
 
 
-de_modification = 'comp_no_mismatches'
-en_modification = 'comp_no_mismatches'
+de_modification = 'tmp'
+en_modification = 'tmp2'
 de_lines = open('../ContraPro_Dario/contrapro.text.tok.prev.de.de', 'r').readlines()
 en_lines = open('../ContraPro_Dario/contrapro.text.tok.prev.en.en', 'r').readlines()
 output_de = f'../ContraPro_Dario/modified/{de_modification}_de_tok.txt'
 output_en = f'../ContraPro_Dario/modified/{en_modification}_en_tok.txt'
 valid_pos_seqs = [['PRP$', 'NN'], ['DT', 'NN'], ['DT', 'NNP'], ['DT', 'JJ', 'NN'], ['DT', 'NN', 'NN'], ['PRP$', 'JJ', 'NN'], ['DT', 'NNP', 'NNP']]
 
-det2def_det = load_dets('de')
+det2def_det = get_word2definite_article('de')
 contrapro = json.load(open('../ContraPro/contrapro.json', 'r'))
 idx = get_sentence_idx()
 
@@ -156,7 +143,7 @@ with MosesPunctuationNormalizer('de') as norm, MosesTokenizer('de') as tok, Mose
 # sorted_pos = sorted(pos_seqs.items(), key=lambda x: len(x[1]), reverse=True)
 # humanreadable = '\n'.join([str(len(example)) + '  ' + seq + str(example[:3]) for (seq, example) in sorted_pos])
 # print(humanreadable)
-det2def_det = load_dets('en')
+det2def_det = get_word2definite_article('en')
 modified_count = 0
 pos_seqs = defaultdict(list)
 mismatch_idx = []
@@ -205,10 +192,6 @@ with MosesPunctuationNormalizer('en') as norm, MosesTokenizer('en') as tok, Mose
             lines = [''] * (end - start)
         for line, original in zip(lines, en_lines[start:end]):
             modified_en[example_id].append((line, original))
-
-# sorted_pos = sorted(pos_seqs.items(), key=lambda x: len(x[1]), reverse=True)
-# humanreadable = '\n'.join([str(len(example)) + '  ' + seq + str(example[:3]) for (seq, example) in sorted_pos])
-# print(humanreadable)
 
 both_lang_modified_idx = modified_idx_de & modified_idx_en
 print(f"MODIFIED {len(both_lang_modified_idx)} examples out of 12.000")

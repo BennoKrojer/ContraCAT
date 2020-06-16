@@ -27,7 +27,7 @@ type = '1_entity_step/animal'
 first_correct = True
 path = f'../../templates_SEP_fixed/{type}/'
 os.makedirs(path, exist_ok=True)
-pairs = combine_nouns('../../templates_SEP_fixed/animals/nouns', '../../templates_SEP_fixed/1_entity_step/human')
+pairs = combine_nouns('../../templates_SEP_fixed/animals/animals', '../../templates_SEP_fixed/1_entity_step/human')
 nominative = {'m': 'der', 'f': 'die', 'n': 'das'}
 
 

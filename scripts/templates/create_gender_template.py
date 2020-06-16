@@ -15,7 +15,7 @@ path = f'../../templates_SEP_fixed/{type}/'
 os.makedirs(path, exist_ok=True)
 
 # new approach:
-# 1. extract most frequent nouns from training data
+# 1. extract most frequent objects from training data
 # 2. Get gender from dict-cc
 # 3. create templates
 

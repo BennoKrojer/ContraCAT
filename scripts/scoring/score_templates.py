@@ -1,6 +1,6 @@
 import os
 
-main_dir = 'templates_SEP_fixed/'
+main_dir = 'templates_SEP_fixed/2_coreference_step'
 for path, _, files in os.walk(main_dir):
     if len(files) == 5:
         print(path)

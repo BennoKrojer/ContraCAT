@@ -5,7 +5,7 @@ nouns = {'m': [], 'f': [], 'n': []}
 nominative = {'m': 'Der', 'f': 'Die', 'n': 'Das'}
 dativ = {'m': 'dem', 'f': 'der', 'n': 'dem'}
 
-with open('../../templates_SEP_fixed/distance/nouns', 'r') as file:
+with open('../../templates_SEP_fixed/distance/objects', 'r') as file:
     for line in file:
         en, de, gender = line.split(',')
         nouns[gender.strip()].append((en, de))

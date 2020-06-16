@@ -9,3 +9,9 @@ GermaNet/
 resources/zeit-10M-tagged
 resources/OpenSubtitles.de-en.clean.train.tok.clean.de
 resources/OpenSubtitles.de-en.clean.train.tok.clean.en
+/data_augmentation/antecedent_free/antecedent_alignments_with_main_final
+/data_augmentation/antecedent_free/antecedent_alignments_with_main_final_forward_alignments
+/data_augmentation/antecedent_free/cr-clean-processed-final-new.txt.tok.post
+/data_augmentation/antecedent_free/it-indicators-new-final.txt
+/data_augmentation/antecedent_free/OpenSubtitles.de-en.clean.train.tok.de.mod_for_coref
+/data_augmentation/antecedent_free/OpenSubtitles.de-en.clean.train.tok.en.mod_for_coref

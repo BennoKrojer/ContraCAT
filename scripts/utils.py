@@ -70,3 +70,16 @@ def get_gender(mapping, word, head=None):
     if result is None:
         result = mapping.get(head.lower())
     return result
+
+
+def get_word2definite_article(lang):
+    d = dict()
+    with open('../resources/DET2definiteDET_'+lang, 'r') as file:
+        for line in file:
+            line = line.split()
+            if len(line) == 1:
+                d[line[0]] = ''
+            else:
+                d[line[0]] = line[1]
+    return d
+
