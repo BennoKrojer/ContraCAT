@@ -1,1 +1,1 @@
-python3 -m sockeye.score --target templates_SEP_fixed/1_entity_step/inanimate/de_bpe --source templates_SEP_fixed/1_entity_step/inanimate/en_bpe --output templates_SEP_fixed/1_entity_step/inanimate/concat22 --model models_dario/subtitles/concat-2-2/ --device-ids 0 --output-type score --batch-size 128
+python3 -m sockeye.score --target ContraPro_Dario/contrapro.text.tok.de --source ContraPro_Dario/contrapro.text.tok.en --output outputs/subtitles/normal/baseline --model models_dario/subtitles/baseline/baseline/ --device-ids 0 --output-type score --batch-size 128
