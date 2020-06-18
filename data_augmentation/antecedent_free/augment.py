@@ -72,7 +72,7 @@ def get_german_variants(sent_en, sent_de, pronoun, alignment, prev_de):
             print('WORKED')
         new_p = get_new_prev(de_pronoun, g, gender_pronoun[de_pronoun.lower()], sent_de, type='pronoun')
         tok_sent = sent_de.split(' ')
-        tok_sent[pronoun_idx] = new_p
+        tok_sent[de_idx] = new_p
         new_sent = ' '.join(tok_sent)
         res.append((prev_de, new_sent))
     return res

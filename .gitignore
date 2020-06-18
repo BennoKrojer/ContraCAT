@@ -27,5 +27,5 @@ resources/OpenSubtitles.de-en.clean.train.tok.clean.en
 /data_augmentation/synonyms/alignments_pronoun
 /data_augmentation/synonyms/augmentation_german.json
 /data_augmentation/synonyms/augmentation_synonym_de
-/data_augmentation/synonyms/augmentation_synonym_free_en
+/data_augmentation/synonyms/augmentation_synonym_en
 /data_augmentation/synonyms/cache_modifiable_sentence_ids.pkl
