@@ -5,7 +5,7 @@ import numpy
 import os
 
 gender_order = ['m', 'f', 'n']
-dir = '../../templates_SEP_fixed/2_coreference_step/world_knowledge'
+dir = '../../templates_SEP_fixed/2_coreference_step/event'
 for path, _, files in os.walk(dir):
     if 'correct' in files:
         predictions = {'correct': [], 'false': []}
@@ -34,11 +34,11 @@ for path, _, files in os.walk(dir):
                 for word in de[i+pred].split(' '):
                     words_incorrect[word] += 1
         print(path)
-        for key, val in predictions.items():
-            print(f'{key}: {len(val)}')
-        print(distr_correct)
-        print(distr_incorrect)
-        print(sorted(list(words_correct.items())[10:], key=lambda x: x[1], reverse=True))
-        print(sorted(list(words_incorrect.items())[10:], key=lambda x: x[1], reverse=True))
-        print('\n')
+        with open(f'{path}/global_result', 'w') as file:
+            for key, val in predictions.items():
+                file.write(f'{key}: {len(val)}'+'\n')
+            file.write(str(distr_correct)+'\n')
+            file.write(str(distr_incorrect)+'\n')
+            file.write(str(sorted(list(words_correct.items())[10:], key=lambda x: x[1], reverse=True))+'\n')
+            file.write(str(sorted(list(words_incorrect.items())[10:], key=lambda x: x[1], reverse=True))+'\n')
         json.dump(predictions, open(f'{path}/results.json', 'w'), indent=2)
