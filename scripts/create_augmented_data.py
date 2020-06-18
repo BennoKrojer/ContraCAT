@@ -61,7 +61,7 @@ lexid2synset = load_germanet()
 
 def clean_context(context):
     context = context.replace('<SEP> ', '')
-    context = MosesDetokenizer('en')(context.split())
+    context = MosesDetokenizer('en_full_text')(context.split())
     return context
 
 
@@ -88,7 +88,7 @@ def get_genders():
                         retrieved += 1
                         genders[word.lower().strip()] = gender
                 else:
-                    # print(de)
+                    # print(de_full_text)
                     pass
         print("!!!!!!!!!!RETRIEVED:" + str(retrieved))
         return genders
@@ -114,7 +114,7 @@ de_file_acc = []
 en_file_acc = []
 split = False
 
-det2def_det = load_dets('de')
+det2def_det = load_dets('de_full_text')
 gender_change = {'m': load_gender_change('2male_de'), 'f': load_gender_change('2female_de'), 'n': load_gender_change(
     '2neutral_de')}
 contrapro = json.load(open('../ContraPro/contrapro.json', 'r'))
@@ -146,7 +146,7 @@ def get_gender2sent(example):
     return order, unusual
 
 
-with MosesPunctuationNormalizer('de') as norm, MosesTokenizer('de') as tok, MosesDetokenizer('de') as de_tok,\
+with MosesPunctuationNormalizer('de_full_text') as norm, MosesTokenizer('de_full_text') as tok, MosesDetokenizer('de_full_text') as de_tok,\
         open(output_de, 'w') as de_file, open(output_en, 'w') as en_file:
     for i in tqdm.tqdm(modified_indices if cached else range(len(contrapro))):
         modified = False

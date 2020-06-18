@@ -27,7 +27,7 @@ def get_gender_dict(dict_cc_file, en_key=True):
                         else:
                             genders[word.lower()] = gender
                 else:
-                    # print(de)
+                    # print(de_full_text)
                     pass
         print(f"RETRIEVED: {str(retrieved)} words")
         return genders

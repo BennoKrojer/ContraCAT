@@ -1,6 +1,6 @@
 # from nltk.metrics.distance import edit_distance
 #
-# with open('../ContraPro_Dario/contrapro.text.tok.de', 'r') as file:
+# with open('../ContraPro_Dario/contrapro.text.tok.de_full_text', 'r') as file:
 #     group_sizes = []
 #     count = 1
 #     lines = file.readlines()

@@ -31,7 +31,7 @@ class TaggedYamlObjectMetaclass(yaml.YAMLObjectMetaclass):
 
 class Config(yaml.YAMLObject, metaclass=TaggedYamlObjectMetaclass):
     """
-    Base configuration object that supports freezing of members and YAML (de-)serialization.
+    Base configuration object that supports freezing of members and YAML (de_full_text-)serialization.
     Actual Configuration should subclass this object.
     """
     yaml_loader = yaml.UnsafeLoader  # type: ignore

@@ -44,9 +44,9 @@ dative = {'m': 'dem', 'f': 'der', 'n': 'dem'}
 
 with open(path + 'de_tok', 'w') as tokenized_de, \
         open(path + 'en_tok', 'w') as tokenized_en, \
-        MosesPunctuationNormalizer('en') as norm, \
-        MosesTokenizer('de') as tok_de, \
-        MosesTokenizer('en') as tok_en, \
+        MosesPunctuationNormalizer('en_full_text') as norm, \
+        MosesTokenizer('de_full_text') as tok_de, \
+        MosesTokenizer('en_full_text') as tok_en, \
         open(f'../../templates_SEP_fixed/2_coreference_step/world_knowledge/{type}/correct', 'w') as correct:
     for sub, obj in pairs:
         for attr in vehicle_en:

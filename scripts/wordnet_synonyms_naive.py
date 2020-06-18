@@ -27,7 +27,7 @@ en2de = get_dict()
 
 def clean_context(context):
     context = context.replace('<SEP> ', '')
-    context = MosesDetokenizer('en')(context.split())
+    context = MosesDetokenizer('en_full_text')(context.split())
     return context
 
 

@@ -24,8 +24,8 @@ for m_en,m_de in nouns['f']:
 
 with open('../../templates_SEP_fixed/distance/and_de_tok', 'w') as tokenized_de, open('../../templates_SEP_fixed/distance/and_en_tok',
                                                                             'w') \
-        as tokenized_en, MosesPunctuationNormalizer('en') as norm, MosesTokenizer('de') as tok_de, MosesTokenizer(
-    'en') as tok_en, open('../../templates_SEP_fixed/distance/gender_combination', 'w') as gender_file:
+        as tokenized_en, MosesPunctuationNormalizer('en_full_text') as norm, MosesTokenizer('de_full_text') as tok_de, MosesTokenizer(
+    'en_full_text') as tok_en, open('../../templates_SEP_fixed/distance/gender_combination', 'w') as gender_file:
     for first, second in pairs:
         en_template1 = ' '.join(tok_en(norm(f'I am now standing in front of the {first[1]} and the {second[1]}.  I'
                                             f' look at it.')))

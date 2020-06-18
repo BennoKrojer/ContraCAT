@@ -104,7 +104,7 @@ def main(A, B, scoresA, sourceA_en, sourceA_de, scoresB, sourceB_en, sourceB_de,
     if stats:
         nr_modification_errors = len(onlyBwrong)
         count = defaultdict(int)
-        german_modified_dets = load_dets("de").values()
+        german_modified_dets = load_dets("de_full_text").values()
         for item in onlyAwrong:
             groundtruth = "".join([char for char in (item[0][0] + item[0][1]) if char not in string.punctuation]).replace('aposs', '').split()
             mistake_mod = "".join([char for char in item[1] if char not in string.punctuation]).replace('\n->\n', '').replace('aposs', '').split()

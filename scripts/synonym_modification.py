@@ -61,7 +61,7 @@ lexid2synset = load_germanet()
 
 def clean_context(context):
     context = context.replace('<SEP> ', '')
-    context = MosesDetokenizer('en')(context.split())
+    context = MosesDetokenizer('en_full_text')(context.split())
     return context
 
 
@@ -88,7 +88,7 @@ en_lines = open('../ContraPro_Dario/contrapro.text.tok.prev.en.en', 'r').readlin
 output_de = f'../ContraPro_Dario/modified/{modification_name}_de_tok.txt'
 output_en = f'../ContraPro_Dario/modified/{modification_name}_en_tok.txt'
 
-det2def_det = load_dets('de')
+det2def_det = load_dets('de_full_text')
 gender_change = load_gender_change('2male_de')
 contrapro = json.load(open('../ContraPro/contrapro.json', 'r'))
 idx = get_sentence_idx()
@@ -99,7 +99,7 @@ modified_idx_de = set()
 modified_de = defaultdict(list)
 to_be_examined = ""
 count_preword = defaultdict(int)
-with MosesPunctuationNormalizer('de') as norm, MosesTokenizer('de') as tok, MosesDetokenizer('de') as de_tok,\
+with MosesPunctuationNormalizer('de_full_text') as norm, MosesTokenizer('de_full_text') as tok, MosesDetokenizer('de_full_text') as de_tok,\
         open(output_de, 'w') as de_file:
     for i, example in tqdm.tqdm(enumerate(contrapro)):
         head = example['src ante head lemma']

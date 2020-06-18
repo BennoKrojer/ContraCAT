@@ -36,7 +36,7 @@ en_path = '../ContraPro_Dario/contrapro.text.tok.prev.en.en'
 output_de = f'../ContraPro_Dario/subtitle_bpe/modified/{de_modification}_de_tok.txt'
 output_en = f'../ContraPro_Dario/subtitle_bpe/modified/{en_modification}_en_tok.txt'
 
-with MosesPunctuationNormalizer('de') as norm, MosesTokenizer('de') as tok, MosesDetokenizer('de') as de_tok:
+with MosesPunctuationNormalizer('de_full_text') as norm, MosesTokenizer('de_full_text') as tok, MosesDetokenizer('de_full_text') as de_tok:
     with open(de_path, 'r') as de_file, open(output_de, 'w') as out:
         for _, line in tqdm(enumerate(de_file)):
             # print(line)
@@ -53,7 +53,7 @@ with MosesPunctuationNormalizer('de') as norm, MosesTokenizer('de') as tok, Mose
                 sent = '<SEP> ' + ' '.join(tok(sent)) + '\n'
                 out.write(sent)
 
-with MosesPunctuationNormalizer('en') as norm, MosesTokenizer('en') as tok, MosesDetokenizer('en') as de_tok:
+with MosesPunctuationNormalizer('en_full_text') as norm, MosesTokenizer('en_full_text') as tok, MosesDetokenizer('en_full_text') as de_tok:
     with open(en_path, 'r') as en_file, open(output_en, 'w') as out:
         for _, line in tqdm(enumerate(en_file)):
             line = de_tok(line.split())

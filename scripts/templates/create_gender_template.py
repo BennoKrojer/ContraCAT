@@ -21,9 +21,9 @@ os.makedirs(path, exist_ok=True)
 
 with open(path + 'de_tok', 'w') as tokenized_de, \
         open(path + 'en_tok', 'w') as tokenized_en, \
-        MosesPunctuationNormalizer('en') as norm, \
-        MosesTokenizer('de') as tok_de, \
-        MosesTokenizer('en') as tok_en, \
+        MosesPunctuationNormalizer('en_full_text') as norm, \
+        MosesTokenizer('de_full_text') as tok_de, \
+        MosesTokenizer('en_full_text') as tok_en, \
         open('../../templates_SEP_fixed/gender/valid_nouns_cleaned', 'w') as valid, \
         open(f'../../templates_SEP_fixed/{type}/correct', 'w') as correct:
 
@@ -32,7 +32,7 @@ with open(path + 'de_tok', 'w') as tokenized_de, \
         if de in de_freq and de_freq[de] > 30 and en in en_freq and en_freq[en] > 30\
                 and en[-1] != 's':
             valid.write(f'{en} {de} {gender}\n')
-            # article = 'an' if en[0] in ['a', 'o', 'e', 'i'] else 'a'
+            # article = 'an' if en_full_text[0] in ['a', 'o', 'e', 'i'] else 'a'
             en_template = f'The {en} and why it is limited.'
 
             for _ in range(3):

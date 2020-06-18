@@ -92,7 +92,7 @@ output_de = f'../ContraPro_Dario/modified/{de_modification}_de_tok.txt'
 output_en = f'../ContraPro_Dario/modified/{en_modification}_en_tok.txt'
 valid_pos_seqs = [['PRP$', 'NN'], ['DT', 'NN'], ['DT', 'NNP'], ['DT', 'JJ', 'NN'], ['DT', 'NN', 'NN'], ['PRP$', 'JJ', 'NN'], ['DT', 'NNP', 'NNP']]
 
-det2def_det = get_word2definite_article('de')
+det2def_det = get_word2definite_article('de_full_text')
 contrapro = json.load(open('../ContraPro/contrapro.json', 'r'))
 idx = get_sentence_idx()
 
@@ -100,7 +100,7 @@ modified_count = 0
 pos_seqs = defaultdict(list)
 modified_idx_de = set()
 modified_de = defaultdict(list)
-with MosesPunctuationNormalizer('de') as norm, MosesTokenizer('de') as tok, MosesDetokenizer('de') as de_tok:
+with MosesPunctuationNormalizer('de_full_text') as norm, MosesTokenizer('de_full_text') as tok, MosesDetokenizer('de_full_text') as de_tok:
     for example_id, (start, end) in tqdm(enumerate(list(zip(idx, idx[1:])))):
         info = contrapro[example_id]
         ante = info['ref ante phrase']
@@ -143,13 +143,13 @@ with MosesPunctuationNormalizer('de') as norm, MosesTokenizer('de') as tok, Mose
 # sorted_pos = sorted(pos_seqs.items(), key=lambda x: len(x[1]), reverse=True)
 # humanreadable = '\n'.join([str(len(example)) + '  ' + seq + str(example[:3]) for (seq, example) in sorted_pos])
 # print(humanreadable)
-det2def_det = get_word2definite_article('en')
+det2def_det = get_word2definite_article('en_full_text')
 modified_count = 0
 pos_seqs = defaultdict(list)
 mismatch_idx = []
 modified_idx_en = set()
 modified_en = defaultdict(list)
-with MosesPunctuationNormalizer('en') as norm, MosesTokenizer('en') as tok, MosesDetokenizer('en') as de_tok:
+with MosesPunctuationNormalizer('en_full_text') as norm, MosesTokenizer('en_full_text') as tok, MosesDetokenizer('en_full_text') as de_tok:
     for example_id, (start, end) in tqdm(enumerate(list(zip(idx, idx[1:])))):
         if example_id in mismatch_idx:
             lines.append('')

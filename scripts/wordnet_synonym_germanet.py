@@ -60,7 +60,7 @@ lexid2synset = load_germanet()
 
 def clean_context(context):
     context = context.replace('<SEP> ', '')
-    context = MosesDetokenizer('en')(context.split())
+    context = MosesDetokenizer('en_full_text')(context.split())
     return context
 
 
@@ -87,7 +87,7 @@ def get_genders():
                         retrieved += 1
                         genders[word.lower().strip()] = gender
                 else:
-                    # print(de)
+                    # print(de_full_text)
                     pass
         print("!!!!!!!!!!RETRIEVED:" + str(retrieved))
         return genders

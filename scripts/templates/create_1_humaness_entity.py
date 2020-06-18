@@ -33,9 +33,9 @@ nominative = {'m': 'der', 'f': 'die', 'n': 'das'}
 
 with open(path + 'de_tok', 'w') as tokenized_de, \
         open(path + 'en_tok', 'w') as tokenized_en, \
-        MosesPunctuationNormalizer('en') as norm, \
-        MosesTokenizer('de') as tok_de, \
-        MosesTokenizer('en') as tok_en, \
+        MosesPunctuationNormalizer('en_full_text') as norm, \
+        MosesTokenizer('de_full_text') as tok_de, \
+        MosesTokenizer('en_full_text') as tok_en, \
         open(f'{path}/correct', 'w') as correct:
     for first, second in pairs:
         en_template1 = ' '.join(tok_en(norm(f'The {first[1]} and the {second[1]} come closer. It is looking at '

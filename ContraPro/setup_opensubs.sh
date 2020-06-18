@@ -42,6 +42,6 @@ rm -rf documents/1191
 
 # remove source files - comment out if you would like to keep them
 rm -f source.de-en.zip
-rm -f OpenSubtitles.de-en.{de,en,ids}
+rm -f OpenSubtitles.de-en.{de_full_text,en_full_text,ids}
 rm -f doc.order.en-de.txt
 rm -f README
