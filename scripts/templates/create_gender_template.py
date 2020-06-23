@@ -24,22 +24,22 @@ with open(path + 'de_tok', 'w') as tokenized_de, \
         MosesPunctuationNormalizer('en_full_text') as norm, \
         MosesTokenizer('de_full_text') as tok_de, \
         MosesTokenizer('en_full_text') as tok_en, \
-        open('../../templates_SEP_fixed/gender/valid_nouns_cleaned', 'w') as valid, \
         open(f'../../templates_SEP_fixed/{type}/correct', 'w') as correct:
 
     for en, (de, gender) in genders.items():
         de = de.capitalize()
+        #@Denis: my current constraints on nouns are this, can be modified:
         if de in de_freq and de_freq[de] > 30 and en in en_freq and en_freq[en] > 30\
                 and en[-1] != 's':
-            valid.write(f'{en} {de} {gender}\n')
-            # article = 'an' if en_full_text[0] in ['a', 'o', 'e', 'i'] else 'a'
-            en_template = f'The {en} and why it is limited.'
+            #@Denis: TEMPLATE is: There is a/an X. It is {big, small, blue, red, shiny...}
+            #you can choose the adjectives there inside {...}
+            en_template = f'There is a/an {en} . <SEP> It is {big, small, blue, red, shiny,...} .'
 
             for _ in range(3):
                 tokenized_en.write(en_template + '\n')
                 correct.write(gender + '\n')
-            for (article, pronoun) in [('Der', 'er'), ('Die', 'sie'), ('Das', 'es')]:
-                de_template = f'{article} {de} und warum {pronoun} limitiert ist.'
+            for (article, pronoun) in [('einen', 'er'), ('eine', 'sie'), ('ein', 'es')]:
+                de_template = f'Es gibt {article} {de} . <SEP> {pronoun} ist {groß, klein...} .'
                 tokenized_de.write(de_template + '\n')
 
 command = f'subword-nmt apply-bpe -c ../../models_dario/subtitles/ende.bpe --glossaries "<SEP>" < ' \
