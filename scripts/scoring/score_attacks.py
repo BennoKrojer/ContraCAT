@@ -23,7 +23,8 @@ for path, _, files in os.walk(main_dir):
                     en = f
     if valid:
         for model in models:
+            os.makedirs(f'{path}/{model}', exist_ok=True)
             command = f'python3 -m sockeye.score --target {path}/{de} --source {path}/{en}' \
-                      f' --output {path}/{model}/concat22' \
+                      f' --output {path}/{model}/scores' \
                       f' --model  {model_path}/{model}/ --device-ids 1 --output-type score --batch-size 128'
             os.system(command)
