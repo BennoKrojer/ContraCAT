@@ -153,5 +153,5 @@ for i, example in tqdm.tqdm(enumerate(contrapro)):
                 results.append(None)
         results.append(None)
 json.dump(results, open('../ContraPro_Dario/modified/synonyms/synonyms.json', 'w'))
-print(f'Found {nn_count} antecedents tagged as NN. {modifiable_count} could be modified right now')
+print(f'Found {nn_count} antecedents tagged as NN. {modifiable_count} could be ted right now')
 modifications_file.close()

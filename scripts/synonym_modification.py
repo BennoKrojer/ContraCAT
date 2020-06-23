@@ -85,8 +85,8 @@ modifications_file = open('possible_modifications', 'w')
 modification_name = 'male'
 de_lines = open('../ContraPro_Dario/contrapro.text.tok.prev.de.de', 'r').readlines()
 en_lines = open('../ContraPro_Dario/contrapro.text.tok.prev.en.en', 'r').readlines()
-output_de = f'../ContraPro_Dario/modified/{modification_name}_de_tok.txt'
-output_en = f'../ContraPro_Dario/modified/{modification_name}_en_tok.txt'
+output_de = f'../ContraPro_Dario/ted/{modification_name}_de_tok.txt'
+output_en = f'../ContraPro_Dario/ted/{modification_name}_en_tok.txt'
 
 det2def_det = load_dets('de_full_text')
 gender_change = load_gender_change('2male_de')
@@ -173,7 +173,7 @@ with MosesPunctuationNormalizer('de_full_text') as norm, MosesTokenizer('de_full
 print(sorted(count_preword.items(), key=lambda x: x[1], reverse=True))
 
 print('MODIFIED EXAMPLES:' + str(len(modified_indices)))
-command_de = f'subword-nmt apply-bpe -c ../ted_data/train/ende.bpe --glossaries "<SEP>" < ../ContraPro_Dario/modified/{modification_name}_de_tok.txt > tmp_de.txt'
+command_de = f'subword-nmt apply-bpe -c ../ted_data/train/ende.bpe --glossaries "<SEP>" < ../ContraPro_Dario/ted/{modification_name}_de_tok.txt > tmp_de.txt'
 os.system(command_de)
 
 with open('tmp_de.txt', 'r') as tmp_de, open(f'../ContraPro_Dario/modified/{modification_name}_de_bpe.txt', 'w') as bpe_de:

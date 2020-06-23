@@ -14,7 +14,7 @@ def get_sentence_idx(amount_samples=None):
 
 if __name__=='__main__':
     sample_idx = get_sentence_idx(amount_samples=200)
-    source = '../ContraPro_Dario/modified'
+    source = '../ContraPro_Dario/ted'
     mod_dirs = os.listdir(source)
     all_samples = []
     for mod_dir in mod_dirs:

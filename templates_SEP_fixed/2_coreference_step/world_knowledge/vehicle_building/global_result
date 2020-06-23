@@ -1,0 +1,6 @@
+correct: 252
+false: 252
+{'m': 144, 'f': 0, 'n': 108}
+{'m': 144, 'f': 0, 'n': 108}
+[('.\n', 252), ('dem', 108), ('Das', 108), ('Es', 108), ('einen', 84), ('kaputten', 84), ('Reifen', 84), ('schnell', 84), ('richtig', 84), ('geparkt', 84), ('Bus', 48), ('Wagen', 48), ('Auto', 36), ('Fahrrad', 36), ('Motorrad', 36), ('Bank', 18), ('Tankstelle', 18), ('Bäckerei', 18), ('Apotheke', 18), ('Universität', 18), ('Fabrik', 18), ('Bibliothek', 18), ('Haus', 9), ('Restaurant', 9), ('Krankenhaus', 9), ('Museum', 9), ('Kino', 9), ('Fitnessstudio', 9), ('Hotel', 9), ('Gefängnis', 9), ('Bahnhof', 9), ('Supermarkt', 9), ('Wolkenkratzer', 9), ('Turm', 9)]
+[('.\n', 252), ('dem', 108), ('Das', 108), ('Es', 108), ('Beton', 84), ('Holz', 84), ('wird', 84), ('gerade', 84), ('renoviert', 84), ('Bus', 48), ('Wagen', 48), ('Auto', 36), ('Fahrrad', 36), ('Motorrad', 36), ('Bank', 18), ('Tankstelle', 18), ('Bäckerei', 18), ('Apotheke', 18), ('Universität', 18), ('Fabrik', 18), ('Bibliothek', 18), ('Haus', 9), ('Restaurant', 9), ('Krankenhaus', 9), ('Museum', 9), ('Kino', 9), ('Fitnessstudio', 9), ('Hotel', 9), ('Gefängnis', 9), ('Bahnhof', 9), ('Supermarkt', 9), ('Wolkenkratzer', 9), ('Turm', 9)]

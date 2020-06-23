@@ -93,7 +93,7 @@ def modify(df):
     else:
         modifiable_sentence_ids = []
         cache_loaded = False
-    with open('augmentation_synonym_de', 'w') as d, open('augmentation_synonym_en', 'w') as e:
+    with open('untouched_synonym_de', 'w') as d, open('untouched_synonym_en', 'w') as e:
         for i, row in tqdm(df.iterrows()):
             if not cache_loaded or (cache_loaded and i in modifiable_sentence_ids):
                 mods_per_sentence = []
@@ -125,9 +125,9 @@ def modify(df):
                     print('!!!')
                     d.write(prev_de.strip() + ' <SEP> ' + main_de.strip() + '\n')
                     e.write(prev_en.strip() + ' <SEP> ' + main_en.strip() + '\n')
-                    for mod_prev, mod_main in mods_per_sentence:
-                        d.write(mod_prev.strip() + ' <SEP> ' + mod_main.strip() + '\n')
-                        e.write(prev_en.strip() + ' <SEP> ' + main_en.strip() + '\n')
+                    # for mod_prev, mod_main in mods_per_sentence:
+                    #     d.write(mod_prev.strip() + ' <SEP> ' + mod_main.strip() + '\n')
+                    #     e.write(prev_en.strip() + ' <SEP> ' + main_en.strip() + '\n')
 
                     if not cache_loaded:
                         modifiable_sentence_ids.append(i)

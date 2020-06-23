@@ -83,7 +83,7 @@ prev_en = en.readline()
 pronoun_sent = pronouns.readline()
 alignment = alignments.readline()
 
-with open('augmentation_antecedent_free_de', 'w') as d, open('augmentation_antecedent_free_en', 'w') as e:
+with open('untouched_antecedent_free_de', 'w') as d, open('untouched_antecedent_free_en', 'w') as e:
     for i, indicator in tqdm(enumerate(indicators[1:])):
         sent_de = de.readline()
         sent_en = en.readline()
@@ -91,10 +91,13 @@ with open('augmentation_antecedent_free_de', 'w') as d, open('augmentation_antec
         pronoun_sent = pronouns.readline()
         if indicator == 'Yes\n':
             try:
-                for prev, new in get_german_variants(sent_en, sent_de, pronoun_sent, alignment, prev_de):
-                    d.write(prev.strip() + ' <SEP> ' + new.strip() + '\n')
-                for _ in range(3):
-                    e.write(prev_en.strip() + ' <SEP> ' + sent_en.strip() + '\n')
+                # for prev, new in get_german_variants(sent_en, sent_de, pronoun_sent, alignment, prev_de):
+                _ = get_german_variants(sent_en, sent_de, pronoun_sent, alignment, prev_de)
+                d.write(prev_de.strip() + ' <SEP> ' + sent_de.strip() + '\n')
+                e.write(prev_en.strip() + ' <SEP> ' + sent_en.strip() + '\n')
+                #     d.write(prev.strip() + ' <SEP> ' + new.strip() + '\n')
+                # for _ in range(3):
+                #     e.write(prev_en.strip() + ' <SEP> ' + sent_en.strip() + '\n')
             except:
                 continue
 

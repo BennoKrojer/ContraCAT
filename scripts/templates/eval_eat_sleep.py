@@ -5,7 +5,7 @@ import numpy
 import os
 
 gender_order = ['m', 'f', 'n']
-dir = '../../templates_SEP_fixed/2_coreference_step/event'
+dir = '../../templates_SEP_fixed/2_coreference_step/world_knowledge'
 for path, _, files in os.walk(dir):
     if 'correct' in files:
         predictions = {'correct': [], 'false': []}
