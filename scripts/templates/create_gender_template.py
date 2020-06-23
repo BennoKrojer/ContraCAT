@@ -33,13 +33,14 @@ with open(path + 'de_tok', 'w') as tokenized_de, \
                 and en[-1] != 's':
             #@Denis: TEMPLATE is: There is a/an X. It is {big, small, blue, red, shiny...}
             #you can choose the adjectives there inside {...}
-            en_template = f'There is a/an {en} . <SEP> It is {big, small, blue, red, shiny,...} .'
+            # if you deem it relevant, make sure that a/an is correctly chosen
+            en_template = f'I saw a/an {en} . <SEP> It was {big, small, blue, red, shiny,...} .'
 
             for _ in range(3):
                 tokenized_en.write(en_template + '\n')
                 correct.write(gender + '\n')
             for (article, pronoun) in [('einen', 'er'), ('eine', 'sie'), ('ein', 'es')]:
-                de_template = f'Es gibt {article} {de} . <SEP> {pronoun} ist {groß, klein...} .'
+                de_template = f'Ich sah {article} {de} . <SEP> {pronoun} war {groß, klein...} .'
                 tokenized_de.write(de_template + '\n')
 
 command = f'subword-nmt apply-bpe -c ../../models_dario/subtitles/ende.bpe --glossaries "<SEP>" < ' \
