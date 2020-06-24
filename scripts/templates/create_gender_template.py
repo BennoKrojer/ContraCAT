@@ -5,7 +5,7 @@ from mosestokenizer import MosesPunctuationNormalizer, MosesTokenizer
 
 from scripts.utils import get_gender_dict
 
-concrete_nouns = [line.rstrip('\n') for line in open('../../resources/concrete_nouns_brysbaert.txt'])
+concrete_nouns = [line.rstrip('\n') for line in open('../../resources/concrete_nouns_brysbaert.txt')]
 genders = get_gender_dict('../../resources/dict_cc_original.txt')
 de_freq = json.load(open('../../resources/open_subtitles_de_freq.json', 'r'))
 en_freq = json.load(open('../../resources/open_subtitles_en_freq.json', 'r'))
