@@ -1,4 +1,5 @@
 import difflib
+import glob
 import json
 import pickle
 import string
@@ -163,16 +164,20 @@ def main(A, B, scoresA, sourceA_en, sourceA_de, scoresB, sourceB_en, sourceB_de,
 
 
 if __name__ == '__main__':
-
-    scoresA = open('../outputs/subtitles/synonyms/male/concat22', 'r')
-    scoresB = open('../outputs/subtitles/normal/concat22', 'r')
-    sourceA_en = open('../ContraPro_Dario/subtitle_bpe/modified/synonyms/male/en_tok.txt', 'r')
-    sourceA_de = open('../ContraPro_Dario/subtitle_bpe/modified/synonyms/male/de_tok.txt', 'r')
-    sourceB_en = open('../ContraPro_Dario/subtitle_bpe/contrapro.text.tok.prev.en.en', 'r')
-    sourceB_de = open('../ContraPro_Dario/subtitle_bpe/contrapro.text.tok.prev.de.de', 'r')
-    modified_idx = pickle.load(open('../ContraPro_Dario/subtitle_bpe/modified/synonyms/male/modified_indices.pkl','rb'))
-    results = open('../outputs/subtitles/compare/normal-male_synonym', 'w')
-    A = 'male'
-    B = 'normal'
-    stats_mode = False
-    main(A, B, scoresA.readlines(), sourceA_en.readlines(), sourceA_de.readlines(), scoresB.readlines(), sourceB_en.readlines(), sourceB_de.readlines(), results, modified_idx, stats=stats_mode)
+    for g in ['male', 'female', 'neutral']:
+        for score_file in glob.glob(f'../ContraPro_Dario/subtitle_bpe/modified/synonyms/{g}/*/scores'):
+            scores_mod = open(score_file, 'r')
+            scores_normal = open('../outputs/subtitles/normal/concat22', 'r')
+            sourceA_en = open(f'../ContraPro_Dario/subtitle_bpe/modified/synonyms/{g}/en_tok.txt', 'r')
+            sourceA_de = open(f'../ContraPro_Dario/subtitle_bpe/modified/synonyms/{g}/de_tok.txt', 'r')
+            sourceB_en = open('../ContraPro_Dario/subtitle_bpe/contrapro.text.tok.prev.en.en', 'r')
+            sourceB_de = open('../ContraPro_Dario/subtitle_bpe/contrapro.text.tok.prev.de.de', 'r')
+            modified_idx = pickle.load(open(f'../ContraPro_Dario/subtitle_bpe/modified/synonyms/{g}'
+                                            '/modified_indices.pkl', 'rb'))
+            results = open('../outputs/subtitles/compare/normal-male_synonym', 'w')
+            A = 'male'
+            B = 'normal'
+            stats_mode = False
+            print(score_file)
+            main(A, B, scores_mod.readlines(), sourceA_en.readlines(), sourceA_de.readlines(), scores_normal.readlines(),
+                 sourceB_en.readlines(), sourceB_de.readlines(), results, modified_idx, stats=stats_mode)

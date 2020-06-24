@@ -613,7 +613,7 @@ class RecurrentDecoder(Decoder):
                                                 seq_idx,
                                                 enc_last_hidden=enc_last_hidden)
             hidden_states.append(state.hidden)
-            attention_scores.append(attention_state.scores)
+            attention_scores.append(attention_state.scores_normal)
 
         # concatenate along time axis: (batch_size, target_embed_max_length, rnn_num_hidden)
         hidden_stack = mx.sym.stack(*hidden_states, axis=1, name='%shidden_stack' % self.prefix)
@@ -667,7 +667,7 @@ class RecurrentDecoder(Decoder):
                       source_encoded_length,
                       state.hidden] + state.layer_states
 
-        return state.hidden, attention_state.probs, new_states, attention_state.scores
+        return state.hidden, attention_state.probs, new_states, attention_state.scores_normal
 
     def reset(self):
         """

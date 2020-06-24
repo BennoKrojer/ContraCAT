@@ -1,0 +1,33 @@
+total : 2881 4580 0.6290393013100437
+
+statistics by error category
+it:er : 1409 2304 0.6115451388888888
+it:sie : 1472 2276 0.6467486818980668
+
+statistics by intrasegmental
+False : 2183 3623 0.6025393320452663 
+True : 698 957 0.7293625914315569 
+
+statistics by ante distance
+0 : 698 957 0.7293625914315569 
+1 : 1784 2882 0.6190145732130465 
+2 : 269 503 0.5347912524850894 
+3 : 90 172 0.5232558139534884 
+>3 : 40 66 0.6060606060606061 
+
+ante distance per pronoun pairs
+ante distance 0 :
+it:er 455 
+it:sie 502 
+ante distance 1 :
+it:er 1438 
+it:sie 1444 
+ante distance 2 :
+it:er 276 
+it:sie 227 
+ante distance 3 :
+it:er 98 
+it:sie 74 
+ante distance >3 :
+it:er 37 
+it:sie 29 

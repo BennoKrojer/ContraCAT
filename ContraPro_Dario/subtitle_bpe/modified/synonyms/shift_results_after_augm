@@ -1,0 +1,84 @@
+/home/benno/python-virtual-environments/nmt/bin/python3 /home/benno/Projects/BreakingNMT/scripts/compare_scores_synonyms.py
+../ContraPro_Dario/subtitle_bpe/modified/synonyms/male/augmentation-it-nomod-lower/scores
+total_correct_shifts:223
+{('sie', 'es'): 105, ('es', 'es'): 131, ('sie', 'sie'): 132, ('sie', 'er'): 176, ('es', 'er'): 26, ('er', 'er'): 19, ('es', 'sie'): 2, ('ihren', 'seinen'): 1, ('ihre', 'seine'): 1, ('er', 'es'): 4})
+../ContraPro_Dario/subtitle_bpe/modified/synonyms/male/augmentation-synonym-mod-lowest/scores
+total_correct_shifts:207
+{('sie', 'es'): 114, ('es', 'es'): 138, ('sie', 'sie'): 132, ('es', 'er'): 21, ('sie', 'er'): 167, ('er', 'er'): 17, ('ihren', 'seinen'): 1, ('er', 'es'): 6, ('ihre', 'seine'): 1})
+../ContraPro_Dario/subtitle_bpe/modified/synonyms/male/augmentation-it-mod-lower/scores
+total_correct_shifts:309
+{('sie', 'es'): 23, ('sie', 'er'): 208, ('es', 'es'): 41, ('es', 'er'): 78, ('sie', 'sie'): 183, ('es', 'sie'): 40, ('er', 'er'): 22, ('ihren', 'seinen'): 1, ('er', 'es'): 1})
+../ContraPro_Dario/subtitle_bpe/modified/synonyms/male/augmentation-it-nomod-low/scores
+total_correct_shifts:233
+{('sie', 'es'): 96, ('es', 'es'): 128, ('sie', 'sie'): 135, ('es', 'er'): 30, ('sie', 'er'): 182, ('er', 'er'): 19, ('es', 'sie'): 1, ('ihren', 'seinen'): 1, ('ihre', 'seine'): 1, ('er', 'es'): 4})
+../ContraPro_Dario/subtitle_bpe/modified/synonyms/male/augmentation-it-mod-low/scores
+total_correct_shifts:288
+{('sie', 'es'): 37, ('sie', 'er'): 196, ('es', 'es'): 50, ('sie', 'sie'): 181, ('es', 'er'): 68, ('es', 'sie'): 41, ('er', 'er'): 22, ('ihren', 'seinen'): 1, ('er', 'es'): 1})
+../ContraPro_Dario/subtitle_bpe/modified/synonyms/male/augmentation-it-nomod-lowest/scores
+total_correct_shifts:204
+{('sie', 'es'): 114, ('es', 'es'): 141, ('sie', 'sie'): 132, ('sie', 'er'): 167, ('es', 'er'): 18, ('er', 'er'): 17, ('ihren', 'seinen'): 1, ('er', 'es'): 6, ('ihre', 'seine'): 1})
+../ContraPro_Dario/subtitle_bpe/modified/synonyms/male/augmentation-synonym-mod-lower/scores
+total_correct_shifts:223
+{('sie', 'es'): 102, ('es', 'es'): 134, ('sie', 'er'): 178, ('es', 'er'): 25, ('sie', 'sie'): 134, ('er', 'er'): 19, ('ihren', 'seinen'): 1, ('er', 'es'): 4})
+../ContraPro_Dario/subtitle_bpe/modified/synonyms/male/augmentation-synonym-mod-low/scores
+total_correct_shifts:247
+{('sie', 'es'): 110, ('es', 'es'): 121, ('sie', 'er'): 194, ('es', 'er'): 34, ('sie', 'sie'): 110, ('er', 'er'): 18, ('es', 'sie'): 4, ('ihren', 'seinen'): 1, ('er', 'es'): 5})
+../ContraPro_Dario/subtitle_bpe/modified/synonyms/male/augmentation-it-mod-lowest/scores
+total_correct_shifts:242
+{('sie', 'es'): 77, ('sie', 'er'): 188, ('es', 'es'): 121, ('es', 'er'): 33, ('sie', 'sie'): 149, ('er', 'er'): 20, ('es', 'sie'): 5, ('ihren', 'seinen'): 1, ('er', 'es'): 3})
+
+../ContraPro_Dario/subtitle_bpe/modified/synonyms/female/augmentation-it-nomod-lower/scores
+total_correct_shifts:203
+{('er', 'sie'): 177, ('ihn', 'sie'): 6, ('es', 'es'): 93, ('er', 'es'): 31, ('es', 'sie'): 14, ('er', 'er'): 36, ('sie', 'sie'): 3, ('seine', 'ihre'): 1, ('seinen', 'ihren'): 1, ('seiner', 'ihrer'): 1, ('ihn', 'ihn'): 1})
+../ContraPro_Dario/subtitle_bpe/modified/synonyms/female/augmentation-synonym-mod-lowest/scores
+total_correct_shifts:199
+{('er', 'sie'): 177, ('ihn', 'sie'): 6, ('es', 'es'): 97, ('er', 'es'): 32, ('es', 'sie'): 10, ('er', 'er'): 36, ('sie', 'sie'): 3, ('seine', 'ihre'): 1, ('seinen', 'ihren'): 1, ('seiner', 'ihrer'): 1})
+../ContraPro_Dario/subtitle_bpe/modified/synonyms/female/augmentation-it-mod-lower/scores
+total_correct_shifts:299
+{('er', 'sie'): 198, ('ihn', 'sie'): 6, ('es', 'sie'): 88, ('es', 'es'): 11, ('er', 'er'): 45, ('sie', 'sie'): 3, ('es', 'er'): 7, ('seine', 'ihre'): 1, ('seinen', 'ihren'): 1, ('seiner', 'ihrer'): 1, ('ihn', 'ihn'): 1, ('seines', 'ihres'): 1, ('er', 'es'): 1})
+../ContraPro_Dario/subtitle_bpe/modified/synonyms/female/augmentation-it-nomod-low/scores
+total_correct_shifts:207
+{('er', 'sie'): 177, ('ihn', 'sie'): 5, ('es', 'es'): 87, ('er', 'es'): 32, ('es', 'sie'): 18, ('er', 'er'): 36, ('sie', 'sie'): 3, ('seine', 'ihre'): 1, ('seinen', 'ihren'): 1, ('seiner', 'ihrer'): 1, ('es', 'er'): 1, ('ihn', 'ihn'): 1, ('seines', 'ihres'): 1})
+../ContraPro_Dario/subtitle_bpe/modified/synonyms/female/augmentation-it-mod-low/scores
+total_correct_shifts:252
+{('er', 'sie'): 172, ('ihn', 'sie'): 4, ('es', 'sie'): 69, ('es', 'es'): 23, ('er', 'er'): 66, ('sie', 'sie'): 3, ('es', 'er'): 14, ('seine', 'ihre'): 1, ('seinen', 'ihren'): 1, ('ihn', 'ihn'): 1, ('er', 'es'): 8, ('seiner', 'ihrer'): 1, ('seines', 'ihres'): 1})
+../ContraPro_Dario/subtitle_bpe/modified/synonyms/female/augmentation-it-nomod-lowest/scores
+total_correct_shifts:201
+{('er', 'sie'): 178, ('ihn', 'sie'): 6, ('es', 'es'): 96, ('er', 'es'): 31, ('es', 'sie'): 11, ('er', 'er'): 36, ('sie', 'sie'): 3, ('seine', 'ihre'): 1, ('seinen', 'ihren'): 1, ('seiner', 'ihrer'): 1})
+../ContraPro_Dario/subtitle_bpe/modified/synonyms/female/augmentation-synonym-mod-lower/scores
+total_correct_shifts:216
+{('er', 'sie'): 186, ('ihn', 'sie'): 6, ('es', 'es'): 88, ('er', 'es'): 23, ('es', 'sie'): 17, ('er', 'er'): 36, ('sie', 'sie'): 3, ('seine', 'ihre'): 1, ('seinen', 'ihren'): 1, ('seiner', 'ihrer'): 1, ('es', 'er'): 1, ('seines', 'ihres'): 1})
+../ContraPro_Dario/subtitle_bpe/modified/synonyms/female/augmentation-synonym-mod-low/scores
+total_correct_shifts:225
+{('er', 'sie'): 186, ('ihn', 'sie'): 6, ('es', 'es'): 78, ('es', 'sie'): 26, ('er', 'es'): 24, ('er', 'er'): 35, ('sie', 'sie'): 3, ('seine', 'ihre'): 1, ('seinen', 'ihren'): 1, ('seiner', 'ihrer'): 1, ('es', 'er'): 2, ('seines', 'ihres'): 1})
+../ContraPro_Dario/subtitle_bpe/modified/synonyms/female/augmentation-it-mod-lowest/scores
+total_correct_shifts:236
+{('er', 'sie'): 195, ('ihn', 'sie'): 6, ('es', 'es'): 76, ('es', 'sie'): 28, ('er', 'er'): 37, ('sie', 'sie'): 3, ('er', 'es'): 12, ('seine', 'ihre'): 1, ('seinen', 'ihren'): 1, ('seiner', 'ihrer'): 1, ('es', 'er'): 2, ('ihn', 'ihn'): 1, ('seines', 'ihres'): 1})
+
+../ContraPro_Dario/subtitle_bpe/modified/synonyms/neutral/augmentation-it-nomod-lower/scores
+total_correct_shifts:492
+{('er', 'es'): 175, ('es', 'es'): 153, ('sie', 'es'): 164, ('sie', 'er'): 5, ('er', 'er'): 31, ('sie', 'sie'): 27, ('ihn', 'ihn'): 2, ('er', 'sie'): 1})
+../ContraPro_Dario/subtitle_bpe/modified/synonyms/neutral/augmentation-synonym-mod-lowest/scores
+total_correct_shifts:
+{('er', 'es'): 179, ('es', 'es'): 153, ('sie', 'es'): 164, ('sie', 'er'): 4, ('sie', 'sie'): 28, ('er', 'er'): 28, ('er', 'sie'): 1, ('ihn', 'ihn'): 1})
+../ContraPro_Dario/subtitle_bpe/modified/synonyms/neutral/augmentation-it-mod-lower/scores
+total_correct_shifts:330
+{('er', 'es'): 110, ('es', 'es'): 114, ('er', 'er'): 87, ('sie', 'es'): 106, ('sie', 'sie'): 81, ('ihn', 'ihn'): 3, ('es', 'er'): 19, ('sie', 'er'): 9, ('er', 'sie'): 8, ('es', 'sie'): 20, ('ihn', 'sie'): 1})
+../ContraPro_Dario/subtitle_bpe/modified/synonyms/neutral/augmentation-it-nomod-low/scores
+total_correct_shifts:
+{('er', 'es'): 174, ('es', 'es'): 152, ('sie', 'es'): 162, ('sie', 'er'): 5, ('er', 'er'): 32, ('sie', 'sie'): 29, ('ihn', 'ihn'): 2, ('es', 'er'): 1, ('er', 'sie'): 1})
+../ContraPro_Dario/subtitle_bpe/modified/synonyms/neutral/augmentation-it-mod-low/scores
+total_correct_shifts:
+{('er', 'es'): 86, ('es', 'es'): 100, ('er', 'er'): 109, ('sie', 'sie'): 87, ('ihn', 'ihn'): 3, ('sie', 'es'): 84, ('es', 'sie'): 34, ('sie', 'er'): 25, ('es', 'er'): 19, ('er', 'sie'): 10, ('ihm', 'ihm'): 1})
+../ContraPro_Dario/subtitle_bpe/modified/synonyms/neutral/augmentation-it-nomod-lowest/scores
+total_correct_shifts:
+{('er', 'es'): 180, ('es', 'es'): 153, ('sie', 'es'): 164, ('sie', 'er'): 4, ('sie', 'sie'): 28, ('er', 'er'): 27, ('er', 'sie'): 1, ('ihn', 'ihn'): 1})
+../ContraPro_Dario/subtitle_bpe/modified/synonyms/neutral/augmentation-synonym-mod-lower/scores
+total_correct_shifts:
+{('er', 'es'): 178, ('es', 'es'): 153, ('sie', 'es'): 163, ('sie', 'er'): 5, ('sie', 'sie'): 28, ('er', 'er'): 29, ('er', 'sie'): 1, ('ihn', 'ihn'): 1})
+../ContraPro_Dario/subtitle_bpe/modified/synonyms/neutral/augmentation-synonym-mod-low/scores
+total_correct_shifts:
+{('er', 'es'): 177, ('es', 'es'): 153, ('sie', 'es'): 167, ('sie', 'er'): 4, ('sie', 'sie'): 25, ('er', 'er'): 30, ('er', 'sie'): 1, ('ihn', 'ihn'): 1})
+../ContraPro_Dario/subtitle_bpe/modified/synonyms/neutral/augmentation-it-mod-lowest/scores
+total_correct_shifts:
+{('er', 'es'): 170, ('es', 'es'): 151, ('sie', 'es'): 160, ('sie', 'er'): 3, ('er', 'er'): 35, ('sie', 'sie'): 33, ('es', 'sie'): 2, ('ihn', 'ihn'): 2, ('er', 'sie'): 2})
