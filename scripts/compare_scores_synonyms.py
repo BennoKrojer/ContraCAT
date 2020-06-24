@@ -10,8 +10,9 @@ from scripts.sample_modifications import get_sentence_idx
 
 def get_groundtruth_translations():
     idx = get_sentence_idx()
-    en = np.array(open('../ContraPro_Dario/contrapro.text.tok.prev.en.en', 'r').readlines())[idx[:-1]].tolist()
-    de = np.array(open('../ContraPro_Dario/contrapro.text.tok.prev.de.de', 'r').readlines())[idx[:-1]].tolist()
+    en = np.array(open('../ContraPro_Dario/subtitle_bpe/contrapro.text.tok.prev.en.en', 'r').readlines())[idx[
+                                                                                                          :-1]].tolist()
+    de = np.array(open('../ContraPro_Dario/subtitle_bpe/contrapro.text.tok.prev.de.de', 'r').readlines())[idx[:-1]].tolist()
     return list(zip(en, de)), idx
 
 
@@ -165,11 +166,11 @@ if __name__ == '__main__':
 
     scoresA = open('../outputs/subtitles/synonyms/male/concat22', 'r')
     scoresB = open('../outputs/subtitles/normal/concat22', 'r')
-    sourceA_en = open('../ContraPro_Dario/modified/synonyms/male/male_en_tok.txt', 'r')
-    sourceA_de = open('../ContraPro_Dario/modified/synonyms/male/de_tok.txt', 'r')
-    sourceB_en = open('../ContraPro_Dario/contrapro.text.tok.prev.en.en', 'r')
-    sourceB_de = open('../ContraPro_Dario/contrapro.text.tok.prev.de.de', 'r')
-    modified_idx = pickle.load(open('../ContraPro_Dario/modified/synonyms/male/modified_indices.pkl','rb'))
+    sourceA_en = open('../ContraPro_Dario/subtitle_bpe/modified/synonyms/male/en_tok.txt', 'r')
+    sourceA_de = open('../ContraPro_Dario/subtitle_bpe/modified/synonyms/male/de_tok.txt', 'r')
+    sourceB_en = open('../ContraPro_Dario/subtitle_bpe/contrapro.text.tok.prev.en.en', 'r')
+    sourceB_de = open('../ContraPro_Dario/subtitle_bpe/contrapro.text.tok.prev.de.de', 'r')
+    modified_idx = pickle.load(open('../ContraPro_Dario/subtitle_bpe/modified/synonyms/male/modified_indices.pkl','rb'))
     results = open('../outputs/subtitles/compare/normal-male_synonym', 'w')
     A = 'male'
     B = 'normal'
