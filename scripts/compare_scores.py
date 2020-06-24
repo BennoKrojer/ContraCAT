@@ -138,7 +138,7 @@ if __name__=='__main__':
     scoresA = open('../outputs/ted/synonyms/male/concat22', 'r')
     scoresB = open('../outputs/ted/normal/output-concat22', 'r')
     sourceA_en = open('../ContraPro_Dario/modified/synonyms/male/male_en_tok.txt', 'r')
-    sourceA_de = open('../ContraPro_Dario/modified/synonyms/male/male_de_tok.txt', 'r')
+    sourceA_de = open('../ContraPro_Dario/modified/synonyms/male/de_tok.txt', 'r')
     sourceB_en = open('../ContraPro_Dario/contrapro.text.tok.prev.en.en', 'r')
     sourceB_de = open('../ContraPro_Dario/contrapro.text.tok.prev.de.de', 'r')
     results = open('../outputs/ted/compare/normal-male_synonym', 'w')
