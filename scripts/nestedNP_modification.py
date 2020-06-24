@@ -86,8 +86,8 @@ def modify(tokenize, line, to_be_replaced, ante_distance, np, word_mapping=None,
 
 de_modification = 'tmp'
 en_modification = 'tmp2'
-de_lines = open('../ContraPro_Dario/contrapro.text.tok.prev.de.de', 'r').readlines()
-en_lines = open('../ContraPro_Dario/contrapro.text.tok.prev.en.en', 'r').readlines()
+de_lines = open('../ContraPro_Dario/de_tok.txt', 'r').readlines()
+en_lines = open('../ContraPro_Dario/en_tok.txt', 'r').readlines()
 output_de = f'../ContraPro_Dario/modified/{de_modification}_de_tok.txt'
 output_en = f'../ContraPro_Dario/modified/{en_modification}_en_tok.txt'
 valid_pos_seqs = [['PRP$', 'NN'], ['DT', 'NN'], ['DT', 'NNP'], ['DT', 'JJ', 'NN'], ['DT', 'NN', 'NN'], ['PRP$', 'JJ', 'NN'], ['DT', 'NNP', 'NNP']]

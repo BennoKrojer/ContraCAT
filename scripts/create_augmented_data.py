@@ -105,9 +105,9 @@ modification_name = 'augm_synoynm'
 folder = 'synonym_augmentation'
 model = 'subtitles'
 
-de_lines = open('../ContraPro_Dario/contrapro.text.tok.prev.de.de', 'r').readlines()
-en_lines = open('../ContraPro_Dario/contrapro.text.tok.prev.en.en', 'r').readlines()
-bpe_en_lines = open('../ContraPro_Dario/contrapro.text.bpe.prev.en.en', 'r').readlines()
+de_lines = open('../ContraPro_Dario/de_tok.txt', 'r').readlines()
+en_lines = open('../ContraPro_Dario/en_tok.txt', 'r').readlines()
+bpe_en_lines = open('../ContraPro_Dario/en_bpe.txt', 'r').readlines()
 output_de = f'../ContraPro_Dario/{folder}/{model}/{modification_name}_de_tok.txt'
 output_en = f'../ContraPro_Dario/{folder}/{model}/{modification_name}_en_tok.txt'
 de_file_acc = []

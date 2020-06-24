@@ -75,16 +75,16 @@ def disambiguate(word, context, synsets):
 results = []
 de2gender = get_genders()
 indices = get_sentence_idx()
-en_context_lines = open('../ContraPro_Dario/contrapro.text.tok.prev.en.en', 'r').readlines()
-de_context_lines = open('../ContraPro_Dario/contrapro.text.tok.prev.de.de', 'r').readlines()
+en_context_lines = open('../ContraPro_Dario/en_tok.txt', 'r').readlines()
+de_context_lines = open('../ContraPro_Dario/de_tok.txt', 'r').readlines()
 nn_count = 0
 modifiable_count = 0
 different_gender_count = 0
 modifications_file = open('possible_modifications', 'w')
 
 modification_name = 'male'
-de_lines = open('../ContraPro_Dario/contrapro.text.tok.prev.de.de', 'r').readlines()
-en_lines = open('../ContraPro_Dario/contrapro.text.tok.prev.en.en', 'r').readlines()
+de_lines = open('../ContraPro_Dario/de_tok.txt', 'r').readlines()
+en_lines = open('../ContraPro_Dario/en_tok.txt', 'r').readlines()
 output_de = f'../ContraPro_Dario/ted/{modification_name}_de_tok.txt'
 output_en = f'../ContraPro_Dario/ted/{modification_name}_en_tok.txt'
 
@@ -181,6 +181,6 @@ with open('tmp_de.txt', 'r') as tmp_de, open(f'../ContraPro_Dario/modified/{modi
         bpe_de.write(line)
 
 os.system('rm -rf tmp_de.txt')
-shutil.copy('../ContraPro_Dario/contrapro.text.tok.prev.en.en', f'../ContraPro_Dario/modified/{modification_name}_en_tok.txt')
-shutil.copy('../ContraPro_Dario/contrapro.text.bpe.prev.en.en', f'../ContraPro_Dario/modified/{modification_name}_en_bpe.txt')
+shutil.copy('../ContraPro_Dario/en_tok.txt', f'../ContraPro_Dario/modified/{modification_name}_en_tok.txt')
+shutil.copy('../ContraPro_Dario/en_bpe.txt', f'../ContraPro_Dario/modified/{modification_name}_en_bpe.txt')
 pickle.dump(modified_indices, open('../ContraPro_Dario/modified/modified_indices.pkl', 'wb'))

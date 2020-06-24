@@ -47,7 +47,7 @@ def get_translations(en_word):
 
 
 indices = get_sentence_idx()
-context_lines = open('../ContraPro_Dario/contrapro.text.tok.prev.en.en', 'r').readlines()
+context_lines = open('../ContraPro_Dario/en_tok.txt', 'r').readlines()
 nn_count = 0
 modifiable_count = 0
 for i, example in enumerate(contrapro):

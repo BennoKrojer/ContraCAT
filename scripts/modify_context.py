@@ -31,8 +31,8 @@ def append(line, phrase, new_sentence=False):
 
 de_modification = 'true_separate'
 en_modification = 'true_separate'
-de_path = '../ContraPro_Dario/contrapro.text.tok.prev.de.de'
-en_path = '../ContraPro_Dario/contrapro.text.tok.prev.en.en'
+de_path = '../ContraPro_Dario/de_tok.txt'
+en_path = '../ContraPro_Dario/en_tok.txt'
 output_de = f'../ContraPro_Dario/subtitle_bpe/modified/{de_modification}_de_tok.txt'
 output_en = f'../ContraPro_Dario/subtitle_bpe/modified/{en_modification}_en_tok.txt'
 

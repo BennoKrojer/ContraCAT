@@ -96,8 +96,8 @@ def get_genders():
 results = []
 de2gender = get_genders()
 indices = get_sentence_idx()
-en_context_lines = open('../ContraPro_Dario/contrapro.text.tok.prev.en.en', 'r').readlines()
-de_context_lines = open('../ContraPro_Dario/contrapro.text.tok.prev.de.de', 'r').readlines()
+en_context_lines = open('../ContraPro_Dario/en_tok.txt', 'r').readlines()
+de_context_lines = open('../ContraPro_Dario/de_tok.txt', 'r').readlines()
 nn_count = 0
 modifiable_count = 0
 different_gender_count = 0

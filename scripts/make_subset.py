@@ -9,7 +9,7 @@ indices = [int(line.strip()) for line in
 f = open('../ContraPro_Dario/subtitle_bpe/modified/synonyms/female/de_tok.txt').readlines()
 m = open('../ContraPro_Dario/subtitle_bpe/modified/synonyms/male/de_tok.txt').readlines()
 n = open('../ContraPro_Dario/subtitle_bpe/modified/synonyms/neutral/de_tok.txt').readlines()
-no_mod = open('../ContraPro_Dario/subtitle_bpe/contrapro.text.tok.prev.de.de').readlines()
+no_mod = open('../ContraPro_Dario/subtitle_bpe/de_tok.txt').readlines()
 modified_idx = []
 
 for i, idx in enumerate(indices[:-1]):
