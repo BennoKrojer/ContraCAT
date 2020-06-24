@@ -5,7 +5,8 @@ import numpy as np
 
 
 def get_sentence_idx(amount_samples=None):
-    indices = [list(map(int, line.strip().split())) for line in open('../ContraPro_Dario/sentence_groups.txt', 'r').readlines()]
+    indices = [list(map(int, line.strip().split())) for line in open(
+        '../ContraPro_Dario/subtitle_bpe/sentence_groups.txt', 'r').readlines()]
     if amount_samples is None:
         return [idx_pair[0] for idx_pair in indices]
     else:
