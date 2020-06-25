@@ -36,7 +36,7 @@ def combine_nouns(animal_path, food_path):
 type = 'vehicle_building'
 path = f'../../templates_SEP_fixed/2_coreference_step/world_knowledge/{type}/'
 os.makedirs(path, exist_ok=True)
-pairs = combine_nouns('../../templates_SEP_fixed/entity_sets/vehicles', '../../templates_SEP_fixed/entity_sets/buildings')
+pairs = combine_nouns('../../templates_SEP_fixed/entities/vehicles', '../../templates_SEP_fixed/entities/buildings')
 nominative = {'m': 'Der', 'f': 'Die', 'n': 'Das'}
 accusative = {'m': 'den', 'f': 'die', 'n': 'das'}
 dative = {'m': 'dem', 'f': 'der', 'n': 'dem'}

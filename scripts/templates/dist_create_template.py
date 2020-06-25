@@ -72,9 +72,9 @@ with open('../../templates_SEP_fixed/distance/and_de_tok', 'w') as tokenized_de,
 
 
 command = 'subword-nmt apply-bpe -c ../../models_dario/subtitles/ende.bpe --glossaries "<SEP>" < ' \
-          '../../templates_SEP_fixed/distance/and_en_tok > ../../templates_SEP_fixed/distance/and_en_bpe'
+          '../../templates/distance/and_en_tok > ../../templates/distance/and_en_bpe'
 os.system(command)
 
 command = 'subword-nmt apply-bpe -c ../../models_dario/subtitles/ende.bpe --glossaries "<SEP>" < ' \
-                  '../../templates_SEP_fixed/distance/and_de_tok > ../../templates_SEP_fixed/distance/and_de_bpe'
+                  '../../templates/distance/and_de_tok > ../../templates/distance/and_de_bpe'
 os.system(command)

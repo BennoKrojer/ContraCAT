@@ -26,8 +26,8 @@ def combine_nouns(path1, path2):
 for type, pleo_en, pleo_de in zip(types, pleonasms_en, pleonasms_de):
     path = f'../../templates_SEP_fixed/2_coreference_step/event/{type}/'
     os.makedirs(path, exist_ok=True)
-    pairs = combine_nouns('../../templates_SEP_fixed/entity_sets/animals',
-                          '../../templates_SEP_fixed/entity_sets/buildings')
+    pairs = combine_nouns('../../templates/entities/animals.json',
+                          '../../templates/entities/buildings')
     nominative = {'m': 'Der', 'f': 'Die', 'n': 'Das'}
     accusative = {'m': 'den', 'f': 'die', 'n': 'das'}
     dative = {'m': 'dem', 'f': 'der', 'n': 'dem'}

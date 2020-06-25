@@ -86,13 +86,13 @@ def modify(tokenize, line, to_be_replaced, ante_distance, np, word_mapping=None,
 
 de_modification = 'tmp'
 en_modification = 'tmp2'
-de_lines = open('../ContraPro_Dario/de_tok.txt', 'r').readlines()
-en_lines = open('../ContraPro_Dario/en_tok.txt', 'r').readlines()
+de_lines = open('../ContraPro_Dario/subtitle_bpe/de_tok.txt', 'r').readlines()
+en_lines = open('../ContraPro_Dario/subtitle_bpe/en_tok.txt', 'r').readlines()
 output_de = f'../ContraPro_Dario/modified/{de_modification}_de_tok.txt'
 output_en = f'../ContraPro_Dario/modified/{en_modification}_en_tok.txt'
 valid_pos_seqs = [['PRP$', 'NN'], ['DT', 'NN'], ['DT', 'NNP'], ['DT', 'JJ', 'NN'], ['DT', 'NN', 'NN'], ['PRP$', 'JJ', 'NN'], ['DT', 'NNP', 'NNP']]
 
-det2def_det = get_word2definite_article('de_full_text')
+det2def_det = get_word2definite_article('de')
 contrapro = json.load(open('../ContraPro/contrapro.json', 'r'))
 idx = get_sentence_idx()
 
@@ -100,7 +100,7 @@ modified_count = 0
 pos_seqs = defaultdict(list)
 modified_idx_de = set()
 modified_de = defaultdict(list)
-with MosesPunctuationNormalizer('de_full_text') as norm, MosesTokenizer('de_full_text') as tok, MosesDetokenizer('de_full_text') as de_tok:
+with MosesPunctuationNormalizer('de') as norm, MosesTokenizer('de') as tok, MosesDetokenizer('de') as de_tok:
     for example_id, (start, end) in tqdm(enumerate(list(zip(idx, idx[1:])))):
         info = contrapro[example_id]
         ante = info['ref ante phrase']
