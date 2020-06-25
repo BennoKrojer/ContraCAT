@@ -20,8 +20,8 @@ def tokenize(sequence, tokenizer):
 overlap = 'subject_overlap'
 orders = {'eat_drink_eat': {'en': ('ate', 'drank', 'ate'), 'de': ('gegessen', 'getrunken', 'gegessen')},
           'eat_drink_drink': {'en': ('ate', 'drank', 'drank'), 'de': ('gegessen', 'getrunken', 'getrunken')},
-          # 'drink_eat_eat': {'en': ('drank', 'ate', 'ate'), 'de': ('getrunken', 'gegessen', 'gegessen')},
-          # 'drink_eat_drink': {'en': ('drank', 'ate', 'drank'), 'de': ('getrunken', 'gegessen', 'getrunken')}
+          'drink_eat_eat': {'en': ('drank', 'ate', 'ate'), 'de': ('getrunken', 'gegessen', 'gegessen')},
+          'drink_eat_drink': {'en': ('drank', 'ate', 'drank'), 'de': ('getrunken', 'gegessen', 'getrunken')}
           }
 
 nom = {'m': 'der', 'f': 'die', 'n': 'das'}
@@ -53,7 +53,7 @@ for specification, verbs in orders.items():
                             en_template = tokenize(en_template, en_tokenizer)
                             for _ in range(3):
                                 tokenized_en.write(en_template + '\n')
-                                correct.write((f_gender if first_correct else d_gender) + '\n')
+                                correct.write((f_gender if verbs['en'][2] == 'ate' else d_gender) + '\n')
 
                             for pronoun in ['ihn', 'sie', 'es']:
                                 x = {'gegessen': f_de, 'getrunken': d_de}
