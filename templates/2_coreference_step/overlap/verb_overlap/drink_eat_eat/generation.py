@@ -63,7 +63,7 @@ for specification, verbs in orders.items():
                                           f'{verbs["de"][0]} und ' \
                                           f'{nom[a2_de["gender"]]} {a2_de["de"]} hat ' \
                                           f'{verbs["de"][1]}. ' \
-                                          f'{pronoun} hat {adv_de} {verbs["de"][1]}.'
+                                          f'{pronoun} hat {adv_de} {verbs["de"][2]}.'
                             de_template = tokenize(de_template, de_tokenizer)
                             tokenized_de.write(de_template + '\n')
 

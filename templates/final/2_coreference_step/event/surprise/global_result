@@ -1,6 +1,0 @@
-correct: 2162
-false: 0
-{'m': 0, 'f': 0, 'n': 2162}
-{'m': 0, 'f': 0, 'n': 0}
-[('überraschend', 2162), ('.\n', 2162), ('der', 782), ('Die', 782), ('Das', 690), ('Bär', 92), ('Tiger', 92), ('Löwe', 92), ('Adler', 92), ('Fisch', 92), ('Hase', 92), ('Vogel', 92), ('Affe', 92), ('Frosch', 92), ('Katze', 92), ('Kuh', 92), ('Giraffe', 92), ('Schildkröte', 92), ('Maus', 92), ('Ente', 92), ('Eule', 92), ('Taube', 92), ('Ziege', 92), ('Schaf', 92), ('Eichhörnchen', 92), ('Pferd', 92), ('Schwein', 92), ('Zebra', 92), ('Känguru', 92), ('Kamel', 92), ('Bahnhof', 92), ('Kirche', 92), ('Bank', 92), ('Tankstelle', 92), ('Bäckerei', 92), ('Apotheke', 92), ('Universität', 92), ('Fabrik', 92), ('Bibliothek', 92), ('Supermarkt', 92), ('Wolkenkratzer', 92), ('Turm', 92), ('Haus', 92), ('Restaurant', 92), ('Krankenhaus', 92), ('Museum', 92), ('Kino', 92), ('Fitnessstudio', 92), ('Hotel', 92), ('Gefängnis', 92)]
-[]
