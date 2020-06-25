@@ -5,7 +5,7 @@ predictions = {'first_pos': [], 'second_pos': [], 'same_antecedent': [], 'other'
 acc_scores = []
 acc_en = []
 acc_de = []
-model = 'standard'
+model = 'tuned'
 dir = '../../templates/final/0_priors/position/'
 genders = open(f'{dir}gender_combination', 'r').readlines()
 for i, (score, de, en) in enumerate(zip(open(f'{dir}scores_{model}', 'r'),
@@ -19,7 +19,7 @@ for i, (score, de, en) in enumerate(zip(open(f'{dir}scores_{model}', 'r'),
         bestidx1 = acc_scores[:3].index(min(acc_scores[:3]))
         bestidx2 = acc_scores[3:].index(min(acc_scores[3:]))
 
-        if bestidx1 == bestidx2:
+        if bestidx1 == bestidx2 and (gender_order[bestidx2] == second_gender or gender_order[bestidx2] == first_gender):
             predictions['same_antecedent'].append(
                 acc_de[bestidx1].strip() + '///' + acc_de[3:][bestidx2].strip())
         elif bestidx1 == gender_order.index(first_gender) and bestidx2 == gender_order.index(second_gender):

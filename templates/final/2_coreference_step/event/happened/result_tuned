@@ -1,0 +1,6 @@
+correct: 108
+false: 267
+{'m': 0, 'f': 0, 'n': 108}
+{'m': 135, 'f': 132, 'n': 0}
+[('ist', 108), ('tatsächlich', 108), ('passiert', 108), ('.\n', 108), ('Das', 105), ('das', 105), ('Schaf', 15), ('Eichhörnchen', 15), ('Pferd', 15), ('Schwein', 15), ('Zebra', 15), ('Känguru', 15), ('Reh', 15), ('Fleisch', 8), ('Steak', 8), ('Keks', 7), ('Kuchen', 7), ('Hotdog', 7), ('Käse', 7), ('Apfel', 7), ('Nuss', 7), ('Frucht', 7), ('Karotte', 7), ('Wurst', 7), ('Pizza', 7), ('Brot', 7), ('Eis', 7)]
+[('ist', 267), ('tatsächlich', 267), ('passiert', 267), ('.\n', 267), ('Die', 132), ('die', 132), ('Sie', 132), ('Kuchen', 18), ('Hotdog', 18), ('Käse', 18), ('Apfel', 18), ('Nuss', 18), ('Frucht', 18), ('Karotte', 18), ('Wurst', 18), ('Pizza', 18), ('Brot', 18), ('Eis', 18), ('Ei', 17), ('Fleisch', 17), ('Steak', 17), ('Wolf', 15), ('Bär', 15), ('Tiger', 15), ('Löwe', 15), ('Hase', 15), ('Affe', 15), ('Adler', 15), ('Frosch', 15), ('Katze', 15), ('Kuh', 15), ('Giraffe', 15), ('Maus', 15), ('Ente', 15), ('Schildkröte', 15), ('Taube', 15), ('Ziege', 15), ('Eule', 12)]
