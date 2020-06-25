@@ -1,6 +1,6 @@
 import os
 
-main_dir = 'templates/'
+main_dir = 'templates/final'
 models = {'standard': 'models_dario/subtitles/concat-2-2/',
           'tuned': '/mounts/data/proj/dario/CtxTfNMTOld/models/subtitles/benno/augmentation-it-mod-lower'}
 for model, model_path in models.items():
