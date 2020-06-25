@@ -53,7 +53,7 @@ for specification, verbs in orders.items():
                             en_template = tokenize(en_template, en_tokenizer)
                             for _ in range(3):
                                 tokenized_en.write(en_template + '\n')
-                                correct.write((a1[0] if first_correct else a2[0]) + '\n')
+                                correct.write((a1_gender if first_correct else a2_gender) + '\n')
 
                             for pronoun in ['Er', 'Sie', 'Es']:
                                 x = {'gegessen': f_de, 'getrunken': d_de}
