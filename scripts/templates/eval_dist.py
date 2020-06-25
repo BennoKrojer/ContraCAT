@@ -1,14 +1,16 @@
 import json
 
-gender_order = ['m','f','n']
+gender_order = ['m', 'f', 'n']
 predictions = {'first_pos': [], 'second_pos': [], 'same_antecedent': [], 'other': []}
 acc_scores = []
 acc_en = []
 acc_de = []
-genders = open('../../templates_SEP_fixed/distance/gender_combination', 'r').readlines()
-for i, (score, de, en) in enumerate(zip(open('../../templates_SEP_fixed/distance/and_concat22', 'r'),
-                                        open('../../templates_SEP_fixed/distance/and_de_tok', 'r').readlines(),
-                                        open('../../templates_SEP_fixed/distance/and_en_tok', 'r').readlines())):
+model = 'standard'
+dir = '../../templates/final/0_priors/position/'
+genders = open(f'{dir}gender_combination', 'r').readlines()
+for i, (score, de, en) in enumerate(zip(open(f'{dir}scores_{model}', 'r'),
+                                        open(f'{dir}de_tok', 'r').readlines(),
+                                        open(f'{dir}en_tok', 'r').readlines())):
 
     acc_scores.append(float(score)), acc_en.append(en), acc_de.append(de)
     if i % 6 == 5:
@@ -31,6 +33,7 @@ for i, (score, de, en) in enumerate(zip(open('../../templates_SEP_fixed/distance
                 acc_de[bestidx1].strip() + '///' + acc_de[3:][bestidx2].strip())
         acc_scores, acc_en, acc_de = [], [], []
 
-for key, val in predictions.items():
-    print(f'{key}: {len(val)}')
-json.dump(predictions, open('../../templates_SEP_fixed/distance/and_results.json', 'w'), indent=2)
+with open(f'{dir}results_{model}', 'w') as file:
+    for key, val in predictions.items():
+        file.write(f'{key}: {len(val)}\n')
+json.dump(predictions, open(f'{dir}results_{model}.json', 'w'), indent=2)

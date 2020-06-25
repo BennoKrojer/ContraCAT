@@ -23,7 +23,7 @@ animals = json.load(open('../../templates/entities/animals.json'))
 adjectives = json.load(open('../../templates/entities/adjectives_size.json'))
 dest = '../../templates/0_priors/position'
 os.makedirs(dest, exist_ok=True)
-
+sampled = []
 with open(f'{dest}/de_tok', 'w') as tokenized_de, \
         open(f'{dest}/en_tok', 'w') as tokenized_en,\
         open(f'{dest}/gender_combination', 'w') as gender_file:
@@ -32,13 +32,19 @@ with open(f'{dest}/de_tok', 'w') as tokenized_de, \
             for a_en, a_de in adjectives.items():
                 a1_gender = animals[a1]['gender']
                 a2_gender = animals[a2]['gender']
-                if a1_gender != a2_gender:
-                    en_template = f'I stood in front of the {a1} and the {a2}. It was {a_en}.'
-                    en_template = tokenize(en_template, en_tokenizer)
+                if a1_gender != a2_gender and {a1, a2, a_de} not in sampled:
+                    sampled.append({a1, a2, a_de})
+                    en_template1 = f'I stood in front of the {a1} and the {a2}. It was {a_en}.'
+                    en_template2 = f'I stood in front of the {a2} and the {a1}. It was {a_en}.'
+                    en_template1 = tokenize(en_template1, en_tokenizer)
+                    en_template2 = tokenize(en_template2, en_tokenizer)
 
                     for _ in range(3):
-                        tokenized_en.write(en_template + '\n')
+                        tokenized_en.write(en_template1 + '\n')
                         gender_file.write(a1_gender+a2_gender+'\n')
+                    for _ in range(3):
+                        tokenized_en.write(en_template2 + '\n')
+                        gender_file.write(a2_gender + a1_gender + '\n')
 
                     for gender, pro in pros.items():
                         de_a1 = animals[a1]['de']
@@ -47,6 +53,14 @@ with open(f'{dest}/de_tok', 'w') as tokenized_de, \
                                       f'{pro} war {a_de}.'
                         de_template = tokenize(de_template, de_tokenizer)
                         tokenized_de.write(de_template+'\n')
+                    for gender, pro in pros.items():
+                        de_a1 = animals[a1]['de']
+                        de_a2 = animals[a2]['de']
+                        de_template = f'Ich stand vor {acc[a2_gender]} {de_a2} und {acc[a1_gender]} {de_a1}. ' \
+                                      f'{pro} war {a_de}.'
+                        de_template = tokenize(de_template, de_tokenizer)
+                        tokenized_de.write(de_template+'\n')
+
 
 command = f'subword-nmt apply-bpe -c ../../models_dario/subtitles/ende.bpe --glossaries "<SEP>" < ' \
           f'{dest}/en_tok > {dest}/en_bpe'
