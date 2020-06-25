@@ -1,0 +1,6 @@
+correct: 1679
+false: 817
+{'m': 910, 'f': 174, 'n': 595}
+{'m': 279, 'f': 231, 'n': 307}
+[('gegessen', 1679), ('.', 1679), ('', 1679), ('<SEP>', 1679), ('mochte', 1679), ('.\n', 1679), ('das', 1655), ('Die', 1134), ('Das', 1102), ('ihn', 910), ('es', 595), ('Wassser', 550), ('Taube', 457), ('Maus', 444), ('Tee', 424), ('Kuh', 422), ('Reh', 421), ('Affe', 409), ('Schaf', 409), ('Zebra', 407), ('Pferd', 375), ('Löwe', 371), ('Frosch', 360), ('Schildkröte', 323), ('Apfel', 312), ('Keks', 308), ('Hotdog', 290), ('Fleisch', 243), ('Steak', 195), ('sie', 174), ('Brot', 157), ('Wurst', 98), ('Frucht', 76)]
+[('das', 829), ('gegessen', 817), ('.', 817), ('', 817), ('<SEP>', 817), ('mochte', 817), ('.\n', 817), ('Das', 434), ('Die', 402), ('es', 307), ('ihn', 279), ('Schildkröte', 253), ('Frucht', 236), ('Milch', 231), ('sie', 231), ('Wassser', 230), ('Frosch', 216), ('Wurst', 214), ('Löwe', 205), ('Pferd', 201), ('Zebra', 169), ('Affe', 167), ('Schaf', 167), ('Brot', 155), ('Reh', 155), ('Kuh', 154), ('Maus', 132), ('Taube', 119), ('Steak', 117), ('Fleisch', 69), ('Hotdog', 22), ('Keks', 4)]

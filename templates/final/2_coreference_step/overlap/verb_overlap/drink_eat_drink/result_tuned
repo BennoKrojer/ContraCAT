@@ -1,0 +1,6 @@
+correct: 406
+false: 154
+{'m': 157, 'f': 180, 'n': 69}
+{'m': 54, 'f': 100, 'n': 0}
+[('<SEP>', 406), ('.\n', 406), ('das', 180), ('Die', 180), ('Sie', 180), ('Er', 157), ('der', 146), ('viel', 88), ('Pferd', 84), ('schnell', 82), ('fröhlich', 79), ('wenig', 79), ('langsam', 78), ('Schildkröte', 72), ('Reh', 71), ('Das', 69), ('Es', 69), ('Taube', 61), ('Bär', 61), ('Löwe', 61), ('Affe', 61), ('Frosch', 61), ('Schaf', 47), ('Zebra', 47), ('Maus', 46)]
+[('<SEP>', 154), ('.\n', 154), ('Das', 111), ('Sie', 100), ('der', 54), ('Er', 54), ('Schaf', 43), ('Zebra', 43), ('langsam', 34), ('fröhlich', 33), ('wenig', 33), ('schnell', 30), ('Taube', 29), ('viel', 24), ('Bär', 19), ('Löwe', 19), ('Affe', 19), ('Frosch', 19), ('Reh', 19), ('Schildkröte', 18), ('Kuh', 9), ('Pferd', 6)]
