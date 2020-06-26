@@ -53,7 +53,7 @@ with open(path + 'de_tok', 'w') as tokenized_de, \
                             de_template = tokenize(de_template, de_tokenizer)
                             tokenized_de.write(de_template + '\n')
 
-                        for pronoun in ['Er', 'Sie', 'Es']:
+                        for pronoun in ['er', 'sie', 'es']:
                             de_template = f'{nom[h_gender].capitalize()} {h_de} und {nom[a_gender[0]]} {a_de} waren ' \
                                           f'{de_adj}. Aber {pronoun} war {more_de[de_adj]}.'
                             de_template = tokenize(de_template, de_tokenizer)
