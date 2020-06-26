@@ -1,6 +1,6 @@
 import os
 
-main_dir = 'templates/2_coreference_step/overlap/subject_overlap'
+main_dir = 'templates/1_entity_step'
 models = {'standard': 'models_dario/subtitles/concat-2-2/',
           'tuned': '/mounts/data/proj/dario/CtxTfNMTOld/models/subtitles/benno/augmentation-it-mod-lower'}
 for model, model_path in models.items():
