@@ -5,8 +5,8 @@ predictions = {'subj': [], 'obj': [], 'other': []}
 acc_scores = []
 acc_en = []
 acc_de = []
-model = 'tuned'
-dir = '../../templates/final/0_priors/role/'
+model = 'tuned_lowest'
+dir = '../../templates/final/0_priors/position/'
 genders = open(f'{dir}gender_combination', 'r').readlines()
 for i, (score, de, en) in enumerate(zip(open(f'{dir}scores_{model}', 'r'),
                                         open(f'{dir}de_tok', 'r').readlines(),

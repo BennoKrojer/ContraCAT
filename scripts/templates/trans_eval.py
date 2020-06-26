@@ -6,7 +6,7 @@ genders = ['er', 'sie', 'es']
 predictions = {'er': [], 'sie': [], 'es': []}
 best_en = ''
 best_de = ''
-model = "tuned"
+model = "tuned_lowest"
 dir = '../../templates/final/0_priors/verb/'
 for i, (score, de, en) in enumerate(zip(open(f'{dir}scores_{model}', 'r'),
                                         open(f'{dir}de_tok', 'r').readlines(),
