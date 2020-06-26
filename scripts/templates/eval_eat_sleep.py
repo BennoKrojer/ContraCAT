@@ -6,7 +6,7 @@ import os
 
 gender_order = ['m', 'f', 'n']
 dir = '../../templates/final/'
-for model in ['standard', 'tuned']:
+for model in ['standard', 'tuned', 'tuned_lowest']:
     for path, _, files in os.walk(dir):
         if 'correct' in files:
             predictions = {'correct': [], 'false': []}

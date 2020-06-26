@@ -1,6 +1,6 @@
-correct: 1774
-false: 722
-{'m': 754, 'f': 397, 'n': 623}
-{'m': 323, 'f': 0, 'n': 399}
-[('getrunken', 3548), ('.', 1774), ('', 1774), ('<SEP>', 1774), ('schnell', 1774), ('.\n', 1774), ('das', 1662), ('Die', 1084), ('Das', 1033), ('Tee', 754), ('ihn', 754), ('Wassser', 623), ('es', 623), ('Frosch', 448), ('Affe', 445), ('Löwe', 440), ('Taube', 424), ('Maus', 408), ('Schildkröte', 398), ('Milch', 397), ('sie', 397), ('Pferd', 393), ('Schaf', 390), ('Kuh', 388), ('Reh', 385), ('Zebra', 348), ('Frucht', 312), ('Wurst', 312), ('Hotdog', 292), ('Steak', 217), ('Fleisch', 209), ('Brot', 130), ('Apfel', 3)]
-[('getrunken', 1444), ('das', 822), ('.', 722), ('', 722), ('<SEP>', 722), ('schnell', 722), ('.\n', 722), ('Milch', 539), ('Das', 503), ('Die', 452), ('es', 399), ('ihn', 323), ('Zebra', 228), ('Reh', 191), ('Kuh', 188), ('Schaf', 186), ('Pferd', 183), ('Brot', 182), ('Schildkröte', 178), ('Maus', 168), ('Wassser', 157), ('Taube', 152), ('Löwe', 136), ('Affe', 131), ('Frosch', 128), ('Fleisch', 103), ('Steak', 95), ('Tee', 26), ('Hotdog', 20), ('Keks', 13)]
+correct: 1776
+false: 720
+{'m': 754, 'f': 397, 'n': 625}
+{'m': 321, 'f': 0, 'n': 399}
+[('getrunken', 3552), ('.', 1776), ('', 1776), ('<SEP>', 1776), ('schnell', 1776), ('.\n', 1776), ('das', 1664), ('Die', 1085), ('Das', 1033), ('Tee', 754), ('ihn', 754), ('Wasser', 625), ('es', 625), ('Frosch', 449), ('Affe', 445), ('Löwe', 440), ('Taube', 424), ('Maus', 408), ('Schildkröte', 399), ('Milch', 397), ('sie', 397), ('Pferd', 393), ('Schaf', 390), ('Kuh', 388), ('Reh', 385), ('Zebra', 348), ('Frucht', 312), ('Wurst', 312), ('Hotdog', 293), ('Steak', 217), ('Fleisch', 209), ('Brot', 130), ('Apfel', 3)]
+[('getrunken', 1440), ('das', 820), ('.', 720), ('', 720), ('<SEP>', 720), ('schnell', 720), ('.\n', 720), ('Milch', 539), ('Das', 503), ('Die', 451), ('es', 399), ('ihn', 321), ('Zebra', 228), ('Reh', 191), ('Kuh', 188), ('Schaf', 186), ('Pferd', 183), ('Brot', 182), ('Schildkröte', 177), ('Maus', 168), ('Wasser', 155), ('Taube', 152), ('Löwe', 136), ('Affe', 131), ('Frosch', 127), ('Fleisch', 103), ('Steak', 95), ('Tee', 26), ('Hotdog', 19), ('Keks', 12)]

@@ -1,6 +1,6 @@
-correct: 715
-false: 1781
-{'m': 520, 'f': 195, 'n': 0}
-{'m': 780, 'f': 837, 'n': 164}
-[('getrunken', 715), ('.', 715), ('', 715), ('<SEP>', 715), ('schnell', 715), ('.\n', 715), ('Wassser', 616), ('ihn', 520), ('die', 517), ('Die', 498), ('Das', 278), ('Apfel', 255), ('sie', 195), ('Schildkröte', 187), ('Taube', 186), ('Löwe', 185), ('Affe', 183), ('Frosch', 178), ('Maus', 176), ('Kuh', 172), ('Reh', 150), ('Schaf', 145), ('Hotdog', 132), ('Frucht', 103), ('Milch', 99), ('Pferd', 99), ('Zebra', 96), ('Wurst', 92)]
-[('getrunken', 1781), ('.', 1781), ('', 1781), ('<SEP>', 1781), ('schnell', 1781), ('.\n', 1781), ('das', 1656), ('Das', 1258), ('Die', 1038), ('Milch', 837), ('sie', 837), ('Tee', 780), ('ihn', 780), ('Zebra', 480), ('Pferd', 477), ('Schaf', 431), ('Reh', 426), ('Kuh', 404), ('Maus', 400), ('Frosch', 398), ('Affe', 393), ('Löwe', 391), ('Taube', 390), ('Schildkröte', 389), ('Brot', 312), ('Fleisch', 312), ('Steak', 312), ('Wurst', 220), ('Frucht', 209), ('Hotdog', 180), ('Wassser', 164), ('es', 164), ('Apfel', 57)]
+correct: 682
+false: 1814
+{'m': 514, 'f': 168, 'n': 0}
+{'m': 780, 'f': 837, 'n': 197}
+[('getrunken', 682), ('.', 682), ('', 682), ('<SEP>', 682), ('schnell', 682), ('.\n', 682), ('Wasser', 583), ('ihn', 514), ('die', 487), ('Die', 474), ('Das', 264), ('Apfel', 255), ('Schildkröte', 179), ('Taube', 179), ('Affe', 176), ('Löwe', 175), ('Frosch', 174), ('Maus', 174), ('sie', 168), ('Kuh', 162), ('Reh', 142), ('Schaf', 137), ('Hotdog', 128), ('Milch', 99), ('Frucht', 93), ('Pferd', 93), ('Zebra', 86), ('Wurst', 75)]
+[('getrunken', 1814), ('.', 1814), ('', 1814), ('<SEP>', 1814), ('schnell', 1814), ('.\n', 1814), ('das', 1707), ('Das', 1272), ('Die', 1062), ('Milch', 837), ('sie', 837), ('Tee', 780), ('ihn', 780), ('Zebra', 490), ('Pferd', 483), ('Schaf', 439), ('Reh', 434), ('Kuh', 414), ('Frosch', 402), ('Maus', 402), ('Löwe', 401), ('Affe', 400), ('Schildkröte', 397), ('Taube', 397), ('Brot', 312), ('Fleisch', 312), ('Steak', 312), ('Wurst', 237), ('Frucht', 219), ('Wasser', 197), ('es', 197), ('Hotdog', 184), ('Apfel', 57)]

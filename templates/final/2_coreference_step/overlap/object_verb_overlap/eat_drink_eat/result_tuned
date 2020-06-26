@@ -1,6 +1,6 @@
-correct: 1630
-false: 1058
-{'m': 461, 'f': 740, 'n': 429}
-{'m': 299, 'f': 519, 'n': 240}
-[('das', 2417), ('getrunken', 1630), ('.', 1630), ('', 1630), ('<SEP>', 1630), ('schnell', 1630), ('.\n', 1630), ('Die', 740), ('Sie', 740), ('der', 671), ('Wassser', 558), ('Milch', 526), ('Er', 461), ('Das', 429), ('Es', 429), ('Wurst', 428), ('Brot', 424), ('Frucht', 422), ('Steak', 418), ('Apfel', 404), ('Fleisch', 396), ('Hotdog', 382), ('Schildkröte', 299), ('Pferd', 293), ('Schaf', 255), ('Zebra', 253), ('Reh', 249), ('Bär', 247), ('Taube', 227), ('Maus', 227), ('Löwe', 224), ('Frosch', 222), ('Affe', 215)]
-[('das', 1359), ('getrunken', 1058), ('.', 1058), ('', 1058), ('<SEP>', 1058), ('schnell', 1058), ('.\n', 1058), ('Sie', 519), ('Das', 435), ('Tee', 350), ('Wassser', 338), ('Er', 299), ('Hotdog', 290), ('der', 289), ('Fleisch', 276), ('Apfel', 268), ('Steak', 254), ('Frucht', 250), ('Brot', 248), ('Wurst', 244), ('Es', 240), ('Maus', 205), ('Taube', 205), ('Reh', 183), ('Zebra', 179), ('Schaf', 177), ('Affe', 169), ('Frosch', 162), ('Löwe', 160), ('Pferd', 139), ('Bär', 137), ('Schildkröte', 133), ('Die', 124)]
+correct: 1623
+false: 1065
+{'m': 465, 'f': 738, 'n': 420}
+{'m': 305, 'f': 523, 'n': 237}
+[('das', 2405), ('getrunken', 1623), ('.', 1623), ('', 1623), ('<SEP>', 1623), ('schnell', 1623), ('.\n', 1623), ('Die', 738), ('Sie', 738), ('der', 665), ('Wasser', 551), ('Milch', 526), ('Er', 465), ('Wurst', 424), ('Brot', 422), ('Frucht', 420), ('Das', 420), ('Es', 420), ('Steak', 414), ('Apfel', 400), ('Fleisch', 394), ('Hotdog', 384), ('Schildkröte', 298), ('Pferd', 290), ('Zebra', 252), ('Reh', 252), ('Schaf', 250), ('Bär', 247), ('Taube', 226), ('Maus', 225), ('Löwe', 222), ('Frosch', 220), ('Affe', 216)]
+[('das', 1371), ('getrunken', 1065), ('.', 1065), ('', 1065), ('<SEP>', 1065), ('schnell', 1065), ('.\n', 1065), ('Sie', 523), ('Das', 444), ('Tee', 350), ('Wasser', 345), ('Er', 305), ('der', 295), ('Hotdog', 288), ('Fleisch', 278), ('Apfel', 272), ('Steak', 258), ('Frucht', 252), ('Brot', 250), ('Wurst', 248), ('Es', 237), ('Maus', 207), ('Taube', 206), ('Schaf', 182), ('Zebra', 180), ('Reh', 180), ('Affe', 168), ('Frosch', 164), ('Löwe', 162), ('Pferd', 142), ('Bär', 137), ('Schildkröte', 134), ('Die', 126)]
