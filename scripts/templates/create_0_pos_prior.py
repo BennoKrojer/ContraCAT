@@ -17,23 +17,24 @@ def tokenize(sequence, tokenizer):
 
 nominative = {'m': 'Der', 'f': 'Die', 'n': 'Das'}
 dativ = {'m': 'den', 'f': 'die', 'n': 'das'}
-pros = {'m': 'Er', 'f': 'Sie', 'n': 'Es'}
+pros = {'m': 'ihn', 'f': 'sie', 'n': 'es'}
 animals = json.load(open('../../templates/entities/animals.json'))
 food = json.load(open('../../templates/entities/food.json'))
 adjectives = json.load(open('../../templates/entities/adjectives_size.json'))
 dest = '../../templates/0_priors/role'
 os.makedirs(dest, exist_ok=True)
+subj = {'He': 'Er', 'She': 'Sie', 'I': 'Ich', 'You': 'Du'}
 
 with open(f'{dest}/de_tok', 'w') as tokenized_de, \
         open(f'{dest}/en_tok', 'w') as tokenized_en,\
         open(f'{dest}/gender_combination', 'w') as gender_file:
     for animal in animals:
         for food_entity in food:
-            for a_en, a_de in adjectives.items():
+            for pro_en, pro_de in subj.items():
                 animal_gender = animals[animal]['gender']
                 food_gender = food[food_entity]['gender']
                 if animal_gender != food_gender:
-                    en_template = f'The {animal} ate the {food_entity}. It was {a_en}.'
+                    en_template = f'The {animal} ate the {food_entity}. {pro_en} looked at it.'
                     en_template = tokenize(en_template, en_tokenizer)
 
                     for _ in range(3):
@@ -43,8 +44,9 @@ with open(f'{dest}/de_tok', 'w') as tokenized_de, \
                     for gender, pro in pros.items():
                         de_animal = animals[animal]['de']
                         de_food = food[food_entity]['de']
-                        de_template = f'{nominative[animal_gender]} {de_animal} hat {dativ[food_gender]} {de_food} gegessen. {pro} ' \
-                                      f'war {a_de}.'
+                        de_template = f'{nominative[animal_gender]} {de_animal} hat {dativ[food_gender]} {de_food} ' \
+                                      f'gegessen. {pro_de} ' \
+                                      f'schaute {pro} an.'
                         de_template = tokenize(de_template, de_tokenizer)
                         tokenized_de.write(de_template+'\n')
 

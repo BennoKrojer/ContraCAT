@@ -33,7 +33,7 @@ food = json.load(open('../../templates/entities/food.json'))
 drinks = json.load(open('../../templates/entities/drinks.json'))
 
 for specification, verbs in orders.items():
-    path = f'../../templates/2_coreference_step/overlap/{overlap}/{specification}/'
+    path = f'../../templates/final/2_coreference_step/overlap/{overlap}/{specification}/'
     os.makedirs(path, exist_ok=True)
     with open(path + 'de_tok', 'w') as tokenized_de, \
             open(path + 'en_tok', 'w') as tokenized_en, \
