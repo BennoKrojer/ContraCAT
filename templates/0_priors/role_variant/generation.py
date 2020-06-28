@@ -24,6 +24,7 @@ adjectives = json.load(open('../../templates/entities/adjectives_size.json'))
 dest = '../../templates/0_priors/role_variant'
 os.makedirs(dest, exist_ok=True)
 subj = {'He': 'Er', 'She': 'Sie', 'I': 'Ich', 'You': 'Du'}
+haben = {'Ich': 'habe', 'Du': 'hast', 'Er': 'hat', 'Sie': 'hat'}
 
 with open(f'{dest}/de_tok', 'w') as tokenized_de, \
         open(f'{dest}/en_tok', 'w') as tokenized_en,\
@@ -46,7 +47,7 @@ with open(f'{dest}/de_tok', 'w') as tokenized_de, \
                         de_food = food[food_entity]['de']
                         de_template = f'{nominative[animal_gender]} {de_animal} hat {dativ[food_gender]} {de_food} ' \
                                       f'gegessen. {pro_de} ' \
-                                      f'betrachtete {pro}.'
+                                      f'{haben[pro_de]} {pro} betrachtet.'
                         de_template = tokenize(de_template, de_tokenizer)
                         tokenized_de.write(de_template+'\n')
 
