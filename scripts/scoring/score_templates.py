@@ -1,6 +1,6 @@
 import os
 
-main_dir = 'templates/final/'
+main_dir = 'templates/0_priors/role_variant'
 models = {'tuned_lowest': '/mounts/data/proj/dario/CtxTfNMTOld/models/subtitles/benno/augmentation-it-mod-lowest'}
 for model, model_path in models.items():
     for path, _, files in os.walk(main_dir):
