@@ -165,7 +165,7 @@ def main(A, B, scoresA, sourceA_en, sourceA_de, scoresB, sourceB_en, sourceB_de,
 
 if __name__ == '__main__':
     for g in ['male', 'female', 'neutral']:
-        for score_file in glob.glob(f'../ContraPro_Dario/subtitle_bpe/modified/synonyms/{g}/*/scores'):
+        for score_file in glob.glob(f'../outputs/subtitles/synonyms/{g}/concat22'):
             scores_mod = open(score_file, 'r')
             scores_normal = open('../outputs/subtitles/normal/concat22', 'r')
             sourceA_en = open(f'../ContraPro_Dario/subtitle_bpe/modified/synonyms/{g}/en_tok.txt', 'r')
@@ -174,7 +174,7 @@ if __name__ == '__main__':
             sourceB_de = open('../ContraPro_Dario/subtitle_bpe/de_tok.txt', 'r')
             modified_idx = pickle.load(open(f'../ContraPro_Dario/subtitle_bpe/modified/synonyms/{g}'
                                             '/modified_indices.pkl', 'rb'))
-            results = open('../outputs/subtitles/compare/normal-male_synonym', 'w')
+            results = open(f'../outputs/subtitles/compare/normal-{g}_synonym', 'w')
             A = 'male'
             B = 'normal'
             stats_mode = False
