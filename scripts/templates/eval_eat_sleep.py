@@ -5,8 +5,8 @@ import numpy
 import os
 
 gender_order = ['m', 'f', 'n']
-dir = '../../templates/final/'
-for model in ['standard', 'tuned', 'tuned_lowest']:
+dir = '../../templates/final/baseline_sentence_level'
+for model in ['baseline']:
     for path, _, files in os.walk(dir):
         if 'correct' in files:
             predictions = {'correct': [], 'false': []}
