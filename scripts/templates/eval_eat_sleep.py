@@ -5,8 +5,8 @@ import numpy
 import os
 
 gender_order = ['m', 'f', 'n']
-dir = '../../templates/final/baseline_sentence_level'
-for model in ['baseline']:
+dir = '../../templates/3_gender/'
+for model in ['standard', 'tuned']:
     for path, _, files in os.walk(dir):
         if 'correct' in files:
             predictions = {'correct': [], 'false': []}
@@ -25,12 +25,12 @@ for model in ['baseline']:
                 pred_gender = gender_order[pred]
 
                 if correct_gender == pred_gender:
-                    predictions['correct'].append(de[i+pred])
+                    predictions['correct'].append(de[i+pred] + '//' + en[i+pred])
                     distr_correct[pred_gender] += 1
                     for word in de[i+pred].split(' '):
                         words_correct[word] += 1
                 else:
-                    predictions['false'].append(de[i+pred])
+                    predictions['false'].append(de[i+pred] + '//' + en[i+pred])
                     distr_incorrect[pred_gender] += 1
                     for word in de[i+pred].split(' '):
                         words_incorrect[word] += 1
