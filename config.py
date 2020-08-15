@@ -1,4 +1,8 @@
 import os
+from pathlib import Path
 
-base = os.path.dirname(os.path.realpath(__file__))
-data_dir = os.path.join(base, 'data')
+base = Path(os.path.dirname(os.path.realpath(__file__)))
+data_dir = base / 'data'
+adversarial_data_dir = data_dir / 'adversarial_ContraPro'
+contrapro_file = base / 'ContraPro' / 'contrapro.json'
+resources_dir = base / 'resources'

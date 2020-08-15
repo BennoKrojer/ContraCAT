@@ -1,11 +1,13 @@
 import glob
 import re
-from random import sample
+
 import xml.etree.ElementTree as ET
-import config
 
 
 def get_gender_dict(dict_cc_file, en_key=True):
+    '''
+    Returns a mapping from german word to tuple (english word, deprecated_gender)
+    '''
     pattern = r'\[.*?\]|\(.*?\)'
     with open(dict_cc_file, 'r') as file:
         genders = dict()
@@ -25,6 +27,7 @@ def get_gender_dict(dict_cc_file, en_key=True):
                         else:
                             genders[word.lower()] = gender
                 else:
+                    # print(de_full_text)
                     pass
         print(f"RETRIEVED: {str(retrieved)} words")
         return genders
@@ -71,7 +74,7 @@ def get_gender(mapping, word, head=None):
 
 def get_word2definite_article(lang):
     d = dict()
-    with open(config.resources_dir / ('DET2definiteDET_' + lang), 'r') as file:
+    with open('../resources/DET2definiteDET_'+lang, 'r') as file:
         for line in file:
             line = line.split()
             if len(line) == 1:
@@ -79,14 +82,4 @@ def get_word2definite_article(lang):
             else:
                 d[line[0]] = line[1]
     return d
-
-
-def get_sentence_idx(amount_samples=None):
-    indices = [list(map(int, line.strip().split())) for line in open(
-        config.adversarial_data_dir / 'sentence_groups.txt', 'r').readlines()]
-    if amount_samples is None:
-        return [idx_pair[0] for idx_pair in indices]
-    else:
-        return [idx_pair[0] for idx_pair in sample(indices, amount_samples)]
-
 
