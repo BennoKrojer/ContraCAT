@@ -77,14 +77,14 @@ de_context_lines = open(config.adversarial_data_dir / 'de.txt', 'r').readlines()
 modifications_file = open('possible_modifications', 'w')
 
 modification_name = 'male'
-de_lines = open('../ContraPro_Dario/de_tok.txt', 'r').readlines()
-en_lines = open('../ContraPro_Dario/en_tok.txt', 'r').readlines()
-output_de = f'../ContraPro_Dario/ted/{modification_name}_de_tok.txt'
-output_en = f'../ContraPro_Dario/ted/{modification_name}_en_tok.txt'
+en_lines = open(config.adversarial_data_dir / 'en.txt', 'r').readlines()
+de_lines = open(config.adversarial_data_dir / 'de.txt', 'r').readlines()
+output_de = config.adversarial_data_dir / 'synonyms' / 'male'
+output_en = config.adversarial_data_dir / 'synonyms' / 'male'
 
 det2def_det = get_word2definite_article('de')
 gender_change = json.load(open(config.resources_dir / 'gender_conversion.json'))
-contrapro = json.load(open('../ContraPro/contrapro.json', 'r'))
+contrapro = json.load(open(config.contrapro_file, 'r'))
 idx = get_sentence_idx()
 
 modified = False
@@ -93,9 +93,9 @@ modified_idx_de = set()
 modified_de = defaultdict(list)
 to_be_examined = ""
 count_preword = defaultdict(int)
-with MosesPunctuationNormalizer('de_full_text') as norm, MosesTokenizer('de_full_text') as tok, MosesDetokenizer(
-        'de_full_text') as de_tok, \
-        open(output_de, 'w') as de_file:
+with MosesPunctuationNormalizer('de') as norm, MosesTokenizer('de') as tok, MosesDetokenizer(
+        'de') as de_tok, \
+        open(output_de / 'de.txt', 'w') as de_file:
     for i, example in tqdm.tqdm(enumerate(contrapro)):
         head = example['src ante head lemma']
         tag = example["src ante head pos"]
@@ -103,8 +103,8 @@ with MosesPunctuationNormalizer('de_full_text') as norm, MosesTokenizer('de_full
         dist = example['ante distance']
         en_context = clean_context(en_context_lines[indices[i]])
         de_context = clean_context(de_context_lines[indices[i]])
-        if 'NN' in tag and de_head is not None and dist < 2 and (
-                de_head in tok(de_context) or de_head in de_context.split()):
+        if 'NN' in tag and de_head and dist < 2 and (
+                de_head in tok(de_context_lines[indices[i]]) or de_head in de_context):
             synset = disambiguate(head, en_context, wordnet.synsets(head))  # if it is not ".n" you can ignore it
             if synset:
                 id = synset._offset
@@ -136,13 +136,13 @@ with MosesPunctuationNormalizer('de_full_text') as norm, MosesTokenizer('de_full
                             try:
                                 words = line.split()
                                 pre = words[words.index(de_head) - 1]
-                                replace_pre = gender_change[pre]
+                                replace_pre = gender_change[pre]['m']
                                 words[words.index(de_head) - 1] = replace_pre
                                 line = ' '.join(words)
                             except ValueError:
                                 words = tok(line)
                                 pre = words[words.index(de_head) - 1]
-                                replace_pre = gender_change[pre]
+                                replace_pre = gender_change[pre]['m']
                                 words[words.index(de_head) - 1] = replace_pre
                                 line = de_tok(words)
                             count_preword[pre] += 1
@@ -168,15 +168,15 @@ with MosesPunctuationNormalizer('de_full_text') as norm, MosesTokenizer('de_full
 print(sorted(count_preword.items(), key=lambda x: x[1], reverse=True))
 
 print('MODIFIED EXAMPLES:' + str(len(modified_indices)))
-command_de = f'subword-nmt apply-bpe -c ../ted_data/train/ende.bpe --glossaries "<SEP>" < ../ContraPro_Dario/ted/{modification_name}_de_tok.txt > tmp_de.txt'
-os.system(command_de)
-
-with open('tmp_de.txt', 'r') as tmp_de, open(f'../ContraPro_Dario/modified/{modification_name}_de_bpe.txt',
-                                             'w') as bpe_de:
-    for line in tmp_de:
-        bpe_de.write(line)
-
-os.system('rm -rf tmp_de.txt')
-shutil.copy('../ContraPro_Dario/en_tok.txt', f'../ContraPro_Dario/modified/{modification_name}_en_tok.txt')
-shutil.copy('../ContraPro_Dario/en_bpe.txt', f'../ContraPro_Dario/modified/{modification_name}_en_bpe.txt')
-pickle.dump(modified_indices, open('../ContraPro_Dario/modified/modified_indices.pkl', 'wb'))
+# command_de = f'subword-nmt apply-bpe -c ../ted_data/train/ende.bpe --glossaries "<SEP>" < ../ContraPro_Dario/ted/{modification_name}_de_tok.txt > tmp_de.txt'
+# os.system(command_de)
+#
+# with open('tmp_de.txt', 'r') as tmp_de, open(f'../ContraPro_Dario/modified/{modification_name}_de_bpe.txt',
+#                                              'w') as bpe_de:
+#     for line in tmp_de:
+#         bpe_de.write(line)
+#
+# os.system('rm -rf tmp_de.txt')
+# shutil.copy('../ContraPro_Dario/en_tok.txt', f'../ContraPro_Dario/modified/{modification_name}_en_tok.txt')
+# shutil.copy('../ContraPro_Dario/en_bpe.txt', f'../ContraPro_Dario/modified/{modification_name}_en_bpe.txt')
+# pickle.dump(modified_indices, open('../ContraPro_Dario/modified/modified_indices.pkl', 'wb'))
