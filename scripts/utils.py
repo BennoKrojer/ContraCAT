@@ -89,4 +89,38 @@ def get_sentence_idx(amount_samples=None):
     else:
         return [idx_pair[0] for idx_pair in sample(indices, amount_samples)]
 
+def load_interlingual():
+    root = ET.parse(config.resources_dir / 'GermaNet/GN_V120/GN_V120_XML/interLingualIndex_DE-EN.xml').getroot()
+    wn_id2lex_id = dict()
+    for entry in root:
+        id = entry.attrib['pwn30Id']
+        lex_id = entry.attrib['lexUnitId']
+        _, offset, pos = id.split('-')
+        if pos == 'n' and 'synonym' in entry.attrib['ewnRelation']:
+            try:
+                wn_id2lex_id[int(offset)] = lex_id
+            except ValueError:
+                continue
+    return wn_id2lex_id
 
+
+def load_germanet():
+    id2synset = dict()
+    for filepath in glob.glob(str(config.resources_dir / 'GermaNet/GN_V120/GN_V120_XML/nomen*.xml')):
+        root = ET.parse(filepath).getroot()
+        for synset in root:
+            # lexs = [orthform.text for lex_unit in synset for orthform in lex_unit if orthform.tag == 'orthForm']
+            lexs = []
+            for lex_unit in synset:
+                head = ''
+                for sub in lex_unit:
+                    if sub.tag == 'compound':
+                        for sub_sub in sub:
+                            if sub_sub.tag == 'head':
+                                head = sub_sub.text
+                for sub in lex_unit:
+                    if sub.tag == 'orthForm':
+                        lexs.append((sub.text, head))
+            ids = {lex_unit.attrib['id']: lexs for lex_unit in synset if lex_unit.tag == "lexUnit"}
+            id2synset.update(ids)
+    return id2synset
