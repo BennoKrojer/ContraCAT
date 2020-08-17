@@ -1,19 +1,46 @@
 import json
 import os
-
 import nltk
+import spacy
 import tqdm
 from mosestokenizer import MosesDetokenizer, MosesTokenizer
 from nltk.corpus import wordnet
 from scripts.utils import get_gender_dict, get_sentence_idx, load_germanet, load_interlingual
 import config
 
+nlp_de = spacy.load("de_core_news_sm")
+gender_declination = json.load(open(config.resources_dir / 'german_declination.json'))
+
+
+def get_new_prev(prev, gender, sentence, idx):
+    upper = prev[0].isupper()
+    old_prev = prev
+    prev = prev.lower()
+    article = gender_declination['article'].get(prev)
+    if list(article.keys())[0] in ['m', 'f', 'n']:
+        return article[gender].capitalize() if upper else article[gender]
+    else:
+        token = [t for t in nlp_de(sentence) if t.text == old_prev][idx]
+        dep = token.dep_ if type == 'pronoun' else token.head.dep_
+        if dep in ['sb', 'sp']:
+            case = 'nom'
+        elif dep[:2] == 'oa':
+            case = 'acc'
+        elif dep in ['da', 'op']:
+            case = 'dat'
+        elif dep in ['og', 'ag']:
+            case = 'gen'
+        else:
+            case = 'nom'
+
+        return article[case][gender].capitalize() if upper else article[case][gender]
+
+
 en2lex_id = load_interlingual()
 lexid2synset = load_germanet()
 nltk.download('wordnet')
 de2gender = get_gender_dict(config.resources_dir / 'dict_cc_original.txt', en_key=False)
 indices = get_sentence_idx()
-gender_change = json.load(open(config.resources_dir / 'gender_conversion.json'))
 contrapro = json.load(open(config.contrapro_file, 'r'))
 
 
@@ -73,10 +100,14 @@ with open(output / 'de.txt', 'w') as de_file, open(output / 'en.txt', 'w') as en
                     for j, line in enumerate(de_lines[indices[i]:indices[i + 1]]):
                         words = tok(line)
                         pre = words[words.index(de_head) - 1]
-                        replace_pre = gender_change[pre][new_gender]
+                        pre_idx = -1
+                        for w in words:
+                            if w == pre:
+                                pre_idx += 1
+                        replace_pre = get_new_prev(pre, new_gender, line, pre_idx)
                         words[words.index(de_head) - 1] = replace_pre
+                        words[words.index(de_head)] = new_ante.capitalize()
                         line = detok(words)
-                        line = line.replace(de_head, new_ante.capitalize())
                         context, sent = line.split('< SEP >')
                         line = context + '<SEP>' + sent + '\n'
                         de_variations.append(line)
@@ -102,7 +133,7 @@ with open(output / 'de.txt', 'w') as de_file, open(output / 'en.txt', 'w') as en
                             error['contrastive'] = old_ref_segment
                             error['replacement'] = old_ref_pronoun
                     modified_contrapro_subset.append(new_example)
-            except KeyError:
+            except (KeyError, AttributeError, ValueError) as e:
                 pass
 
 json.dump(contrapro_subset, open(output / 'contrapro_subset.json', 'w'), indent=2)

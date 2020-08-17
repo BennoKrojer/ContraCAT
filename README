@@ -12,3 +12,9 @@ python3 -m scripts.adversarial_attack.phrase_addition -n but_sure_sep -d "aber e
 python3 -m scripts.adversarial_attack.phrase_addition -n but_sure -d "aber er war sich nicht sicher" -e "but he wasn't sure" -a --start_punct_de ,
 
 python3 -m scripts.adversarial_attack.possessive_extension -n company -d "des Unternehmens" -e "the company's" --de_append --en_prepend
+
+To evaluate simply use ContraPro's evaluate script like this:
+python3 -m ContraPro.evaluate --reference PATH_TO_contrapro.json --scores scripts/example_scores
+
+If you want to evaluate a file that was modified with possessive-extension or synonym-replacement, you have to use a different contrapro.json:
+python3 -m ContraPro.evaluate --reference data/adversarial_ContraPro/synonyms/modified_contrapro_subset.json --scores scripts/example_scores
