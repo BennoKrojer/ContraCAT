@@ -46,6 +46,9 @@ with open(output / 'de.txt', 'w') as de_file, open(output / 'en.txt', 'w') as en
         tag = example["src ante head pos"]
         de_head = example['ref ante head lemma']
         dist = example['ante distance']
+
+        gender_order = [gendermap[error['replacement gender']] for error in example['errors']]
+
         de_phrase = de_lines[indices[i]]
         if 'NN' in tag and de_head and dist < 2 and de_head in tok(de_phrase) and wordnet.synsets(head):
             try:
@@ -65,18 +68,25 @@ with open(output / 'de.txt', 'w') as de_file, open(output / 'en.txt', 'w') as en
                         continue
 
                 if gender_instances:
+                    new_ante, new_gender = gender_instances[0]
+                    de_variations = []
                     for j, line in enumerate(de_lines[indices[i]:indices[i + 1]]):
                         words = tok(line)
                         pre = words[words.index(de_head) - 1]
-                        replace_pre = gender_change[pre][gender_instances[0][1]]
+                        replace_pre = gender_change[pre][new_gender]
                         words[words.index(de_head) - 1] = replace_pre
                         line = detok(words)
-                        line = line.replace(de_head, gender_instances[0][0].capitalize())
+                        line = line.replace(de_head, new_ante.capitalize())
                         context, sent = line.split('< SEP >')
                         line = context + '<SEP>' + sent + '\n'
+                        de_variations.append(line)
+                    best = de_variations[gender_order.index(new_gender) + 1]
+                    de_variations[gender_order.index(new_gender) + 1] = de_variations[0]
+                    de_variations[0] = best
+                    for line in de_variations:
                         de_file.write(line)
-                        for line in en_lines[indices[i]:indices[i + 1]]:
-                            en_file.write(line)
+                    for line in en_lines[indices[i]:indices[i + 1]]:
+                        en_file.write(line)
                     modified_indices.append(i)
                     contrapro_subset.append(example)
 

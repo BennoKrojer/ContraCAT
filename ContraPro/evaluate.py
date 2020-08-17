@@ -56,7 +56,7 @@ def count_errors(reference, scores, maximize, verbose=False):
         results['by_intrasegmental'][intrasegmental]['total'] +=1
         for error in sentence['errors']:
             errorscore = float(scores.readline())
-            readlines +=1
+            readlines += 1
             if not better(score, errorscore):
                     all_better = False
 
