@@ -1,12 +1,12 @@
 import json
 import os
 from collections import defaultdict
-from scripts.utils import get_word2definite_article
+from scripts.adversarial_attack.utils import get_word2definite_article
 from mosestokenizer import MosesPunctuationNormalizer, MosesTokenizer, MosesDetokenizer
 from tqdm import tqdm
 from scripts.sample_modifications import get_sentence_idx
 import spacy
-import pickle
+
 nlp_en = spacy.load("en_core_web_sm")
 nlp_de = spacy.load("de_core_news_sm")
 

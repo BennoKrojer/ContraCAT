@@ -15,11 +15,10 @@ def tokenize(sequence, tokenizer):
     return res
 
 
-templates = open('../../templates/entities/He_X_it', 'r').readlines()
+templates = open('../../templates/universe/He_X_it', 'r').readlines()
 subjs = {'I': 'Ich', 'You': 'Du', 'He': 'Er', 'She': 'Sie', 'We': 'Wir', 'They': 'Sie'}
 conj = {'I': 'habe', 'You': 'hast', 'He': 'hat', 'She': 'hat', 'We': 'haben', 'They': 'haben'}
 dest = '../../templates/0_priors/verb'
-
 
 with open(f'{dest}/de_tok', 'w') as tokenized_de, open(f'{dest}/en_tok', 'w') as tokenized_en:
     for line in templates:
@@ -33,17 +32,17 @@ with open(f'{dest}/de_tok', 'w') as tokenized_de, open(f'{dest}/en_tok', 'w') as
             if len(verb_de) == 1:
                 ihn = tokenize(f'Wow! {de_subj} {verb_de[0]} ihn.', de_tokenizer)
                 tokenized_de.write(ihn + '\n')
-                sie = tokenize(f'Wow! {de_subj} {verb_de[0]} sie.',de_tokenizer)
+                sie = tokenize(f'Wow! {de_subj} {verb_de[0]} sie.', de_tokenizer)
                 tokenized_de.write(sie + '\n')
-                es = tokenize(f'Wow! {de_subj} {verb_de[0]} es.',de_tokenizer)
+                es = tokenize(f'Wow! {de_subj} {verb_de[0]} es.', de_tokenizer)
                 tokenized_de.write(es + '\n')
             else:
                 verb_de[0] = verb_de[0].replace('hat', conj[en_subj])
-                ihn = tokenize(f'Wow! {de_subj} {verb_de[0]} ihn {verb_de[1]}.',de_tokenizer)
+                ihn = tokenize(f'Wow! {de_subj} {verb_de[0]} ihn {verb_de[1]}.', de_tokenizer)
                 tokenized_de.write(ihn + '\n')
-                sie = tokenize(f'Wow! {de_subj} {verb_de[0]} sie {verb_de[1]}.',de_tokenizer)
+                sie = tokenize(f'Wow! {de_subj} {verb_de[0]} sie {verb_de[1]}.', de_tokenizer)
                 tokenized_de.write(sie + '\n')
-                es = tokenize(f'Wow! {de_subj} {verb_de[0]} es {verb_de[1]}.',de_tokenizer)
+                es = tokenize(f'Wow! {de_subj} {verb_de[0]} es {verb_de[1]}.', de_tokenizer)
                 tokenized_de.write(es + '\n')
 
 command = 'subword-nmt apply-bpe -c ../../models_dario/subtitles/ende.bpe --glossaries "<SEP>" < ' \

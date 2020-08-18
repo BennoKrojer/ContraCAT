@@ -8,11 +8,6 @@ en_tokenizer = MosesTokenizer('en')
 de_tokenizer = MosesTokenizer('de')
 
 
-def tokenize(sequence, tokenizer):
-    res = ' '.join(tokenizer(normalizer(sequence)))
-    for punc in ['. ', '? ', '! ']:
-        res = res.replace(punc, f'{punc} <SEP> ')
-    return res
 
 
 templates = open('../../templates/entities/He_X_it', 'r').readlines()

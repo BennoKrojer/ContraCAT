@@ -2,7 +2,6 @@ import glob
 import json
 import os
 import pickle
-import re
 import shutil
 from collections import defaultdict
 import nltk
@@ -13,7 +12,7 @@ from nltk.corpus import wordnet
 from scripts.compare_scores import load_dets, load_gender_change
 from scripts.sample_modifications import get_sentence_idx
 import xml.etree.ElementTree as ET
-from scripts.utils import get_genders
+from scripts.adversarial_attack.utils import get_genders
 
 nltk.download('wordnet')
 # nlp_en = spacy.load("en_core_web_sm")

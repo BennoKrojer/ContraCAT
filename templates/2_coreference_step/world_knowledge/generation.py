@@ -24,8 +24,8 @@ food_de = ['hatte einen süßen Geschmack', 'hatte einen bitteren Geschmack', 'h
 
 path = f'../../templates/2_coreference_step/world_knowledge/'
 os.makedirs(path, exist_ok=True)
-animals = json.load(open('../../templates/entities/animals.json'))
-food = json.load(open('../../templates/entities/food.json'))
+animals = json.load(open('../../templates/universe/animal.json'))
+food = json.load(open('../../templates/universe/food.json'))
 nominative = {'m': 'Der', 'f': 'Die', 'n': 'Das'}
 accusative = {'m': 'den', 'f': 'die', 'n': 'das'}
 dative = {'m': 'dem', 'f': 'der', 'n': 'dem'}

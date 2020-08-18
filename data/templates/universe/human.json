@@ -1,0 +1,44 @@
+{
+  "professor": {
+    "f": "Professorin",
+    "m": "Professor"
+  },
+  "student": {
+    "f": "Studentin",
+    "m": "Student"
+  },
+  "judge": {
+    "f": "Richterin",
+    "m": "Richter"
+  },
+  "secretary": {
+    "f": "Sekret\u00e4rin",
+    "m": "Sekret\u00e4r"
+  },
+  "doctor": {
+    "f": "\u00c4rztin",
+    "m": "Arzt"
+  },
+  "lawyer": {
+    "f": "Anw\u00e4ltin",
+    "m": "Anwalt"
+  },
+  "scientist": {
+    "f": "Wissenschaftlerin",
+    "m": "Wissenschaftler"
+  },
+  "manager": {
+    "f": "Managerin",
+    "m": "Manager"
+  },
+  "artist": {
+    "f": "K\u00fcnstlerin",
+    "m": "K\u00fcnstler"
+  },
+  "actress": {
+    "f": "Schauspielerin"
+  },
+  "actor": {
+    "m": "Schauspieler"
+  }
+}

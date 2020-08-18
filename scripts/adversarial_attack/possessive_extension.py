@@ -3,7 +3,7 @@ import os
 import argparse
 import config
 from collections import defaultdict
-from scripts.utils import get_word2definite_article, get_sentence_idx
+from scripts.adversarial_attack.utils import get_word2definite_article, get_sentence_idx
 from tqdm import tqdm
 import spacy
 
@@ -77,7 +77,6 @@ def write_modify(args):
 
     output = config.adversarial_data_dir / 'possessive_ext' / args.mod_name
     os.makedirs(output, exist_ok=True)
-
     for lang in ['de', 'en']:
         orignal_lines = open(config.adversarial_data_dir / (lang + '.txt'), 'r').readlines()
         det2def_det = get_word2definite_article(lang)
@@ -124,16 +123,16 @@ def write_modify(args):
     both_lang_modified_idx = lang2modified_idx['en'] & lang2modified_idx['de']
     print(f"Modified {len(both_lang_modified_idx)} examples out of 12.000")
     with open(output / 'de.txt', 'w') as de_out, open(output / 'en.txt', 'w') as en_out:
+        modified_contrapro_subset = []
         for i in range(len(idx)):
             if i in both_lang_modified_idx:
-                lines_de = [tuple[0] for tuple in lang2modified_examples['de'][i]]
-                lines_en = [tuple[0] for tuple in lang2modified_examples['en'][i]]
-            else:
-                lines_de = [tuple[1] for tuple in lang2modified_examples['de'][i]]
-                lines_en = [tuple[1] for tuple in lang2modified_examples['en'][i]]
-            for de_line, en_line in zip(lines_de, lines_en):
-                de_out.write(de_line)
-                en_out.write(en_line)
+                for tuple in lang2modified_examples['de'][i]:
+                    de_out.write(tuple[0])
+                for tuple in lang2modified_examples['en'][i]:
+                    en_out.write(tuple[0])
+                modified_contrapro_subset.append(contrapro[i])
+
+    json.dump(modified_contrapro_subset, open(output / 'modified_contrapro_subset.json', 'w'))
 
 
 if __name__ == '__main__':

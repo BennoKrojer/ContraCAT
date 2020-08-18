@@ -1,9 +1,6 @@
 import json
 import os
-
-from mosestokenizer import MosesPunctuationNormalizer, MosesTokenizer
-
-from scripts.utils import get_gender_dict
+from scripts.adversarial_attack.utils import get_gender_dict
 
 concrete_nouns = [line.rstrip('\n') for line in open('../../resources/concrete_nouns_brysbaert.txt')]
 concrete_nouns_de = [line.rstrip('\n') for line in open('../../resources/concrete_nouns_brysbaert_de.txt')]

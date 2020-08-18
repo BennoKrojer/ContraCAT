@@ -24,8 +24,8 @@ pleonasms_de = ['Es kam überraschend', 'Es führte zu Chaos', 'Es war eine lust
                                                                                               'passiert']
 types = ['surprise', 'resulted', 'situation', 'happened']
 
-animals = json.load(open('../../templates/entities/animals.json'))
-food = json.load(open('../../templates/entities/food.json'))
+animals = json.load(open('../../templates/universe/animal.json'))
+food = json.load(open('../../templates/universe/food.json'))
 
 nom = {'m': 'Der', 'f': 'Die', 'n': 'Das'}
 acc = {'m': 'den', 'f': 'die', 'n': 'das'}

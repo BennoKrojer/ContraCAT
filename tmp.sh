@@ -15,3 +15,15 @@ python3 -m scripts.adversarial_attack.possessive_extension -n bolsena -d "Bolsen
 python3 -m scripts.adversarial_attack.possessive_extension -n peter -d "Peters" -e "Peter's" --de_prepend --en_prepend
 python3 -m scripts.adversarial_attack.possessive_extension -n robert -d "Roberts" -e "Robert's" --de_prepend --en_prepend
 python3 -m scripts.adversarial_attack.possessive_extension -n david -d "Davids" -e "David's" --de_prepend --en_prepend
+
+#python3 -m scripts.adversarial_attack.phrase_addition -n true_separate -d "es ist wahr" -e "it is true" -a --end_punct .
+#python3 -m scripts.adversarial_attack.phrase_addition -n and_it_true -d "und es ist wahr" -e "and it is true" -a
+#python3 -m scripts.adversarial_attack.phrase_addition -n and_that_true -d "und das ist wahr" -e "and that is true" -a
+#python3 -m scripts.adversarial_attack.phrase_addition -n true: -d "es ist wahr" -e "it is true" -p --end_punct :
+#python3 -m scripts.adversarial_attack.phrase_addition -n true:quot -d "es ist wahr" -e "it is true" -p --end_punct : -q
+#
+#python3 -m scripts.adversarial_attack.phrase_addition -n he_said -d "er sagte" -e "he said" -p --end_punct : -q
+#python3 -m scripts.adversarial_attack.phrase_addition -n she_said -d "sie sagte" -e "she said" -p --end_punct : -q
+#
+#python3 -m scripts.adversarial_attack.phrase_addition -n but_sure_sep -d "aber er war sich nicht sicher" -e "but he wasn't sure" -a --end_punct .
+#python3 -m scripts.adversarial_attack.phrase_addition -n but_sure -d "aber er war sich nicht sicher" -e "but he wasn't sure" -a --start_punct_de ,

@@ -15,7 +15,7 @@ def tokenize(sequence, tokenizer):
     return res
 
 
-templates = open('../../templates/entities/He_X_it', 'r').readlines()
+templates = open('../../templates/universe/He_X_it', 'r').readlines()
 subjs = {'I': 'Ich', 'You': 'Du', 'He': 'Er', 'She': 'Sie', 'We': 'Wir', 'They': 'Sie'}
 conj = {'I': 'habe', 'You': 'hast', 'He': 'hat', 'She': 'hat', 'We': 'haben', 'They': 'haben'}
 dest = '../../templates/0_priors/verb'
