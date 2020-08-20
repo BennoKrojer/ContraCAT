@@ -1,0 +1,11 @@
+-n
+2_coreference_step/overlap/verb_overlap/drink_eat_eat
+-e
+The <ANIMAL>_1 drank and the <ANIMAL>*_2 ate. It ate <ADVERB>.
+-d
+<DEF_NOM> <ANIMAL>_1 hat getrunken und <DEF_NOM> <ANIMAL>*_2 hat gegessen. <PRO_NOM_3_SIN>* hat <ADVERB> gegessen.
+--unequal_gender_entities
+<ANIMAL>_1,<ANIMAL>*_2
+--half
+--full
+ADVERB

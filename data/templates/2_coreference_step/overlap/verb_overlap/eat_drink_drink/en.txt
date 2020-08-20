@@ -1,0 +1,1680 @@
+The dog ate and the cow drank. <SEP> It drank a lot.
+The dog ate and the cow drank. <SEP> It drank a lot.
+The dog ate and the cow drank. <SEP> It drank a lot.
+The cow ate and the dog drank. <SEP> It drank a lot.
+The cow ate and the dog drank. <SEP> It drank a lot.
+The cow ate and the dog drank. <SEP> It drank a lot.
+The dog ate and the cow drank. <SEP> It drank quickly.
+The dog ate and the cow drank. <SEP> It drank quickly.
+The dog ate and the cow drank. <SEP> It drank quickly.
+The cow ate and the dog drank. <SEP> It drank quickly.
+The cow ate and the dog drank. <SEP> It drank quickly.
+The cow ate and the dog drank. <SEP> It drank quickly.
+The dog ate and the cow drank. <SEP> It drank slowly.
+The dog ate and the cow drank. <SEP> It drank slowly.
+The dog ate and the cow drank. <SEP> It drank slowly.
+The cow ate and the dog drank. <SEP> It drank slowly.
+The cow ate and the dog drank. <SEP> It drank slowly.
+The cow ate and the dog drank. <SEP> It drank slowly.
+The dog ate and the cow drank. <SEP> It drank happily.
+The dog ate and the cow drank. <SEP> It drank happily.
+The dog ate and the cow drank. <SEP> It drank happily.
+The cow ate and the dog drank. <SEP> It drank happily.
+The cow ate and the dog drank. <SEP> It drank happily.
+The cow ate and the dog drank. <SEP> It drank happily.
+The dog ate and the cow drank. <SEP> It drank little.
+The dog ate and the cow drank. <SEP> It drank little.
+The dog ate and the cow drank. <SEP> It drank little.
+The cow ate and the dog drank. <SEP> It drank little.
+The cow ate and the dog drank. <SEP> It drank little.
+The cow ate and the dog drank. <SEP> It drank little.
+The dog ate and the mouse drank. <SEP> It drank a lot.
+The dog ate and the mouse drank. <SEP> It drank a lot.
+The dog ate and the mouse drank. <SEP> It drank a lot.
+The mouse ate and the dog drank. <SEP> It drank a lot.
+The mouse ate and the dog drank. <SEP> It drank a lot.
+The mouse ate and the dog drank. <SEP> It drank a lot.
+The dog ate and the mouse drank. <SEP> It drank quickly.
+The dog ate and the mouse drank. <SEP> It drank quickly.
+The dog ate and the mouse drank. <SEP> It drank quickly.
+The mouse ate and the dog drank. <SEP> It drank quickly.
+The mouse ate and the dog drank. <SEP> It drank quickly.
+The mouse ate and the dog drank. <SEP> It drank quickly.
+The dog ate and the mouse drank. <SEP> It drank slowly.
+The dog ate and the mouse drank. <SEP> It drank slowly.
+The dog ate and the mouse drank. <SEP> It drank slowly.
+The mouse ate and the dog drank. <SEP> It drank slowly.
+The mouse ate and the dog drank. <SEP> It drank slowly.
+The mouse ate and the dog drank. <SEP> It drank slowly.
+The dog ate and the mouse drank. <SEP> It drank happily.
+The dog ate and the mouse drank. <SEP> It drank happily.
+The dog ate and the mouse drank. <SEP> It drank happily.
+The mouse ate and the dog drank. <SEP> It drank happily.
+The mouse ate and the dog drank. <SEP> It drank happily.
+The mouse ate and the dog drank. <SEP> It drank happily.
+The dog ate and the mouse drank. <SEP> It drank little.
+The dog ate and the mouse drank. <SEP> It drank little.
+The dog ate and the mouse drank. <SEP> It drank little.
+The mouse ate and the dog drank. <SEP> It drank little.
+The mouse ate and the dog drank. <SEP> It drank little.
+The mouse ate and the dog drank. <SEP> It drank little.
+The dog ate and the turtle drank. <SEP> It drank a lot.
+The dog ate and the turtle drank. <SEP> It drank a lot.
+The dog ate and the turtle drank. <SEP> It drank a lot.
+The turtle ate and the dog drank. <SEP> It drank a lot.
+The turtle ate and the dog drank. <SEP> It drank a lot.
+The turtle ate and the dog drank. <SEP> It drank a lot.
+The dog ate and the turtle drank. <SEP> It drank quickly.
+The dog ate and the turtle drank. <SEP> It drank quickly.
+The dog ate and the turtle drank. <SEP> It drank quickly.
+The turtle ate and the dog drank. <SEP> It drank quickly.
+The turtle ate and the dog drank. <SEP> It drank quickly.
+The turtle ate and the dog drank. <SEP> It drank quickly.
+The dog ate and the turtle drank. <SEP> It drank slowly.
+The dog ate and the turtle drank. <SEP> It drank slowly.
+The dog ate and the turtle drank. <SEP> It drank slowly.
+The turtle ate and the dog drank. <SEP> It drank slowly.
+The turtle ate and the dog drank. <SEP> It drank slowly.
+The turtle ate and the dog drank. <SEP> It drank slowly.
+The dog ate and the turtle drank. <SEP> It drank happily.
+The dog ate and the turtle drank. <SEP> It drank happily.
+The dog ate and the turtle drank. <SEP> It drank happily.
+The turtle ate and the dog drank. <SEP> It drank happily.
+The turtle ate and the dog drank. <SEP> It drank happily.
+The turtle ate and the dog drank. <SEP> It drank happily.
+The dog ate and the turtle drank. <SEP> It drank little.
+The dog ate and the turtle drank. <SEP> It drank little.
+The dog ate and the turtle drank. <SEP> It drank little.
+The turtle ate and the dog drank. <SEP> It drank little.
+The turtle ate and the dog drank. <SEP> It drank little.
+The turtle ate and the dog drank. <SEP> It drank little.
+The dog ate and the dove drank. <SEP> It drank a lot.
+The dog ate and the dove drank. <SEP> It drank a lot.
+The dog ate and the dove drank. <SEP> It drank a lot.
+The dove ate and the dog drank. <SEP> It drank a lot.
+The dove ate and the dog drank. <SEP> It drank a lot.
+The dove ate and the dog drank. <SEP> It drank a lot.
+The dog ate and the dove drank. <SEP> It drank quickly.
+The dog ate and the dove drank. <SEP> It drank quickly.
+The dog ate and the dove drank. <SEP> It drank quickly.
+The dove ate and the dog drank. <SEP> It drank quickly.
+The dove ate and the dog drank. <SEP> It drank quickly.
+The dove ate and the dog drank. <SEP> It drank quickly.
+The dog ate and the dove drank. <SEP> It drank slowly.
+The dog ate and the dove drank. <SEP> It drank slowly.
+The dog ate and the dove drank. <SEP> It drank slowly.
+The dove ate and the dog drank. <SEP> It drank slowly.
+The dove ate and the dog drank. <SEP> It drank slowly.
+The dove ate and the dog drank. <SEP> It drank slowly.
+The dog ate and the dove drank. <SEP> It drank happily.
+The dog ate and the dove drank. <SEP> It drank happily.
+The dog ate and the dove drank. <SEP> It drank happily.
+The dove ate and the dog drank. <SEP> It drank happily.
+The dove ate and the dog drank. <SEP> It drank happily.
+The dove ate and the dog drank. <SEP> It drank happily.
+The dog ate and the dove drank. <SEP> It drank little.
+The dog ate and the dove drank. <SEP> It drank little.
+The dog ate and the dove drank. <SEP> It drank little.
+The dove ate and the dog drank. <SEP> It drank little.
+The dove ate and the dog drank. <SEP> It drank little.
+The dove ate and the dog drank. <SEP> It drank little.
+The dog ate and the sheep drank. <SEP> It drank a lot.
+The dog ate and the sheep drank. <SEP> It drank a lot.
+The dog ate and the sheep drank. <SEP> It drank a lot.
+The sheep ate and the dog drank. <SEP> It drank a lot.
+The sheep ate and the dog drank. <SEP> It drank a lot.
+The sheep ate and the dog drank. <SEP> It drank a lot.
+The dog ate and the sheep drank. <SEP> It drank quickly.
+The dog ate and the sheep drank. <SEP> It drank quickly.
+The dog ate and the sheep drank. <SEP> It drank quickly.
+The sheep ate and the dog drank. <SEP> It drank quickly.
+The sheep ate and the dog drank. <SEP> It drank quickly.
+The sheep ate and the dog drank. <SEP> It drank quickly.
+The dog ate and the sheep drank. <SEP> It drank slowly.
+The dog ate and the sheep drank. <SEP> It drank slowly.
+The dog ate and the sheep drank. <SEP> It drank slowly.
+The sheep ate and the dog drank. <SEP> It drank slowly.
+The sheep ate and the dog drank. <SEP> It drank slowly.
+The sheep ate and the dog drank. <SEP> It drank slowly.
+The dog ate and the sheep drank. <SEP> It drank happily.
+The dog ate and the sheep drank. <SEP> It drank happily.
+The dog ate and the sheep drank. <SEP> It drank happily.
+The sheep ate and the dog drank. <SEP> It drank happily.
+The sheep ate and the dog drank. <SEP> It drank happily.
+The sheep ate and the dog drank. <SEP> It drank happily.
+The dog ate and the sheep drank. <SEP> It drank little.
+The dog ate and the sheep drank. <SEP> It drank little.
+The dog ate and the sheep drank. <SEP> It drank little.
+The sheep ate and the dog drank. <SEP> It drank little.
+The sheep ate and the dog drank. <SEP> It drank little.
+The sheep ate and the dog drank. <SEP> It drank little.
+The dog ate and the horse drank. <SEP> It drank a lot.
+The dog ate and the horse drank. <SEP> It drank a lot.
+The dog ate and the horse drank. <SEP> It drank a lot.
+The horse ate and the dog drank. <SEP> It drank a lot.
+The horse ate and the dog drank. <SEP> It drank a lot.
+The horse ate and the dog drank. <SEP> It drank a lot.
+The dog ate and the horse drank. <SEP> It drank quickly.
+The dog ate and the horse drank. <SEP> It drank quickly.
+The dog ate and the horse drank. <SEP> It drank quickly.
+The horse ate and the dog drank. <SEP> It drank quickly.
+The horse ate and the dog drank. <SEP> It drank quickly.
+The horse ate and the dog drank. <SEP> It drank quickly.
+The dog ate and the horse drank. <SEP> It drank slowly.
+The dog ate and the horse drank. <SEP> It drank slowly.
+The dog ate and the horse drank. <SEP> It drank slowly.
+The horse ate and the dog drank. <SEP> It drank slowly.
+The horse ate and the dog drank. <SEP> It drank slowly.
+The horse ate and the dog drank. <SEP> It drank slowly.
+The dog ate and the horse drank. <SEP> It drank happily.
+The dog ate and the horse drank. <SEP> It drank happily.
+The dog ate and the horse drank. <SEP> It drank happily.
+The horse ate and the dog drank. <SEP> It drank happily.
+The horse ate and the dog drank. <SEP> It drank happily.
+The horse ate and the dog drank. <SEP> It drank happily.
+The dog ate and the horse drank. <SEP> It drank little.
+The dog ate and the horse drank. <SEP> It drank little.
+The dog ate and the horse drank. <SEP> It drank little.
+The horse ate and the dog drank. <SEP> It drank little.
+The horse ate and the dog drank. <SEP> It drank little.
+The horse ate and the dog drank. <SEP> It drank little.
+The dog ate and the zebra drank. <SEP> It drank a lot.
+The dog ate and the zebra drank. <SEP> It drank a lot.
+The dog ate and the zebra drank. <SEP> It drank a lot.
+The zebra ate and the dog drank. <SEP> It drank a lot.
+The zebra ate and the dog drank. <SEP> It drank a lot.
+The zebra ate and the dog drank. <SEP> It drank a lot.
+The dog ate and the zebra drank. <SEP> It drank quickly.
+The dog ate and the zebra drank. <SEP> It drank quickly.
+The dog ate and the zebra drank. <SEP> It drank quickly.
+The zebra ate and the dog drank. <SEP> It drank quickly.
+The zebra ate and the dog drank. <SEP> It drank quickly.
+The zebra ate and the dog drank. <SEP> It drank quickly.
+The dog ate and the zebra drank. <SEP> It drank slowly.
+The dog ate and the zebra drank. <SEP> It drank slowly.
+The dog ate and the zebra drank. <SEP> It drank slowly.
+The zebra ate and the dog drank. <SEP> It drank slowly.
+The zebra ate and the dog drank. <SEP> It drank slowly.
+The zebra ate and the dog drank. <SEP> It drank slowly.
+The dog ate and the zebra drank. <SEP> It drank happily.
+The dog ate and the zebra drank. <SEP> It drank happily.
+The dog ate and the zebra drank. <SEP> It drank happily.
+The zebra ate and the dog drank. <SEP> It drank happily.
+The zebra ate and the dog drank. <SEP> It drank happily.
+The zebra ate and the dog drank. <SEP> It drank happily.
+The dog ate and the zebra drank. <SEP> It drank little.
+The dog ate and the zebra drank. <SEP> It drank little.
+The dog ate and the zebra drank. <SEP> It drank little.
+The zebra ate and the dog drank. <SEP> It drank little.
+The zebra ate and the dog drank. <SEP> It drank little.
+The zebra ate and the dog drank. <SEP> It drank little.
+The dog ate and the deer drank. <SEP> It drank a lot.
+The dog ate and the deer drank. <SEP> It drank a lot.
+The dog ate and the deer drank. <SEP> It drank a lot.
+The deer ate and the dog drank. <SEP> It drank a lot.
+The deer ate and the dog drank. <SEP> It drank a lot.
+The deer ate and the dog drank. <SEP> It drank a lot.
+The dog ate and the deer drank. <SEP> It drank quickly.
+The dog ate and the deer drank. <SEP> It drank quickly.
+The dog ate and the deer drank. <SEP> It drank quickly.
+The deer ate and the dog drank. <SEP> It drank quickly.
+The deer ate and the dog drank. <SEP> It drank quickly.
+The deer ate and the dog drank. <SEP> It drank quickly.
+The dog ate and the deer drank. <SEP> It drank slowly.
+The dog ate and the deer drank. <SEP> It drank slowly.
+The dog ate and the deer drank. <SEP> It drank slowly.
+The deer ate and the dog drank. <SEP> It drank slowly.
+The deer ate and the dog drank. <SEP> It drank slowly.
+The deer ate and the dog drank. <SEP> It drank slowly.
+The dog ate and the deer drank. <SEP> It drank happily.
+The dog ate and the deer drank. <SEP> It drank happily.
+The dog ate and the deer drank. <SEP> It drank happily.
+The deer ate and the dog drank. <SEP> It drank happily.
+The deer ate and the dog drank. <SEP> It drank happily.
+The deer ate and the dog drank. <SEP> It drank happily.
+The dog ate and the deer drank. <SEP> It drank little.
+The dog ate and the deer drank. <SEP> It drank little.
+The dog ate and the deer drank. <SEP> It drank little.
+The deer ate and the dog drank. <SEP> It drank little.
+The deer ate and the dog drank. <SEP> It drank little.
+The deer ate and the dog drank. <SEP> It drank little.
+The bear ate and the cow drank. <SEP> It drank a lot.
+The bear ate and the cow drank. <SEP> It drank a lot.
+The bear ate and the cow drank. <SEP> It drank a lot.
+The cow ate and the bear drank. <SEP> It drank a lot.
+The cow ate and the bear drank. <SEP> It drank a lot.
+The cow ate and the bear drank. <SEP> It drank a lot.
+The bear ate and the cow drank. <SEP> It drank quickly.
+The bear ate and the cow drank. <SEP> It drank quickly.
+The bear ate and the cow drank. <SEP> It drank quickly.
+The cow ate and the bear drank. <SEP> It drank quickly.
+The cow ate and the bear drank. <SEP> It drank quickly.
+The cow ate and the bear drank. <SEP> It drank quickly.
+The bear ate and the cow drank. <SEP> It drank slowly.
+The bear ate and the cow drank. <SEP> It drank slowly.
+The bear ate and the cow drank. <SEP> It drank slowly.
+The cow ate and the bear drank. <SEP> It drank slowly.
+The cow ate and the bear drank. <SEP> It drank slowly.
+The cow ate and the bear drank. <SEP> It drank slowly.
+The bear ate and the cow drank. <SEP> It drank happily.
+The bear ate and the cow drank. <SEP> It drank happily.
+The bear ate and the cow drank. <SEP> It drank happily.
+The cow ate and the bear drank. <SEP> It drank happily.
+The cow ate and the bear drank. <SEP> It drank happily.
+The cow ate and the bear drank. <SEP> It drank happily.
+The bear ate and the cow drank. <SEP> It drank little.
+The bear ate and the cow drank. <SEP> It drank little.
+The bear ate and the cow drank. <SEP> It drank little.
+The cow ate and the bear drank. <SEP> It drank little.
+The cow ate and the bear drank. <SEP> It drank little.
+The cow ate and the bear drank. <SEP> It drank little.
+The bear ate and the mouse drank. <SEP> It drank a lot.
+The bear ate and the mouse drank. <SEP> It drank a lot.
+The bear ate and the mouse drank. <SEP> It drank a lot.
+The mouse ate and the bear drank. <SEP> It drank a lot.
+The mouse ate and the bear drank. <SEP> It drank a lot.
+The mouse ate and the bear drank. <SEP> It drank a lot.
+The bear ate and the mouse drank. <SEP> It drank quickly.
+The bear ate and the mouse drank. <SEP> It drank quickly.
+The bear ate and the mouse drank. <SEP> It drank quickly.
+The mouse ate and the bear drank. <SEP> It drank quickly.
+The mouse ate and the bear drank. <SEP> It drank quickly.
+The mouse ate and the bear drank. <SEP> It drank quickly.
+The bear ate and the mouse drank. <SEP> It drank slowly.
+The bear ate and the mouse drank. <SEP> It drank slowly.
+The bear ate and the mouse drank. <SEP> It drank slowly.
+The mouse ate and the bear drank. <SEP> It drank slowly.
+The mouse ate and the bear drank. <SEP> It drank slowly.
+The mouse ate and the bear drank. <SEP> It drank slowly.
+The bear ate and the mouse drank. <SEP> It drank happily.
+The bear ate and the mouse drank. <SEP> It drank happily.
+The bear ate and the mouse drank. <SEP> It drank happily.
+The mouse ate and the bear drank. <SEP> It drank happily.
+The mouse ate and the bear drank. <SEP> It drank happily.
+The mouse ate and the bear drank. <SEP> It drank happily.
+The bear ate and the mouse drank. <SEP> It drank little.
+The bear ate and the mouse drank. <SEP> It drank little.
+The bear ate and the mouse drank. <SEP> It drank little.
+The mouse ate and the bear drank. <SEP> It drank little.
+The mouse ate and the bear drank. <SEP> It drank little.
+The mouse ate and the bear drank. <SEP> It drank little.
+The bear ate and the turtle drank. <SEP> It drank a lot.
+The bear ate and the turtle drank. <SEP> It drank a lot.
+The bear ate and the turtle drank. <SEP> It drank a lot.
+The turtle ate and the bear drank. <SEP> It drank a lot.
+The turtle ate and the bear drank. <SEP> It drank a lot.
+The turtle ate and the bear drank. <SEP> It drank a lot.
+The bear ate and the turtle drank. <SEP> It drank quickly.
+The bear ate and the turtle drank. <SEP> It drank quickly.
+The bear ate and the turtle drank. <SEP> It drank quickly.
+The turtle ate and the bear drank. <SEP> It drank quickly.
+The turtle ate and the bear drank. <SEP> It drank quickly.
+The turtle ate and the bear drank. <SEP> It drank quickly.
+The bear ate and the turtle drank. <SEP> It drank slowly.
+The bear ate and the turtle drank. <SEP> It drank slowly.
+The bear ate and the turtle drank. <SEP> It drank slowly.
+The turtle ate and the bear drank. <SEP> It drank slowly.
+The turtle ate and the bear drank. <SEP> It drank slowly.
+The turtle ate and the bear drank. <SEP> It drank slowly.
+The bear ate and the turtle drank. <SEP> It drank happily.
+The bear ate and the turtle drank. <SEP> It drank happily.
+The bear ate and the turtle drank. <SEP> It drank happily.
+The turtle ate and the bear drank. <SEP> It drank happily.
+The turtle ate and the bear drank. <SEP> It drank happily.
+The turtle ate and the bear drank. <SEP> It drank happily.
+The bear ate and the turtle drank. <SEP> It drank little.
+The bear ate and the turtle drank. <SEP> It drank little.
+The bear ate and the turtle drank. <SEP> It drank little.
+The turtle ate and the bear drank. <SEP> It drank little.
+The turtle ate and the bear drank. <SEP> It drank little.
+The turtle ate and the bear drank. <SEP> It drank little.
+The bear ate and the dove drank. <SEP> It drank a lot.
+The bear ate and the dove drank. <SEP> It drank a lot.
+The bear ate and the dove drank. <SEP> It drank a lot.
+The dove ate and the bear drank. <SEP> It drank a lot.
+The dove ate and the bear drank. <SEP> It drank a lot.
+The dove ate and the bear drank. <SEP> It drank a lot.
+The bear ate and the dove drank. <SEP> It drank quickly.
+The bear ate and the dove drank. <SEP> It drank quickly.
+The bear ate and the dove drank. <SEP> It drank quickly.
+The dove ate and the bear drank. <SEP> It drank quickly.
+The dove ate and the bear drank. <SEP> It drank quickly.
+The dove ate and the bear drank. <SEP> It drank quickly.
+The bear ate and the dove drank. <SEP> It drank slowly.
+The bear ate and the dove drank. <SEP> It drank slowly.
+The bear ate and the dove drank. <SEP> It drank slowly.
+The dove ate and the bear drank. <SEP> It drank slowly.
+The dove ate and the bear drank. <SEP> It drank slowly.
+The dove ate and the bear drank. <SEP> It drank slowly.
+The bear ate and the dove drank. <SEP> It drank happily.
+The bear ate and the dove drank. <SEP> It drank happily.
+The bear ate and the dove drank. <SEP> It drank happily.
+The dove ate and the bear drank. <SEP> It drank happily.
+The dove ate and the bear drank. <SEP> It drank happily.
+The dove ate and the bear drank. <SEP> It drank happily.
+The bear ate and the dove drank. <SEP> It drank little.
+The bear ate and the dove drank. <SEP> It drank little.
+The bear ate and the dove drank. <SEP> It drank little.
+The dove ate and the bear drank. <SEP> It drank little.
+The dove ate and the bear drank. <SEP> It drank little.
+The dove ate and the bear drank. <SEP> It drank little.
+The bear ate and the sheep drank. <SEP> It drank a lot.
+The bear ate and the sheep drank. <SEP> It drank a lot.
+The bear ate and the sheep drank. <SEP> It drank a lot.
+The sheep ate and the bear drank. <SEP> It drank a lot.
+The sheep ate and the bear drank. <SEP> It drank a lot.
+The sheep ate and the bear drank. <SEP> It drank a lot.
+The bear ate and the sheep drank. <SEP> It drank quickly.
+The bear ate and the sheep drank. <SEP> It drank quickly.
+The bear ate and the sheep drank. <SEP> It drank quickly.
+The sheep ate and the bear drank. <SEP> It drank quickly.
+The sheep ate and the bear drank. <SEP> It drank quickly.
+The sheep ate and the bear drank. <SEP> It drank quickly.
+The bear ate and the sheep drank. <SEP> It drank slowly.
+The bear ate and the sheep drank. <SEP> It drank slowly.
+The bear ate and the sheep drank. <SEP> It drank slowly.
+The sheep ate and the bear drank. <SEP> It drank slowly.
+The sheep ate and the bear drank. <SEP> It drank slowly.
+The sheep ate and the bear drank. <SEP> It drank slowly.
+The bear ate and the sheep drank. <SEP> It drank happily.
+The bear ate and the sheep drank. <SEP> It drank happily.
+The bear ate and the sheep drank. <SEP> It drank happily.
+The sheep ate and the bear drank. <SEP> It drank happily.
+The sheep ate and the bear drank. <SEP> It drank happily.
+The sheep ate and the bear drank. <SEP> It drank happily.
+The bear ate and the sheep drank. <SEP> It drank little.
+The bear ate and the sheep drank. <SEP> It drank little.
+The bear ate and the sheep drank. <SEP> It drank little.
+The sheep ate and the bear drank. <SEP> It drank little.
+The sheep ate and the bear drank. <SEP> It drank little.
+The sheep ate and the bear drank. <SEP> It drank little.
+The bear ate and the horse drank. <SEP> It drank a lot.
+The bear ate and the horse drank. <SEP> It drank a lot.
+The bear ate and the horse drank. <SEP> It drank a lot.
+The horse ate and the bear drank. <SEP> It drank a lot.
+The horse ate and the bear drank. <SEP> It drank a lot.
+The horse ate and the bear drank. <SEP> It drank a lot.
+The bear ate and the horse drank. <SEP> It drank quickly.
+The bear ate and the horse drank. <SEP> It drank quickly.
+The bear ate and the horse drank. <SEP> It drank quickly.
+The horse ate and the bear drank. <SEP> It drank quickly.
+The horse ate and the bear drank. <SEP> It drank quickly.
+The horse ate and the bear drank. <SEP> It drank quickly.
+The bear ate and the horse drank. <SEP> It drank slowly.
+The bear ate and the horse drank. <SEP> It drank slowly.
+The bear ate and the horse drank. <SEP> It drank slowly.
+The horse ate and the bear drank. <SEP> It drank slowly.
+The horse ate and the bear drank. <SEP> It drank slowly.
+The horse ate and the bear drank. <SEP> It drank slowly.
+The bear ate and the horse drank. <SEP> It drank happily.
+The bear ate and the horse drank. <SEP> It drank happily.
+The bear ate and the horse drank. <SEP> It drank happily.
+The horse ate and the bear drank. <SEP> It drank happily.
+The horse ate and the bear drank. <SEP> It drank happily.
+The horse ate and the bear drank. <SEP> It drank happily.
+The bear ate and the horse drank. <SEP> It drank little.
+The bear ate and the horse drank. <SEP> It drank little.
+The bear ate and the horse drank. <SEP> It drank little.
+The horse ate and the bear drank. <SEP> It drank little.
+The horse ate and the bear drank. <SEP> It drank little.
+The horse ate and the bear drank. <SEP> It drank little.
+The bear ate and the zebra drank. <SEP> It drank a lot.
+The bear ate and the zebra drank. <SEP> It drank a lot.
+The bear ate and the zebra drank. <SEP> It drank a lot.
+The zebra ate and the bear drank. <SEP> It drank a lot.
+The zebra ate and the bear drank. <SEP> It drank a lot.
+The zebra ate and the bear drank. <SEP> It drank a lot.
+The bear ate and the zebra drank. <SEP> It drank quickly.
+The bear ate and the zebra drank. <SEP> It drank quickly.
+The bear ate and the zebra drank. <SEP> It drank quickly.
+The zebra ate and the bear drank. <SEP> It drank quickly.
+The zebra ate and the bear drank. <SEP> It drank quickly.
+The zebra ate and the bear drank. <SEP> It drank quickly.
+The bear ate and the zebra drank. <SEP> It drank slowly.
+The bear ate and the zebra drank. <SEP> It drank slowly.
+The bear ate and the zebra drank. <SEP> It drank slowly.
+The zebra ate and the bear drank. <SEP> It drank slowly.
+The zebra ate and the bear drank. <SEP> It drank slowly.
+The zebra ate and the bear drank. <SEP> It drank slowly.
+The bear ate and the zebra drank. <SEP> It drank happily.
+The bear ate and the zebra drank. <SEP> It drank happily.
+The bear ate and the zebra drank. <SEP> It drank happily.
+The zebra ate and the bear drank. <SEP> It drank happily.
+The zebra ate and the bear drank. <SEP> It drank happily.
+The zebra ate and the bear drank. <SEP> It drank happily.
+The bear ate and the zebra drank. <SEP> It drank little.
+The bear ate and the zebra drank. <SEP> It drank little.
+The bear ate and the zebra drank. <SEP> It drank little.
+The zebra ate and the bear drank. <SEP> It drank little.
+The zebra ate and the bear drank. <SEP> It drank little.
+The zebra ate and the bear drank. <SEP> It drank little.
+The bear ate and the deer drank. <SEP> It drank a lot.
+The bear ate and the deer drank. <SEP> It drank a lot.
+The bear ate and the deer drank. <SEP> It drank a lot.
+The deer ate and the bear drank. <SEP> It drank a lot.
+The deer ate and the bear drank. <SEP> It drank a lot.
+The deer ate and the bear drank. <SEP> It drank a lot.
+The bear ate and the deer drank. <SEP> It drank quickly.
+The bear ate and the deer drank. <SEP> It drank quickly.
+The bear ate and the deer drank. <SEP> It drank quickly.
+The deer ate and the bear drank. <SEP> It drank quickly.
+The deer ate and the bear drank. <SEP> It drank quickly.
+The deer ate and the bear drank. <SEP> It drank quickly.
+The bear ate and the deer drank. <SEP> It drank slowly.
+The bear ate and the deer drank. <SEP> It drank slowly.
+The bear ate and the deer drank. <SEP> It drank slowly.
+The deer ate and the bear drank. <SEP> It drank slowly.
+The deer ate and the bear drank. <SEP> It drank slowly.
+The deer ate and the bear drank. <SEP> It drank slowly.
+The bear ate and the deer drank. <SEP> It drank happily.
+The bear ate and the deer drank. <SEP> It drank happily.
+The bear ate and the deer drank. <SEP> It drank happily.
+The deer ate and the bear drank. <SEP> It drank happily.
+The deer ate and the bear drank. <SEP> It drank happily.
+The deer ate and the bear drank. <SEP> It drank happily.
+The bear ate and the deer drank. <SEP> It drank little.
+The bear ate and the deer drank. <SEP> It drank little.
+The bear ate and the deer drank. <SEP> It drank little.
+The deer ate and the bear drank. <SEP> It drank little.
+The deer ate and the bear drank. <SEP> It drank little.
+The deer ate and the bear drank. <SEP> It drank little.
+The lion ate and the cow drank. <SEP> It drank a lot.
+The lion ate and the cow drank. <SEP> It drank a lot.
+The lion ate and the cow drank. <SEP> It drank a lot.
+The cow ate and the lion drank. <SEP> It drank a lot.
+The cow ate and the lion drank. <SEP> It drank a lot.
+The cow ate and the lion drank. <SEP> It drank a lot.
+The lion ate and the cow drank. <SEP> It drank quickly.
+The lion ate and the cow drank. <SEP> It drank quickly.
+The lion ate and the cow drank. <SEP> It drank quickly.
+The cow ate and the lion drank. <SEP> It drank quickly.
+The cow ate and the lion drank. <SEP> It drank quickly.
+The cow ate and the lion drank. <SEP> It drank quickly.
+The lion ate and the cow drank. <SEP> It drank slowly.
+The lion ate and the cow drank. <SEP> It drank slowly.
+The lion ate and the cow drank. <SEP> It drank slowly.
+The cow ate and the lion drank. <SEP> It drank slowly.
+The cow ate and the lion drank. <SEP> It drank slowly.
+The cow ate and the lion drank. <SEP> It drank slowly.
+The lion ate and the cow drank. <SEP> It drank happily.
+The lion ate and the cow drank. <SEP> It drank happily.
+The lion ate and the cow drank. <SEP> It drank happily.
+The cow ate and the lion drank. <SEP> It drank happily.
+The cow ate and the lion drank. <SEP> It drank happily.
+The cow ate and the lion drank. <SEP> It drank happily.
+The lion ate and the cow drank. <SEP> It drank little.
+The lion ate and the cow drank. <SEP> It drank little.
+The lion ate and the cow drank. <SEP> It drank little.
+The cow ate and the lion drank. <SEP> It drank little.
+The cow ate and the lion drank. <SEP> It drank little.
+The cow ate and the lion drank. <SEP> It drank little.
+The lion ate and the mouse drank. <SEP> It drank a lot.
+The lion ate and the mouse drank. <SEP> It drank a lot.
+The lion ate and the mouse drank. <SEP> It drank a lot.
+The mouse ate and the lion drank. <SEP> It drank a lot.
+The mouse ate and the lion drank. <SEP> It drank a lot.
+The mouse ate and the lion drank. <SEP> It drank a lot.
+The lion ate and the mouse drank. <SEP> It drank quickly.
+The lion ate and the mouse drank. <SEP> It drank quickly.
+The lion ate and the mouse drank. <SEP> It drank quickly.
+The mouse ate and the lion drank. <SEP> It drank quickly.
+The mouse ate and the lion drank. <SEP> It drank quickly.
+The mouse ate and the lion drank. <SEP> It drank quickly.
+The lion ate and the mouse drank. <SEP> It drank slowly.
+The lion ate and the mouse drank. <SEP> It drank slowly.
+The lion ate and the mouse drank. <SEP> It drank slowly.
+The mouse ate and the lion drank. <SEP> It drank slowly.
+The mouse ate and the lion drank. <SEP> It drank slowly.
+The mouse ate and the lion drank. <SEP> It drank slowly.
+The lion ate and the mouse drank. <SEP> It drank happily.
+The lion ate and the mouse drank. <SEP> It drank happily.
+The lion ate and the mouse drank. <SEP> It drank happily.
+The mouse ate and the lion drank. <SEP> It drank happily.
+The mouse ate and the lion drank. <SEP> It drank happily.
+The mouse ate and the lion drank. <SEP> It drank happily.
+The lion ate and the mouse drank. <SEP> It drank little.
+The lion ate and the mouse drank. <SEP> It drank little.
+The lion ate and the mouse drank. <SEP> It drank little.
+The mouse ate and the lion drank. <SEP> It drank little.
+The mouse ate and the lion drank. <SEP> It drank little.
+The mouse ate and the lion drank. <SEP> It drank little.
+The lion ate and the turtle drank. <SEP> It drank a lot.
+The lion ate and the turtle drank. <SEP> It drank a lot.
+The lion ate and the turtle drank. <SEP> It drank a lot.
+The turtle ate and the lion drank. <SEP> It drank a lot.
+The turtle ate and the lion drank. <SEP> It drank a lot.
+The turtle ate and the lion drank. <SEP> It drank a lot.
+The lion ate and the turtle drank. <SEP> It drank quickly.
+The lion ate and the turtle drank. <SEP> It drank quickly.
+The lion ate and the turtle drank. <SEP> It drank quickly.
+The turtle ate and the lion drank. <SEP> It drank quickly.
+The turtle ate and the lion drank. <SEP> It drank quickly.
+The turtle ate and the lion drank. <SEP> It drank quickly.
+The lion ate and the turtle drank. <SEP> It drank slowly.
+The lion ate and the turtle drank. <SEP> It drank slowly.
+The lion ate and the turtle drank. <SEP> It drank slowly.
+The turtle ate and the lion drank. <SEP> It drank slowly.
+The turtle ate and the lion drank. <SEP> It drank slowly.
+The turtle ate and the lion drank. <SEP> It drank slowly.
+The lion ate and the turtle drank. <SEP> It drank happily.
+The lion ate and the turtle drank. <SEP> It drank happily.
+The lion ate and the turtle drank. <SEP> It drank happily.
+The turtle ate and the lion drank. <SEP> It drank happily.
+The turtle ate and the lion drank. <SEP> It drank happily.
+The turtle ate and the lion drank. <SEP> It drank happily.
+The lion ate and the turtle drank. <SEP> It drank little.
+The lion ate and the turtle drank. <SEP> It drank little.
+The lion ate and the turtle drank. <SEP> It drank little.
+The turtle ate and the lion drank. <SEP> It drank little.
+The turtle ate and the lion drank. <SEP> It drank little.
+The turtle ate and the lion drank. <SEP> It drank little.
+The lion ate and the dove drank. <SEP> It drank a lot.
+The lion ate and the dove drank. <SEP> It drank a lot.
+The lion ate and the dove drank. <SEP> It drank a lot.
+The dove ate and the lion drank. <SEP> It drank a lot.
+The dove ate and the lion drank. <SEP> It drank a lot.
+The dove ate and the lion drank. <SEP> It drank a lot.
+The lion ate and the dove drank. <SEP> It drank quickly.
+The lion ate and the dove drank. <SEP> It drank quickly.
+The lion ate and the dove drank. <SEP> It drank quickly.
+The dove ate and the lion drank. <SEP> It drank quickly.
+The dove ate and the lion drank. <SEP> It drank quickly.
+The dove ate and the lion drank. <SEP> It drank quickly.
+The lion ate and the dove drank. <SEP> It drank slowly.
+The lion ate and the dove drank. <SEP> It drank slowly.
+The lion ate and the dove drank. <SEP> It drank slowly.
+The dove ate and the lion drank. <SEP> It drank slowly.
+The dove ate and the lion drank. <SEP> It drank slowly.
+The dove ate and the lion drank. <SEP> It drank slowly.
+The lion ate and the dove drank. <SEP> It drank happily.
+The lion ate and the dove drank. <SEP> It drank happily.
+The lion ate and the dove drank. <SEP> It drank happily.
+The dove ate and the lion drank. <SEP> It drank happily.
+The dove ate and the lion drank. <SEP> It drank happily.
+The dove ate and the lion drank. <SEP> It drank happily.
+The lion ate and the dove drank. <SEP> It drank little.
+The lion ate and the dove drank. <SEP> It drank little.
+The lion ate and the dove drank. <SEP> It drank little.
+The dove ate and the lion drank. <SEP> It drank little.
+The dove ate and the lion drank. <SEP> It drank little.
+The dove ate and the lion drank. <SEP> It drank little.
+The lion ate and the sheep drank. <SEP> It drank a lot.
+The lion ate and the sheep drank. <SEP> It drank a lot.
+The lion ate and the sheep drank. <SEP> It drank a lot.
+The sheep ate and the lion drank. <SEP> It drank a lot.
+The sheep ate and the lion drank. <SEP> It drank a lot.
+The sheep ate and the lion drank. <SEP> It drank a lot.
+The lion ate and the sheep drank. <SEP> It drank quickly.
+The lion ate and the sheep drank. <SEP> It drank quickly.
+The lion ate and the sheep drank. <SEP> It drank quickly.
+The sheep ate and the lion drank. <SEP> It drank quickly.
+The sheep ate and the lion drank. <SEP> It drank quickly.
+The sheep ate and the lion drank. <SEP> It drank quickly.
+The lion ate and the sheep drank. <SEP> It drank slowly.
+The lion ate and the sheep drank. <SEP> It drank slowly.
+The lion ate and the sheep drank. <SEP> It drank slowly.
+The sheep ate and the lion drank. <SEP> It drank slowly.
+The sheep ate and the lion drank. <SEP> It drank slowly.
+The sheep ate and the lion drank. <SEP> It drank slowly.
+The lion ate and the sheep drank. <SEP> It drank happily.
+The lion ate and the sheep drank. <SEP> It drank happily.
+The lion ate and the sheep drank. <SEP> It drank happily.
+The sheep ate and the lion drank. <SEP> It drank happily.
+The sheep ate and the lion drank. <SEP> It drank happily.
+The sheep ate and the lion drank. <SEP> It drank happily.
+The lion ate and the sheep drank. <SEP> It drank little.
+The lion ate and the sheep drank. <SEP> It drank little.
+The lion ate and the sheep drank. <SEP> It drank little.
+The sheep ate and the lion drank. <SEP> It drank little.
+The sheep ate and the lion drank. <SEP> It drank little.
+The sheep ate and the lion drank. <SEP> It drank little.
+The lion ate and the horse drank. <SEP> It drank a lot.
+The lion ate and the horse drank. <SEP> It drank a lot.
+The lion ate and the horse drank. <SEP> It drank a lot.
+The horse ate and the lion drank. <SEP> It drank a lot.
+The horse ate and the lion drank. <SEP> It drank a lot.
+The horse ate and the lion drank. <SEP> It drank a lot.
+The lion ate and the horse drank. <SEP> It drank quickly.
+The lion ate and the horse drank. <SEP> It drank quickly.
+The lion ate and the horse drank. <SEP> It drank quickly.
+The horse ate and the lion drank. <SEP> It drank quickly.
+The horse ate and the lion drank. <SEP> It drank quickly.
+The horse ate and the lion drank. <SEP> It drank quickly.
+The lion ate and the horse drank. <SEP> It drank slowly.
+The lion ate and the horse drank. <SEP> It drank slowly.
+The lion ate and the horse drank. <SEP> It drank slowly.
+The horse ate and the lion drank. <SEP> It drank slowly.
+The horse ate and the lion drank. <SEP> It drank slowly.
+The horse ate and the lion drank. <SEP> It drank slowly.
+The lion ate and the horse drank. <SEP> It drank happily.
+The lion ate and the horse drank. <SEP> It drank happily.
+The lion ate and the horse drank. <SEP> It drank happily.
+The horse ate and the lion drank. <SEP> It drank happily.
+The horse ate and the lion drank. <SEP> It drank happily.
+The horse ate and the lion drank. <SEP> It drank happily.
+The lion ate and the horse drank. <SEP> It drank little.
+The lion ate and the horse drank. <SEP> It drank little.
+The lion ate and the horse drank. <SEP> It drank little.
+The horse ate and the lion drank. <SEP> It drank little.
+The horse ate and the lion drank. <SEP> It drank little.
+The horse ate and the lion drank. <SEP> It drank little.
+The lion ate and the zebra drank. <SEP> It drank a lot.
+The lion ate and the zebra drank. <SEP> It drank a lot.
+The lion ate and the zebra drank. <SEP> It drank a lot.
+The zebra ate and the lion drank. <SEP> It drank a lot.
+The zebra ate and the lion drank. <SEP> It drank a lot.
+The zebra ate and the lion drank. <SEP> It drank a lot.
+The lion ate and the zebra drank. <SEP> It drank quickly.
+The lion ate and the zebra drank. <SEP> It drank quickly.
+The lion ate and the zebra drank. <SEP> It drank quickly.
+The zebra ate and the lion drank. <SEP> It drank quickly.
+The zebra ate and the lion drank. <SEP> It drank quickly.
+The zebra ate and the lion drank. <SEP> It drank quickly.
+The lion ate and the zebra drank. <SEP> It drank slowly.
+The lion ate and the zebra drank. <SEP> It drank slowly.
+The lion ate and the zebra drank. <SEP> It drank slowly.
+The zebra ate and the lion drank. <SEP> It drank slowly.
+The zebra ate and the lion drank. <SEP> It drank slowly.
+The zebra ate and the lion drank. <SEP> It drank slowly.
+The lion ate and the zebra drank. <SEP> It drank happily.
+The lion ate and the zebra drank. <SEP> It drank happily.
+The lion ate and the zebra drank. <SEP> It drank happily.
+The zebra ate and the lion drank. <SEP> It drank happily.
+The zebra ate and the lion drank. <SEP> It drank happily.
+The zebra ate and the lion drank. <SEP> It drank happily.
+The lion ate and the zebra drank. <SEP> It drank little.
+The lion ate and the zebra drank. <SEP> It drank little.
+The lion ate and the zebra drank. <SEP> It drank little.
+The zebra ate and the lion drank. <SEP> It drank little.
+The zebra ate and the lion drank. <SEP> It drank little.
+The zebra ate and the lion drank. <SEP> It drank little.
+The lion ate and the deer drank. <SEP> It drank a lot.
+The lion ate and the deer drank. <SEP> It drank a lot.
+The lion ate and the deer drank. <SEP> It drank a lot.
+The deer ate and the lion drank. <SEP> It drank a lot.
+The deer ate and the lion drank. <SEP> It drank a lot.
+The deer ate and the lion drank. <SEP> It drank a lot.
+The lion ate and the deer drank. <SEP> It drank quickly.
+The lion ate and the deer drank. <SEP> It drank quickly.
+The lion ate and the deer drank. <SEP> It drank quickly.
+The deer ate and the lion drank. <SEP> It drank quickly.
+The deer ate and the lion drank. <SEP> It drank quickly.
+The deer ate and the lion drank. <SEP> It drank quickly.
+The lion ate and the deer drank. <SEP> It drank slowly.
+The lion ate and the deer drank. <SEP> It drank slowly.
+The lion ate and the deer drank. <SEP> It drank slowly.
+The deer ate and the lion drank. <SEP> It drank slowly.
+The deer ate and the lion drank. <SEP> It drank slowly.
+The deer ate and the lion drank. <SEP> It drank slowly.
+The lion ate and the deer drank. <SEP> It drank happily.
+The lion ate and the deer drank. <SEP> It drank happily.
+The lion ate and the deer drank. <SEP> It drank happily.
+The deer ate and the lion drank. <SEP> It drank happily.
+The deer ate and the lion drank. <SEP> It drank happily.
+The deer ate and the lion drank. <SEP> It drank happily.
+The lion ate and the deer drank. <SEP> It drank little.
+The lion ate and the deer drank. <SEP> It drank little.
+The lion ate and the deer drank. <SEP> It drank little.
+The deer ate and the lion drank. <SEP> It drank little.
+The deer ate and the lion drank. <SEP> It drank little.
+The deer ate and the lion drank. <SEP> It drank little.
+The monkey ate and the cow drank. <SEP> It drank a lot.
+The monkey ate and the cow drank. <SEP> It drank a lot.
+The monkey ate and the cow drank. <SEP> It drank a lot.
+The cow ate and the monkey drank. <SEP> It drank a lot.
+The cow ate and the monkey drank. <SEP> It drank a lot.
+The cow ate and the monkey drank. <SEP> It drank a lot.
+The monkey ate and the cow drank. <SEP> It drank quickly.
+The monkey ate and the cow drank. <SEP> It drank quickly.
+The monkey ate and the cow drank. <SEP> It drank quickly.
+The cow ate and the monkey drank. <SEP> It drank quickly.
+The cow ate and the monkey drank. <SEP> It drank quickly.
+The cow ate and the monkey drank. <SEP> It drank quickly.
+The monkey ate and the cow drank. <SEP> It drank slowly.
+The monkey ate and the cow drank. <SEP> It drank slowly.
+The monkey ate and the cow drank. <SEP> It drank slowly.
+The cow ate and the monkey drank. <SEP> It drank slowly.
+The cow ate and the monkey drank. <SEP> It drank slowly.
+The cow ate and the monkey drank. <SEP> It drank slowly.
+The monkey ate and the cow drank. <SEP> It drank happily.
+The monkey ate and the cow drank. <SEP> It drank happily.
+The monkey ate and the cow drank. <SEP> It drank happily.
+The cow ate and the monkey drank. <SEP> It drank happily.
+The cow ate and the monkey drank. <SEP> It drank happily.
+The cow ate and the monkey drank. <SEP> It drank happily.
+The monkey ate and the cow drank. <SEP> It drank little.
+The monkey ate and the cow drank. <SEP> It drank little.
+The monkey ate and the cow drank. <SEP> It drank little.
+The cow ate and the monkey drank. <SEP> It drank little.
+The cow ate and the monkey drank. <SEP> It drank little.
+The cow ate and the monkey drank. <SEP> It drank little.
+The monkey ate and the mouse drank. <SEP> It drank a lot.
+The monkey ate and the mouse drank. <SEP> It drank a lot.
+The monkey ate and the mouse drank. <SEP> It drank a lot.
+The mouse ate and the monkey drank. <SEP> It drank a lot.
+The mouse ate and the monkey drank. <SEP> It drank a lot.
+The mouse ate and the monkey drank. <SEP> It drank a lot.
+The monkey ate and the mouse drank. <SEP> It drank quickly.
+The monkey ate and the mouse drank. <SEP> It drank quickly.
+The monkey ate and the mouse drank. <SEP> It drank quickly.
+The mouse ate and the monkey drank. <SEP> It drank quickly.
+The mouse ate and the monkey drank. <SEP> It drank quickly.
+The mouse ate and the monkey drank. <SEP> It drank quickly.
+The monkey ate and the mouse drank. <SEP> It drank slowly.
+The monkey ate and the mouse drank. <SEP> It drank slowly.
+The monkey ate and the mouse drank. <SEP> It drank slowly.
+The mouse ate and the monkey drank. <SEP> It drank slowly.
+The mouse ate and the monkey drank. <SEP> It drank slowly.
+The mouse ate and the monkey drank. <SEP> It drank slowly.
+The monkey ate and the mouse drank. <SEP> It drank happily.
+The monkey ate and the mouse drank. <SEP> It drank happily.
+The monkey ate and the mouse drank. <SEP> It drank happily.
+The mouse ate and the monkey drank. <SEP> It drank happily.
+The mouse ate and the monkey drank. <SEP> It drank happily.
+The mouse ate and the monkey drank. <SEP> It drank happily.
+The monkey ate and the mouse drank. <SEP> It drank little.
+The monkey ate and the mouse drank. <SEP> It drank little.
+The monkey ate and the mouse drank. <SEP> It drank little.
+The mouse ate and the monkey drank. <SEP> It drank little.
+The mouse ate and the monkey drank. <SEP> It drank little.
+The mouse ate and the monkey drank. <SEP> It drank little.
+The monkey ate and the turtle drank. <SEP> It drank a lot.
+The monkey ate and the turtle drank. <SEP> It drank a lot.
+The monkey ate and the turtle drank. <SEP> It drank a lot.
+The turtle ate and the monkey drank. <SEP> It drank a lot.
+The turtle ate and the monkey drank. <SEP> It drank a lot.
+The turtle ate and the monkey drank. <SEP> It drank a lot.
+The monkey ate and the turtle drank. <SEP> It drank quickly.
+The monkey ate and the turtle drank. <SEP> It drank quickly.
+The monkey ate and the turtle drank. <SEP> It drank quickly.
+The turtle ate and the monkey drank. <SEP> It drank quickly.
+The turtle ate and the monkey drank. <SEP> It drank quickly.
+The turtle ate and the monkey drank. <SEP> It drank quickly.
+The monkey ate and the turtle drank. <SEP> It drank slowly.
+The monkey ate and the turtle drank. <SEP> It drank slowly.
+The monkey ate and the turtle drank. <SEP> It drank slowly.
+The turtle ate and the monkey drank. <SEP> It drank slowly.
+The turtle ate and the monkey drank. <SEP> It drank slowly.
+The turtle ate and the monkey drank. <SEP> It drank slowly.
+The monkey ate and the turtle drank. <SEP> It drank happily.
+The monkey ate and the turtle drank. <SEP> It drank happily.
+The monkey ate and the turtle drank. <SEP> It drank happily.
+The turtle ate and the monkey drank. <SEP> It drank happily.
+The turtle ate and the monkey drank. <SEP> It drank happily.
+The turtle ate and the monkey drank. <SEP> It drank happily.
+The monkey ate and the turtle drank. <SEP> It drank little.
+The monkey ate and the turtle drank. <SEP> It drank little.
+The monkey ate and the turtle drank. <SEP> It drank little.
+The turtle ate and the monkey drank. <SEP> It drank little.
+The turtle ate and the monkey drank. <SEP> It drank little.
+The turtle ate and the monkey drank. <SEP> It drank little.
+The monkey ate and the dove drank. <SEP> It drank a lot.
+The monkey ate and the dove drank. <SEP> It drank a lot.
+The monkey ate and the dove drank. <SEP> It drank a lot.
+The dove ate and the monkey drank. <SEP> It drank a lot.
+The dove ate and the monkey drank. <SEP> It drank a lot.
+The dove ate and the monkey drank. <SEP> It drank a lot.
+The monkey ate and the dove drank. <SEP> It drank quickly.
+The monkey ate and the dove drank. <SEP> It drank quickly.
+The monkey ate and the dove drank. <SEP> It drank quickly.
+The dove ate and the monkey drank. <SEP> It drank quickly.
+The dove ate and the monkey drank. <SEP> It drank quickly.
+The dove ate and the monkey drank. <SEP> It drank quickly.
+The monkey ate and the dove drank. <SEP> It drank slowly.
+The monkey ate and the dove drank. <SEP> It drank slowly.
+The monkey ate and the dove drank. <SEP> It drank slowly.
+The dove ate and the monkey drank. <SEP> It drank slowly.
+The dove ate and the monkey drank. <SEP> It drank slowly.
+The dove ate and the monkey drank. <SEP> It drank slowly.
+The monkey ate and the dove drank. <SEP> It drank happily.
+The monkey ate and the dove drank. <SEP> It drank happily.
+The monkey ate and the dove drank. <SEP> It drank happily.
+The dove ate and the monkey drank. <SEP> It drank happily.
+The dove ate and the monkey drank. <SEP> It drank happily.
+The dove ate and the monkey drank. <SEP> It drank happily.
+The monkey ate and the dove drank. <SEP> It drank little.
+The monkey ate and the dove drank. <SEP> It drank little.
+The monkey ate and the dove drank. <SEP> It drank little.
+The dove ate and the monkey drank. <SEP> It drank little.
+The dove ate and the monkey drank. <SEP> It drank little.
+The dove ate and the monkey drank. <SEP> It drank little.
+The monkey ate and the sheep drank. <SEP> It drank a lot.
+The monkey ate and the sheep drank. <SEP> It drank a lot.
+The monkey ate and the sheep drank. <SEP> It drank a lot.
+The sheep ate and the monkey drank. <SEP> It drank a lot.
+The sheep ate and the monkey drank. <SEP> It drank a lot.
+The sheep ate and the monkey drank. <SEP> It drank a lot.
+The monkey ate and the sheep drank. <SEP> It drank quickly.
+The monkey ate and the sheep drank. <SEP> It drank quickly.
+The monkey ate and the sheep drank. <SEP> It drank quickly.
+The sheep ate and the monkey drank. <SEP> It drank quickly.
+The sheep ate and the monkey drank. <SEP> It drank quickly.
+The sheep ate and the monkey drank. <SEP> It drank quickly.
+The monkey ate and the sheep drank. <SEP> It drank slowly.
+The monkey ate and the sheep drank. <SEP> It drank slowly.
+The monkey ate and the sheep drank. <SEP> It drank slowly.
+The sheep ate and the monkey drank. <SEP> It drank slowly.
+The sheep ate and the monkey drank. <SEP> It drank slowly.
+The sheep ate and the monkey drank. <SEP> It drank slowly.
+The monkey ate and the sheep drank. <SEP> It drank happily.
+The monkey ate and the sheep drank. <SEP> It drank happily.
+The monkey ate and the sheep drank. <SEP> It drank happily.
+The sheep ate and the monkey drank. <SEP> It drank happily.
+The sheep ate and the monkey drank. <SEP> It drank happily.
+The sheep ate and the monkey drank. <SEP> It drank happily.
+The monkey ate and the sheep drank. <SEP> It drank little.
+The monkey ate and the sheep drank. <SEP> It drank little.
+The monkey ate and the sheep drank. <SEP> It drank little.
+The sheep ate and the monkey drank. <SEP> It drank little.
+The sheep ate and the monkey drank. <SEP> It drank little.
+The sheep ate and the monkey drank. <SEP> It drank little.
+The monkey ate and the horse drank. <SEP> It drank a lot.
+The monkey ate and the horse drank. <SEP> It drank a lot.
+The monkey ate and the horse drank. <SEP> It drank a lot.
+The horse ate and the monkey drank. <SEP> It drank a lot.
+The horse ate and the monkey drank. <SEP> It drank a lot.
+The horse ate and the monkey drank. <SEP> It drank a lot.
+The monkey ate and the horse drank. <SEP> It drank quickly.
+The monkey ate and the horse drank. <SEP> It drank quickly.
+The monkey ate and the horse drank. <SEP> It drank quickly.
+The horse ate and the monkey drank. <SEP> It drank quickly.
+The horse ate and the monkey drank. <SEP> It drank quickly.
+The horse ate and the monkey drank. <SEP> It drank quickly.
+The monkey ate and the horse drank. <SEP> It drank slowly.
+The monkey ate and the horse drank. <SEP> It drank slowly.
+The monkey ate and the horse drank. <SEP> It drank slowly.
+The horse ate and the monkey drank. <SEP> It drank slowly.
+The horse ate and the monkey drank. <SEP> It drank slowly.
+The horse ate and the monkey drank. <SEP> It drank slowly.
+The monkey ate and the horse drank. <SEP> It drank happily.
+The monkey ate and the horse drank. <SEP> It drank happily.
+The monkey ate and the horse drank. <SEP> It drank happily.
+The horse ate and the monkey drank. <SEP> It drank happily.
+The horse ate and the monkey drank. <SEP> It drank happily.
+The horse ate and the monkey drank. <SEP> It drank happily.
+The monkey ate and the horse drank. <SEP> It drank little.
+The monkey ate and the horse drank. <SEP> It drank little.
+The monkey ate and the horse drank. <SEP> It drank little.
+The horse ate and the monkey drank. <SEP> It drank little.
+The horse ate and the monkey drank. <SEP> It drank little.
+The horse ate and the monkey drank. <SEP> It drank little.
+The monkey ate and the zebra drank. <SEP> It drank a lot.
+The monkey ate and the zebra drank. <SEP> It drank a lot.
+The monkey ate and the zebra drank. <SEP> It drank a lot.
+The zebra ate and the monkey drank. <SEP> It drank a lot.
+The zebra ate and the monkey drank. <SEP> It drank a lot.
+The zebra ate and the monkey drank. <SEP> It drank a lot.
+The monkey ate and the zebra drank. <SEP> It drank quickly.
+The monkey ate and the zebra drank. <SEP> It drank quickly.
+The monkey ate and the zebra drank. <SEP> It drank quickly.
+The zebra ate and the monkey drank. <SEP> It drank quickly.
+The zebra ate and the monkey drank. <SEP> It drank quickly.
+The zebra ate and the monkey drank. <SEP> It drank quickly.
+The monkey ate and the zebra drank. <SEP> It drank slowly.
+The monkey ate and the zebra drank. <SEP> It drank slowly.
+The monkey ate and the zebra drank. <SEP> It drank slowly.
+The zebra ate and the monkey drank. <SEP> It drank slowly.
+The zebra ate and the monkey drank. <SEP> It drank slowly.
+The zebra ate and the monkey drank. <SEP> It drank slowly.
+The monkey ate and the zebra drank. <SEP> It drank happily.
+The monkey ate and the zebra drank. <SEP> It drank happily.
+The monkey ate and the zebra drank. <SEP> It drank happily.
+The zebra ate and the monkey drank. <SEP> It drank happily.
+The zebra ate and the monkey drank. <SEP> It drank happily.
+The zebra ate and the monkey drank. <SEP> It drank happily.
+The monkey ate and the zebra drank. <SEP> It drank little.
+The monkey ate and the zebra drank. <SEP> It drank little.
+The monkey ate and the zebra drank. <SEP> It drank little.
+The zebra ate and the monkey drank. <SEP> It drank little.
+The zebra ate and the monkey drank. <SEP> It drank little.
+The zebra ate and the monkey drank. <SEP> It drank little.
+The monkey ate and the deer drank. <SEP> It drank a lot.
+The monkey ate and the deer drank. <SEP> It drank a lot.
+The monkey ate and the deer drank. <SEP> It drank a lot.
+The deer ate and the monkey drank. <SEP> It drank a lot.
+The deer ate and the monkey drank. <SEP> It drank a lot.
+The deer ate and the monkey drank. <SEP> It drank a lot.
+The monkey ate and the deer drank. <SEP> It drank quickly.
+The monkey ate and the deer drank. <SEP> It drank quickly.
+The monkey ate and the deer drank. <SEP> It drank quickly.
+The deer ate and the monkey drank. <SEP> It drank quickly.
+The deer ate and the monkey drank. <SEP> It drank quickly.
+The deer ate and the monkey drank. <SEP> It drank quickly.
+The monkey ate and the deer drank. <SEP> It drank slowly.
+The monkey ate and the deer drank. <SEP> It drank slowly.
+The monkey ate and the deer drank. <SEP> It drank slowly.
+The deer ate and the monkey drank. <SEP> It drank slowly.
+The deer ate and the monkey drank. <SEP> It drank slowly.
+The deer ate and the monkey drank. <SEP> It drank slowly.
+The monkey ate and the deer drank. <SEP> It drank happily.
+The monkey ate and the deer drank. <SEP> It drank happily.
+The monkey ate and the deer drank. <SEP> It drank happily.
+The deer ate and the monkey drank. <SEP> It drank happily.
+The deer ate and the monkey drank. <SEP> It drank happily.
+The deer ate and the monkey drank. <SEP> It drank happily.
+The monkey ate and the deer drank. <SEP> It drank little.
+The monkey ate and the deer drank. <SEP> It drank little.
+The monkey ate and the deer drank. <SEP> It drank little.
+The deer ate and the monkey drank. <SEP> It drank little.
+The deer ate and the monkey drank. <SEP> It drank little.
+The deer ate and the monkey drank. <SEP> It drank little.
+The frog ate and the cow drank. <SEP> It drank a lot.
+The frog ate and the cow drank. <SEP> It drank a lot.
+The frog ate and the cow drank. <SEP> It drank a lot.
+The cow ate and the frog drank. <SEP> It drank a lot.
+The cow ate and the frog drank. <SEP> It drank a lot.
+The cow ate and the frog drank. <SEP> It drank a lot.
+The frog ate and the cow drank. <SEP> It drank quickly.
+The frog ate and the cow drank. <SEP> It drank quickly.
+The frog ate and the cow drank. <SEP> It drank quickly.
+The cow ate and the frog drank. <SEP> It drank quickly.
+The cow ate and the frog drank. <SEP> It drank quickly.
+The cow ate and the frog drank. <SEP> It drank quickly.
+The frog ate and the cow drank. <SEP> It drank slowly.
+The frog ate and the cow drank. <SEP> It drank slowly.
+The frog ate and the cow drank. <SEP> It drank slowly.
+The cow ate and the frog drank. <SEP> It drank slowly.
+The cow ate and the frog drank. <SEP> It drank slowly.
+The cow ate and the frog drank. <SEP> It drank slowly.
+The frog ate and the cow drank. <SEP> It drank happily.
+The frog ate and the cow drank. <SEP> It drank happily.
+The frog ate and the cow drank. <SEP> It drank happily.
+The cow ate and the frog drank. <SEP> It drank happily.
+The cow ate and the frog drank. <SEP> It drank happily.
+The cow ate and the frog drank. <SEP> It drank happily.
+The frog ate and the cow drank. <SEP> It drank little.
+The frog ate and the cow drank. <SEP> It drank little.
+The frog ate and the cow drank. <SEP> It drank little.
+The cow ate and the frog drank. <SEP> It drank little.
+The cow ate and the frog drank. <SEP> It drank little.
+The cow ate and the frog drank. <SEP> It drank little.
+The frog ate and the mouse drank. <SEP> It drank a lot.
+The frog ate and the mouse drank. <SEP> It drank a lot.
+The frog ate and the mouse drank. <SEP> It drank a lot.
+The mouse ate and the frog drank. <SEP> It drank a lot.
+The mouse ate and the frog drank. <SEP> It drank a lot.
+The mouse ate and the frog drank. <SEP> It drank a lot.
+The frog ate and the mouse drank. <SEP> It drank quickly.
+The frog ate and the mouse drank. <SEP> It drank quickly.
+The frog ate and the mouse drank. <SEP> It drank quickly.
+The mouse ate and the frog drank. <SEP> It drank quickly.
+The mouse ate and the frog drank. <SEP> It drank quickly.
+The mouse ate and the frog drank. <SEP> It drank quickly.
+The frog ate and the mouse drank. <SEP> It drank slowly.
+The frog ate and the mouse drank. <SEP> It drank slowly.
+The frog ate and the mouse drank. <SEP> It drank slowly.
+The mouse ate and the frog drank. <SEP> It drank slowly.
+The mouse ate and the frog drank. <SEP> It drank slowly.
+The mouse ate and the frog drank. <SEP> It drank slowly.
+The frog ate and the mouse drank. <SEP> It drank happily.
+The frog ate and the mouse drank. <SEP> It drank happily.
+The frog ate and the mouse drank. <SEP> It drank happily.
+The mouse ate and the frog drank. <SEP> It drank happily.
+The mouse ate and the frog drank. <SEP> It drank happily.
+The mouse ate and the frog drank. <SEP> It drank happily.
+The frog ate and the mouse drank. <SEP> It drank little.
+The frog ate and the mouse drank. <SEP> It drank little.
+The frog ate and the mouse drank. <SEP> It drank little.
+The mouse ate and the frog drank. <SEP> It drank little.
+The mouse ate and the frog drank. <SEP> It drank little.
+The mouse ate and the frog drank. <SEP> It drank little.
+The frog ate and the turtle drank. <SEP> It drank a lot.
+The frog ate and the turtle drank. <SEP> It drank a lot.
+The frog ate and the turtle drank. <SEP> It drank a lot.
+The turtle ate and the frog drank. <SEP> It drank a lot.
+The turtle ate and the frog drank. <SEP> It drank a lot.
+The turtle ate and the frog drank. <SEP> It drank a lot.
+The frog ate and the turtle drank. <SEP> It drank quickly.
+The frog ate and the turtle drank. <SEP> It drank quickly.
+The frog ate and the turtle drank. <SEP> It drank quickly.
+The turtle ate and the frog drank. <SEP> It drank quickly.
+The turtle ate and the frog drank. <SEP> It drank quickly.
+The turtle ate and the frog drank. <SEP> It drank quickly.
+The frog ate and the turtle drank. <SEP> It drank slowly.
+The frog ate and the turtle drank. <SEP> It drank slowly.
+The frog ate and the turtle drank. <SEP> It drank slowly.
+The turtle ate and the frog drank. <SEP> It drank slowly.
+The turtle ate and the frog drank. <SEP> It drank slowly.
+The turtle ate and the frog drank. <SEP> It drank slowly.
+The frog ate and the turtle drank. <SEP> It drank happily.
+The frog ate and the turtle drank. <SEP> It drank happily.
+The frog ate and the turtle drank. <SEP> It drank happily.
+The turtle ate and the frog drank. <SEP> It drank happily.
+The turtle ate and the frog drank. <SEP> It drank happily.
+The turtle ate and the frog drank. <SEP> It drank happily.
+The frog ate and the turtle drank. <SEP> It drank little.
+The frog ate and the turtle drank. <SEP> It drank little.
+The frog ate and the turtle drank. <SEP> It drank little.
+The turtle ate and the frog drank. <SEP> It drank little.
+The turtle ate and the frog drank. <SEP> It drank little.
+The turtle ate and the frog drank. <SEP> It drank little.
+The frog ate and the dove drank. <SEP> It drank a lot.
+The frog ate and the dove drank. <SEP> It drank a lot.
+The frog ate and the dove drank. <SEP> It drank a lot.
+The dove ate and the frog drank. <SEP> It drank a lot.
+The dove ate and the frog drank. <SEP> It drank a lot.
+The dove ate and the frog drank. <SEP> It drank a lot.
+The frog ate and the dove drank. <SEP> It drank quickly.
+The frog ate and the dove drank. <SEP> It drank quickly.
+The frog ate and the dove drank. <SEP> It drank quickly.
+The dove ate and the frog drank. <SEP> It drank quickly.
+The dove ate and the frog drank. <SEP> It drank quickly.
+The dove ate and the frog drank. <SEP> It drank quickly.
+The frog ate and the dove drank. <SEP> It drank slowly.
+The frog ate and the dove drank. <SEP> It drank slowly.
+The frog ate and the dove drank. <SEP> It drank slowly.
+The dove ate and the frog drank. <SEP> It drank slowly.
+The dove ate and the frog drank. <SEP> It drank slowly.
+The dove ate and the frog drank. <SEP> It drank slowly.
+The frog ate and the dove drank. <SEP> It drank happily.
+The frog ate and the dove drank. <SEP> It drank happily.
+The frog ate and the dove drank. <SEP> It drank happily.
+The dove ate and the frog drank. <SEP> It drank happily.
+The dove ate and the frog drank. <SEP> It drank happily.
+The dove ate and the frog drank. <SEP> It drank happily.
+The frog ate and the dove drank. <SEP> It drank little.
+The frog ate and the dove drank. <SEP> It drank little.
+The frog ate and the dove drank. <SEP> It drank little.
+The dove ate and the frog drank. <SEP> It drank little.
+The dove ate and the frog drank. <SEP> It drank little.
+The dove ate and the frog drank. <SEP> It drank little.
+The frog ate and the sheep drank. <SEP> It drank a lot.
+The frog ate and the sheep drank. <SEP> It drank a lot.
+The frog ate and the sheep drank. <SEP> It drank a lot.
+The sheep ate and the frog drank. <SEP> It drank a lot.
+The sheep ate and the frog drank. <SEP> It drank a lot.
+The sheep ate and the frog drank. <SEP> It drank a lot.
+The frog ate and the sheep drank. <SEP> It drank quickly.
+The frog ate and the sheep drank. <SEP> It drank quickly.
+The frog ate and the sheep drank. <SEP> It drank quickly.
+The sheep ate and the frog drank. <SEP> It drank quickly.
+The sheep ate and the frog drank. <SEP> It drank quickly.
+The sheep ate and the frog drank. <SEP> It drank quickly.
+The frog ate and the sheep drank. <SEP> It drank slowly.
+The frog ate and the sheep drank. <SEP> It drank slowly.
+The frog ate and the sheep drank. <SEP> It drank slowly.
+The sheep ate and the frog drank. <SEP> It drank slowly.
+The sheep ate and the frog drank. <SEP> It drank slowly.
+The sheep ate and the frog drank. <SEP> It drank slowly.
+The frog ate and the sheep drank. <SEP> It drank happily.
+The frog ate and the sheep drank. <SEP> It drank happily.
+The frog ate and the sheep drank. <SEP> It drank happily.
+The sheep ate and the frog drank. <SEP> It drank happily.
+The sheep ate and the frog drank. <SEP> It drank happily.
+The sheep ate and the frog drank. <SEP> It drank happily.
+The frog ate and the sheep drank. <SEP> It drank little.
+The frog ate and the sheep drank. <SEP> It drank little.
+The frog ate and the sheep drank. <SEP> It drank little.
+The sheep ate and the frog drank. <SEP> It drank little.
+The sheep ate and the frog drank. <SEP> It drank little.
+The sheep ate and the frog drank. <SEP> It drank little.
+The frog ate and the horse drank. <SEP> It drank a lot.
+The frog ate and the horse drank. <SEP> It drank a lot.
+The frog ate and the horse drank. <SEP> It drank a lot.
+The horse ate and the frog drank. <SEP> It drank a lot.
+The horse ate and the frog drank. <SEP> It drank a lot.
+The horse ate and the frog drank. <SEP> It drank a lot.
+The frog ate and the horse drank. <SEP> It drank quickly.
+The frog ate and the horse drank. <SEP> It drank quickly.
+The frog ate and the horse drank. <SEP> It drank quickly.
+The horse ate and the frog drank. <SEP> It drank quickly.
+The horse ate and the frog drank. <SEP> It drank quickly.
+The horse ate and the frog drank. <SEP> It drank quickly.
+The frog ate and the horse drank. <SEP> It drank slowly.
+The frog ate and the horse drank. <SEP> It drank slowly.
+The frog ate and the horse drank. <SEP> It drank slowly.
+The horse ate and the frog drank. <SEP> It drank slowly.
+The horse ate and the frog drank. <SEP> It drank slowly.
+The horse ate and the frog drank. <SEP> It drank slowly.
+The frog ate and the horse drank. <SEP> It drank happily.
+The frog ate and the horse drank. <SEP> It drank happily.
+The frog ate and the horse drank. <SEP> It drank happily.
+The horse ate and the frog drank. <SEP> It drank happily.
+The horse ate and the frog drank. <SEP> It drank happily.
+The horse ate and the frog drank. <SEP> It drank happily.
+The frog ate and the horse drank. <SEP> It drank little.
+The frog ate and the horse drank. <SEP> It drank little.
+The frog ate and the horse drank. <SEP> It drank little.
+The horse ate and the frog drank. <SEP> It drank little.
+The horse ate and the frog drank. <SEP> It drank little.
+The horse ate and the frog drank. <SEP> It drank little.
+The frog ate and the zebra drank. <SEP> It drank a lot.
+The frog ate and the zebra drank. <SEP> It drank a lot.
+The frog ate and the zebra drank. <SEP> It drank a lot.
+The zebra ate and the frog drank. <SEP> It drank a lot.
+The zebra ate and the frog drank. <SEP> It drank a lot.
+The zebra ate and the frog drank. <SEP> It drank a lot.
+The frog ate and the zebra drank. <SEP> It drank quickly.
+The frog ate and the zebra drank. <SEP> It drank quickly.
+The frog ate and the zebra drank. <SEP> It drank quickly.
+The zebra ate and the frog drank. <SEP> It drank quickly.
+The zebra ate and the frog drank. <SEP> It drank quickly.
+The zebra ate and the frog drank. <SEP> It drank quickly.
+The frog ate and the zebra drank. <SEP> It drank slowly.
+The frog ate and the zebra drank. <SEP> It drank slowly.
+The frog ate and the zebra drank. <SEP> It drank slowly.
+The zebra ate and the frog drank. <SEP> It drank slowly.
+The zebra ate and the frog drank. <SEP> It drank slowly.
+The zebra ate and the frog drank. <SEP> It drank slowly.
+The frog ate and the zebra drank. <SEP> It drank happily.
+The frog ate and the zebra drank. <SEP> It drank happily.
+The frog ate and the zebra drank. <SEP> It drank happily.
+The zebra ate and the frog drank. <SEP> It drank happily.
+The zebra ate and the frog drank. <SEP> It drank happily.
+The zebra ate and the frog drank. <SEP> It drank happily.
+The frog ate and the zebra drank. <SEP> It drank little.
+The frog ate and the zebra drank. <SEP> It drank little.
+The frog ate and the zebra drank. <SEP> It drank little.
+The zebra ate and the frog drank. <SEP> It drank little.
+The zebra ate and the frog drank. <SEP> It drank little.
+The zebra ate and the frog drank. <SEP> It drank little.
+The frog ate and the deer drank. <SEP> It drank a lot.
+The frog ate and the deer drank. <SEP> It drank a lot.
+The frog ate and the deer drank. <SEP> It drank a lot.
+The deer ate and the frog drank. <SEP> It drank a lot.
+The deer ate and the frog drank. <SEP> It drank a lot.
+The deer ate and the frog drank. <SEP> It drank a lot.
+The frog ate and the deer drank. <SEP> It drank quickly.
+The frog ate and the deer drank. <SEP> It drank quickly.
+The frog ate and the deer drank. <SEP> It drank quickly.
+The deer ate and the frog drank. <SEP> It drank quickly.
+The deer ate and the frog drank. <SEP> It drank quickly.
+The deer ate and the frog drank. <SEP> It drank quickly.
+The frog ate and the deer drank. <SEP> It drank slowly.
+The frog ate and the deer drank. <SEP> It drank slowly.
+The frog ate and the deer drank. <SEP> It drank slowly.
+The deer ate and the frog drank. <SEP> It drank slowly.
+The deer ate and the frog drank. <SEP> It drank slowly.
+The deer ate and the frog drank. <SEP> It drank slowly.
+The frog ate and the deer drank. <SEP> It drank happily.
+The frog ate and the deer drank. <SEP> It drank happily.
+The frog ate and the deer drank. <SEP> It drank happily.
+The deer ate and the frog drank. <SEP> It drank happily.
+The deer ate and the frog drank. <SEP> It drank happily.
+The deer ate and the frog drank. <SEP> It drank happily.
+The frog ate and the deer drank. <SEP> It drank little.
+The frog ate and the deer drank. <SEP> It drank little.
+The frog ate and the deer drank. <SEP> It drank little.
+The deer ate and the frog drank. <SEP> It drank little.
+The deer ate and the frog drank. <SEP> It drank little.
+The deer ate and the frog drank. <SEP> It drank little.
+The cow ate and the sheep drank. <SEP> It drank a lot.
+The cow ate and the sheep drank. <SEP> It drank a lot.
+The cow ate and the sheep drank. <SEP> It drank a lot.
+The sheep ate and the cow drank. <SEP> It drank a lot.
+The sheep ate and the cow drank. <SEP> It drank a lot.
+The sheep ate and the cow drank. <SEP> It drank a lot.
+The cow ate and the sheep drank. <SEP> It drank quickly.
+The cow ate and the sheep drank. <SEP> It drank quickly.
+The cow ate and the sheep drank. <SEP> It drank quickly.
+The sheep ate and the cow drank. <SEP> It drank quickly.
+The sheep ate and the cow drank. <SEP> It drank quickly.
+The sheep ate and the cow drank. <SEP> It drank quickly.
+The cow ate and the sheep drank. <SEP> It drank slowly.
+The cow ate and the sheep drank. <SEP> It drank slowly.
+The cow ate and the sheep drank. <SEP> It drank slowly.
+The sheep ate and the cow drank. <SEP> It drank slowly.
+The sheep ate and the cow drank. <SEP> It drank slowly.
+The sheep ate and the cow drank. <SEP> It drank slowly.
+The cow ate and the sheep drank. <SEP> It drank happily.
+The cow ate and the sheep drank. <SEP> It drank happily.
+The cow ate and the sheep drank. <SEP> It drank happily.
+The sheep ate and the cow drank. <SEP> It drank happily.
+The sheep ate and the cow drank. <SEP> It drank happily.
+The sheep ate and the cow drank. <SEP> It drank happily.
+The cow ate and the sheep drank. <SEP> It drank little.
+The cow ate and the sheep drank. <SEP> It drank little.
+The cow ate and the sheep drank. <SEP> It drank little.
+The sheep ate and the cow drank. <SEP> It drank little.
+The sheep ate and the cow drank. <SEP> It drank little.
+The sheep ate and the cow drank. <SEP> It drank little.
+The cow ate and the horse drank. <SEP> It drank a lot.
+The cow ate and the horse drank. <SEP> It drank a lot.
+The cow ate and the horse drank. <SEP> It drank a lot.
+The horse ate and the cow drank. <SEP> It drank a lot.
+The horse ate and the cow drank. <SEP> It drank a lot.
+The horse ate and the cow drank. <SEP> It drank a lot.
+The cow ate and the horse drank. <SEP> It drank quickly.
+The cow ate and the horse drank. <SEP> It drank quickly.
+The cow ate and the horse drank. <SEP> It drank quickly.
+The horse ate and the cow drank. <SEP> It drank quickly.
+The horse ate and the cow drank. <SEP> It drank quickly.
+The horse ate and the cow drank. <SEP> It drank quickly.
+The cow ate and the horse drank. <SEP> It drank slowly.
+The cow ate and the horse drank. <SEP> It drank slowly.
+The cow ate and the horse drank. <SEP> It drank slowly.
+The horse ate and the cow drank. <SEP> It drank slowly.
+The horse ate and the cow drank. <SEP> It drank slowly.
+The horse ate and the cow drank. <SEP> It drank slowly.
+The cow ate and the horse drank. <SEP> It drank happily.
+The cow ate and the horse drank. <SEP> It drank happily.
+The cow ate and the horse drank. <SEP> It drank happily.
+The horse ate and the cow drank. <SEP> It drank happily.
+The horse ate and the cow drank. <SEP> It drank happily.
+The horse ate and the cow drank. <SEP> It drank happily.
+The cow ate and the horse drank. <SEP> It drank little.
+The cow ate and the horse drank. <SEP> It drank little.
+The cow ate and the horse drank. <SEP> It drank little.
+The horse ate and the cow drank. <SEP> It drank little.
+The horse ate and the cow drank. <SEP> It drank little.
+The horse ate and the cow drank. <SEP> It drank little.
+The cow ate and the zebra drank. <SEP> It drank a lot.
+The cow ate and the zebra drank. <SEP> It drank a lot.
+The cow ate and the zebra drank. <SEP> It drank a lot.
+The zebra ate and the cow drank. <SEP> It drank a lot.
+The zebra ate and the cow drank. <SEP> It drank a lot.
+The zebra ate and the cow drank. <SEP> It drank a lot.
+The cow ate and the zebra drank. <SEP> It drank quickly.
+The cow ate and the zebra drank. <SEP> It drank quickly.
+The cow ate and the zebra drank. <SEP> It drank quickly.
+The zebra ate and the cow drank. <SEP> It drank quickly.
+The zebra ate and the cow drank. <SEP> It drank quickly.
+The zebra ate and the cow drank. <SEP> It drank quickly.
+The cow ate and the zebra drank. <SEP> It drank slowly.
+The cow ate and the zebra drank. <SEP> It drank slowly.
+The cow ate and the zebra drank. <SEP> It drank slowly.
+The zebra ate and the cow drank. <SEP> It drank slowly.
+The zebra ate and the cow drank. <SEP> It drank slowly.
+The zebra ate and the cow drank. <SEP> It drank slowly.
+The cow ate and the zebra drank. <SEP> It drank happily.
+The cow ate and the zebra drank. <SEP> It drank happily.
+The cow ate and the zebra drank. <SEP> It drank happily.
+The zebra ate and the cow drank. <SEP> It drank happily.
+The zebra ate and the cow drank. <SEP> It drank happily.
+The zebra ate and the cow drank. <SEP> It drank happily.
+The cow ate and the zebra drank. <SEP> It drank little.
+The cow ate and the zebra drank. <SEP> It drank little.
+The cow ate and the zebra drank. <SEP> It drank little.
+The zebra ate and the cow drank. <SEP> It drank little.
+The zebra ate and the cow drank. <SEP> It drank little.
+The zebra ate and the cow drank. <SEP> It drank little.
+The cow ate and the deer drank. <SEP> It drank a lot.
+The cow ate and the deer drank. <SEP> It drank a lot.
+The cow ate and the deer drank. <SEP> It drank a lot.
+The deer ate and the cow drank. <SEP> It drank a lot.
+The deer ate and the cow drank. <SEP> It drank a lot.
+The deer ate and the cow drank. <SEP> It drank a lot.
+The cow ate and the deer drank. <SEP> It drank quickly.
+The cow ate and the deer drank. <SEP> It drank quickly.
+The cow ate and the deer drank. <SEP> It drank quickly.
+The deer ate and the cow drank. <SEP> It drank quickly.
+The deer ate and the cow drank. <SEP> It drank quickly.
+The deer ate and the cow drank. <SEP> It drank quickly.
+The cow ate and the deer drank. <SEP> It drank slowly.
+The cow ate and the deer drank. <SEP> It drank slowly.
+The cow ate and the deer drank. <SEP> It drank slowly.
+The deer ate and the cow drank. <SEP> It drank slowly.
+The deer ate and the cow drank. <SEP> It drank slowly.
+The deer ate and the cow drank. <SEP> It drank slowly.
+The cow ate and the deer drank. <SEP> It drank happily.
+The cow ate and the deer drank. <SEP> It drank happily.
+The cow ate and the deer drank. <SEP> It drank happily.
+The deer ate and the cow drank. <SEP> It drank happily.
+The deer ate and the cow drank. <SEP> It drank happily.
+The deer ate and the cow drank. <SEP> It drank happily.
+The cow ate and the deer drank. <SEP> It drank little.
+The cow ate and the deer drank. <SEP> It drank little.
+The cow ate and the deer drank. <SEP> It drank little.
+The deer ate and the cow drank. <SEP> It drank little.
+The deer ate and the cow drank. <SEP> It drank little.
+The deer ate and the cow drank. <SEP> It drank little.
+The mouse ate and the sheep drank. <SEP> It drank a lot.
+The mouse ate and the sheep drank. <SEP> It drank a lot.
+The mouse ate and the sheep drank. <SEP> It drank a lot.
+The sheep ate and the mouse drank. <SEP> It drank a lot.
+The sheep ate and the mouse drank. <SEP> It drank a lot.
+The sheep ate and the mouse drank. <SEP> It drank a lot.
+The mouse ate and the sheep drank. <SEP> It drank quickly.
+The mouse ate and the sheep drank. <SEP> It drank quickly.
+The mouse ate and the sheep drank. <SEP> It drank quickly.
+The sheep ate and the mouse drank. <SEP> It drank quickly.
+The sheep ate and the mouse drank. <SEP> It drank quickly.
+The sheep ate and the mouse drank. <SEP> It drank quickly.
+The mouse ate and the sheep drank. <SEP> It drank slowly.
+The mouse ate and the sheep drank. <SEP> It drank slowly.
+The mouse ate and the sheep drank. <SEP> It drank slowly.
+The sheep ate and the mouse drank. <SEP> It drank slowly.
+The sheep ate and the mouse drank. <SEP> It drank slowly.
+The sheep ate and the mouse drank. <SEP> It drank slowly.
+The mouse ate and the sheep drank. <SEP> It drank happily.
+The mouse ate and the sheep drank. <SEP> It drank happily.
+The mouse ate and the sheep drank. <SEP> It drank happily.
+The sheep ate and the mouse drank. <SEP> It drank happily.
+The sheep ate and the mouse drank. <SEP> It drank happily.
+The sheep ate and the mouse drank. <SEP> It drank happily.
+The mouse ate and the sheep drank. <SEP> It drank little.
+The mouse ate and the sheep drank. <SEP> It drank little.
+The mouse ate and the sheep drank. <SEP> It drank little.
+The sheep ate and the mouse drank. <SEP> It drank little.
+The sheep ate and the mouse drank. <SEP> It drank little.
+The sheep ate and the mouse drank. <SEP> It drank little.
+The mouse ate and the horse drank. <SEP> It drank a lot.
+The mouse ate and the horse drank. <SEP> It drank a lot.
+The mouse ate and the horse drank. <SEP> It drank a lot.
+The horse ate and the mouse drank. <SEP> It drank a lot.
+The horse ate and the mouse drank. <SEP> It drank a lot.
+The horse ate and the mouse drank. <SEP> It drank a lot.
+The mouse ate and the horse drank. <SEP> It drank quickly.
+The mouse ate and the horse drank. <SEP> It drank quickly.
+The mouse ate and the horse drank. <SEP> It drank quickly.
+The horse ate and the mouse drank. <SEP> It drank quickly.
+The horse ate and the mouse drank. <SEP> It drank quickly.
+The horse ate and the mouse drank. <SEP> It drank quickly.
+The mouse ate and the horse drank. <SEP> It drank slowly.
+The mouse ate and the horse drank. <SEP> It drank slowly.
+The mouse ate and the horse drank. <SEP> It drank slowly.
+The horse ate and the mouse drank. <SEP> It drank slowly.
+The horse ate and the mouse drank. <SEP> It drank slowly.
+The horse ate and the mouse drank. <SEP> It drank slowly.
+The mouse ate and the horse drank. <SEP> It drank happily.
+The mouse ate and the horse drank. <SEP> It drank happily.
+The mouse ate and the horse drank. <SEP> It drank happily.
+The horse ate and the mouse drank. <SEP> It drank happily.
+The horse ate and the mouse drank. <SEP> It drank happily.
+The horse ate and the mouse drank. <SEP> It drank happily.
+The mouse ate and the horse drank. <SEP> It drank little.
+The mouse ate and the horse drank. <SEP> It drank little.
+The mouse ate and the horse drank. <SEP> It drank little.
+The horse ate and the mouse drank. <SEP> It drank little.
+The horse ate and the mouse drank. <SEP> It drank little.
+The horse ate and the mouse drank. <SEP> It drank little.
+The mouse ate and the zebra drank. <SEP> It drank a lot.
+The mouse ate and the zebra drank. <SEP> It drank a lot.
+The mouse ate and the zebra drank. <SEP> It drank a lot.
+The zebra ate and the mouse drank. <SEP> It drank a lot.
+The zebra ate and the mouse drank. <SEP> It drank a lot.
+The zebra ate and the mouse drank. <SEP> It drank a lot.
+The mouse ate and the zebra drank. <SEP> It drank quickly.
+The mouse ate and the zebra drank. <SEP> It drank quickly.
+The mouse ate and the zebra drank. <SEP> It drank quickly.
+The zebra ate and the mouse drank. <SEP> It drank quickly.
+The zebra ate and the mouse drank. <SEP> It drank quickly.
+The zebra ate and the mouse drank. <SEP> It drank quickly.
+The mouse ate and the zebra drank. <SEP> It drank slowly.
+The mouse ate and the zebra drank. <SEP> It drank slowly.
+The mouse ate and the zebra drank. <SEP> It drank slowly.
+The zebra ate and the mouse drank. <SEP> It drank slowly.
+The zebra ate and the mouse drank. <SEP> It drank slowly.
+The zebra ate and the mouse drank. <SEP> It drank slowly.
+The mouse ate and the zebra drank. <SEP> It drank happily.
+The mouse ate and the zebra drank. <SEP> It drank happily.
+The mouse ate and the zebra drank. <SEP> It drank happily.
+The zebra ate and the mouse drank. <SEP> It drank happily.
+The zebra ate and the mouse drank. <SEP> It drank happily.
+The zebra ate and the mouse drank. <SEP> It drank happily.
+The mouse ate and the zebra drank. <SEP> It drank little.
+The mouse ate and the zebra drank. <SEP> It drank little.
+The mouse ate and the zebra drank. <SEP> It drank little.
+The zebra ate and the mouse drank. <SEP> It drank little.
+The zebra ate and the mouse drank. <SEP> It drank little.
+The zebra ate and the mouse drank. <SEP> It drank little.
+The mouse ate and the deer drank. <SEP> It drank a lot.
+The mouse ate and the deer drank. <SEP> It drank a lot.
+The mouse ate and the deer drank. <SEP> It drank a lot.
+The deer ate and the mouse drank. <SEP> It drank a lot.
+The deer ate and the mouse drank. <SEP> It drank a lot.
+The deer ate and the mouse drank. <SEP> It drank a lot.
+The mouse ate and the deer drank. <SEP> It drank quickly.
+The mouse ate and the deer drank. <SEP> It drank quickly.
+The mouse ate and the deer drank. <SEP> It drank quickly.
+The deer ate and the mouse drank. <SEP> It drank quickly.
+The deer ate and the mouse drank. <SEP> It drank quickly.
+The deer ate and the mouse drank. <SEP> It drank quickly.
+The mouse ate and the deer drank. <SEP> It drank slowly.
+The mouse ate and the deer drank. <SEP> It drank slowly.
+The mouse ate and the deer drank. <SEP> It drank slowly.
+The deer ate and the mouse drank. <SEP> It drank slowly.
+The deer ate and the mouse drank. <SEP> It drank slowly.
+The deer ate and the mouse drank. <SEP> It drank slowly.
+The mouse ate and the deer drank. <SEP> It drank happily.
+The mouse ate and the deer drank. <SEP> It drank happily.
+The mouse ate and the deer drank. <SEP> It drank happily.
+The deer ate and the mouse drank. <SEP> It drank happily.
+The deer ate and the mouse drank. <SEP> It drank happily.
+The deer ate and the mouse drank. <SEP> It drank happily.
+The mouse ate and the deer drank. <SEP> It drank little.
+The mouse ate and the deer drank. <SEP> It drank little.
+The mouse ate and the deer drank. <SEP> It drank little.
+The deer ate and the mouse drank. <SEP> It drank little.
+The deer ate and the mouse drank. <SEP> It drank little.
+The deer ate and the mouse drank. <SEP> It drank little.
+The turtle ate and the sheep drank. <SEP> It drank a lot.
+The turtle ate and the sheep drank. <SEP> It drank a lot.
+The turtle ate and the sheep drank. <SEP> It drank a lot.
+The sheep ate and the turtle drank. <SEP> It drank a lot.
+The sheep ate and the turtle drank. <SEP> It drank a lot.
+The sheep ate and the turtle drank. <SEP> It drank a lot.
+The turtle ate and the sheep drank. <SEP> It drank quickly.
+The turtle ate and the sheep drank. <SEP> It drank quickly.
+The turtle ate and the sheep drank. <SEP> It drank quickly.
+The sheep ate and the turtle drank. <SEP> It drank quickly.
+The sheep ate and the turtle drank. <SEP> It drank quickly.
+The sheep ate and the turtle drank. <SEP> It drank quickly.
+The turtle ate and the sheep drank. <SEP> It drank slowly.
+The turtle ate and the sheep drank. <SEP> It drank slowly.
+The turtle ate and the sheep drank. <SEP> It drank slowly.
+The sheep ate and the turtle drank. <SEP> It drank slowly.
+The sheep ate and the turtle drank. <SEP> It drank slowly.
+The sheep ate and the turtle drank. <SEP> It drank slowly.
+The turtle ate and the sheep drank. <SEP> It drank happily.
+The turtle ate and the sheep drank. <SEP> It drank happily.
+The turtle ate and the sheep drank. <SEP> It drank happily.
+The sheep ate and the turtle drank. <SEP> It drank happily.
+The sheep ate and the turtle drank. <SEP> It drank happily.
+The sheep ate and the turtle drank. <SEP> It drank happily.
+The turtle ate and the sheep drank. <SEP> It drank little.
+The turtle ate and the sheep drank. <SEP> It drank little.
+The turtle ate and the sheep drank. <SEP> It drank little.
+The sheep ate and the turtle drank. <SEP> It drank little.
+The sheep ate and the turtle drank. <SEP> It drank little.
+The sheep ate and the turtle drank. <SEP> It drank little.
+The turtle ate and the horse drank. <SEP> It drank a lot.
+The turtle ate and the horse drank. <SEP> It drank a lot.
+The turtle ate and the horse drank. <SEP> It drank a lot.
+The horse ate and the turtle drank. <SEP> It drank a lot.
+The horse ate and the turtle drank. <SEP> It drank a lot.
+The horse ate and the turtle drank. <SEP> It drank a lot.
+The turtle ate and the horse drank. <SEP> It drank quickly.
+The turtle ate and the horse drank. <SEP> It drank quickly.
+The turtle ate and the horse drank. <SEP> It drank quickly.
+The horse ate and the turtle drank. <SEP> It drank quickly.
+The horse ate and the turtle drank. <SEP> It drank quickly.
+The horse ate and the turtle drank. <SEP> It drank quickly.
+The turtle ate and the horse drank. <SEP> It drank slowly.
+The turtle ate and the horse drank. <SEP> It drank slowly.
+The turtle ate and the horse drank. <SEP> It drank slowly.
+The horse ate and the turtle drank. <SEP> It drank slowly.
+The horse ate and the turtle drank. <SEP> It drank slowly.
+The horse ate and the turtle drank. <SEP> It drank slowly.
+The turtle ate and the horse drank. <SEP> It drank happily.
+The turtle ate and the horse drank. <SEP> It drank happily.
+The turtle ate and the horse drank. <SEP> It drank happily.
+The horse ate and the turtle drank. <SEP> It drank happily.
+The horse ate and the turtle drank. <SEP> It drank happily.
+The horse ate and the turtle drank. <SEP> It drank happily.
+The turtle ate and the horse drank. <SEP> It drank little.
+The turtle ate and the horse drank. <SEP> It drank little.
+The turtle ate and the horse drank. <SEP> It drank little.
+The horse ate and the turtle drank. <SEP> It drank little.
+The horse ate and the turtle drank. <SEP> It drank little.
+The horse ate and the turtle drank. <SEP> It drank little.
+The turtle ate and the zebra drank. <SEP> It drank a lot.
+The turtle ate and the zebra drank. <SEP> It drank a lot.
+The turtle ate and the zebra drank. <SEP> It drank a lot.
+The zebra ate and the turtle drank. <SEP> It drank a lot.
+The zebra ate and the turtle drank. <SEP> It drank a lot.
+The zebra ate and the turtle drank. <SEP> It drank a lot.
+The turtle ate and the zebra drank. <SEP> It drank quickly.
+The turtle ate and the zebra drank. <SEP> It drank quickly.
+The turtle ate and the zebra drank. <SEP> It drank quickly.
+The zebra ate and the turtle drank. <SEP> It drank quickly.
+The zebra ate and the turtle drank. <SEP> It drank quickly.
+The zebra ate and the turtle drank. <SEP> It drank quickly.
+The turtle ate and the zebra drank. <SEP> It drank slowly.
+The turtle ate and the zebra drank. <SEP> It drank slowly.
+The turtle ate and the zebra drank. <SEP> It drank slowly.
+The zebra ate and the turtle drank. <SEP> It drank slowly.
+The zebra ate and the turtle drank. <SEP> It drank slowly.
+The zebra ate and the turtle drank. <SEP> It drank slowly.
+The turtle ate and the zebra drank. <SEP> It drank happily.
+The turtle ate and the zebra drank. <SEP> It drank happily.
+The turtle ate and the zebra drank. <SEP> It drank happily.
+The zebra ate and the turtle drank. <SEP> It drank happily.
+The zebra ate and the turtle drank. <SEP> It drank happily.
+The zebra ate and the turtle drank. <SEP> It drank happily.
+The turtle ate and the zebra drank. <SEP> It drank little.
+The turtle ate and the zebra drank. <SEP> It drank little.
+The turtle ate and the zebra drank. <SEP> It drank little.
+The zebra ate and the turtle drank. <SEP> It drank little.
+The zebra ate and the turtle drank. <SEP> It drank little.
+The zebra ate and the turtle drank. <SEP> It drank little.
+The turtle ate and the deer drank. <SEP> It drank a lot.
+The turtle ate and the deer drank. <SEP> It drank a lot.
+The turtle ate and the deer drank. <SEP> It drank a lot.
+The deer ate and the turtle drank. <SEP> It drank a lot.
+The deer ate and the turtle drank. <SEP> It drank a lot.
+The deer ate and the turtle drank. <SEP> It drank a lot.
+The turtle ate and the deer drank. <SEP> It drank quickly.
+The turtle ate and the deer drank. <SEP> It drank quickly.
+The turtle ate and the deer drank. <SEP> It drank quickly.
+The deer ate and the turtle drank. <SEP> It drank quickly.
+The deer ate and the turtle drank. <SEP> It drank quickly.
+The deer ate and the turtle drank. <SEP> It drank quickly.
+The turtle ate and the deer drank. <SEP> It drank slowly.
+The turtle ate and the deer drank. <SEP> It drank slowly.
+The turtle ate and the deer drank. <SEP> It drank slowly.
+The deer ate and the turtle drank. <SEP> It drank slowly.
+The deer ate and the turtle drank. <SEP> It drank slowly.
+The deer ate and the turtle drank. <SEP> It drank slowly.
+The turtle ate and the deer drank. <SEP> It drank happily.
+The turtle ate and the deer drank. <SEP> It drank happily.
+The turtle ate and the deer drank. <SEP> It drank happily.
+The deer ate and the turtle drank. <SEP> It drank happily.
+The deer ate and the turtle drank. <SEP> It drank happily.
+The deer ate and the turtle drank. <SEP> It drank happily.
+The turtle ate and the deer drank. <SEP> It drank little.
+The turtle ate and the deer drank. <SEP> It drank little.
+The turtle ate and the deer drank. <SEP> It drank little.
+The deer ate and the turtle drank. <SEP> It drank little.
+The deer ate and the turtle drank. <SEP> It drank little.
+The deer ate and the turtle drank. <SEP> It drank little.
+The dove ate and the sheep drank. <SEP> It drank a lot.
+The dove ate and the sheep drank. <SEP> It drank a lot.
+The dove ate and the sheep drank. <SEP> It drank a lot.
+The sheep ate and the dove drank. <SEP> It drank a lot.
+The sheep ate and the dove drank. <SEP> It drank a lot.
+The sheep ate and the dove drank. <SEP> It drank a lot.
+The dove ate and the sheep drank. <SEP> It drank quickly.
+The dove ate and the sheep drank. <SEP> It drank quickly.
+The dove ate and the sheep drank. <SEP> It drank quickly.
+The sheep ate and the dove drank. <SEP> It drank quickly.
+The sheep ate and the dove drank. <SEP> It drank quickly.
+The sheep ate and the dove drank. <SEP> It drank quickly.
+The dove ate and the sheep drank. <SEP> It drank slowly.
+The dove ate and the sheep drank. <SEP> It drank slowly.
+The dove ate and the sheep drank. <SEP> It drank slowly.
+The sheep ate and the dove drank. <SEP> It drank slowly.
+The sheep ate and the dove drank. <SEP> It drank slowly.
+The sheep ate and the dove drank. <SEP> It drank slowly.
+The dove ate and the sheep drank. <SEP> It drank happily.
+The dove ate and the sheep drank. <SEP> It drank happily.
+The dove ate and the sheep drank. <SEP> It drank happily.
+The sheep ate and the dove drank. <SEP> It drank happily.
+The sheep ate and the dove drank. <SEP> It drank happily.
+The sheep ate and the dove drank. <SEP> It drank happily.
+The dove ate and the sheep drank. <SEP> It drank little.
+The dove ate and the sheep drank. <SEP> It drank little.
+The dove ate and the sheep drank. <SEP> It drank little.
+The sheep ate and the dove drank. <SEP> It drank little.
+The sheep ate and the dove drank. <SEP> It drank little.
+The sheep ate and the dove drank. <SEP> It drank little.
+The dove ate and the horse drank. <SEP> It drank a lot.
+The dove ate and the horse drank. <SEP> It drank a lot.
+The dove ate and the horse drank. <SEP> It drank a lot.
+The horse ate and the dove drank. <SEP> It drank a lot.
+The horse ate and the dove drank. <SEP> It drank a lot.
+The horse ate and the dove drank. <SEP> It drank a lot.
+The dove ate and the horse drank. <SEP> It drank quickly.
+The dove ate and the horse drank. <SEP> It drank quickly.
+The dove ate and the horse drank. <SEP> It drank quickly.
+The horse ate and the dove drank. <SEP> It drank quickly.
+The horse ate and the dove drank. <SEP> It drank quickly.
+The horse ate and the dove drank. <SEP> It drank quickly.
+The dove ate and the horse drank. <SEP> It drank slowly.
+The dove ate and the horse drank. <SEP> It drank slowly.
+The dove ate and the horse drank. <SEP> It drank slowly.
+The horse ate and the dove drank. <SEP> It drank slowly.
+The horse ate and the dove drank. <SEP> It drank slowly.
+The horse ate and the dove drank. <SEP> It drank slowly.
+The dove ate and the horse drank. <SEP> It drank happily.
+The dove ate and the horse drank. <SEP> It drank happily.
+The dove ate and the horse drank. <SEP> It drank happily.
+The horse ate and the dove drank. <SEP> It drank happily.
+The horse ate and the dove drank. <SEP> It drank happily.
+The horse ate and the dove drank. <SEP> It drank happily.
+The dove ate and the horse drank. <SEP> It drank little.
+The dove ate and the horse drank. <SEP> It drank little.
+The dove ate and the horse drank. <SEP> It drank little.
+The horse ate and the dove drank. <SEP> It drank little.
+The horse ate and the dove drank. <SEP> It drank little.
+The horse ate and the dove drank. <SEP> It drank little.
+The dove ate and the zebra drank. <SEP> It drank a lot.
+The dove ate and the zebra drank. <SEP> It drank a lot.
+The dove ate and the zebra drank. <SEP> It drank a lot.
+The zebra ate and the dove drank. <SEP> It drank a lot.
+The zebra ate and the dove drank. <SEP> It drank a lot.
+The zebra ate and the dove drank. <SEP> It drank a lot.
+The dove ate and the zebra drank. <SEP> It drank quickly.
+The dove ate and the zebra drank. <SEP> It drank quickly.
+The dove ate and the zebra drank. <SEP> It drank quickly.
+The zebra ate and the dove drank. <SEP> It drank quickly.
+The zebra ate and the dove drank. <SEP> It drank quickly.
+The zebra ate and the dove drank. <SEP> It drank quickly.
+The dove ate and the zebra drank. <SEP> It drank slowly.
+The dove ate and the zebra drank. <SEP> It drank slowly.
+The dove ate and the zebra drank. <SEP> It drank slowly.
+The zebra ate and the dove drank. <SEP> It drank slowly.
+The zebra ate and the dove drank. <SEP> It drank slowly.
+The zebra ate and the dove drank. <SEP> It drank slowly.
+The dove ate and the zebra drank. <SEP> It drank happily.
+The dove ate and the zebra drank. <SEP> It drank happily.
+The dove ate and the zebra drank. <SEP> It drank happily.
+The zebra ate and the dove drank. <SEP> It drank happily.
+The zebra ate and the dove drank. <SEP> It drank happily.
+The zebra ate and the dove drank. <SEP> It drank happily.
+The dove ate and the zebra drank. <SEP> It drank little.
+The dove ate and the zebra drank. <SEP> It drank little.
+The dove ate and the zebra drank. <SEP> It drank little.
+The zebra ate and the dove drank. <SEP> It drank little.
+The zebra ate and the dove drank. <SEP> It drank little.
+The zebra ate and the dove drank. <SEP> It drank little.
+The dove ate and the deer drank. <SEP> It drank a lot.
+The dove ate and the deer drank. <SEP> It drank a lot.
+The dove ate and the deer drank. <SEP> It drank a lot.
+The deer ate and the dove drank. <SEP> It drank a lot.
+The deer ate and the dove drank. <SEP> It drank a lot.
+The deer ate and the dove drank. <SEP> It drank a lot.
+The dove ate and the deer drank. <SEP> It drank quickly.
+The dove ate and the deer drank. <SEP> It drank quickly.
+The dove ate and the deer drank. <SEP> It drank quickly.
+The deer ate and the dove drank. <SEP> It drank quickly.
+The deer ate and the dove drank. <SEP> It drank quickly.
+The deer ate and the dove drank. <SEP> It drank quickly.
+The dove ate and the deer drank. <SEP> It drank slowly.
+The dove ate and the deer drank. <SEP> It drank slowly.
+The dove ate and the deer drank. <SEP> It drank slowly.
+The deer ate and the dove drank. <SEP> It drank slowly.
+The deer ate and the dove drank. <SEP> It drank slowly.
+The deer ate and the dove drank. <SEP> It drank slowly.
+The dove ate and the deer drank. <SEP> It drank happily.
+The dove ate and the deer drank. <SEP> It drank happily.
+The dove ate and the deer drank. <SEP> It drank happily.
+The deer ate and the dove drank. <SEP> It drank happily.
+The deer ate and the dove drank. <SEP> It drank happily.
+The deer ate and the dove drank. <SEP> It drank happily.
+The dove ate and the deer drank. <SEP> It drank little.
+The dove ate and the deer drank. <SEP> It drank little.
+The dove ate and the deer drank. <SEP> It drank little.
+The deer ate and the dove drank. <SEP> It drank little.
+The deer ate and the dove drank. <SEP> It drank little.
+The deer ate and the dove drank. <SEP> It drank little.

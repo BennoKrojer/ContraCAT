@@ -18,3 +18,17 @@ python3 -m ContraPro.evaluate --reference PATH_TO_contrapro.json --scores script
 
 If you want to evaluate a file that was modified with possessive-extension or synonym-replacement, you have to use a different contrapro.json:
 python3 -m ContraPro.evaluate --reference data/adversarial_ContraPro/synonyms/modified_contrapro_subset.json --scores scripts/example_scores
+
+template params:
+-n 0_priors/position -e "I stood in front of the <ANIMAL>_1 and the <ANIMAL>_2. It was <SIZE_ADJECTIVE>." -d "Ich stand vor <DEF_DAT> <ANIMAL>_1 und <DEF_DAT> <ANIMAL>_2. <PRO_NOM_3_SIN> war <SIZE_ADJECTIVE>." --unequal_gender_entities "<ANIMAL>_1,<ANIMAL>_2" --no_correct_antecedent
+-n 0_priors/role -e "The <ANIMAL> ate the <FOOD>. It was <SIZE_ADJECTIVE>." -d "<DEF_NOM> <ANIMAL> hat <DEF_ACC> <FOOD> gegessen. <PRO_NOM_3_SIN> war <SIZE_ADJECTIVE>." --unequal_gender_entities "<ANIMAL>,<FOOD>" --no_correct_antecedent
+-n 0_priors/verb -e "Wow! <PRO_NOM> <TRANS_VERB> it." -d "Wow! <PRO_NOM> <TRANS_VERB> <PRO_ACC_3_SIN>."
+-n 1_entity_step -e "The <ANIMAL>* and the <HUMAN> were <FEELING_ADJECTIVE>_1. However it was <FEELING_ADJECTIVE_COMP>_1.///The <HUMAN> and the <ANIMAL> were <FEELING_ADJECTIVE>_1. However it was <FEELING_ADJECTIVE_COMP>_1." -d "<DEF_NOM> <ANIMAL>* und <DEF_NOM> <HUMAN> waren <FEELING_ADJECTIVE>_1. Aber <PRO_NOM_3_SIN>* war <FEELING_ADJECTIVE_COMP>_1.///<DET_NOM> <HUMAN> und <DET_NOM> <ANIMAL>* waren <FEELING_ADJECTIVE>_1. Aber <PRO_NOM_3_SIN>* war <FEELING_ADJECTIVE_COMP>_1." --unequal_gender_entities "<ANIMAL>,<HUMAN>"
+-n 2_coreference_step/event/happened -e "The <ANIMAL> ate the <FOOD>. It actually happened." -d "<DEF_NOM> <ANIMAL> hat <DEF_ACC> <FOOD> gegessen. <PRO_NOM_3_SIN> ist tatsächlich passiert." --neuter_always_correct
+-n 2_coreference_step/event/chaos -e "The <ANIMAL> ate the <FOOD>. It resulted in chaos." -d "<DEF_NOM> <ANIMAL> hat <DEF_ACC> <FOOD> gegessen. <PRO_NOM_3_SIN> führte zu Chaos." --neuter_always_correct
+-n 2_coreference_step/event/chaos -e "The <ANIMAL> ate the <FOOD>. It resulted in chaos." -d "<DEF_NOM> <ANIMAL> hat <DEF_ACC> <FOOD> gegessen. <PRO_NOM_3_SIN> führte zu Chaos." --neuter_always_correct
+-n 2_coreference_step/event/situation -e "The <ANIMAL> ate the <FOOD>. It came as a surprise." -d "<DEF_NOM> <ANIMAL> hat <DEF_ACC> <FOOD> gegessen. <PRO_NOM_3_SIN> kam überraschend." --neuter_always_correct
+
+-n 2_coreference_step/overlap/object_overlap -e "The <ANIMAL>_1 ate the <FOOD> and the <ANIMAL>*_2 drank the <DRINK>_3. It liked the <DRINK>_3." -d "<DEF_NOM> <ANIMAL>_1 hat <DEF_ACC> <FOOD> gegessen und <DEF_NOM> <ANIMAL>*_2 hat <DEF_ACC> <DRINK>_3 getrunken. <PRO_NOM_3_SIN> mochte <DEF_ACC> <DRINK>_3." --unequal_gender_entities "<ANIMAL>_1,<ANIMAL>*_2"
+
+-n 2_coreference_step/overlap/object_overlap/eat_drink_drink -e "The <ANIMAL>_1 ate the <FOOD> and the <ANIMAL>*_2 drank the <DRINK>_3. It liked the <DRINK>_3." -d "<DEF_NOM> <ANIMAL>_1 hat <DEF_ACC> <FOOD> gegessen und <DEF_NOM> <ANIMAL>*_2 hat <DEF_ACC>_4 <DRINK>_3 getrunken. <PRO_NOM_3_SIN> mochte <DEF_ACC>_4 <DRINK>_3." --unequal_gender_entities "<ANIMAL>_1,<ANIMAL>*_2" --half
