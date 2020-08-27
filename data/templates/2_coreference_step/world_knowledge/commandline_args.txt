@@ -1,0 +1,8 @@
+-n
+2_coreference_step/world_knowledge
+-e
+The <ANIMAL>* ate the <FOOD>. It <ANIMAL_ATTRIBUTE>.///The <ANIMAL> ate the <FOOD>*. It <FOOD_ATTRIBUTE>.
+-d
+<DEF_NOM> <ANIMAL>* hat <DEF_ACC> <FOOD> gegessen. <PRO_NOM_3_SIN>* <ANIMAL_ATTRIBUTE>.///<DEF_NOM> <ANIMAL> hat <DEF_ACC> <FOOD>* gegessen. <PRO_NOM_3_SIN>* <FOOD_ATTRIBUTE>.
+--unequal_gender_entities
+<ANIMAL>,<FOOD>

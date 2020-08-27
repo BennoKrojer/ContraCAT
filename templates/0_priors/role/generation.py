@@ -18,9 +18,9 @@ def tokenize(sequence, tokenizer):
 nominative = {'m': 'Der', 'f': 'Die', 'n': 'Das'}
 dativ = {'m': 'den', 'f': 'die', 'n': 'das'}
 pros = {'m': 'Er', 'f': 'Sie', 'n': 'Es'}
-animals = json.load(open('../../templates/universe/animal.json'))
-food = json.load(open('../../templates/universe/food.json'))
-adjectives = json.load(open('../../templates/universe/size_adjective.json'))
+animals = json.load(open('../../templates/vocabulary/animal.json'))
+food = json.load(open('../../templates/vocabulary/food.json'))
+adjectives = json.load(open('../../templates/vocabulary/size_adjective.json'))
 dest = '../../templates/0_priors/role'
 os.makedirs(dest, exist_ok=True)
 

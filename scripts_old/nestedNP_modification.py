@@ -4,7 +4,7 @@ from collections import defaultdict
 from scripts.adversarial_attack.utils import get_word2definite_article
 from mosestokenizer import MosesPunctuationNormalizer, MosesTokenizer, MosesDetokenizer
 from tqdm import tqdm
-from scripts.sample_modifications import get_sentence_idx
+from scripts.adversarial_attack.utils import get_sentence_idx
 import spacy
 
 nlp_en = spacy.load("en_core_web_sm")

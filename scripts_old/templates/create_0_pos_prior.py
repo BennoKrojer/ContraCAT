@@ -7,8 +7,8 @@ dativ = {'m': 'den', 'f': 'die', 'n': 'das'}
 acc = {'m': 'dem', 'f': 'der', 'n': 'dem'}
 pros = {'m': 'Er', 'f': 'Sie', 'n': 'Es'}
 
-animals = json.load(open(config.template_data_dir / 'universe' / 'animal.json'))
-adjectives = json.load(open(config.template_data_dir / 'universe' / 'size_adjective.json'))
+animals = json.load(open(config.template_data_dir / 'vocabulary' / 'animal.json'))
+adjectives = json.load(open(config.template_data_dir / 'vocabulary' / 'size_adjective.json'))
 dest = config.template_data_dir / '0_priors' / 'position'
 os.makedirs(dest, exist_ok=True)
 sampled = []

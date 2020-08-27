@@ -1,0 +1,6 @@
+-n
+0_priors/verb
+-e
+Wow! <PRO_NOM> <TRANS_VERB> it.
+-d
+Wow! <PRO_NOM> <PRO_ACC_3_SIN> <TRANS_VERB>.

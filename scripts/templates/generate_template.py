@@ -7,9 +7,9 @@ import re
 import config
 from scripts.templates.utils import cartesian_product
 
-VALID_VARIABLES = ['ANIMAL', 'HUMAN', 'FOOD', 'DRINK', 'DEF_NOM', 'IND_NOM', 'DEF_ACC', 'PRO_NOM', 'PRO_NOM_3_SIN',
-                   'PRO_ACC_3_SIN', 'SIZE_ADJECTIVE', 'FEELING_ADJECTIVE', 'FEELING_ADJECTIVE_COMP', 'TRANS_VERB',
-                   'ADVERB']
+VALID_VARIABLES = ['ANIMAL', 'HUMAN', 'FOOD', 'DRINK', 'DEF_NOM', 'DEF_ACC', 'IND_ACC', 'PRO_NOM',
+                   'PRO_NOM_3_SIN', 'PRO_ACC_3_SIN', 'SIZE_ADJECTIVE', 'FEELING_ADJECTIVE', 'FEELING_ADJECTIVE_COMP',
+                   'TRANS_VERB', 'ADVERB', 'ANIMAL_ATTRIBUTE', 'FOOD_ATTRIBUTE', 'CONCRETE_NOUN']
 
 
 def get_declination(string, key=None, lang='de'):
@@ -22,12 +22,12 @@ def get_declination(string, key=None, lang='de'):
             return {'m': 'der', 'f': 'die', 'n': 'das'}[key]
         if string == '<DEF_ACC>':
             return {'m': 'den', 'f': 'die', 'n': 'das'}[key]
+        if string == '<IND_ACC>':
+            return {'m': 'einen', 'f': 'eine', 'n': 'ein'}[key]
         if string == '<DEF_DAT>':
             return {'m': 'dem', 'f': 'der', 'n': 'dem'}[key]
         if string == '<FEELING_ADJECTIVE_COMP>':
             return {'hungrig': 'hungriger', 'müde': 'müder', 'glücklich': 'glücklicher', 'nett': 'netter'}[key]
-        if string == 'HABEN':
-            return {'I': 'habe', 'you': 'hast', 'he': 'hat', 'she': 'hat', 'we': 'haben', 'they': 'haben'}[key]
     elif lang == 'en':
         if string == '<FEELING_ADJECTIVE_COMP>':
             return {'hungry': 'hungrier', 'tired': 'more tired', 'happy': 'happier', 'nice': 'nicer'}[key]
@@ -78,7 +78,7 @@ class Token:
 
 
 def load_entities(entity_type, args):
-    entities = json.load(open(config.template_data_dir / 'universe' / (entity_type.lower() + '.json')))
+    entities = json.load(open(config.template_data_dir / 'vocabulary' / (entity_type.lower() + '.json')))
     new_entities = []
     if args.full.lower() == entity_type.lower():
         entities = entities.items()
@@ -122,7 +122,8 @@ def parse(template_str, args, lang):
 
         if '>' in token_str and '<' in token_str:
             check_valid(token_str)
-            potential_antecedent = 'ANIMAL' in token_str or 'HUMAN' in token_str or 'FOOD' in token_str or 'DRINK' in token_str
+            potential_antecedent = 'ANIMAL' in token_str or 'HUMAN' in token_str or 'FOOD' in token_str or 'DRINK' in\
+                                   token_str or 'CONCRETE_NOUN' in token_str
             antecedent = '>*' in token_str and potential_antecedent
             if potential_antecedent:
                 type = 'entity_slot'
@@ -191,6 +192,8 @@ def combine(template, args):
     # implement filter to remove combinations where gender is the same where it shouldn't be
     new_cartesians = []
     for tuple in cartesians:
+        if isinstance(tuple, Entity):
+            tuple = [tuple]
         constrained_entities = [e for i, e in enumerate(tuple) if i in gender_constrained_idx]
         genders = []
         satisfied = True
@@ -261,8 +264,6 @@ def write_templates(en_template, de_template, combinations, args, write_mode):
                     elif '<PRO_ACC_3_SIN>' in token.string:
                         mapping = get_declination('<PRO_ACC_3_SIN>')
                         word = mapping[g] + ' '
-                        if waiting_token:
-                            word += waiting_token + ' '
                     elif token.token_type in ['entity_slot', 'other_slot']:
                         if token.string == '<PRO_NOM>':
                             waiting_token = combination_copy[0].en
@@ -270,12 +271,6 @@ def write_templates(en_template, de_template, combinations, args, write_mode):
                             gender_combination += combination_copy[0].gender
                         elif args.neuter_always_correct:
                             gender_combination = 'n'
-                        if token.string == '<TRANS_VERB>':
-                            verb = combination_copy[0].de
-                            if len(verb.split()) == 2:
-                                word = get_declination('HABEN', waiting_token) + ' '
-                                waiting_token = verb.split()[1]
-                            combination_copy.pop(0)
                         elif token.same_entity and token.same_entity.current_value:
                             if token.string == token.same_entity.string:
                                 word = token.same_entity.current_value + ' '

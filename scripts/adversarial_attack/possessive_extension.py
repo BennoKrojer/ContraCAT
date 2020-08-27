@@ -124,6 +124,7 @@ def write_modify(args):
     print(f"Modified {len(both_lang_modified_idx)} examples out of 12.000")
     with open(output / 'de.txt', 'w') as de_out, open(output / 'en.txt', 'w') as en_out:
         modified_contrapro_subset = []
+        idxxx = []
         for i in range(len(idx)):
             if i in both_lang_modified_idx:
                 for tuple in lang2modified_examples['de'][i]:
@@ -131,6 +132,10 @@ def write_modify(args):
                 for tuple in lang2modified_examples['en'][i]:
                     en_out.write(tuple[0])
                 modified_contrapro_subset.append(contrapro[i])
+                idxxx.append(i)
+    with open('../../modified_poss_idx_best_friend', 'w') as f:
+        for i in idxxx:
+            f.write(str(i)+'\n')
 
     json.dump(modified_contrapro_subset, open(output / 'modified_contrapro_subset.json', 'w'))
 

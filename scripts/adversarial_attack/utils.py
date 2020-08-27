@@ -5,7 +5,7 @@ import xml.etree.ElementTree as ET
 import config
 
 
-def get_gender_dict(dict_cc_file, en_key=True):
+def get_gender_dict(dict_cc_file=config.resources_dir / 'dict_cc_original.txt', en_key=True):
     pattern = r'\[.*?\]|\(.*?\)'
     with open(dict_cc_file, 'r') as file:
         genders = dict()
@@ -26,7 +26,6 @@ def get_gender_dict(dict_cc_file, en_key=True):
                             genders[word.lower()] = gender
                 else:
                     pass
-        print(f"RETRIEVED: {str(retrieved)} words")
         return genders
 
 

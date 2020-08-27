@@ -98,7 +98,7 @@ modified_idx_de = set()
 modified_de = defaultdict(list)
 to_be_examined = ""
 count_preword = defaultdict(int)
-with MosesPunctuationNormalizer('de_full_text') as norm, MosesTokenizer('de_full_text') as tok, MosesDetokenizer('de_full_text') as de_tok,\
+with MosesPunctuationNormalizer('de') as norm, MosesTokenizer('de') as tok, MosesDetokenizer('de_full_text') as de_tok,\
         open(output_de, 'w') as de_file:
     for i, example in tqdm.tqdm(enumerate(contrapro)):
         head = example['src ante head lemma']

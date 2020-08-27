@@ -27,9 +27,9 @@ orders = {'eat_drink_eat': {'en': ('ate', 'drank', 'ate'), 'de': ('gegessen', 'g
 nom = {'m': 'der', 'f': 'die', 'n': 'das'}
 dat = {'m': 'dem', 'f': 'der', 'n': 'dem'}
 acc = {'m': 'den', 'f': 'die', 'n': 'das'}
-animals = json.load(open('../../templates/universe/animal.json'))
-food = json.load(open('../../templates/universe/food.json'))
-drinks = json.load(open('../../templates/universe/drink.json'))
+animals = json.load(open('../../templates/vocabulary/animal.json'))
+food = json.load(open('../../templates/vocabulary/food.json'))
+drinks = json.load(open('../../templates/vocabulary/drink.json'))
 
 for specification, verbs in orders.items():
     path = f'../../templates/2_coreference_step/overlap/{overlap}/{specification}/'

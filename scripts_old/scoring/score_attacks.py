@@ -2,7 +2,7 @@ import os
 
 # modifications = ['but', 'true:_no_quote', 'woman', 'best_friend', 'company', 'maria', 'male', 'female',
 #            'neutral']
-model_path = '/mounts/data/proj/dario/CtxTfNMTOld/models/subtitles/benno/'
+model_path = '/mounts/data/proj/dario/CtxTfNMTOld/models/subtitles/benno'
 models = ["augmentation-synonym-mod-low","augmentation-synonym-mod-lower","augmentation-synonym-mod-lowest",
           "augmentation-it-mod-low","augmentation-it-mod-lower","augmentation-it-mod-lowest",
           "augmentation-it-nomod-low","augmentation-it-nomod-lower","augmentation-it-nomod-lowest"]

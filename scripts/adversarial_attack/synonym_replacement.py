@@ -8,6 +8,7 @@ from nltk.corpus import wordnet
 from scripts.adversarial_attack.utils import get_gender_dict, get_sentence_idx, load_germanet, load_interlingual
 import config
 
+
 def write_modify():
     nlp_de = spacy.load("de_core_news_sm")
     gender_declination = json.load(open(config.resources_dir / 'german_declination.json'))
@@ -17,7 +18,6 @@ def write_modify():
     de2gender = get_gender_dict(config.resources_dir / 'dict_cc_original.txt', en_key=False)
     indices = get_sentence_idx()
     contrapro = json.load(open(config.contrapro_file, 'r'))
-
 
     def get_new_prev(prev, gender, sentence, idx):
         upper = prev[0].isupper()
@@ -42,7 +42,6 @@ def write_modify():
 
             return article[case][gender].capitalize() if upper else article[case][gender]
 
-
     def get_synset_for_en_word(word):
         """
         given an English word, returns a synset of an other language.
@@ -56,7 +55,6 @@ def write_modify():
         german_synset = lexid2synset[lemma_id]
         return german_synset
 
-
     def get_different_gender_synonym(german_synset):
         for word, compound_head in german_synset:
             try:
@@ -67,8 +65,8 @@ def write_modify():
                 if new_gender != original_gender and word.lower() != de_head.lower():
                     return word, new_gender
             except KeyError:
-                return None, None
-
+                continue
+        return None, None
 
     de_lines = open(config.adversarial_data_dir / 'de.txt', 'r').readlines()
     en_lines = open(config.adversarial_data_dir / 'en.txt', 'r').readlines()
@@ -76,6 +74,8 @@ def write_modify():
     os.makedirs(output, exist_ok=True)
     modified_indices = []
     modified_contrapro_subset = []
+    contrapro_subset = []
+    idxxx = []
     gendermap = {'Fem': 'f', 'Masc': 'm', 'Neut': 'n'}
 
     with open(output / 'de.txt', 'w') as de_file, open(output / 'en.txt', 'w') as en_file, \
@@ -85,13 +85,13 @@ def write_modify():
             tag = example["src ante head pos"]
             de_head = example['ref ante head lemma']
             dist = example['ante distance']
+            de_phrase = de_lines[indices[i]]
 
             gender_order = [gendermap[error['replacement gender']] for error in example['errors']]
-            original_gender = gendermap[example['ref ante head gender']]
-            de_phrase = de_lines[indices[i]]
 
             if 'NN' in tag and de_head and dist < 2 and de_head in tok(de_phrase) and wordnet.synsets(head):
                 try:
+                    original_gender = gendermap[example['ref ante head gender']]
                     german_synset = get_synset_for_en_word(head)
                     new_ante, new_gender = get_different_gender_synonym(german_synset)
 
@@ -132,11 +132,17 @@ def write_modify():
                                 error['contrastive'] = old_ref_segment
                                 error['replacement'] = old_ref_pronoun
                         modified_contrapro_subset.append(new_example)
+                        contrapro_subset.append(example)
+                        idxxx.append(i)
                 except (KeyError, AttributeError, ValueError) as e:
                     pass
-
+    with open('../../modified_syn_idx', 'w') as f:
+        for i in idxxx:
+            f.write(str(i)+'\n')
     json.dump(modified_contrapro_subset, open(output / 'modified_contrapro_subset.json', 'w'), indent=2)
+    json.dump(contrapro_subset, open(output / 'contrapro_subset.json', 'w'), indent=2)
     print('MODIFIED EXAMPLES:' + str(len(modified_indices)))
+
 
 if __name__ == '__main__':
     write_modify()

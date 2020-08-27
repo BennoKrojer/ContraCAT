@@ -1,0 +1,9 @@
+-n
+2_coreference_step/overlap/object_overlap/eat_drink_eat
+-e
+The <ANIMAL>*_1 ate the <FOOD>_3 and the <ANIMAL>_2 drank the <DRINK>. It liked <FOOD>_3.
+-d
+<DEF_NOM> <ANIMAL>*_1 hat <DEF_ACC>_3 <FOOD>_4 gegessen und <DEF_NOM> <ANIMAL>_2 hat <DEF_ACC> <DRINK> getrunken. <PRO_NOM_3_SIN>* mochte <DEF_ACC>_3 <FOOD>_4.
+--unequal_gender_entities
+<ANIMAL>*_1,<ANIMAL>_2
+--half
