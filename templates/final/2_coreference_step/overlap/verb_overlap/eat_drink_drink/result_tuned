@@ -1,6 +1,0 @@
-correct: 212
-false: 348
-{'m': 67, 'f': 111, 'n': 34}
-{'m': 117, 'f': 176, 'n': 55}
-[('<SEP>', 212), ('.\n', 212), ('Das', 125), ('Sie', 111), ('der', 67), ('Er', 67), ('Schaf', 45), ('Zebra', 45), ('schnell', 44), ('langsam', 44), ('fröhlich', 44), ('wenig', 44), ('Reh', 43), ('viel', 36), ('Taube', 36), ('das', 34), ('Es', 34), ('Affe', 32), ('Frosch', 32), ('Löwe', 30), ('Pferd', 26), ('Bär', 26), ('Schildkröte', 23), ('Kuh', 11), ('Die', 4)]
-[('<SEP>', 348), ('.\n', 348), ('Die', 176), ('Sie', 176), ('das', 146), ('der', 133), ('Er', 117), ('viel', 76), ('schnell', 68), ('langsam', 68), ('fröhlich', 68), ('wenig', 68), ('Schildkröte', 67), ('Pferd', 64), ('Das', 55), ('Es', 55), ('Taube', 54), ('Bär', 54), ('Löwe', 50), ('Affe', 48), ('Frosch', 48), ('Reh', 47), ('Schaf', 45), ('Zebra', 45), ('Maus', 45)]

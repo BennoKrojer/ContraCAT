@@ -1,1 +1,0 @@
-python3 -m sockeye.score --target ContraPro_Dario/contrapro.text.tok.de --source ContraPro_Dario/contrapro.text.tok.en --output outputs/subtitles/normal/baseline --model models_dario/subtitles/baseline/baseline/ --device-ids 0 --output-type score --batch-size 128

@@ -1,6 +1,0 @@
-correct: 375
-false: 0
-{'m': 0, 'f': 0, 'n': 375}
-{'m': 0, 'f': 0, 'n': 0}
-[('ist', 750), ('das', 480), ('schwer', 375), ('zu', 375), ('glauben', 375), (',', 375), ('dass', 375), ('wahr', 375), ('.\n', 375), ('Die', 135), ('die', 135), ('Das', 105), ('Kuchen', 25), ('Hotdog', 25), ('Käse', 25), ('Apfel', 25), ('Nuss', 25), ('Frucht', 25), ('Karotte', 25), ('Wurst', 25), ('Pizza', 25), ('Brot', 25), ('Ei', 25), ('Fleisch', 25), ('Eis', 25), ('Steak', 25), ('Wolf', 15), ('Bär', 15), ('Tiger', 15), ('Löwe', 15), ('Hase', 15), ('Affe', 15), ('Adler', 15), ('Frosch', 15), ('Katze', 15), ('Kuh', 15), ('Giraffe', 15), ('Maus', 15), ('Ente', 15), ('Schildkröte', 15), ('Eule', 15), ('Taube', 15), ('Ziege', 15), ('Schaf', 15), ('Eichhörnchen', 15), ('Pferd', 15), ('Schwein', 15), ('Zebra', 15), ('Känguru', 15), ('Reh', 15)]
-[]

@@ -1,6 +1,0 @@
-correct: 359
-false: 16
-{'m': 0, 'f': 0, 'n': 359}
-{'m': 16, 'f': 0, 'n': 0}
-[('kam', 359), ('überraschend', 359), ('.\n', 359), ('Die', 135), ('die', 135), ('Das', 105), ('das', 105), ('Hotdog', 25), ('Nuss', 25), ('Frucht', 25), ('Karotte', 25), ('Wurst', 25), ('Pizza', 25), ('Brot', 25), ('Ei', 25), ('Fleisch', 25), ('Eis', 25), ('Steak', 25), ('Kuchen', 24), ('Käse', 18), ('Apfel', 17), ('Wolf', 15), ('Katze', 15), ('Kuh', 15), ('Giraffe', 15), ('Maus', 15), ('Ente', 15), ('Schildkröte', 15), ('Eule', 15), ('Taube', 15), ('Ziege', 15), ('Schaf', 15), ('Eichhörnchen', 15), ('Pferd', 15), ('Schwein', 15), ('Zebra', 15), ('Känguru', 15), ('Reh', 15), ('Affe', 14), ('Tiger', 13), ('Löwe', 13), ('Hase', 13), ('Adler', 13), ('Frosch', 13), ('Bär', 12)]
-[('kam', 16), ('überraschend', 16), ('.\n', 16), ('Apfel', 8), ('Bär', 3), ('Tiger', 2), ('Löwe', 2), ('Hase', 2), ('Adler', 2), ('Frosch', 2), ('Kuchen', 1), ('Affe', 1)]

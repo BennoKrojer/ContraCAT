@@ -1,6 +1,0 @@
-correct: 318
-false: 57
-{'m': 0, 'f': 0, 'n': 318}
-{'m': 34, 'f': 23, 'n': 0}
-[('führte', 318), ('zu', 318), ('Chaos', 318), ('.\n', 318), ('Die', 112), ('die', 112), ('Das', 105), ('das', 105), ('Nuss', 25), ('Fleisch', 25), ('Steak', 25), ('Wurst', 24), ('Frucht', 23), ('Brot', 23), ('Ei', 22), ('Eis', 22), ('Karotte', 21), ('Käse', 20), ('Pizza', 19), ('Kuchen', 17), ('Hotdog', 16), ('Katze', 15), ('Kuh', 15), ('Ziege', 15), ('Schaf', 15), ('Eichhörnchen', 15), ('Pferd', 15), ('Schwein', 15), ('Zebra', 15), ('Känguru', 15), ('Reh', 15), ('Affe', 14), ('Apfel', 14), ('Eule', 14), ('Taube', 14), ('Wolf', 13), ('Hase', 13), ('Maus', 13), ('Schildkröte', 13), ('Tiger', 12), ('Löwe', 12), ('Adler', 10), ('Giraffe', 9), ('Bär', 8), ('Frosch', 7), ('Ente', 4)]
-[('führte', 57), ('zu', 57), ('Chaos', 57), ('.\n', 57), ('Die', 23), ('die', 23), ('Sie', 23), ('Apfel', 11), ('Ente', 11), ('Hotdog', 9), ('Frosch', 8), ('Bär', 7), ('Giraffe', 6), ('Pizza', 6), ('Käse', 5), ('Adler', 5), ('Karotte', 4), ('Keks', 3), ('Ei', 3), ('Eis', 3), ('Tiger', 3), ('Löwe', 3), ('Wolf', 2), ('Hase', 2), ('Brot', 2), ('Frucht', 2), ('Maus', 2), ('Schildkröte', 2), ('Affe', 1), ('Wurst', 1), ('Eule', 1), ('Taube', 1)]
