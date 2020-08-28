@@ -1,0 +1,6 @@
+numpy~=1.18.1
+nltk~=3.4.5
+spacy~=2.2.4
+tqdm~=4.43.0
+mosestokenizer~=1.1.0
+scipy~=1.4.1
