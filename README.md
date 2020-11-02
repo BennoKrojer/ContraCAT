@@ -10,7 +10,6 @@ wget XXX ContraPro repo XXX
 ```
 
 ## Usage
-XXX Should I structure such that scripts and data on highest level or attacks and templates on highest level? XXX
 The data and scripts directory each contain two subfolders: adversarial_ContraPro and templates.
 ### Adversarial ContraPro
 The data for each adversarial attack consists of a file for English (`en.txt`) and German (`de.txt`).
