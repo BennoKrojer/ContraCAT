@@ -1,13 +1,20 @@
 # ContraCAT
 
-This repository contains the data and scripts for the paper XXX
+This repository contains the data and scripts for the paper (ContraCAT: Contrastive Coreference Analytical Templates for Machine Translation)[xxx]
+
+
 
 ## Setup
+
+If you just want the data for your own models and tests, you can find it under `data`.
+If you want to reproduce or tweak or data generation and scoring method:
+
+First install the requirements:
 ```
 python3 -m venv YOUR_ENVIRONMENT_NAME
 pip install -r requirements.txt
-wget XXX ContraPro repo XXX
 ```
+If you want to use all  you will need 4 external resources on which we 
 
 ## Usage
 The data and scripts directory each contain two subfolders: adversarial_ContraPro and templates.
