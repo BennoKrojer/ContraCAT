@@ -48,8 +48,10 @@ Each line in that file corresponds to a line in the above mentioned `en.txt` and
 These scores are then evaluated with two scripts.
 
 For adversarial attacks, we call the original ContraPro evaluation, e.g.:
+
 `python3 -m ContraPro.evaluate --reference PATH_TO_contrapro.json --scores scripts/example_scores`
 For possessive extension and synonym replacement the reference json-file has to be a subset,e.g.:
+
 `python3 -m ContraPro.evaluate --reference data/adversarial_ContraPro/synonyms/modified_contrapro_subset.json --scores scripts/example_scores`
 
 For the evaluation of templates, simply call our script `scripts/templates/evaluate.py`.
