@@ -26,16 +26,18 @@ The data for each adversarial attack consists of a file for English (`en.txt`) a
 Attacks of the types possessive-extension and synonym-replacement additionally contain a modified version of the original `contrapro.json`, since only a subset of ContraPro was modified for these attacks. This means we only want to evaluate on that subset.
 
 The following three example commands show how to create the data for the three types of attacks.
-
-`python3 -m scripts.adversarial_attack.phrase_addition -n true_separate -d "es ist wahr" -e "it is true" -a --end_punct .`
-`python3 -m scripts.adversarial_attack.possessive_extension -n david -d "Davids" -e "David's" --de_prepend --en_prepend`
-`python3 -m scripts.adversarial_attack.synonym_replacement`
+```
+python3 -m scripts.adversarial_attack.phrase_addition -n true_separate -d "es ist wahr" -e "it is true" -a --end_punct .
+python3 -m scripts.adversarial_attack.possessive_extension -n david -d "Davids" -e "David's" --de_prepend --en_prepend`
+python3 -m scripts.adversarial_attack.synonym_replacement
+```
 
 ### Templates
 The data for our ContraCAT templaes is under `data/templates` and is further semantically divided into the different steps of coreference.
 On the lowest level, each concrete template consists of `en.txt` and `de.txt` file, as well as a groundtruth file called `gender.txt`.
 To generate the template, you call `scripts/generate_template.py`, e.g.:
 `python3 -m scripts.templates.generate -n 0_priors/verb -e "Wow! <PRO_NOM> <TRANS_VERB> it." -d "Wow! <PRO_NOM> <TRANS_VERB> <PRO_ACC_3_SIN>."`
+
 (for more details see `commands.sh`)
 
 ### Scoring and evaluation
