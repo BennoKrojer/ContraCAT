@@ -36,6 +36,7 @@ python3 -m scripts.adversarial_attack.synonym_replacement
 The data for our ContraCAT templaes is under `data/templates` and is further semantically divided into the different steps of coreference.
 On the lowest level, each concrete template consists of `en.txt` and `de.txt` file, as well as a groundtruth file called `gender.txt`.
 To generate the template, you call `scripts/generate_template.py`, e.g.:
+
 `python3 -m scripts.templates.generate -n 0_priors/verb -e "Wow! <PRO_NOM> <TRANS_VERB> it." -d "Wow! <PRO_NOM> <TRANS_VERB> <PRO_ACC_3_SIN>."`
 
 (for more details see `commands.sh`)
