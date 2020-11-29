@@ -315,11 +315,11 @@ if __name__ == '__main__':
                                                                      'directories.')
     parser.add_argument('--en_template', '-e', required=True, type=str,
                         help='The English template with variables/slots for entities to be filled. For more details '
-                             'see README_NOTES.')
+                             'see commands.sh.')
     parser.add_argument('--de_template', '-d', required=True, type=str,
                         help='The German template with variables/slots for entities to be filled. For more details '
                              'see '
-                             'README_NOTES.')
+                             'commands.sh.')
     parser.add_argument('--unequal_gender_entities', type=str, default='',
                         help='State the variables/slots that are not allowed to have the same gender when filling the '
                              '2 (or more slots). Separate by comma, e.g.: "<ANIMAL>_1,<FOOD>_1')

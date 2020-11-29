@@ -5,7 +5,7 @@ import xml.etree.ElementTree as ET
 import config
 
 
-def get_gender_dict(dict_cc_file=config.resources_dir / 'dict_cc_original.txt', en_key=True):
+def get_gender_dict(dict_cc_file=config.resources_dir / 'dict_cc_original.txt', en_key=False):
     pattern = r'\[.*?\]|\(.*?\)'
     with open(dict_cc_file, 'r') as file:
         genders = dict()
@@ -27,30 +27,6 @@ def get_gender_dict(dict_cc_file=config.resources_dir / 'dict_cc_original.txt', 
                 else:
                     pass
         return genders
-
-
-def load_germanet(path):
-    id2synset = dict()
-    word2synset = dict()
-    for filepath in glob.glob(path):
-        root = ET.parse(filepath).getroot()
-        for synset in root:
-            lexs = []
-            for lex_unit in synset:
-                head = ''
-                for sub in lex_unit:
-                    if sub.tag == 'compound':
-                        for sub_sub in sub:
-                            if sub_sub.tag == 'head':
-                                head = sub_sub.text
-                for sub in lex_unit:
-                    if sub.tag == 'orthForm':
-                        lexs.append((sub.text, head))
-                for word, head in lexs:
-                    word2synset[word] = (lexs, head)
-            ids = {lex_unit.attrib['id']: lexs for lex_unit in synset if lex_unit.tag == "lexUnit"}
-            id2synset.update(ids)
-    return id2synset, word2synset
 
 
 def get_gender(mapping, word, head=None):
@@ -97,7 +73,7 @@ def load_interlingual():
 
 def load_germanet():
     id2synset = dict()
-    for filepath in glob.glob(str(config.resources_dir / 'GermaNet/GN_V120/GN_V120_XML/nomen*.xml')):
+    for filepath in glob.glob(str(config.germanet_v120_xml_path / 'nomen*.xml')):
         root = ET.parse(filepath).getroot()
         for synset in root:
             # lexs = [orthform.text for lex_unit in synset for orthform in lex_unit if orthform.tag == 'orthForm']

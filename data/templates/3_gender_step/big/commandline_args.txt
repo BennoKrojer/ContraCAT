@@ -1,6 +1,0 @@
--n
-3_gender_step/big
--e
-I saw a <CONCRETE_NOUN>*. It was big.
--d
-Ich sah <IND_ACC> <CONCRETE_NOUN>*. <PRO_NOM_3_SIN>* war groß.
