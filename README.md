@@ -1,6 +1,6 @@
 # ContraCAT
 
-This repository contains the data and scripts for the paper (ContraCAT: Contrastive Coreference Analytical Templates for Machine Translation)[xxx]
+This repository contains the data and scripts for the paper [ContraCAT: Contrastive Coreference Analytical Templates for Machine Translation](xxx)
 
 ## Setup
 
@@ -52,7 +52,7 @@ For possessive extension and synonym replacement the reference json-file has to 
 For the evaluation of templates, simply call our script `scripts/templates/evaluate.py`.
 
 ## Dependencies for adversarial attack generation
-1. ContraPro: Simply clone the (ContraPro repo)[https://github.com/ZurichNLP/ContraPro] into the project directory.
+1. ContraPro: Simply clone the [ContraPro repo](https://github.com/ZurichNLP/ContraPro) into the project directory.
 2. GermaNet: this was needed to get a mapping from an English to a German synset (find access [here](https://uni-tuebingen.de/en/142806)). You will have to change the path in `config.py` if you download it.
 3. noun-to-gender-mapping: we cannot provide this mapping and you will have to implement `get_gender_dict()` in `utils.py` on your own.
 
