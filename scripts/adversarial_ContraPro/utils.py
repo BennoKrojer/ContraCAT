@@ -6,6 +6,11 @@ import config
 
 
 def get_gender_dict(dict_cc_file=config.resources_dir / 'dict_cc_original.txt', en_key=False):
+    '''
+    This function is based on a resource we cannot distribute. While it implements several functionalities,
+    it is needed in the code to map a german noun to its gender.
+    If you plan to just use our modified ContraPro data, this should not worry you.
+    '''
     pattern = r'\[.*?\]|\(.*?\)'
     with open(dict_cc_file, 'r') as file:
         genders = dict()
