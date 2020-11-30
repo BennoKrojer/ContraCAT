@@ -5,7 +5,7 @@ This repository contains the data and scripts for the paper [ContraCAT: Contrast
 ## Setup
 
 If you just want the data for your own models and tests, you can find it under `data`.
-Go to `scripts` to reproduce or tweak or data generation and scoring method.
+Go to `scripts` to reproduce or tweak or data generation and evaluation method.
 
 First install the requirements:
 ```
