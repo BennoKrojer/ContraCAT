@@ -16,7 +16,8 @@ If you want to reproduce or modify our data generation, you also need 3 external
 1. ContraPro
 2. GermaNet
 3. some form of mapping from German noun to gender
-Details for each are further down.
+
+(Details for each are further down)
 
 ## Usage
 The data and scripts directory each contain two subfolders: adversarial_ContraPro and templates.
