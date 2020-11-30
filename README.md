@@ -1,4 +1,4 @@
-# ContraCAT
+# 😺 ContraCAT 
 
 This repository contains the data and scripts for the paper [ContraCAT: Contrastive Coreference Analytical Templates for Machine Translation](https://sites.google.com/view/contracat/).
 
