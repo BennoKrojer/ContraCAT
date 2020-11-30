@@ -44,7 +44,6 @@ To generate the template, you call `scripts/generate_template.py`, e.g.:
 
 ### Scoring and evaluation
 To evaluate the attacks or templates, you need to have a scores-file such as the provided `example_scores`.
-Such a score-file can be created e.g. with XXX (Dario, what to say here ideally?)
 Each line in that file corresponds to a line in the above mentioned `en.txt` and `de.txt`.
 These scores are then evaluated with two scripts.
 
