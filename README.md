@@ -61,19 +61,20 @@ For the evaluation of templates, simply call our script `scripts/templates/evalu
 2. GermaNet: this was needed to get a mapping from an English to a German synset (find access [here](https://uni-tuebingen.de/en/142806)). You will have to change the path in `config.py` if you download it.
 3. noun-to-gender-mapping: we cannot provide this mapping and you will have to implement `get_gender_dict()` in `utils.py` on your own.
 
-## Citation
+## Citation    
 Please cite the following paper:
-  @inproceedings{stojanovski-etal-2020-contracat,
-      title = "{C}ontra{CAT}: Contrastive Coreference Analytical Templates for Machine Translation",
-      author = "Stojanovski, Dario  and
-        Krojer, Benno  and
-        Peskov, Denis  and
-        Fraser, Alexander",
-      booktitle = "Proceedings of the 28th International Conference on Computational Linguistics",
-      month = dec,
-      year = "2020",
-      address = "Barcelona, Spain (Online)",
-      publisher = "International Committee on Computational Linguistics",
-      url = "https://www.aclweb.org/anthology/2020.coling-main.417",
-      pages = "4732--4749",
-  }
+
+    @inproceedings{stojanovski-etal-2020-contracat,
+        title = "{C}ontra{CAT}: Contrastive Coreference Analytical Templates for Machine Translation",
+        author = "Stojanovski, Dario  and
+          Krojer, Benno  and
+          Peskov, Denis  and
+          Fraser, Alexander",
+        booktitle = "Proceedings of the 28th International Conference on Computational Linguistics",
+        month = dec,
+        year = "2020",
+        address = "Barcelona, Spain (Online)",
+        publisher = "International Committee on Computational Linguistics",
+        url = "https://www.aclweb.org/anthology/2020.coling-main.417",
+        pages = "4732--4749",
+    }
